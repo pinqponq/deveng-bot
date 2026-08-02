@@ -1,0 +1,1608 @@
+{
+  "section": {
+    "title": "Često postavljana pitanja",
+    "description": "Odgovori na najčešća pitanja o ovoj stranici."
+  },
+  "pages": {
+    "apps": {
+      "title": "Odabir poslužitelja",
+      "items": [
+        {
+          "q": "Čemu služi ova stranica?",
+          "a": "Ovdje se prikazuju svi Discord poslužitelji s tvog računa. Odabereš poslužitelj koji želiš konfigurirati ili pozoveš bota na poslužitelj na kojem ga još nema."
+        },
+        {
+          "q": "Zašto se neki moj poslužitelj ne pojavljuje na popisu?",
+          "a": "Prikazuju se samo poslužitelji čiji si vlasnik ili na kojima imaš dozvolu „Upravljanje poslužiteljem“. Provjeri imaš li tu ulogu na Discordu i osvježi stranicu."
+        },
+        {
+          "q": "Što se događa kada kliknem „Dodaj bota“?",
+          "a": "Otvara se Discordov dijalog za pozivanje. Nakon dodjele preporučenih dozvola bot se pridružuje poslužitelju i unos se ovdje označava kao „Dodano“."
+        },
+        {
+          "q": "Pozvao sam bota, ali se i dalje prikazuje kao „nije dodan“. Što sad?",
+          "a": "Ponekad se to odgađa zbog Discord cachea. Pričekaj nekoliko sekundi i osvježi stranicu; ako problem ostaje, izbaci bota i ponovno ga pozovi."
+        },
+        {
+          "q": "Kako pretražim poslužitelj?",
+          "a": "U tražilicu na vrhu upiši dio naziva poslužitelja. Popis se filtrira u stvarnom vremenu."
+        },
+        {
+          "q": "Po čemu je poredan popis?",
+          "a": "Prvo se prikazuju poslužitelji s botom, zatim ostali kojima možeš upravljati. Unutar svake skupine sortira se abecedno."
+        },
+        {
+          "q": "Moram li svaki poslužitelj postaviti zasebno?",
+          "a": "Da, postavke su vezane uz poslužitelj. Redom odaberi svaki poslužitelj i konfiguriraj željene module na nadzornoj ploči."
+        },
+        {
+          "q": "Koje dozvole trebam dati kod pozivanja bota?",
+          "a": "Najbolje je zadržati zadane dozvole. Ako ih ograničiš, neke funkcije (dodjela uloga, brisanje poruka, izrada glasovnih kanala) možda neće raditi."
+        },
+        {
+          "q": "Novododani poslužitelj se ne pojavljuje?",
+          "a": "Ne moraš se odjavljivati — koristi gumb za osvježavanje gore desno. Ako i dalje nedostaje, jednom se odjavi s panela i ponovno prijavi."
+        },
+        {
+          "q": "Kako promijenim poslužitelj nakon odabira?",
+          "a": "Klikni naziv poslužitelja u lijevoj bočnoj traci i odaberi „Promijeni poslužitelj“ ili idi izravno na /apps."
+        }
+      ]
+    },
+    "selectServer": {
+      "title": "Popis poslužitelja",
+      "items": [
+        {
+          "q": "Zašto vidim ovu stranicu?",
+          "a": "Ovamo te preusmjeravamo ako još nisi odabrao poslužitelj ili ako odabrani poslužitelj nije dostupan tvom računu."
+        },
+        {
+          "q": "Vidim li ovdje sve svoje poslužitelje?",
+          "a": "Ne — samo poslužitelje kojima možeš upravljati (vlasnik si ili imaš dozvolu „Upravljanje poslužiteljem“)."
+        },
+        {
+          "q": "Što ako je popis prazan?",
+          "a": "Provjeri da na barem jednom Discord poslužitelju imaš dozvolu „Upravljanje poslužiteljem“. Nakon dodjele osvježi stranicu."
+        },
+        {
+          "q": "Što se događa kad odaberem poslužitelj?",
+          "a": "Sprema se kao aktivni poslužitelj i preusmjeravamo te na nadzornu ploču — sve postavke u bočnoj traci od tog trenutka odnose se na njega."
+        },
+        {
+          "q": "Odabrao sam pogrešan poslužitelj — kako ga promijenim?",
+          "a": "Klikni gore lijevo na naziv poslužitelja i koristi „Promijeni poslužitelj“ ili odaberi drugi pod /apps."
+        },
+        {
+          "q": "Što označava ikona pored svakog poslužitelja?",
+          "a": "To je Discord ikona poslužitelja. Ako poslužitelj nema ikonu, prikazuje se prvo slovo naziva."
+        },
+        {
+          "q": "Popis se ne osvježava nakon promjene na Discordu?",
+          "a": "Odjavi se s panela i ponovno prijavi. Time se Discord sesija ponovno učitava i popis ažurira."
+        },
+        {
+          "q": "Mogu li upravljati poslužiteljem koji nije moj?",
+          "a": "Da, ako imaš dozvolu „Upravljanje poslužiteljem“. Inače ga Discord ne dostavlja kao kojim možeš upravljati."
+        },
+        {
+          "q": "Što ako bot nije na odabranom poslužitelju?",
+          "a": "Najprije ćeš biti preusmjeren na pozivanje bota; nakon uspješnog pozivanja odabir se nastavlja."
+        },
+        {
+          "q": "Mogu li otvoriti poslužitelj izravno preko URL-a?",
+          "a": "Da — koristi /dashboard/<id_poslužitelja>. Ako nemaš dozvolu, bit ćeš vraćen na ovu stranicu."
+        }
+      ]
+    },
+    "error": {
+      "title": "Stranica greške",
+      "items": [
+        {
+          "q": "Zašto vidim ovu stranicu?",
+          "a": "Tijekom radnje došlo je do neočekivane greške. Uzrok mogu biti privremeni prekidi, istek sesije ili nedostatak dozvola."
+        },
+        {
+          "q": "Kako riješiti grešku?",
+          "a": "Najprije osvježi stranicu. Ako ne pomogne, odjavi se i ponovno prijavi; ako problem ostaje, javi se podršci."
+        },
+        {
+          "q": "Što znače kodovi grešaka?",
+          "a": "401: sesija istekla, 403: nema dozvole, 404: resurs nije pronađen, 500: greška poslužitelja, 503: usluga privremeno nedostupna."
+        },
+        {
+          "q": "Hoću li izgubiti podatke?",
+          "a": "Ne. Spremljene postavke ostaju u bazi — greška utječe samo na neuspjeli zahtjev."
+        },
+        {
+          "q": "Je li „Pokušaj ponovno“ sigurno?",
+          "a": "Da. Ponavlja se samo zadnji zahtjev — bez dvostrukih zapisa."
+        },
+        {
+          "q": "Stalno dobivam istu grešku — što sad?",
+          "a": "Očisti cache preglednika i ponovno odaberi poslužitelj na /apps. Uzrok mogu biti i mrežni prekidi."
+        },
+        {
+          "q": "Bot radi, ali panel daje grešku?",
+          "a": "Veza bota s Discordom nije povezana s ovim. Panel API može privremeno štekati — pokušaj ponovno za nekoliko minuta."
+        },
+        {
+          "q": "Trebam li prijaviti grešku?",
+          "a": "Ako pošalješ kod greške i opis radnje, rješenje će biti brže. Otvori tiket u Centru za pomoć."
+        },
+        {
+          "q": "Događa li se to samo na mobilnom?",
+          "a": "Neki preglednici agresivno brišu kolačiće sesije. Ažuriraj preglednik ili koristi računalo."
+        },
+        {
+          "q": "Postoje li sigurnosne kopije mojih podataka?",
+          "a": "Da. Na stranici „Sigurnosna kopija poslužitelja“ su trenutni snimci i možeš ih vratiti."
+        }
+      ]
+    },
+    "dashboard": {
+      "title": "Pregled poslužitelja",
+      "items": [
+        {
+          "q": "Što prikazuje ova nadzorna ploča?",
+          "a": "Pregled odabranog poslužitelja u stvarnom vremenu — aktivne module, nedavne događaje, broj članova, status bota i kartice za brzi pristup."
+        },
+        {
+          "q": "Zašto se broj članova razlikuje od onog na Discordu?",
+          "a": "Odražava ono što je bot keširao. Discord propagira događaje s malim kašnjenjem — moguće je nekoliko minuta zaostatka."
+        },
+        {
+          "q": "Kojim modulima mogu pristupiti odavde?",
+          "a": "Putem kartica za brzi pristup ideš do dobrodošlice, moderacije, kanala zapisnika i nekoliko često korištenih stranica."
+        },
+        {
+          "q": "Što prikazuje traka aktivnosti?",
+          "a": "Sažetak nedavnih relevantnih radnji bota (dobrodošlica, slanje zapisnika, moderacija)."
+        },
+        {
+          "q": "Što znači „Aktivno“ kod modula?",
+          "a": "Prekidač je uključen i potrebna konfiguracija kanala/uloga je valjana."
+        },
+        {
+          "q": "Bot izgleda offline — što sad?",
+          "a": "Provjeri ulogu bota i mrežu na Discordu. Ako problem ostaje, otvori tiket u Centru za pomoć."
+        },
+        {
+          "q": "Jesu li podaci uživo ili keširani?",
+          "a": "Učitavaju se pri otvaranju stranice i osvježavaju svakih 30 sekundi. Za trenutno osvježavanje ručno učitaj stranicu."
+        },
+        {
+          "q": "Tko može vidjeti ovu stranicu?",
+          "a": "Svatko s dozvolom „Upravljanje poslužiteljem“. Posebne autorizacije za moderatore nema."
+        },
+        {
+          "q": "Gdje su detaljnije analize?",
+          "a": "Statistički kanal, Ljestvica poziva i Izvještaji nude detaljnije metrike."
+        }
+      ]
+    },
+    "welcome": {
+      "title": "Pozdrav panela",
+      "items": [
+        {
+          "q": "Čemu služi ova stranica?",
+          "a": "Pozdravlja te pri prvoj prijavi i ukratko objašnjava raspored panela."
+        },
+        {
+          "q": "Pojavljuje li se pri svakoj prijavi?",
+          "a": "Ne — samo pri prvom posjetu ili neposredno nakon pozivanja bota. Kasnije se otvara izravno nadzorna ploča."
+        },
+        {
+          "q": "Odakle početi?",
+          "a": "Preporučujemo da najprije postaviš „Opće postavke“ i „Kanal zapisnika“, a zatim specifične module (dobrodošlica, moderacija itd.)."
+        },
+        {
+          "q": "Moram li sada sve konfigurirati?",
+          "a": "Ne — module možeš aktivirati i konfigurirati kad god poželiš. Nekonfigurirani moduli jednostavno ostaju neaktivni."
+        },
+        {
+          "q": "Postoje li upute ili videozapisi?",
+          "a": "Da. U Centru za pomoć nalaze se kratke upute po modulima."
+        },
+        {
+          "q": "Mogu li preskočiti uvodne korake?",
+          "a": "Klikni „Preskoči“ kako bi otišao izravno na nadzornu ploču."
+        },
+        {
+          "q": "Više administratora upravlja našim poslužiteljem — vide li svi isto?",
+          "a": "Da. Svi s dozvolom „Upravljanje poslužiteljem“ vide isti panel; njihove se promjene bilježe u zapisniku promjena."
+        },
+        {
+          "q": "Koji se moduli obično prvi konfiguriraju?",
+          "a": "Najčešće prvo idu poruka dobrodošlice, moderacija, kanal zapisnika, automatska uloga i rođendani."
+        },
+        {
+          "q": "Što je server quota i je li obavezan?",
+          "a": "server quota otključava veće limite i napredne mogućnosti. Osnovne funkcije ostaju besplatne."
+        },
+        {
+          "q": "Mogu li onemogućiti modul koji mi ne treba?",
+          "a": "Da. Svaki modul ima prekidač — podaci ostaju sačuvani i modul se može kasnije ponovno uključiti."
+        }
+      ]
+    },
+    "tasks": {
+      "title": "Praćenje zadataka",
+      "items": [
+        {
+          "q": "Čemu služi ova stranica?",
+          "a": "Pratitelj zadataka u panelu za upravljanje poslužiteljem. Možeš stvarati zadatke, mijenjati im status i dodjeljivati ih."
+        },
+        {
+          "q": "Kako stvoriti zadatak?",
+          "a": "Klikni „Novi zadatak“, unesi naslov i neobavezni opis te odaberi izvršitelja i oznake."
+        },
+        {
+          "q": "Tko vidi ove zadatke?",
+          "a": "Svi s dozvolom „Upravljanje poslužiteljem“ na ovom poslužitelju. Zadaci su vezani uz poslužitelj i ne prenose se na druge."
+        },
+        {
+          "q": "Što se događa s gotovim zadacima?",
+          "a": "Ostaju u kartici „Završeno“. Ne brišu se automatski."
+        },
+        {
+          "q": "Mogu li uvesti/izvesti zadatke?",
+          "a": "Da — „Uvezi“ prima JSON/CSV, a „Izvezi“ preuzima trenutni popis."
+        },
+        {
+          "q": "Vide li se promjene na Discordu?",
+          "a": "Da — uz konfiguriran kanal zapisnika, stvaranje i promjena statusa sažeto se objavljuju ondje."
+        },
+        {
+          "q": "Možemo li raditi u timu?",
+          "a": "Da. Svaki zadatak podržava komentare i ažuriranja statusa; zapisnik promjena pokazuje tko je što i kada promijenio."
+        },
+        {
+          "q": "Mogu li vratiti obrisane zadatke?",
+          "a": "Ne — brisanje je trajno. Koristi status „Završeno“ kao mekanu arhivu."
+        },
+        {
+          "q": "Kako se obavještavaju izvršitelji?",
+          "a": "Korisnici s otvorenim privatnim porukama dobivaju obavijest preko Discorda; inače se prikazuje samo u panelu."
+        },
+        {
+          "q": "Mogu li se zadaci voditi Discord naredbama?",
+          "a": "Trenutno samo putem panela. Integracija slash naredbi je na roadmapu."
+        }
+      ]
+    },
+    "helpCenter": {
+      "title": "Centar za pomoć",
+      "items": [
+        {
+          "q": "Što nudi Centar za pomoć?",
+          "a": "Upute po modulima, česte probleme i mogućnost otvaranja tiketa za podršku."
+        },
+        {
+          "q": "Ne mogu pronaći svoju temu — što sad?",
+          "a": "Probaj ključne riječi u tražilici. Ako ništa ne odgovara, otvori tiket putem obrasca za podršku."
+        },
+        {
+          "q": "Kako kontaktirati podršku?",
+          "a": "Putem gumba „Kontakt“ na dnu ili preko našeg Discord poslužitelja za podršku."
+        },
+        {
+          "q": "Kako brzo odgovara podrška?",
+          "a": "Tijekom radnog vremena obično u roku 24 sata. server quota računi imaju prioritet."
+        },
+        {
+          "q": "Kako prijaviti grešku?",
+          "a": "Navedi stranicu, korake i po potrebi kod greške/snimke zaslona. Reproduktivni scenariji rješavaju se brže."
+        },
+        {
+          "q": "Postoji li forum zajednice?",
+          "a": "Da — naš Discord poslužitelj za podršku ima kanale zajednice gdje možeš postavljati pitanja."
+        },
+        {
+          "q": "Kako poslati povjerljive informacije?",
+          "a": "Koristi obrazac za podršku za privatnu razmjenu. Tokene ili osobne podatke ne objavljuj u javnim kanalima."
+        },
+        {
+          "q": "Postoji li dokumentacija za razvojne programere?",
+          "a": "Da — poveznica „Dokumentacija“ vodi do detaljnih uputa po modulima."
+        },
+        {
+          "q": "Postoji li AI asistent?",
+          "a": "Asistent unutar panela trenutno je u beta fazi. Kada bude dostupan, pojavit će se u tražilici."
+        },
+        {
+          "q": "Gdje predložiti nove značajke?",
+          "a": "U obrascu za podršku odaberi kategoriju „Prijedlog“."
+        }
+      ]
+    },
+    "botWelcome": {
+      "title": "Poruka dobrodošlice",
+      "items": [
+        {
+          "q": "Što radi ovaj modul?",
+          "a": "Automatski šalje poruku kad se novi član pridruži. Moguće su obična poruka, embed ili posebna kartica dobrodošlice."
+        },
+        {
+          "q": "Kako uključiti korisničko ime?",
+          "a": "Koristi rezervirana mjesta {user}, {username} i {server}. Pri pridruživanju zamjenjuju se automatski."
+        },
+        {
+          "q": "Mogu li slati i u kanal i u privatnu poruku?",
+          "a": "Da — kartice „Poruka u kanalu“ i „DM“ su nezavisne i konfiguriraju se zasebno."
+        },
+        {
+          "q": "Zašto privatna poruka može biti neuspješna?",
+          "a": "Članovi s isključenim privatnim porukama ili oni koji su blokirali bota su nedostupni. U kanalu zapisnika to se prikazuje kao „Dostava neuspješna“."
+        },
+        {
+          "q": "Kako izgleda kartica dobrodošlice?",
+          "a": "Slika sastavljena od avatara, pozadine i korisničkog imena. Boje i tekstove podešavaš na ovoj stranici."
+        },
+        {
+          "q": "Po čemu se razlikuju embed i običan tekst?",
+          "a": "Embedi se prikazuju u obojenom okviru s naslovom/opisom/podnožjem; običan tekst je obična Discord poruka."
+        },
+        {
+          "q": "Poruka dobrodošlice se ne šalje — što provjeriti?",
+          "a": "1) Modul je aktivan, 2) ciljani kanal je postavljen, 3) bot ima „Slanje poruka“, 4) zaista je došao guildMemberAdd događaj (intenti aktivni u Discord Developer Portalu)."
+        },
+        {
+          "q": "Mogu li automatski dodijeliti ulogu?",
+          "a": "Da — polje „Uloga za dodjelu“ automatski dodjeljuje ulogu novim članovima."
+        },
+        {
+          "q": "Mogu li dobrodošlicu ograničiti na određene članove?",
+          "a": "Ovdje izravno ne. Za uvjete koristi automatsku ulogu ili prilagođenu naredbu."
+        },
+        {
+          "q": "Postoji li pretpregled?",
+          "a": "Da — gumb „Pretpregled“ šalje ti simulaciju u privatnu poruku, bez utjecaja na stvarnog člana."
+        }
+      ]
+    },
+    "botGoodbye": {
+      "title": "Poruka pozdrava",
+      "items": [
+        {
+          "q": "Kada se šalje poruka pozdrava?",
+          "a": "Kada član napusti poslužitelj — dobrovoljno, izbacivanjem (kick) ili zabranom (ban)."
+        },
+        {
+          "q": "Šalje li se poruka i za zabranjene članove?",
+          "a": "Prema zadanim postavkama da. Aktiviraj „Isključi zabranjene članove“ kako bi ih preskakao."
+        },
+        {
+          "q": "Koja se rezervirana mjesta podržavaju?",
+          "a": "{user}, {username}, {server}, {memberCount}."
+        },
+        {
+          "q": "Ne želim najavljivati odlaske?",
+          "a": "Jednostavno deaktiviraj modul — sve poruke pozdrava prestaju."
+        },
+        {
+          "q": "Mogu li koristiti različite predloške za kick/ban/odlazak?",
+          "a": "Da — koristi kartice da definiraš poseban predložak po razlogu."
+        },
+        {
+          "q": "Treba li poruka ići u kanal zapisnika umjesto u zaseban kanal?",
+          "a": "Postavi „Ciljani kanal“ na kanal zapisnika. Razdvojen pristup je obično pregledniji."
+        },
+        {
+          "q": "Može li bot prikazati avatar člana koji odlazi?",
+          "a": "Da — DM kartica i thumbnail embeda mogu sadržavati avatar."
+        },
+        {
+          "q": "Briše li se poruka ako se član ponovno pridruži?",
+          "a": "Ne — stare poruke ostaju u kanalu; bot ih ne briše automatski."
+        },
+        {
+          "q": "Mogu li imati različitu poruku po jeziku?",
+          "a": "Bot koristi jezik poslužitelja. Višejezične poruke nisu ugrađene."
+        },
+        {
+          "q": "Može li poruka pozdrava ići u više kanala?",
+          "a": "Trenutno samo u jedan kanal. Za više kanala koristi prilagođenu naredbu."
+        }
+      ]
+    },
+    "botEmbedMessage": {
+      "title": "Embed (ugrađena poruka)",
+      "items": [
+        {
+          "q": "Što je embed?",
+          "a": "Discord poruka unutar obojenog okvira s naslovom, opisom i dodatnim poljima."
+        },
+        {
+          "q": "Što mogu raditi na ovoj stranici?",
+          "a": "Odabrati predložak, ispuniti naslov/opis/podnožje/thumbnail/sliku i poslati embed u ciljani kanal."
+        },
+        {
+          "q": "Kako odabrati boju?",
+          "a": "Unesi hex vrijednost (npr. #5865F2) ili koristi birač boja. Lijeva traka embeda preuzima tu boju."
+        },
+        {
+          "q": "Mogu li urediti poslani embed?",
+          "a": "Da — unesi ID poruke i postojeći embed se ažurira (umjesto da se šalje novi)."
+        },
+        {
+          "q": "Mogu li dodati više polja?",
+          "a": "Do 25 polja (Discord limit). Iznad toga panel upozorava."
+        },
+        {
+          "q": "Podržavaju li se rezervirana mjesta?",
+          "a": "Da — {server}, {memberCount} i varijable definirane u prilagođenim naredbama zamjenjuju se pri slanju."
+        },
+        {
+          "q": "Mogu li zakazati embed?",
+          "a": "Ova stranica je za trenutno slanje. Za odgođeno/ponovljeno slanje koristi „Zakazana objava“."
+        },
+        {
+          "q": "Kako vidjeti konačni rezultat unaprijed?",
+          "a": "Desno se tijekom uređivanja prikazuje pretpregled uživo."
+        },
+        {
+          "q": "Poslao sam pogrešan embed — što sad?",
+          "a": "Pronađi ID poruke i koristi „Uredi“, ili je obriši izravno na Discordu."
+        },
+        {
+          "q": "Što ako bot nema dozvolu za embed?",
+          "a": "Bez dozvole „Ugradnja poveznica“ Discord prikazuje samo običan tekst. Dodaj dozvolu ulozi bota."
+        }
+      ]
+    },
+    "botReactionRole": {
+      "title": "Reakcijske uloge",
+      "items": [
+        {
+          "q": "Što je reakcijska uloga?",
+          "a": "Sustav koji članu dodjeljuje ili oduzima ulogu kad reagira određenim emojijem na poruku."
+        },
+        {
+          "q": "Kako odabrati poruku?",
+          "a": "Unesi ID kanala i poruke ili dopusti botu da stvori novu poruku."
+        },
+        {
+          "q": "Koliko emojija po poruci?",
+          "a": "Do Discord limita od 20 različitih reakcija."
+        },
+        {
+          "q": "Mogu li koristiti prilagođene emojije?",
+          "a": "Da, prilagođeni emojiji poslužitelja rade — bot mora biti na poslužitelju koji nudi taj emoji."
+        },
+        {
+          "q": "Uklanja li se uloga kad se ukloni reakcija?",
+          "a": "Prema zadanim postavkama da. Aktiviraj „Sticky“ način kako bi uloga ostala i nakon uklanjanja reakcije."
+        },
+        {
+          "q": "Radi li ako se poruka premjesti u drugi kanal?",
+          "a": "Da — premještanje između kanala nije problem. Ako se poruka obriše, reakcijska uloga prestaje raditi."
+        },
+        {
+          "q": "Bot ne može dodijeliti ulogu?",
+          "a": "Najviša uloga bota mora biti iznad uloge koja se dodjeljuje, te treba dozvolu „Upravljanje ulogama“."
+        },
+        {
+          "q": "Može li član odabrati samo jednu ulogu po poruci?",
+          "a": "Da — aktiviraj „Pojedinačni odabir“ kako bi po poruci bila moguća samo jedna uloga."
+        },
+        {
+          "q": "Kako masovno obrisati stare reakcijske uloge?",
+          "a": "Odaberi unos s popisa i klikni „Obriši“. Briše se samo veza — poruka ostaje u kanalu."
+        },
+        {
+          "q": "Bilježe li se događaji reakcijskih uloga?",
+          "a": "Da — uz konfiguriran kanal zapisnika, dodjele/uklanjanja se bilježe s podacima o članu i poruci."
+        }
+      ]
+    },
+    "botScheduledAnnouncement": {
+      "title": "Zakazana objava",
+      "items": [
+        {
+          "q": "Što je zakazana objava?",
+          "a": "Poruka koja se automatski šalje u zadano vrijeme, neobavezno ponavljajuće. Može biti običan tekst ili embed."
+        },
+        {
+          "q": "Koja se vremenska zona koristi?",
+          "a": "Konfigurirana vremenska zona poslužitelja — možeš eksplicitno zadati i UTC."
+        },
+        {
+          "q": "Kako postaviti ponavljajuću objavu?",
+          "a": "Odaberi dnevno/tjedno/mjesečno, ili koristi napredno polje za cron-slične izraze."
+        },
+        {
+          "q": "Mogu li otkazati objavu?",
+          "a": "Deaktiviraj je ili obriši s popisa. Deaktivacija čuva povijest, ali zaustavlja slanja."
+        },
+        {
+          "q": "Mogu li urediti zakazanu poruku?",
+          "a": "Da, prije slanja. Već poslane kopije se ne uređuju — koristi uređivanje embeda."
+        },
+        {
+          "q": "Radi li @everyone?",
+          "a": "Da, ako bot ima dozvolu „Spominjanje @everyone“. Bez nje tekst se prikazuje, ali bez obavijesti."
+        },
+        {
+          "q": "Mogu li poslati isti tekst u više kanala odjednom?",
+          "a": "Svaka objava cilja jedan kanal. Dupliciraj je za dodatne kanale."
+        },
+        {
+          "q": "Vidim li prošla slanja?",
+          "a": "Da — kartica „Povijest“ prikazuje nedavna slanja s uspješnim/neuspješnim statusom."
+        },
+        {
+          "q": "Što se događa kod neuspješnog slanja?",
+          "a": "Greške dozvola ili obrisani kanali stvaraju zapis, ali ne zaustavljaju raspored. Sljedeće pokretanje pokušava ponovno."
+        },
+        {
+          "q": "Mogu li dodati slike?",
+          "a": "U embed načinu — thumbnaili/slike su podržani. Običan tekst ne dopušta privitke slika."
+        }
+      ]
+    },
+    "botFeeds": {
+      "title": "Feed objave (YouTube/Twitch/RSS)",
+      "items": [
+        {
+          "q": "Što radi ovaj modul?",
+          "a": "Prati YouTube/Twitch/RSS izvor i objavljuje obavijest u odabrani kanal čim se pojavi novi sadržaj."
+        },
+        {
+          "q": "Zašto ne unesem cijeli URL za YouTube/Twitch?",
+          "a": "Bot automatski dodaje https://www.youtube.com/ odnosno https://www.twitch.tv/ — ti unosiš samo naziv kanala. Tako se izbjegavaju neispravni URL-ovi."
+        },
+        {
+          "q": "Kakav format treba RSS poveznica?",
+          "a": "Valjan RSS/Atom URL (npr. https://site.com/feed.xml). Pomoću „Pretpregled“ provjeri može li bot doći do njega."
+        },
+        {
+          "q": "Koliko često se izvor provjerava?",
+          "a": "Standardno svakih 15 minuta (900 s). server quota dopušta kraće intervale; vrlo kratke intervale može ograničiti pružatelj."
+        },
+        {
+          "q": "Ne dolazi novi sadržaj — što provjeriti?",
+          "a": "Koristi „Pretpregled“ za provjeru izvora. Provjeri točnost naziva kanala i je li nedavno objavljen sadržaj."
+        },
+        {
+          "q": "Mogu li po objavi spomenuti ulogu?",
+          "a": "Da — odaberi ulogu pod „Spomenuta uloga“; bot će je pingati pri slanju."
+        },
+        {
+          "q": "Objavljuje li se i stari sadržaj?",
+          "a": "Ne — najavljuje se samo sadržaj objavljen nakon stvaranja pretplate."
+        },
+        {
+          "q": "Mogu li kasnije promijeniti URL izvora?",
+          "a": "Da — pri uređivanju URL-a filter povijesti se resetira, pa se otad otkriva ispočetka."
+        },
+        {
+          "q": "Otkrivaju li se YouTube prijenosi uživo?",
+          "a": "Da — prijenosi uživo pokreću zasebnu obavijest."
+        }
+      ]
+    },
+    "botPoll": {
+      "title": "Ankete",
+      "items": [
+        {
+          "q": "Kako stvoriti anketu?",
+          "a": "Unesi pitanje, opcije, ciljani kanal i trajanje te klikni „Stvori“. Bot objavljuje poruku u kojoj se reakcije broje kao glasovi."
+        },
+        {
+          "q": "Koliko opcija mogu zadati?",
+          "a": "Do Discord limita od 20. Manje opcija obično daje jasnije rezultate."
+        },
+        {
+          "q": "Što čini višestruki odabir?",
+          "a": "Uključeno — član može odabrati više opcija. Isključeno — broji se samo jedan glas po članu."
+        },
+        {
+          "q": "Što se događa pri kraju ankete?",
+          "a": "Bot zaključava poruku i objavljuje sažetak s pobjednikom. Možeš i ručno završiti anketu."
+        },
+        {
+          "q": "Mogu li vidjeti tko je glasovao?",
+          "a": "Moderatori vide popis u kartici „Detalji glasova“ — osim u anonimnom načinu."
+        },
+        {
+          "q": "Mogu li urediti aktivnu anketu?",
+          "a": "Samo pitanje i trajanje. Promjena opcija poništila bi postojeće glasove."
+        },
+        {
+          "q": "Mogu li ograničiti na određene uloge?",
+          "a": "Da — dodaj uloge pod „Dopuštene uloge“. Reakcije ostalih se ne broje."
+        },
+        {
+          "q": "Arhiviraju li se ankete?",
+          "a": "Da — vidljive su na ovoj stranici s rezultatima."
+        },
+        {
+          "q": "Može li se rezultat automatski primijeniti?",
+          "a": "Trenutno bot samo prikazuje rezultate. Za automatske radnje koristi prilagođenu naredbu."
+        },
+        {
+          "q": "Mogu li u anketi spomenuti članove?",
+          "a": "Da — @everyone ili uloge u pitanju/opisu; ovisno o dozvolama bota."
+        }
+      ]
+    },
+    "botGiveaway": {
+      "title": "Nagradne igre",
+      "items": [
+        {
+          "q": "Kako pokrenuti nagradnu igru?",
+          "a": "Unesi naziv, nagradu, broj pobjednika, kanal i datum završetka. Bot prikuplja sudionike reakcijama do datuma završetka."
+        },
+        {
+          "q": "Koja se reakcija broji kao sudjelovanje?",
+          "a": "Standardno 🎉. Svatko tko reagira tim emojijem dodaje se na popis sudionika."
+        },
+        {
+          "q": "Može li biti više pobjednika?",
+          "a": "Da — postavi „Broj pobjednika“. Bot na kraju izvlači odgovarajući broj nasumičnih pobjednika."
+        },
+        {
+          "q": "Mogu li filtrirati sudionike?",
+          "a": "Da — ograniči po ulozi ili minimalnoj starosti računa pod „Napredno“."
+        },
+        {
+          "q": "Mogu li završiti ranije?",
+          "a": "Da — odaberi nagradnu igru s popisa i klikni „Završi“."
+        },
+        {
+          "q": "Mogu li ponovno izvući pobjednike?",
+          "a": "Da — „Ponovno izvuci“ bira novog pobjednika; izvorne pobjednike možeš uključiti ili isključiti."
+        },
+        {
+          "q": "Šalje li bot pobjednicima privatnu poruku?",
+          "a": "Samo ako su im DM-ovi otvoreni. Inače se pinga ju u kanalu."
+        },
+        {
+          "q": "Što ako se obriše poruka nagradne igre?",
+          "a": "Automatski se otkazuje i bilježi. Pokreni novu."
+        },
+        {
+          "q": "Arhiviraju li se nagradne igre?",
+          "a": "Da — kartica „Povijest“ sadrži sve nagradne igre i pobjednike."
+        },
+        {
+          "q": "Mogu li isključiti određene članove?",
+          "a": "Da — „Isključene uloge“ ili „Isključeni korisnici“ uklanjaju ih iz izvlačenja."
+        }
+      ]
+    },
+    "botLevel": {
+      "title": "Sustav razina",
+      "items": [
+        {
+          "q": "Kako radi sustav razina?",
+          "a": "Članovi dobivaju XP za pisanje ili vrijeme provedeno u glasovnom kanalu. Pri pragovima XP-a napreduju razinu; konfigurirane uloge dodjeljuju se automatski."
+        },
+        {
+          "q": "Koliko XP po poruci?",
+          "a": "Vrijednost iz „XP po poruci“. Uz aktivan „Nasumični XP“ vrijednost se nasumično dijeli između min/maks."
+        },
+        {
+          "q": "Što znači cooldown?",
+          "a": "Vrijeme čekanja koje sprječava prebrzo skupljanje XP-a. Preporučuje se 30–60 sekundi."
+        },
+        {
+          "q": "Mogu li isključiti kanale?",
+          "a": "Da — „Ignorirani kanali“ preskaču spam ili kanale za naredbe."
+        },
+        {
+          "q": "Kako definirati nagrade za uloge?",
+          "a": "Unesi razinu i ulogu u tablicu „Nagrade za uloge“ i uključi prekidač."
+        },
+        {
+          "q": "Treba li stara nagrada biti zamijenjena ili akumulirana?",
+          "a": "Standardno se uloge akumuliraju. Aktiviraj „Način pojedinačne uloge“ da ostane samo jedna."
+        },
+        {
+          "q": "Kamo idu obavijesti o napredovanju?",
+          "a": "U konfigurirani kanal ili privatnu poruku. Obavijesti možeš i potpuno isključiti."
+        },
+        {
+          "q": "Mogu li resetirati XP člana?",
+          "a": "Da — moguć je pojedinačni ili reset cijelog poslužitelja. Radnja se ne može poništiti."
+        },
+        {
+          "q": "Prenose li se XP-i između poslužitelja?",
+          "a": "Ne — XP-i su vezani uz poslužitelj. Mogu se prenijeti uz alate za sigurnosnu kopiju/kloniranje."
+        },
+        {
+          "q": "Postoji li ljestvica?",
+          "a": "Da — putem Discord naredbe (npr. /level top) ili modula „Statistički kanal“."
+        }
+      ]
+    },
+    "botInviteLeaderboard": {
+      "title": "Ljestvica poziva",
+      "items": [
+        {
+          "q": "Što prikazuje ova stranica?",
+          "a": "Popis članova prema broju pozvanih. Ukupno, stvarni (ostali), napustili i lažni pozivi prikazuju se odvojeno."
+        },
+        {
+          "q": "Kako se broje pozivi?",
+          "a": "Praćenjem koji je pozivni link svaki novi član iskoristio. Bot treba dozvolu „Upravljanje poslužiteljem“."
+        },
+        {
+          "q": "Što je lažni poziv?",
+          "a": "Poziv s vrlo mladog računa ili člana koji je odmah otišao. Označavaju se radi filtriranja spama."
+        },
+        {
+          "q": "Mogu li filtrirati po datumskom rasponu?",
+          "a": "Da — koristi birač datuma za tjedno/mjesečno/prilagođeno razdoblje."
+        },
+        {
+          "q": "Mogu li postaviti nagrade za pozive?",
+          "a": "Da — u dijelu „Nagrade za pozive“ definiraš nagradne uloge prema broju poziva. Treba dozvola „Upravljanje ulogama“."
+        },
+        {
+          "q": "Mogu li vidjeti koga je član pozvao?",
+          "a": "Da — širenjem retka prikazuje se popis pozvanih korisnika."
+        },
+        {
+          "q": "Brojevi se razlikuju od Discorda — zašto?",
+          "a": "Discord cache može uzrokovati kašnjenje. Pomoću „Sinkroniziraj“ dohvaćaš trenutne podatke."
+        },
+        {
+          "q": "Broje li se pozivi prije pridruživanja bota?",
+          "a": "Možeš postaviti baznu vrijednost za starije pozive. Sve nakon pridruživanja bota broji se u stvarnom vremenu."
+        },
+        {
+          "q": "Mogu li resetirati ljestvicu?",
+          "a": "Da — „Resetiraj“ briše cijeli poslužitelj. Radnja je trajna."
+        },
+        {
+          "q": "Mogu li ljestvicu prikazati javno?",
+          "a": "Da — koristi modul „Statistički kanal“ za prikaz u nazivima glasovnih kanala."
+        }
+      ]
+    },
+    "botApplications": {
+      "title": "Obrasci za prijavu",
+      "items": [
+        {
+          "q": "Što je obrazac za prijavu?",
+          "a": "Višedijelni obrazac za prijave za staff/žiri/event. Bot prikuplja odgovore i prosljeđuje ih moderatorima na pregled."
+        },
+        {
+          "q": "Kako dodati polja?",
+          "a": "Pomoću graditelja obrazaca u panelu — postavi polja s oznakom, tipom i obveznošću. Bez pisanja JSON-a."
+        },
+        {
+          "q": "Koji su tipovi polja?",
+          "a": "Kratki tekst, dugi tekst, broj, datum i padajući izbor. Svako polje može biti obvezno/neobvezno."
+        },
+        {
+          "q": "Gdje član ispunjava obrazac?",
+          "a": "Bot postavlja gumb „Prijavi se“ u odabrani kanal. Članovi ga otvaraju kroz privatnu poruku ili modal."
+        },
+        {
+          "q": "Kamo idu odgovori?",
+          "a": "U konfigurirani „Kanal rezultata“ kao embed s gumbima Odobri/Odbij za moderatore."
+        },
+        {
+          "q": "Mogu li odobreni kandidati dobiti ulogu?",
+          "a": "Da — postavi „Uloga pri odobrenju“; dodjeljuje se automatski po odobrenju."
+        },
+        {
+          "q": "Može li se isti član prijaviti više puta?",
+          "a": "Uz cooldown (zadano 24 h) dopuštene su nove prijave."
+        },
+        {
+          "q": "Čuva li se povijest prijava?",
+          "a": "Da — kartica „Povijest“ prikazuje svaku prijavu i njezin status."
+        },
+        {
+          "q": "Mijenjaju li se stare prijave kad uredim obrazac?",
+          "a": "Ne — stari odgovori ostaju vezani uz verziju obrasca u kojoj su poslani."
+        },
+        {
+          "q": "Mogu li imati više obrazaca (npr. staff i event)?",
+          "a": "Da — definiraj više obrazaca s vlastitim kanalima/ulogama/pitanjima."
+        }
+      ]
+    },
+    "botMusic": {
+      "title": "Glazba",
+      "items": [
+        {
+          "q": "Kako se reproducira glazba?",
+          "a": "Na poslužitelju izvrši /play <pjesma ili URL>. Bot se pridružuje tvom glasovnom kanalu i počinje reprodukciju. Panel samo postavlja pravila."
+        },
+        {
+          "q": "Koje su platforme podržane?",
+          "a": "YouTube, Spotify (poveznice), SoundCloud i izravni audio URL-ovi. Spotify popisi za reprodukciju usklađuju se pjesmu po pjesmu."
+        },
+        {
+          "q": "Bot se ne pridružuje glasovnom kanalu?",
+          "a": "Treba dozvole „Spajanje“ i „Govor“, a ti moraš biti u glasovnom kanalu pri izvođenju /play."
+        },
+        {
+          "q": "Kako upravljati redom?",
+          "a": "/queue prikazuje red, /skip preskače, /pause pauzira, /resume nastavlja. Panel uz to prikazuje trenutno aktivnu pjesmu."
+        },
+        {
+          "q": "Koliko može biti dug red?",
+          "a": "Standardno 100 za standardne poslužitelje; server quota ga povećava. Prilagodljivo putem „Maks. red“."
+        },
+        {
+          "q": "Mogu li ograničiti tko može tražiti pjesme?",
+          "a": "Da — „Dopuštene uloge“ kontroliraju ovlaštenje."
+        },
+        {
+          "q": "Koliko pjesama korisnik može staviti u red?",
+          "a": "„Pjesme po korisniku“ postavlja anti-spam limit."
+        },
+        {
+          "q": "Mogu li podesiti kvalitetu zvuka?",
+          "a": "Da — putem postavke „Bitrate“. 96–128 kbps za slabije veze, 192–256 kbps kad Discord to dopušta."
+        },
+        {
+          "q": "Što bot radi kod duge tišine?",
+          "a": "Automatski se odspaja nakon vremena neaktivnosti (podesivo)."
+        },
+        {
+          "q": "Što donosi server quota za glazbu?",
+          "a": "Duži redovi, brže pretraživanje i napredni filtri (bassboost, nightcore itd.)."
+        }
+      ]
+    },
+    "botTicketPanel": {
+      "title": "Panel za podršku (tiketi)",
+      "items": [
+        {
+          "q": "Što je tiket panel?",
+          "a": "Gumb/izbornik kojim članovi otvaraju privatne kanale za podršku. Svaki klik stvara zaseban tiket kanal."
+        },
+        {
+          "q": "Tko vidi tiket kanal?",
+          "a": "Samo osoba koja traži pomoć, konfigurirane „Uloge za upravljanje tiketima“ i odabrani moderatori. Ostalima je sakriven."
+        },
+        {
+          "q": "Više tiket kategorija (npr. Bug/Pitanje)?",
+          "a": "Da — aktiviraj način s više gumba/izbornika i definiraj zasebna pitanja po tipu."
+        },
+        {
+          "q": "Što se događa pri zatvaranju tiketa?",
+          "a": "Kanal se arhivira ili briše; prijepis ide u kanal zapisnika kao HTML/embed."
+        },
+        {
+          "q": "Što je prijepis?",
+          "a": "Trajni zapis svih razmijenjenih poruka u tiketu za kasniji uvid."
+        },
+        {
+          "q": "Može li član imati više tiketa istovremeno?",
+          "a": "Standardno ne. Aktiviranjem „Više tiketa“ moguće je više aktivnih tiketa po članu."
+        },
+        {
+          "q": "Kako se imenuju tiket kanali?",
+          "a": "Generiraju se prema predlošku poput „ticket-{username}“ ili „ticket-{count}“. Format je prilagodljiv."
+        },
+        {
+          "q": "Kako se moderator pridružuje tiketu?",
+          "a": "Automatski se dodaju. „Preuzmi“ dodjeljuje tiket moderatoru."
+        },
+        {
+          "q": "Mogu li ograničiti broj tiketa?",
+          "a": "Da — limiti aktivnih tiketa po poslužitelju i po korisniku."
+        },
+        {
+          "q": "Koliko se čuvaju podaci tiketa?",
+          "a": "Aktivni tiketi su trajni; arhive slijede postavku zadržavanja (zadano 90 dana)."
+        }
+      ]
+    },
+    "botModerator": {
+      "title": "Moderacija",
+      "items": [
+        {
+          "q": "Što ova stranica pokriva?",
+          "a": "Anti-spam, filter psovki, blokadu poveznica/poziva, spam spominjanja i preplavljivanje porukama."
+        },
+        {
+          "q": "Mogu li onemogućiti pravilo u određenim kanalima?",
+          "a": "Da — „Ignorirani kanali“ ih isključuje."
+        },
+        {
+          "q": "Mogu li određene uloge izuzeti od moderacije?",
+          "a": "Dodaj ih pod „Ignorirane uloge“; njihove poruke zaobilaze pravila."
+        },
+        {
+          "q": "Koje su radnje dostupne?",
+          "a": "Brisanje, upozorenje, time-out, kick, ban — temeljeno na konfigurabilnim pragovima."
+        },
+        {
+          "q": "Može li bot brisati moje poruke?",
+          "a": "Da, ako tvoja uloga nije iznad uloge bota ili nisi u „Ignoriranim ulogama“."
+        },
+        {
+          "q": "Bilježe li se moderacijski događaji?",
+          "a": "Da — svaka radnja ide u kanal zapisnika i vidljiva je u „Zapisnicima moderacije“."
+        },
+        {
+          "q": "Kako poništiti pogrešnu radnju?",
+          "a": "Time-out i ban imaju gumb za poništavanje. Brisanje je nepovratno."
+        },
+        {
+          "q": "Mogu li prilagoditi popis psovki?",
+          "a": "Da — „Vlastiti popis riječi“ omogućuje unose specifične za poslužitelj."
+        },
+        {
+          "q": "Otkrivaju li se pokušaji zaobilaženja?",
+          "a": "Uglavnom da, kroz normalizaciju. Za potpunu pokrivenost kombiniraj s AI moderacijom."
+        },
+        {
+          "q": "Kako se integrira s AI moderacijom?",
+          "a": "Ova stranica radi na ključnim riječima/uzorcima. Za kontekstualnu moderaciju koristi paralelno AI moderaciju."
+        }
+      ]
+    },
+    "botAiModeration": {
+      "title": "AI moderacija",
+      "items": [
+        {
+          "q": "Kako radi AI moderacija?",
+          "a": "Bot ocjenjuje poruke u kategorijama poput Toxicity, Hate, Sexual, Harassment, Self-Harm i ovisno o pragu primjenjuje zapisivanje/brisanje/time-out."
+        },
+        {
+          "q": "Što znači osjetljivost (Niska/Normalna/Visoka)?",
+          "a": "Visoka okida pri nižim vrijednostima i hvata više poruka. Niska reagira manje. Visoka se preporučuje na poslužiteljima sklonim spamu/trolanju."
+        },
+        {
+          "q": "Koje kanale isključiti?",
+          "a": "Kanale s dopuštenim sirovijim govorom (npr. 18+ općenito), bot test kanale i privatne chat kanale."
+        },
+        {
+          "q": "Pokrivaju li se svi jezici?",
+          "a": "Turski i ostalih 11 podržanih jezika — uključujući normalizirane miješane zapise."
+        },
+        {
+          "q": "Koja je preporučena radnja za uvrede?",
+          "a": "Najprije zapis i upozorenje; kod ponavljanja time-out. Ban samo za teške prekršaje."
+        },
+        {
+          "q": "Kako smanjiti lažno pozitivne?",
+          "a": "Konfiguriraj isključene kanale, drži osjetljivost na Normalnoj i po potrebi dodaj iznimke za riječi."
+        },
+        {
+          "q": "Vidim li poduzete radnje?",
+          "a": "Da — „Zapisnici provjera“ navode nedavne okidače s kanalom/korisnikom/ocjenom."
+        },
+        {
+          "q": "Koliko se čuvaju AI podaci?",
+          "a": "Standardno 30 dana, server quota 90 dana. Pri deaktivaciji izvršavaju se zakazana brisanja."
+        },
+        {
+          "q": "Postoje li troškovi korištenja AI-ja?",
+          "a": "Standardno korištenje je uključeno. server quotae daju veću kvotu poruka."
+        },
+        {
+          "q": "Provjerava li se svaka poruka?",
+          "a": "Putem „Sample-rate“ provjeravaš postotak (npr. 50 %, 100 %). Korisno za upravljanje kvotom."
+        }
+      ]
+    },
+    "botModerationLogs": {
+      "title": "Zapisnici moderacije",
+      "items": [
+        {
+          "q": "Što ova stranica navodi?",
+          "a": "Zapisi vezani uz moderaciju s primijenjenim filtrima; podržane vrste radnji su samo one u sučelju — brisanje, upozorenje, time-out, kick i ban nisu svi zajamčeni."
+        },
+        {
+          "q": "Kako rade filtri?",
+          "a": "Mogu se kombinirati radnja, vrsta pravila, kanal, izvor (ručno / AI / filter riječi) i datumski raspon."
+        },
+        {
+          "q": "Mogu li odavde poništiti radnju?",
+          "a": "Poništavanje nije dostupno za svaku radnju u ovoj inačici; ispravite u Discordu ili relevantnom modulu gdje je moguće."
+        },
+        {
+          "q": "Mogu li izvesti zapisnike?",
+          "a": "Da — gumbi CSV i JSON na kartici „Zapisi“ preuzimaju trenutno učitanu (filtriranu) listu. Primjenjuje se API ograničenje upita (do 100 redaka); podijelite raspon datuma za duže razdoblje."
+        },
+        {
+          "q": "Što znače vrijednosti izvora?",
+          "a": "manual = ručna radnja, ai = AI moderacija, keyword = filter riječi/pravila (oznake mogu biti lokalizirane u panelu)."
+        },
+        {
+          "q": "Što ako se isti član stalno detektira?",
+          "a": "Provjeri povijest — kod ponavljanja eskaliraj radnju (time-out → ban)."
+        },
+        {
+          "q": "Kako izolirati automatske radnje?",
+          "a": "Suzi filter izvora odabirom AI moderacije ili filtera riječi za automatske ili pravilo-temeljene slučajeve."
+        },
+        {
+          "q": "Što se vidi u detaljnom prikazu?",
+          "a": "Za odabrani redak: ID zapisa, ID poruke, ključ razloga, kod obavijesti/pogreške, JSON parametri i po potrebi sažetak AI ocjene. Identifikatori korisnika pohranjuju se kao hash."
+        },
+        {
+          "q": "Koliko se zapisi čuvaju?",
+          "a": "Standardno 90 dana, server quota 1 godina. Nakon toga slijedi automatsko brisanje."
+        },
+        {
+          "q": "Je li moguće masovno brisanje?",
+          "a": "U ovoj inačici nema gumba za masovno brisanje ili arhiviranje rezultata filtra."
+        }
+      ]
+    },
+    "botAuditLogs": {
+      "title": "Zapisnik promjena (audit)",
+      "items": [
+        {
+          "q": "Što je audit zapis?",
+          "a": "Vremenski označen zapis svake promjene konfiguracije kroz panel ili bota — tko je što i kada promijenio."
+        },
+        {
+          "q": "Koje se promjene bilježe?",
+          "a": "Prekidači modula, odabir kanala/uloga, pragovi, server quota operacije te izmjene obrazaca/predložaka."
+        },
+        {
+          "q": "Čemu služi usporedba prije/poslije?",
+          "a": "Prikaz starog i novog stanja jedno do drugog — slučajne promjene odmah su vidljive."
+        },
+        {
+          "q": "Što znače filtri radnja i resurs?",
+          "a": "Resurs = koji modul (ai_moderation, ticket itd.). Radnja = operacija (stvaranje/ažuriranje/brisanje)."
+        },
+        {
+          "q": "Mogu li poništiti pogrešnu promjenu?",
+          "a": "„Poništi ovu promjenu“ vraća jednostavna ažuriranja. Složeniji slijedovi traže ručnu korekciju."
+        },
+        {
+          "q": "Mogu li se zapisi uređivati?",
+          "a": "Ne — audit zapisnici su append-only. Samo sustav zapisuje u njih."
+        },
+        {
+          "q": "Koliko dugo se čuvaju?",
+          "a": "Standardno 180 dana, server quota 1 godina. Važne promjene zasebno spremi sigurnosnom kopijom."
+        },
+        {
+          "q": "Vidim li tko je promijenio?",
+          "a": "Da — polje „Actor“ prikazuje Discord ID i ime."
+        },
+        {
+          "q": "Mogu li dohvatiti zapise putem API-ja?",
+          "a": "Da — server quotaovi uključuju pristup audit log API-ju. Detalji u Integracijama."
+        },
+        {
+          "q": "Utječe li mnogo zapisa na performanse?",
+          "a": "Ne — stranica ima paginaciju i filtre; podaci se učitavaju po potrebi."
+        }
+      ]
+    },
+    "botLogChannel": {
+      "title": "Kanal zapisnika",
+      "items": [
+        {
+          "q": "Što radi ovaj modul?",
+          "a": "Dodjeljuje događaje poslužitelja (pridruživanja/odlasci, uređivanja/brisanja, glasovne promjene, promjene uloga) odgovarajućim kanalima zapisnika."
+        },
+        {
+          "q": "Jedan kanal za sve ili po kategoriji?",
+          "a": "Svaki tip zapisa možeš usmjeriti u zaseban kanal ili putem „Nova kategorija + automatski kanali“ sve postaviti odjednom."
+        },
+        {
+          "q": "Koje su kategorije zapisa?",
+          "a": "Član, poruka, kanal, uloga, glas, poziv, moderacija, audit, bot, server quota."
+        },
+        {
+          "q": "Zašto ne vidim zapise poruka?",
+          "a": "Bot treba dozvole „Pregled zapisnika promjena“ i „Čitanje povijesti poruka“ te mora vidjeti kanal."
+        },
+        {
+          "q": "Zapisi su prebučni — kako smanjiti?",
+          "a": "Svaki tip zapisa ima vlastiti prekidač; deaktiviraj nepotrebne."
+        },
+        {
+          "q": "Embed ili običan tekst?",
+          "a": "Embedi standardno, s klasifikacijom po boji/ikoni. Može se prebaciti na običan tekst (za starije klijente)."
+        },
+        {
+          "q": "Mogu li isključiti kanale iz zapisa poruka?",
+          "a": "Da — „Ignorirani kanali“ isključuju osjetljive/privatne."
+        },
+        {
+          "q": "Što se događa ako se kanal zapisnika obriše?",
+          "a": "Bot ne može isporučiti i bilježi grešku; treba odabrati novi kanal."
+        },
+        {
+          "q": "Postoji li zadržavanje zapisa?",
+          "a": "Discord poruke čuva prema svojim pravilima. Panel dodatno vodi 90-dnevnu arhivu."
+        },
+        {
+          "q": "Mogu li ograničiti kanale zapisnika prema ulozi?",
+          "a": "Da — kanal učini vidljivim samo moderatorima kako ga članovi ne bi čitali."
+        }
+      ]
+    },
+    "botCustomCommand": {
+      "title": "Prilagođena naredba (osnovno)",
+      "items": [
+        {
+          "q": "Što je prilagođena naredba?",
+          "a": "Tako definiraš vlastite /naredbe za svoj poslužitelj. Kada ih članovi izvrše, bot izvodi konfiguriranu radnju — obično slanje poruka."
+        },
+        {
+          "q": "Što može osnovni prikaz?",
+          "a": "Običan tekst, embed odgovore i kratke informacije. Za složenije tijekove koristi napredni prikaz."
+        },
+        {
+          "q": "Kako treba izgledati naziv naredbe?",
+          "a": "Samo mala slova i crtica (-). Hrvatski/turski znakovi se normaliziraju (š→s, č→c)."
+        },
+        {
+          "q": "Mogu li ponovno koristiti isti naziv?",
+          "a": "Ne — nazivi su jedinstveni unutar poslužitelja. Kod sukoba obrazac upozorava."
+        },
+        {
+          "q": "Kako ograničiti tko može pokretati naredbu?",
+          "a": "Dodaj uloge pod „Dopuštene uloge“. Ostali dobivaju grešku dozvole."
+        },
+        {
+          "q": "Čemu služi cooldown?",
+          "a": "Kratko vrijeme čekanja po korisniku protiv spama — u sekundama."
+        },
+        {
+          "q": "Mogu li ograničiti naredbu na jedan kanal?",
+          "a": "Da — aktiviraj „Ograniči na ovaj kanal“ i odaberi ga."
+        },
+        {
+          "q": "Što znači „fiksiraj korištenja naredbi“?",
+          "a": "Zaključava odgovor naredbe — ostaje u panelu čak i ako se poslužitelj resetira."
+        },
+        {
+          "q": "Podržavaju li se rezervirana mjesta?",
+          "a": "Da — {user}, {server}, {channel} i druga zamjenjuju se pri izvršavanju."
+        },
+        {
+          "q": "Pojavljuje li se naredba odmah u Discordu?",
+          "a": "Da — Discord cache može povremeno odgoditi distribuciju 5–10 minuta."
+        }
+      ]
+    },
+    "botCustomCommandAdvanced": {
+      "title": "Prilagođena naredba (napredno)",
+      "items": [
+        {
+          "q": "Po čemu se razlikuje od osnovnog prikaza?",
+          "a": "Osim slanja poruka: dodjela/oduzimanje uloga, stvaranje kanala, premještanje članova, slanje embeda i ulančavanje više radnji po naredbi."
+        },
+        {
+          "q": "Više radnji po naredbi?",
+          "a": "Da — dodaj ih na popis radnji; bot ih izvršava redom."
+        },
+        {
+          "q": "Je li redoslijed radnji važan?",
+          "a": "Da. „Dodijeli ulogu, zatim pošalji poruku“ daje drugačiji rezultat od „Pošalji poruku, zatim dodijeli ulogu“."
+        },
+        {
+          "q": "Koje su radnje za uloge/članove moguće?",
+          "a": "Dodjela/oduzimanje uloga, premještanje članova, izbacivanje iz glasovnog kanala, primjena time-outa."
+        },
+        {
+          "q": "Postoje li uvjeti?",
+          "a": "Da — uvjetno polje provjerava status uloge/kanala. Ako nije ispunjeno, naredba tiho završava."
+        },
+        {
+          "q": "Mogu li primati argumente?",
+          "a": "Da — definiraj slash parametre i koristi ih u odgovoru putem {arg.name}."
+        },
+        {
+          "q": "Što se događa kod greške?",
+          "a": "Bot prekida na prvom neuspjelom koraku i bilježi ga u audit zapisnik; sljedeći koraci se ne pokreću."
+        },
+        {
+          "q": "Mogu li testno pokrenuti složeni tijek?",
+          "a": "Da — „Testiraj“ izvodi dry-run na živom poslužitelju."
+        },
+        {
+          "q": "Mogu li se vratiti na raniju verziju?",
+          "a": "Da — otvori audit zapis i koristi „Vrati na ovu verziju“."
+        }
+      ]
+    },
+    "botTemporaryVoiceChannel": {
+      "title": "Privremeni glasovni kanali",
+      "items": [
+        {
+          "q": "Što je privremeni glasovni kanal?",
+          "a": "Čim korisnik uđe u konfigurirani lobby glasovni kanal, bot stvara privatan kanal za njega. Pri izlasku se uklanja."
+        },
+        {
+          "q": "Koji kanal treba biti lobby?",
+          "a": "Često korišten glasovni kanal (često „Općenito“) odaberi pod „Lobby kanal“."
+        },
+        {
+          "q": "Tko upravlja dozvolama novog kanala?",
+          "a": "Vlasnik — može zaključati/otključati, postaviti ograničenje korisnika, preimenovati i izbacivati članove (putem naredbi/gumba)."
+        },
+        {
+          "q": "Stvara li se novi kanal u kategoriji lobbyja?",
+          "a": "Standardno da. Odaberi drugu pod „Pod postojećom kategorijom“."
+        },
+        {
+          "q": "Koliko je veliko ograničenje korisnika?",
+          "a": "Do Discord maksimuma od 99. Postavi zadanu vrijednost preko „Ograničenje korisnika“."
+        },
+        {
+          "q": "Mogu li zadati naziv kanala kao predložak?",
+          "a": "Da — „Naziv privremenog kanala“ podržava {user} i {server}, npr. „{user}-ova soba“."
+        },
+        {
+          "q": "Briše li bot kanal odmah?",
+          "a": "Prema „Odgoda brisanja kanala“ — odmah ili nakon nekoliko sekundi praznine."
+        },
+        {
+          "q": "Što ako vlasnik napusti poslužitelj?",
+          "a": "Predaja sljedećem ovlaštenom članu ili prema tvojoj politici. Inače se kanal uklanja."
+        },
+        {
+          "q": "Što znači „Sinkroniziraj s dozvolama lobbyja“?",
+          "a": "Dozvole uloga lobbyja prenose se na svaki novi privatni kanal — bez ručnog postavljanja."
+        },
+        {
+          "q": "Koliko privremenih kanala istodobno?",
+          "a": "Preporuka 25 u standardnom planu. server quota povećava limit i otključava upravljačke funkcije."
+        }
+      ]
+    },
+    "botStatisticsChannel": {
+      "title": "Statistički kanali",
+      "items": [
+        {
+          "q": "Što je statistički kanal?",
+          "a": "Glasovni kanali čiji naziv prikazuje brojače poslužitelja (članovi, online, botovi, broj uloga, pozivi)."
+        },
+        {
+          "q": "Koji su brojači podržani?",
+          "a": "Ukupno članova, online, offline, botovi, članovi neke uloge, ukupno poziva i prilagođeni brojači."
+        },
+        {
+          "q": "Koliko često se ažuriraju?",
+          "a": "Svakih 5–10 minuta zbog Discord rate limita. Češća ažuriranja nisu moguća."
+        },
+        {
+          "q": "Kako se formatira naziv kanala?",
+          "a": "Putem polja „Predložak“; {value} se zamjenjuje brojačem, npr. „Članovi: {value}“."
+        },
+        {
+          "q": "Tko smije govoriti u kanalu?",
+          "a": "Standardno nitko — ovi kanali su samo za prikaz; @everyone „Spajanje“ je deaktivirano."
+        },
+        {
+          "q": "Mogu li imati više brojača?",
+          "a": "Da — koliko god želiš statističkih kanala s vlastitim predloškom."
+        },
+        {
+          "q": "Brojka izgleda netočno — što sad?",
+          "a": "Vjerojatno Discord cache. „Sinkroniziraj“ prisilno osvježava."
+        },
+        {
+          "q": "Ažurira li se vrijednost i bez bota?",
+          "a": "Ostaje zamrznuta na zadnjoj vrijednosti; ažuriranja se nastavljaju kad se bot ponovno spoji."
+        },
+        {
+          "q": "Što ovdje donosi server quota?",
+          "a": "Brže osvježavanje, više brojača i napredni filtri/grupe."
+        },
+        {
+          "q": "Ako obrišem kanal, gubim li brojač?",
+          "a": "Ne — gubi se samo veza s kanalom. Možeš povezati novi kanal kad god želiš."
+        }
+      ]
+    },
+    "botAutorole": {
+      "title": "Automatska uloga",
+      "items": [
+        {
+          "q": "Što je automatska uloga?",
+          "a": "Automatski dodjeljuje jednu ili više uloga novim članovima, određenim članovima ili botovima."
+        },
+        {
+          "q": "Mogu li dodijeliti više uloga?",
+          "a": "Da — odaberi više uloga. Sve se dodjeljuju u okviru Discord limita uloga."
+        },
+        {
+          "q": "Dobivaju li botovi automatski ulogu?",
+          "a": "Da — polje „Bot uloga“ je zasebno i botovi ne dobivaju redovne automatske uloge."
+        },
+        {
+          "q": "Greška dozvola?",
+          "a": "Najviša uloga bota mora biti iznad uloge koja se dodjeljuje, plus „Upravljanje ulogama“."
+        },
+        {
+          "q": "Uvjeti prema starosti računa?",
+          "a": "Da — „Min. starost računa (dana)“ odgađa dodjelu dok se ne dosegne prag."
+        },
+        {
+          "q": "Pomaže li uvjet starosti protiv raidova?",
+          "a": "Da — filtrira nove/jednokratne račune tijekom raida."
+        },
+        {
+          "q": "Dodjeljuje li se i postojećim članovima?",
+          "a": "Standardno samo novima. „Primijeni na sve“ izvodi jednokratnu masovnu dodjelu."
+        },
+        {
+          "q": "Mogu li odgoditi dodjelu?",
+          "a": "Da — „Odgoda (sekundi)“ pomiče dodjelu, korisno kao anti-raid."
+        },
+        {
+          "q": "Što ako član sam ukloni ulogu?",
+          "a": "Uz aktivno „Ponovno primijeni“ bot je ponovno dodjeljuje; inače jednom."
+        },
+        {
+          "q": "Bilježe li se događaji automatske uloge?",
+          "a": "Da — kanal zapisnika bilježi tko je kada i koju ulogu dobio."
+        }
+      ]
+    },
+    "botBirthday": {
+      "title": "Rođendani",
+      "items": [
+        {
+          "q": "Što radi modul rođendana?",
+          "a": "Čestita članovima na njihov pohranjeni datum i opcionalno dodjeljuje privremenu rođendansku ulogu."
+        },
+        {
+          "q": "Kako članovi pohranjuju rođendan?",
+          "a": "Putem bot naredbe (npr. /dogumgunu) ili modal obrasca. Dovoljni su mjesec/dan; godina je opcionalna."
+        },
+        {
+          "q": "Je li godina obavezna?",
+          "a": "Ne — mjesec i dan su dovoljni. Uz godinu se računa dob; bez godine samo se šalje čestitka."
+        },
+        {
+          "q": "Kada se tijekom dana čestita?",
+          "a": "Standardno u 09:00 po vremenu poslužitelja. Podesivo putem „Sat provjere“."
+        },
+        {
+          "q": "Više rođendana istog dana?",
+          "a": "Bot označava sve u jednoj poruci — bez spama."
+        },
+        {
+          "q": "Koliko dugo ostaje rođendanska uloga?",
+          "a": "Standardno 24 sata (podesivo u satima). Uklanja se automatski."
+        },
+        {
+          "q": "Može li član obrisati svoje podatke?",
+          "a": "Da — putem vlastite naredbe ili gumba „Obriši moje podatke“."
+        },
+        {
+          "q": "Može li se sakriti dob?",
+          "a": "Da — članovi mogu unijeti samo mjesec/dan; dob se ne pohranjuje/prikazuje."
+        },
+        {
+          "q": "Što ako nije postavljen kanal obavijesti?",
+          "a": "Modul ne radi. Konfiguriraj kanal obavijesti i (opcionalno) javne kanale."
+        },
+        {
+          "q": "Slave li se prethodne godine ponovno?",
+          "a": "Da — godišnje. Ako član napusti poslužitelj, podaci ostaju, ali nema obavijesti."
+        }
+      ]
+    },
+    "botReminder": {
+      "title": "Podsjetnici",
+      "items": [
+        {
+          "q": "Što radi modul podsjetnika?",
+          "a": "Šalje poruku u zadanom trenutku članu ili kanalu — događaji, rokovi, termini."
+        },
+        {
+          "q": "Jednokratno ili ponavljajuće?",
+          "a": "Oboje. Jednokratni okidaju jednom; ponavljajući koriste dnevne/tjedne/mjesečne rasporede."
+        },
+        {
+          "q": "Privatna poruka ili kanal?",
+          "a": "Oboje. Kod zatvorenih privatnih poruka i postojećeg kanala bot koristi kanal."
+        },
+        {
+          "q": "Kako se obrađuju vremenske zone?",
+          "a": "Vremenska zona poslužitelja kao zadana. Članovi mogu postaviti /timezone."
+        },
+        {
+          "q": "Više podsjetnika po poslužitelju?",
+          "a": "Da — svaki radi nezavisno; server quota povećava limit."
+        },
+        {
+          "q": "Pri brisanju podsjetnika — što s poviješću?",
+          "a": "Prošla slanja ostaju u kanalima/zapisnicima. Otkazuju se samo budući termini."
+        },
+        {
+          "q": "Mogu li vezati podsjetnike za događaje?",
+          "a": "server quota se integrira s Discord događajima i okida X minuta prije početka."
+        },
+        {
+          "q": "Podržavaju li se rezervirana mjesta?",
+          "a": "Da — {user}, {date}, {time} se zamjenjuju pri slanju."
+        },
+        {
+          "q": "Zašto se podsjetnik nije pokrenuo?",
+          "a": "Mogući uzroci: nedostatak dozvole bota, nedostajući kanal, zatvorene privatne poruke ili offline bot. Provjeri zapisnike."
+        },
+        {
+          "q": "Čuva li se povijest podsjetnika?",
+          "a": "Da — kartica „Povijest“ prikazuje zadnjih 90 dana."
+        }
+      ]
+    },
+    "botReports": {
+      "title": "Izvještaji",
+      "items": [
+        {
+          "q": "Što nudi stranica izvještaja?",
+          "a": "Vizualne analize rasta, angažmana, moderacijskih događaja i učinkovitosti poziva — grafikoni i sažeci."
+        },
+        {
+          "q": "Koja su razdoblja dostupna?",
+          "a": "Zadnjih 7/30/90 dana i prilagođen datumski raspon."
+        },
+        {
+          "q": "Mogu li preuzeti izvještaje kao PDF/Excel?",
+          "a": "Da — „Izvezi“ gore desno daje PDF ili Excel (napredni predlošci uz server quota)."
+        },
+        {
+          "q": "Koliko unatrag idu podaci?",
+          "a": "Standardno 90 dana, server quota 1 godina. Za dulja razdoblja koristi sigurnosne kopije/izvoze."
+        },
+        {
+          "q": "Jesu li izvještaji u stvarnom vremenu?",
+          "a": "Ne — računaju se dnevno. Za stvarno vrijeme koristi nadzornu ploču."
+        },
+        {
+          "q": "Kako se mjeri angažman?",
+          "a": "Poruke, vrijeme u glasu, pozivi, reakcije i korištenje naredbi. Bot poruke se isključuju."
+        },
+        {
+          "q": "Postoji li usporedba članova osoblja?",
+          "a": "Da — „Učinkovitost osoblja“ prikazuje moderacijske radnje, vremena odgovora na tikete i drugo."
+        },
+        {
+          "q": "Filter po kanalu/ulozi?",
+          "a": "Da — filtri gore desno svakog izvještaja."
+        },
+        {
+          "q": "Mogu li sortirati tablice?",
+          "a": "Da — klik na zaglavlje stupca prebacuje uzlazno/silazno."
+        },
+        {
+          "q": "Zašto neki intervali nedostaju?",
+          "a": "Prekidi rada bota stvaraju praznine. Označavaju se u dijelu „Nedostajući intervali“."
+        }
+      ]
+    },
+    "botLocale": {
+      "title": "Jezik poslužitelja",
+      "items": [
+        {
+          "q": "Što znači jezik bota?",
+          "a": "Upravlja jezikom bot poruka na ovom poslužitelju. Biraj između 12 podržanih jezika."
+        },
+        {
+          "q": "Jezik po članu?",
+          "a": "Trenutno na razini poslužitelja. Postavke po korisniku su na roadmapu."
+        },
+        {
+          "q": "Čemu služi rezervni jezik?",
+          "a": "Koristi se kad nedostaje prijevod u aktivnom jeziku. Tipično su to turski ili engleski."
+        },
+        {
+          "q": "Ažuriraju li se sve poruke pri promjeni jezika?",
+          "a": "Nove poruke koriste novi jezik. Prošle se ne uređuju (Discord to ne dopušta)."
+        },
+        {
+          "q": "Što se događa s ključevima koji nedostaju?",
+          "a": "Vraća se na rezervni jezik i prikazuje upozorenje."
+        },
+        {
+          "q": "Vrijedi li jezik za prilagođene naredbe?",
+          "a": "Ne — tekst u prilagođenim naredbama je tvoj i neovisan o jeziku bota."
+        },
+        {
+          "q": "Mogu li dodati novi jezik?",
+          "a": "Trenutno su aktivna samo 12 podržanih jezika. Prijedloge šalji kroz obrazac za podršku."
+        },
+        {
+          "q": "Utječe li jezik na AI moderaciju?",
+          "a": "AI je višejezičan i to ne utječe. Ova stranica upravlja samo bot porukama."
+        },
+        {
+          "q": "Bilježe li se promjene jezika?",
+          "a": "Da — promjene jezika pojavljuju se u zapisniku promjena kao ažuriranje konfiguracije."
+        }
+      ]
+    },
+    "botGuilds": {
+      "title": "Upravljanje poslužiteljima",
+      "items": [
+        {
+          "q": "Što ova stranica upravlja?",
+          "a": "Pregled svih poslužitelja s tvog računa — status bota, server quota i konfiguracija na visokoj razini."
+        },
+        {
+          "q": "Mogu li ukloniti bota s nekog poslužitelja?",
+          "a": "Da — „Ukloni bota“ izbacuje bota. Podaci se čuvaju 30 dana i mogu se vratiti."
+        },
+        {
+          "q": "Mogu li ovdje preimenovati poslužitelj?",
+          "a": "Ne — nazivi poslužitelja upravljaju se u Discordu; panel ih samo odražava."
+        },
+        {
+          "q": "Kopirati postavke između poslužitelja?",
+          "a": "Da — „Kopiraj konfiguraciju“ prenosi postavke modula na drugi poslužitelj."
+        },
+        {
+          "q": "Kako dijagnosticirati problem na poslužitelju?",
+          "a": "Odaberi poslužitelj i pokreni „Pokreni dijagnostiku“ — provjeravaju se dozvole, reference kanala/uloga i status pretplate."
+        },
+        {
+          "q": "Masovne radnje na više poslužitelja?",
+          "a": "Da — putem višestrukog odabira lijevo aktiviraj/deaktiviraj module ili masovno pokreni sigurnosne kopije."
+        },
+        {
+          "q": "Kada se brišu podaci bota?",
+          "a": "30 dana nakon što bot napusti poslužitelj povezani podaci se automatski uklanjaju — prije toga su povratljivi."
+        },
+        {
+          "q": "Mogu li pozvati administratore u panel?",
+          "a": "Svatko s dozvolom „Upravljanje poslužiteljem“ automatski dobiva pristup panelu; zaseban sustav poziva ne postoji."
+        },
+        {
+          "q": "Što se događa ako se poslužitelj obriše na Discordu?",
+          "a": "Nakon 7 dana zapis u panelu se arhivira u skladu s pravilima zadržavanja."
+        }
+      ]
+    },
+    "botCustomBots": {
+      "title": "Privatni bot",
+      "items": [
+        {
+          "q": "Što je vlastiti bot?",
+          "a": "Zaseban Discord bot pod tvojim brendom (avatar/naredbe) koji koristi isti engine."
+        },
+        {
+          "q": "Gdje dobiti bot token?",
+          "a": "Iz Discord Developer Portala > Application > Bot. Tokeni su privatni — pažljivo ih unesi u panel."
+        },
+        {
+          "q": "Gdje zalijepiti token?",
+          "a": "U polje „Bot token“. Pohranjuje se šifriran i nikad više ne prikazuje u čistom tekstu."
+        },
+        {
+          "q": "Više vlastitih botova istodobno?",
+          "a": "Ne — po računu se može registrirati samo jedan privatni bot."
+        },
+        {
+          "q": "Jesu li naredbe iste kao kod glavnog bota?",
+          "a": "Osnovne funkcije su identične; razlikuju se naziv i avatar. Nazivi naredbi mogu se prilagoditi."
+        },
+        {
+          "q": "Moj vlastiti bot je offline?",
+          "a": "Provjeri token, je li aplikacija postavljena na Discordu, jesu li intenti uključeni. Greške se prikazuju na ovoj stranici."
+        },
+        {
+          "q": "Kako postaviti avatar?",
+          "a": "U Discord Developer Portalu unutar aplikacije — panel ne upravlja avatarom."
+        },
+        {
+          "q": "Token mi je procurio — što sad?",
+          "a": "Resetiraj token u Developer Portalu i unesi novi. Stari token postaje odmah nevažeći."
+        },
+        {
+          "q": "Više vlastitih botova na istom poslužitelju?",
+          "a": "Po računu je dopušten samo jedan privatni bot. Možete ga koristiti uz glavnog Deveng bota na istom poslužitelju."
+        },
+        {
+          "q": "Mogu li pauzirati vlastiti bot?",
+          "a": "Da — „Pauziraj“ zaustavlja bot. Token i postavke ostaju sačuvani."
+        }
+      ]
+    }
+  }
+}

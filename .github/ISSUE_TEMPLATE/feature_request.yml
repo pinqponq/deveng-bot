@@ -1,0 +1,47 @@
+name: Feature request
+description: Suggest an improvement for Deveng Bot
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: Propose a focused improvement. Prefer features that can ship end-to-end (panel + API + bot).
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Bot commands / Discord UX
+        - Web panel
+        - API / data
+        - Music
+        - Moderation / AI
+        - Automation
+        - Ops / Docker / DX
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What pain does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: checkboxes
+    id: honesty
+    attributes:
+      label: Scope honesty
+      options:
+        - label: I understand half-wired UI placeholders without API/bot paths are out of scope
+          required: true

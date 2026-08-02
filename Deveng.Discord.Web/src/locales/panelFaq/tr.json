@@ -1,0 +1,1604 @@
+{
+  "section": {
+    "title": "Sıkça Sorulan Sorular",
+    "description": "Bu sayfayla ilgili merak ettiklerinizin cevapları."
+  },
+  "pages": {
+    "apps": {
+      "title": "Sunucu seçici",
+      "items": [
+        {
+          "q": "Bu sayfa ne işe yarar?",
+          "a": "Bu ekranda Discord hesabınızdaki sunucular listelenir. Ayarlamak istediğiniz sunucuyu seçer veya bot eklenmemiş bir sunucuya botu davet edersiniz."
+        },
+        {
+          "q": "Bir sunucum listede neden görünmüyor?",
+          "a": "Yalnızca sahibi olduğunuz veya 'Sunucuyu Yönet' yetkinizin olduğu sunucular gelir. Listede yoksa Discord'da ilgili rolün olduğundan emin olun ve sayfayı yenileyin."
+        },
+        {
+          "q": "‘Bot Ekle’ butonuna bastığımda ne olur?",
+          "a": "Discord'un bot davet ekranı açılır. Botu seçili sunucuya gerekli izinlerle eklersiniz; ardından bu listede bot 'Eklendi' olarak işaretlenir."
+        },
+        {
+          "q": "Botu eklediğim halde 'eklenmemiş' görünüyor, ne yapmalıyım?",
+          "a": "Discord cache'i nedeniyle bazen gecikme olur. Bir kaç saniye bekleyip sayfayı yenileyin; sorun sürerse sunucudan botu atıp tekrar davet edin."
+        },
+        {
+          "q": "Sunucuları nasıl arayabilirim?",
+          "a": "Üstteki arama kutusuna sunucu adının bir kısmını yazmanız yeterlidir. Liste anlık olarak filtrelenir."
+        },
+        {
+          "q": "Sıralama neye göre yapılıyor?",
+          "a": "Bot eklenmiş sunucular önce gösterilir; ardından yetkiniz olan diğer sunucular gelir. Aralarında alfabetik sıralama uygulanır."
+        },
+        {
+          "q": "Birden fazla sunucum varsa hepsini ayrı ayrı mı yapmam gerekir?",
+          "a": "Evet, ayarlar sunucu bazındadır. Her sunucu için botu seçip kontrol paneline girer ve ilgili özellikleri yapılandırırsınız."
+        },
+        {
+          "q": "Botu davet ederken hangi izinleri vermeliyim?",
+          "a": "Davet ekranındaki varsayılan izinleri korumanızı öneririz. Yetkileri kısıtlarsanız bazı özellikler (rol verme, mesaj silme, ses kanalı oluşturma vb.) çalışmayabilir."
+        },
+        {
+          "q": "Yeni eklediğim sunucu listede görünmüyor?",
+          "a": "Discord'dan 'Çıkış / Tekrar Giriş' yapmanıza gerek yok; sayfanın sağ üstündeki yenile düğmesine basmak yeterli olur. Yine de gelmiyorsa bir kez panelden çıkıp girin."
+        },
+        {
+          "q": "Sunucu seçtikten sonra geri dönmek istersem?",
+          "a": "Sol menüdeki sunucu adına tıklayıp 'Sunucu Değiştir' diyebilir veya doğrudan /apps adresine gidebilirsiniz."
+        }
+      ]
+    },
+    "selectServer": {
+      "title": "Sunucu listesi",
+      "items": [
+        {
+          "q": "Bu sayfa neden gösteriliyor?",
+          "a": "Henüz bir sunucu seçmediğiniz veya seçili sunucu erişiminizin olmadığı durumlarda buraya yönlendirilirsiniz."
+        },
+        {
+          "q": "Sunucularımın hepsi mi gösteriliyor?",
+          "a": "Hayır, yalnızca yönetebileceğiniz (sahibi veya 'Sunucuyu Yönet' yetkili olduğunuz) sunucular gelir."
+        },
+        {
+          "q": "Liste boşsa ne yapmalıyım?",
+          "a": "Discord hesabınızda yetkinizin olduğu bir sunucu olduğundan emin olun. Yeni eklediyseniz sayfayı yenileyin."
+        },
+        {
+          "q": "Bir sunucuyu seçince ne olur?",
+          "a": "O sunucu seçili sunucu olarak kaydedilir ve dashboard'a yönlendirilirsiniz; sol menüdeki tüm ayarlar bu sunucuya işler."
+        },
+        {
+          "q": "Yanlış sunucu seçtim, nasıl değiştiririm?",
+          "a": "Sol üstteki sunucu adına tıklayıp 'Sunucu Değiştir'i kullanın veya /apps sayfasından farklı bir sunucu seçin."
+        },
+        {
+          "q": "Sunucu adının yanındaki ikon nedir?",
+          "a": "Discord'daki sunucu simgesidir. Sunucunun ikonu yoksa baş harfi gösterilir."
+        },
+        {
+          "q": "Hesap değişikliği sonrası liste güncellenmiyor?",
+          "a": "Çıkış yapıp tekrar giriş yapın. Discord oturumunuz yenilendiğinde liste güncel hale gelir."
+        },
+        {
+          "q": "Sahibi olmadığım sunucuyu yönetebilir miyim?",
+          "a": "Evet, ama sadece 'Sunucuyu Yönet' iznine sahipseniz. Aksi halde Discord o sunucuyu API'ye yönetilebilir olarak göndermez."
+        },
+        {
+          "q": "Sunucu seçildiğinde bot eklenmemişse ne olur?",
+          "a": "Sizi bot davet sayfasına yönlendiririz; davet sonrası seçim devam eder."
+        },
+        {
+          "q": "URL'den doğrudan bir sunucuya gidebilir miyim?",
+          "a": "Evet, /dashboard/<sunucu_id> şeklinde gidebilirsiniz. Yetkiniz yoksa bu sayfaya geri yönlendirilirsiniz."
+        }
+      ]
+    },
+    "error": {
+      "title": "Hata sayfası",
+      "items": [
+        {
+          "q": "Bu sayfa neden açıldı?",
+          "a": "Bir işlem sırasında beklenmeyen bir hata oluştu. Sunucunun anlık durumu, oturum süresi veya yetkiyle ilgili olabilir."
+        },
+        {
+          "q": "Hatayı nasıl çözebilirim?",
+          "a": "Önce sayfayı yenilemeyi deneyin. Sürerse panelden çıkıp tekrar girin; sorun devam ederse destek ekibine başvurun."
+        },
+        {
+          "q": "Hata kodu görüyorum, ne anlama geliyor?",
+          "a": "401: oturum süresi dolmuş, 403: yetkiniz yok, 404: kaynak bulunamadı, 500: sunucu hatası, 503: servis geçici olarak kapalı."
+        },
+        {
+          "q": "Verilerim kaybolur mu?",
+          "a": "Hayır. Kaydedilmiş ayarlar veritabanında saklanır; bu hata yalnızca o anki isteği etkiler."
+        },
+        {
+          "q": "‘Yeniden dene’ butonu güvenli mi?",
+          "a": "Evet, yalnızca son isteği tekrar gönderir; mükerrer kayıt oluşturmaz."
+        },
+        {
+          "q": "Sürekli aynı hatayı alıyorum?",
+          "a": "Tarayıcı önbelleğini temizleyin ve /apps üzerinden sunucuyu yeniden seçin. Sorun ağ kesintisinden de kaynaklanabilir."
+        },
+        {
+          "q": "Bot çalışıyor ama panel hata veriyor?",
+          "a": "Discord ile botun bağlantısı sağlamdır; sorun panelin API'sine ait olabilir. Birkaç dakika sonra tekrar deneyin."
+        },
+        {
+          "q": "Hata raporlamam gerekir mi?",
+          "a": "Hata mesajındaki kodu ve yaptığınız işlemi bildirirseniz hızlı çözüm üretilir. Yardım Merkezi sayfasından destek talebi açabilirsiniz."
+        },
+        {
+          "q": "Mobil cihazda mı oluyor?",
+          "a": "Bazı tarayıcılar oturum çerezlerini agresif siler. Tarayıcıyı güncelleyin veya bilgisayardan deneyin."
+        },
+        {
+          "q": "Verilerin yedeği var mı?",
+          "a": "Panel ayarları sunucu bazında saklanır. Kritik değişiklikler için Denetim Kayıtları ekranından geçmişi inceleyebilirsiniz."
+        }
+      ]
+    },
+    "dashboard": {
+      "title": "Sunucu özeti",
+      "items": [
+        {
+          "q": "Bu ekranda neler görüyorum?",
+          "a": "Seçili sunucunun anlık özetini: özet metrikler (üye, aktivite, talepler), hızlı erişim modül kartları ve analitik ile talep gelen kutusu bağlantıları yer alır."
+        },
+        {
+          "q": "Üye sayısı neden Discord'dakinden farklı?",
+          "a": "Veriler Discord cache'inden alınır ve bot bilgisayarına gelen son güncelleme baz alınır. Birkaç dakika gecikme olabilir."
+        },
+        {
+          "q": "Hangi modülleri buradan açabilirim?",
+          "a": "Hızlı erişim kartlarıyla welcome, moderasyon, log kanalı ve birkaç sık kullanılan ayara doğrudan ulaşabilirsiniz."
+        },
+        {
+          "q": "Son etkinlikler bölümü neyi gösterir?",
+          "a": "Bot tarafından son zamanlarda gerçekleştirilen önemli aksiyonları (hoş geldin, log gönderimi, moderasyon) özet olarak listeler."
+        },
+        {
+          "q": "Modülün 'Aktif' olması ne demek?",
+          "a": "İlgili özelliğin etkin (Switch açık) ve gerekli kanal/rol ayarlarının doğru tanımlanmış olduğu anlamına gelir."
+        },
+        {
+          "q": "Bot çevrimdışı görünüyor, ne yapmalıyım?",
+          "a": "Discord'da botun rolünü ve internet bağlantısını kontrol edin. Sorun süreklilik kazandıysa Yardım Merkezi'nden destek isteyin."
+        },
+        {
+          "q": "Bu ekrandaki bilgi anlık mı yenileniyor?",
+          "a": "Sayfa açıldığında veriler çekilir; arka planda 30 saniyede bir tazelenir. Hemen güncel sonuç için sayfayı yenileyebilirsiniz."
+        },
+        {
+          "q": "Bu sayfa kimler görebilir?",
+          "a": "Sunucuyu yönetme yetkisine sahip herkes görebilir. Üye/yardımcı rolleri için ayrı yetkilendirme yoktur."
+        },
+        {
+          "q": "Daha detaylı veri nereden bakabilirim?",
+          "a": "İstatistik Kanalı, Davet Sıralaması ve Raporlar sayfaları daha derin metrikler sunar."
+        }
+      ]
+    },
+    "welcome": {
+      "title": "Panel hoş geldin",
+      "items": [
+        {
+          "q": "Bu sayfa ne için tasarlandı?",
+          "a": "Panele ilk girişte sizi karşılayan, kısaca panelin nasıl çalıştığını anlatan bilgilendirme ekranıdır."
+        },
+        {
+          "q": "Bu ekran her açılışta gelir mi?",
+          "a": "Hayır. Sadece davet veya ilk girişte gelir. Sonraki girişlerde doğrudan kontrol paneline yönlendirilirsiniz."
+        },
+        {
+          "q": "Buradan hangi sayfaya geçmeliyim?",
+          "a": "Önce 'Genel Ayarlar' ve 'Log Kanalı' bölümlerini yapılandırmanızı; ardından özel modülleri (welcome, moderasyon, vs.) tanımlamanızı öneririz."
+        },
+        {
+          "q": "Her şeyi şimdi mi ayarlamak zorundayım?",
+          "a": "Hayır. İhtiyacınız olan modülleri istediğiniz zaman aktif edip yapılandırabilirsiniz. Eksik ayar olan modüller sadece pasif kalır."
+        },
+        {
+          "q": "Tanıtım videosu/dokümanı var mı?",
+          "a": "Evet, Yardım Merkezi sayfasında modül başlıklı kısa rehberler vardır."
+        },
+        {
+          "q": "Adımları atlayabilir miyim?",
+          "a": "Atla butonu sizi doğrudan /dashboard/<sunucu>/ ana ekranına götürür."
+        },
+        {
+          "q": "Birden fazla yöneticiyle çalışıyoruz, herkes aynı şeyi mi görür?",
+          "a": "Evet. Yönetici yetkisi olan herkes aynı kontrol paneline ulaşır; ancak değişiklik audit log ile kayıt altına alınır."
+        },
+        {
+          "q": "Hangi modüller önerilen ilk yapılandırma?",
+          "a": "Hoş geldin mesajı, moderasyon, log kanalı, otomatik rol ve doğum günü en sık ilk yapılandırılan modüllerdir."
+        },
+        {
+          "q": "Ücretli plan veya abonelik var mı?",
+          "a": "Hayır. Panelde ücretli plan yoktur; temel modüller ücretsizdir. Sunucu başına makul kullanım limitleri panelde gösterilir."
+        },
+        {
+          "q": "İhtiyaç hissetmediğim bir modülü tamamen kapatabilir miyim?",
+          "a": "Evet. İlgili sayfasında 'Modülü kapat' veya 'Aktif' anahtarını kapatabilirsiniz; veriler korunur ve istediğinizde geri açılır."
+        }
+      ]
+    },
+    "tasks": {
+      "title": "Görev takibi",
+      "items": [
+        {
+          "q": "Bu sayfa nedir?",
+          "a": "Sunucu yönetimi için panel içinde takip ettiğiniz görevlerin listelendiği ekrandır. Görev ekleyebilir, durumlarını güncelleyebilirsiniz."
+        },
+        {
+          "q": "Görev oluşturmak için ne yapmalıyım?",
+          "a": "‘Yeni görev’ butonuna basıp başlık ve isteğe bağlı açıklama girin. Atayan/atanan ve etiket bilgileri seçilebilir."
+        },
+        {
+          "q": "Görevleri kim görebilir?",
+          "a": "Sunucuyu yönetme yetkisi olan herkes görür. Görevler sunucuya bağlıdır, başka sunucuya geçmez."
+        },
+        {
+          "q": "Tamamlanan görevler ne olur?",
+          "a": "Listede 'Tamamlandı' sekmesinde kalır. Silmediğiniz sürece kayıt korunur."
+        },
+        {
+          "q": "Görevleri içe/dışa aktarabilir miyim?",
+          "a": "Evet. ‘İçe Aktar’ ile JSON/CSV dosyasından toplu olarak görev oluşturabilir, ‘Dışa Aktar’ ile mevcutları indirebilirsiniz."
+        },
+        {
+          "q": "Discord'a bildirim gider mi?",
+          "a": "Evet. Eğer log kanalı tanımlıysa görev oluşturma/durum değişikliği orada özetlenir."
+        },
+        {
+          "q": "Ekiplerle birlikte mi çalışılıyor?",
+          "a": "Evet. Her görev için yorum yapılabilir ve durum güncellenebilir; kim ne zaman değiştirmiş audit logunda görünür."
+        },
+        {
+          "q": "Görev silinince geri gelir mi?",
+          "a": "Hayır, silme işlemi kalıcıdır. Sehven silmemek için 'Tamamlandı' durumu önerilir."
+        },
+        {
+          "q": "Atanan kişi olarak nasıl bildirim alırım?",
+          "a": "Discord DM yetkisi açık olan kullanıcılara bildirim gönderilir. Kapalıysa sadece panelde görünür."
+        },
+        {
+          "q": "Görevler Discord komutlarıyla yönetilebilir mi?",
+          "a": "Şu an için sadece panel üzerinden yönetilir. İleride komut entegrasyonu planlanmaktadır."
+        }
+      ]
+    },
+    "helpCenter": {
+      "title": "Yardım merkezi",
+      "items": [
+        {
+          "q": "Yardım Merkezi'nde neler var?",
+          "a": "Modül tabanlı kullanım rehberleri, sıkça karşılaşılan hatalar ve destek talebi açma seçeneği bulunur."
+        },
+        {
+          "q": "Aradığım konuyu bulamıyorum?",
+          "a": "Üstteki arama kutusuna anahtar kelime yazın. Sonuç çıkmazsa ‘Destek Talebi’ kısmından soru iletebilirsiniz."
+        },
+        {
+          "q": "Destek ekibine nasıl ulaşırım?",
+          "a": "Sayfanın altındaki 'Bize Ulaşın' butonu ile destek formu açılır. Ya da Discord destek sunucumuza katılabilirsiniz."
+        },
+        {
+          "q": "Cevaplar ne kadar sürede gelir?",
+          "a": "Mesai saatleri içinde 24 saat içinde dönüş yapılır."
+        },
+        {
+          "q": "Hata raporu nasıl iletmeliyim?",
+          "a": "Hatanın oluştuğu sayfayı, adımları ve varsa hata kodunu/ekran görüntüsünü ekleyin. Olabildiğince tekrarlanabilir senaryolar yazın."
+        },
+        {
+          "q": "Topluluk forumu var mı?",
+          "a": "Evet, Discord destek sunucumuzda topluluk kanalları üzerinden başkalarıyla soru-cevap yapabilirsiniz."
+        },
+        {
+          "q": "Gizli/özel konuları nasıl iletirim?",
+          "a": "Destek formu özel iletişim için kullanılır. Token, kişisel bilgi veya hassas içerik için form üzerinden iletmeniz önerilir."
+        },
+        {
+          "q": "Belgelendirme dokümanı var mı?",
+          "a": "Evet. ‘Dokümantasyon’ bağlantısından her modülün detaylı kullanım kılavuzuna ulaşabilirsiniz."
+        },
+        {
+          "q": "Yapay zeka asistan var mı?",
+          "a": "Şu an için panel içi asistan beta aşamadadır. Kullanılabilirse arama kutusunda görünür."
+        },
+        {
+          "q": "Önerilerimi nereye yazabilirim?",
+          "a": "Destek formundaki 'Öneri' kategorisini seçerek yeni özellik talepleri iletebilirsiniz."
+        }
+      ]
+    },
+    "botWelcome": {
+      "title": "Hoş geldin mesajı",
+      "items": [
+        {
+          "q": "Bu modül ne işe yarar?",
+          "a": "Yeni bir üye sunucuya katıldığında otomatik olarak gönderilecek hoş geldin mesajını ayarlar. Kanal mesajı, embed ve özel hoş geldin kartı seçenekleri vardır."
+        },
+        {
+          "q": "Mesajda kullanıcı adını nasıl gösteririm?",
+          "a": "{user}, {username} ve {server} gibi yer tutucular kullanılır. Mesaja ekleyince üye giriş yaptığında otomatik dolar."
+        },
+        {
+          "q": "Hem kanala hem DM'e mesaj atabilir miyim?",
+          "a": "Evet. Üst sekmedeki 'Hoş Geldin Mesajı' kanal için, 'DM' seçeneği ise özel mesaj içindir. İkisi bağımsız çalışır."
+        },
+        {
+          "q": "Üyeye DM atılamıyor olabilir mi?",
+          "a": "Üye DM'leri kapalıysa veya botu engelleyense gönderim başarısız olur. Bu durum log kanalında 'Gönderilemedi' olarak işaretlenir."
+        },
+        {
+          "q": "Hoş geldin kartı görsel olarak nasıl?",
+          "a": "Avatar + arka plan + kullanıcı adı içeren özel bir görseldir. Renkler ve metinler ekrandaki ayarlardan kişiselleştirilir."
+        },
+        {
+          "q": "Embed ile düz mesaj arasındaki fark?",
+          "a": "Embed renkli kutu içinde başlık/açıklama/footer alanlarıyla görünür; düz mesaj normal Discord mesajıdır."
+        },
+        {
+          "q": "Mesaj çıkmıyor, ne kontrol ederim?",
+          "a": "1) Modül 'Aktif' mi, 2) Hedef kanal seçili mi, 3) Bot kanalda yazma iznine sahip mi, 4) Üye gerçekten 'guildMemberAdd' ile geldi mi (bot davetinde yetki açık olmalı)."
+        },
+        {
+          "q": "Otomatik rol verebilir miyim?",
+          "a": "Evet. ‘Verilecek Rol’ alanından yeni gelen üyeye atanacak rolü seçebilirsiniz."
+        },
+        {
+          "q": "Yalnızca belirli koşulu sağlayan üyelere mesaj atılır mı?",
+          "a": "Şu an temel modülde yok. Akıllı koşullar için Otomatik Rol veya Özel Komut kullanılabilir."
+        },
+        {
+          "q": "Önizleme nasıl alabilirim?",
+          "a": "‘Önizleme’ butonu mevcut ayarlarla mesajın simülasyonunu hedef kanalda size DM olarak gösterir; gerçek üyeye gitmez."
+        }
+      ]
+    },
+    "botGoodbye": {
+      "title": "Veda mesajı",
+      "items": [
+        {
+          "q": "Veda mesajı ne zaman gönderilir?",
+          "a": "Bir üye sunucudan ayrıldığında (kendi çıkışı veya atılması) tetiklenir."
+        },
+        {
+          "q": "Banlanan üye için de mesaj gider mi?",
+          "a": "Evet, varsayılan olarak gider. İsterseniz ‘Banlanan üyeleri hariç tut’ ayarını açabilirsiniz."
+        },
+        {
+          "q": "Yer tutucular hangileri?",
+          "a": "{user}, {username}, {server}, {memberCount} kullanılabilir."
+        },
+        {
+          "q": "Üyenin çıkışını duyurmak istemiyorum?",
+          "a": "Modülü pasif yapmanız yeterli. Tüm veda mesajları durur."
+        },
+        {
+          "q": "Sebebi (kick/ban/leave) ayrı bildirebilir miyim?",
+          "a": "Evet. Üst sekmelerden farklı şablon ayarlayabilirsiniz."
+        },
+        {
+          "q": "Mesaj kanal yerine log kanalına gitsin?",
+          "a": "‘Hedef Kanal’ olarak log kanalını seçin. Karışmaması için iki kanal kullanmanız önerilir."
+        },
+        {
+          "q": "Bot ayrılan üyenin avatarını gösterebilir mi?",
+          "a": "Evet. DM kart desteği ve embed thumbnail'ı bu amaçla kullanılabilir."
+        },
+        {
+          "q": "Üye yeniden katılırsa veda mesajı silinir mi?",
+          "a": "Hayır, geçmiş mesaj kanalda kalır. Bot otomatik silmez."
+        },
+        {
+          "q": "Çoklu dil için ayrı mesaj olabilir mi?",
+          "a": "Sunucu ana dili 'Bot Dili' ayarındadır; çoklu dil bot tarafında otomatik değildir."
+        },
+        {
+          "q": "Veda mesajı birden fazla kanala gönderilebilir mi?",
+          "a": "Şu an için tek kanal desteklenir. Birden fazla kanal için Özel Komut yazabilirsiniz."
+        }
+      ]
+    },
+    "botEmbedMessage": {
+      "title": "Zengin (gömülü) mesaj",
+      "items": [
+        {
+          "q": "Embed mesaj nedir?",
+          "a": "Discord'da renkli kutu içinde başlık/açıklama/alanlar ile gösterilen profesyonel mesaj türüdür."
+        },
+        {
+          "q": "Bu sayfada ne yapabilirim?",
+          "a": "Hazır şablon seçebilir, kendi başlık/açıklama/footer/thumbnail/resim alanlarını doldurup hedef kanala gönderebilirsiniz."
+        },
+        {
+          "q": "Renk nasıl seçilir?",
+          "a": "Hex rengi (örn. #5865F2) veya seçici ile renk belirlersiniz. Embed'in sol kenar şeridi bu renkle görünür."
+        },
+        {
+          "q": "Mesaj gönderildikten sonra düzenlenebilir mi?",
+          "a": "Evet, ‘Mesaj ID’si ile mevcut bir embed'i düzenleyebilirsiniz. Yeni mesaj olarak göndermez, mevcudu günceller."
+        },
+        {
+          "q": "Birden çok alan eklenebilir mi?",
+          "a": "Discord embed limiti dahilinde 25 alana kadar eklenebilir. Limit aşıldığında uyarı verir."
+        },
+        {
+          "q": "Yer tutucu kullanabilir miyim?",
+          "a": "Evet. {server}, {memberCount} ve özel komutla tanımladığınız değişkenler gönderim anında çözülür."
+        },
+        {
+          "q": "Mesaj zamanlanabilir mi?",
+          "a": "Bu sayfa anlık gönderim içindir. Zamanlama için 'Zamanlanmış Duyuru' modülünü kullanın."
+        },
+        {
+          "q": "Önizleme tam göründüğüne emin değilim?",
+          "a": "Sağdaki canlı önizlemede son hali görünür; gönderim öncesi kontrol edebilirsiniz."
+        },
+        {
+          "q": "Hatalı/yanlış embed gönderdim?",
+          "a": "Mesaj ID'sini bularak ‘Düzenle’ ile değiştirebilir veya Discord üzerinden silebilirsiniz."
+        },
+        {
+          "q": "Bot embed yetkisi yoksa ne olur?",
+          "a": "‘Embed Links’ izni yoksa düz metin gider. Botun rolüne ilgili izni eklemeniz gerekir."
+        }
+      ]
+    },
+    "botReactionRole": {
+      "title": "Tepki rolleri",
+      "items": [
+        {
+          "q": "Tepki rolü nedir?",
+          "a": "Belirli bir mesajdaki emojiye tepki veren üyeye otomatik olarak rol verme/alma sistemidir."
+        },
+        {
+          "q": "Mesajı nasıl seçerim?",
+          "a": "Panelde mesaj ID’si girilmez. Ayarları kaydettikten sonra ‘Kanala Gönder’ ile bot mesajı oluşturulur ve buna bağlanır; kaldırmak için ‘Gönderilen mesajı kaldır’ kullanılır."
+        },
+        {
+          "q": "Aynı mesaja kaç emoji eklenebilir?",
+          "a": "Discord limiti olan 20 farklı tepkiye kadar eklenebilir. Üzerine çıktığında bot tepki ekleyemez."
+        },
+        {
+          "q": "Özel emoji kullanabilir miyim?",
+          "a": "Evet, sunucudaki özel emojileri seçebilirsiniz. Bot, emoji kullanımı için ilgili sunucuda bulunmalıdır."
+        },
+        {
+          "q": "Üye tepkiyi geri alınca rol gider mi?",
+          "a": "Evet, varsayılan davranış böyledir. Ayrı bir ‘tek seferlik / sticky’ modu anahtarı bu sürümde yoktur."
+        },
+        {
+          "q": "Kanal değiştiyse tepki rolü çalışır mı?",
+          "a": "Mesaj kanal değişikliklerinden etkilenmez. Mesaj silinirse tepki rolü çalışmaz."
+        },
+        {
+          "q": "Bot rol veremiyor diyor?",
+          "a": "Botun rolü, vereceği rolden hiyerarşide üstte olmalıdır. Ayrıca 'Manage Roles' yetkisi gerekir."
+        },
+        {
+          "q": "Üyenin birden çok rol seçmesini engelleyebilir miyim?",
+          "a": "Genel bir ‘tek seçim’ anahtarı yoktur; menülerde min/max değerleriyle tek veya çoklu seçim davranışı sınırlanabilir."
+        },
+        {
+          "q": "Eski mesajları toplu temizlemek istiyorum?",
+          "a": "Listeden ilgili mesajı seçip ‘Sil’ yapabilirsiniz. Sadece tepki rolü tanımı silinir, mesaj kanalda kalır."
+        },
+        {
+          "q": "Tepki rolü atılınca log gider mi?",
+          "a": "Evet, log kanalı tanımlıysa rol verilen/alınan üye ve mesaj bilgisi orada görünür."
+        }
+      ]
+    },
+    "botScheduledAnnouncement": {
+      "title": "Zamanlanmış duyuru",
+      "items": [
+        {
+          "q": "Zamanlanmış duyuru nedir?",
+          "a": "Belirli bir UTC tarih/saatte tetiklenen duyurudur. Bu sürümde tekrarlı/cron periyodu ve ayrı saat dilimi seçimi panelde yoktur; tek seferlik zamanlama kullanılır."
+        },
+        {
+          "q": "Saat dilimi hangisi kullanılıyor?",
+          "a": "Formda gösterilen gönderim zamanı UTC’dir; ayrı bir saat dilimi seçim alanı bu ekranda bulunmaz."
+        },
+        {
+          "q": "Tekrarlı duyuru nasıl yapılır?",
+          "a": "Şu anki panel sürümünde günlük/haftalık/aylık veya gelişmiş cron alanı yoktur; yalnızca tek seferlik zamanlama desteklenir."
+        },
+        {
+          "q": "Duyuruyu iptal edebilir miyim?",
+          "a": "Listeden ilgili duyuruyu pasif yapın veya silin. Pasifleştirmek geçmiş kayıtları korur."
+        },
+        {
+          "q": "Mesajı düzenlemek mümkün mü?",
+          "a": "Evet, gönderilmemişse içerik/zaman düzenlenebilir. Gönderilmiş kopyalar düzenlenmez (ayrı 'mesaj düzenle' işlemi gerekir)."
+        },
+        {
+          "q": "Mention etiketi (@everyone) çalışır mı?",
+          "a": "Metinde @everyone yazabilirsiniz; bildirimin gerçekten gitmesi botun ilgili iznine bağlıdır. Ayrı bir mention politikası seçimi bu ekranda yoktur."
+        },
+        {
+          "q": "Birden çok kanala aynı anda gönderebilir miyim?",
+          "a": "Bir duyuru tek kanaldır. Aynı içerik için birden çok zamanlanmış duyuru oluşturabilirsiniz."
+        },
+        {
+          "q": "Geçmiş gönderimleri görebiliyor muyum?",
+          "a": "Ayrı bir ‘Geçmiş’ sekmesi yoktur; sayfadaki çalıştırma geçmişi (run history) bölümünde son denemeler ve durumları görüntülenir."
+        },
+        {
+          "q": "Hatalı gönderim sonrası ne olur?",
+          "a": "Kanal yetkisi yoksa veya kanal silindiyse hata loglanır; duyuru otomatik durdurulmaz, sıradaki tekrarda yeniden denenir."
+        },
+        {
+          "q": "Görseller eklenebilir mi?",
+          "a": "Bu sürümde embed görsel/thumbnail alanları yoktur; başlık ve metin içeriği kullanılır."
+        }
+      ]
+    },
+    "botFeeds": {
+      "title": "Feed duyuruları (YouTube/Twitch/RSS)",
+      "items": [
+        {
+          "q": "Feed duyurusu ne işe yarar?",
+          "a": "Belirlediğiniz YouTube/Twitch/RSS kaynağında yeni içerik geldiğinde otomatik olarak hedef kanala duyuru gönderir."
+        },
+        {
+          "q": "YouTube/Twitch için neden tam URL girmiyorum?",
+          "a": "Kanal adı/handle yeterlidir. Bot otomatik olarak https://www.youtube.com/ veya https://www.twitch.tv/ ekler. Bu sayede yanlış URL girilmesi engellenir."
+        },
+        {
+          "q": "RSS link nasıl olmalı?",
+          "a": "Geçerli bir RSS/Atom URL'i (örn. https://site.com/feed.xml) olmalı. Önizleme butonu ile çekip çekemediğini görebilirsiniz."
+        },
+        {
+          "q": "Kontrol sıklığı ne kadar?",
+          "a": "Varsayılan 15 dakika (900 sn). Çok kısa aralık platform tarafından sınırlandırılabilir."
+        },
+        {
+          "q": "Yeni içerik gelmiyor, ne yapmalıyım?",
+          "a": "Önizleme ile kaynağın canlı olup olmadığını kontrol edin. Kanal adının doğru ve içeriğin son 2 günde yayınlanmış olduğundan emin olun."
+        },
+        {
+          "q": "Belirli rolü etiketleyebilir miyim?",
+          "a": "Evet, ‘Mention rolü’ alanından rolü seçin. Bot, mesajı gönderirken o role bildirim gönderir."
+        },
+        {
+          "q": "Geçmiş içeriklerin tamamını gönderir mi?",
+          "a": "Hayır. Aboneliği oluşturduğunuzda sadece o tarihten sonra yayınlanan içerikler bildirilir."
+        },
+        {
+          "q": "Feed kaynağını değiştirebilir miyim?",
+          "a": "Evet, listeden seçip 'Düzenle' ile URL/kanal/rol değiştirebilirsiniz. URL değişikliği geçmiş gönderim filtresini sıfırlar."
+        },
+        {
+          "q": "YouTube canlı yayını da yakalar mı?",
+          "a": "Evet. Kanaldaki canlı yayın başladığında ayrı bir bildirim olarak gelir."
+        },
+        {
+          "q": "Kaç feed aboneliği tanımlanabilir?",
+          "a": "Sunucu başına en fazla 30 feed aboneliği desteklenir. Güncel limit panelde ve modül ayarlarında gösterilir."
+        }
+      ]
+    },
+    "botPoll": {
+      "title": "Anketler",
+      "items": [
+        {
+          "q": "Anket nasıl oluşturulur?",
+          "a": "Soru, seçenekler, hedef kanal ve süreyi girip 'Oluştur'a basın. Bot belirlenen kanalda emoji tepkilerinin oy olarak sayıldığı bir anket gönderir."
+        },
+        {
+          "q": "En fazla kaç seçenek eklenebilir?",
+          "a": "Discord limiti olan 20'ye kadar seçenek eklenebilir. Az seçenek hızlı ve net sonuç verir."
+        },
+        {
+          "q": "Çoklu oy seçeneği nedir?",
+          "a": "Açıkken bir üye birden çok seçeneğe oy verebilir. Kapalıyken sadece tek seçenek seçilir."
+        },
+        {
+          "q": "Anket sona erdiğinde ne olur?",
+          "a": "Bot mesajı kilitler, sonuçları ve kazananı gösteren bir özet gönderir. Süre yoksa manuel olarak 'Bitir' diyebilirsiniz."
+        },
+        {
+          "q": "Kim oy kullandığını görebilir miyim?",
+          "a": "Sadece moderatörler ‘Oy detayları’ sekmesinden oy verenleri görebilir. Anonim modda bu kapalıdır."
+        },
+        {
+          "q": "Anketi düzenlemek istiyorum, mümkün mü?",
+          "a": "Sadece soru metni ve süre düzenlenebilir. Seçenek ekleme/kaldırma mevcut oyları sıfırlar; bu nedenle kapalıdır."
+        },
+        {
+          "q": "Anketi belirli role sınırlayabilir miyim?",
+          "a": "Evet, ‘İzin Verilen Roller’ alanı ile katılımı kısıtlayabilirsiniz; diğerleri tepki verince oyu sayılmaz."
+        },
+        {
+          "q": "Anket sonuçları kaydediliyor mu?",
+          "a": "Evet. Geçmiş anketler ve sonuçları sayfada listelenir; istediğiniz zaman incelenebilir."
+        },
+        {
+          "q": "Anket otomatik olarak en çok oyu alanı uygulasın mı?",
+          "a": "Şu an için sadece sonuç gösterimi yapar. Otomatik aksiyon için Özel Komut yazabilirsiniz."
+        },
+        {
+          "q": "Anket bildiriminde kullanıcı etiketleyebilir miyim?",
+          "a": "Evet. Anket başlığında veya açıklamasında @everyone, @rol kullanabilirsiniz, izin gerektirir."
+        }
+      ]
+    },
+    "botGiveaway": {
+      "title": "Çekilişler",
+      "items": [
+        {
+          "q": "Çekiliş nasıl başlatılır?",
+          "a": "Adı, ödülü, kazanan sayısı, kanal ve bitiş tarihini girin. Bot belirlediğiniz tarihe kadar tepkiyle katılım toplar."
+        },
+        {
+          "q": "Hangi tepkiyle katılım sağlanıyor?",
+          "a": "Varsayılan olarak 🎉 emojisidir. Mesajdaki emojiye tepki veren her üye katılım listesine eklenir."
+        },
+        {
+          "q": "Birden fazla kazanan olabilir mi?",
+          "a": "Evet, ‘Kazanan Sayısı’ alanından belirleyebilirsiniz. Çekiliş sonunda rastgele o kadar kazanan seçilir."
+        },
+        {
+          "q": "Katılımcılar nasıl filtrelenir?",
+          "a": "Belirli rolü olanlara veya hesap yaşı şartına uyanlara sınırlamak mümkündür. ‘Gelişmiş’ kısmından ayarlanır."
+        },
+        {
+          "q": "Erken bitirebilir miyim?",
+          "a": "Evet, listeden seçip ‘Bitir’ diyerek çekilişi anında sonlandırabilirsiniz."
+        },
+        {
+          "q": "Yeniden çekiliş yapmak istiyorum?",
+          "a": "‘Yeniden Çek’ butonu ile kazananı tekrar belirleyebilirsiniz; eski kazananlar tekrar dahil olabilir veya hariç tutulabilir."
+        },
+        {
+          "q": "Bot kazananı DM ile uyarır mı?",
+          "a": "Evet, kullanıcının DM'si açıksa bilgi mesajı gider; aksi halde sadece kanalda etiketlenir."
+        },
+        {
+          "q": "Çekiliş mesajı silinirse?",
+          "a": "Çekiliş otomatik iptal edilir ve loglanır. Yeni bir çekiliş başlatmanız gerekir."
+        },
+        {
+          "q": "Çekilişler arşivde tutuluyor mu?",
+          "a": "Çekiliş kayıtları sunucuda tutulur; panelde ayrı bir ‘Geçmiş’ sekmesi olmadan liste/özet üzerinden erişilir."
+        },
+        {
+          "q": "Belirli kişileri hariç tutabilir miyim?",
+          "a": "Evet, ‘Yok Sayılan Roller’ veya ‘Yok Sayılan Kullanıcılar’ alanlarından tanımlanır."
+        }
+      ]
+    },
+    "botLevel": {
+      "title": "Seviye sistemi",
+      "items": [
+        {
+          "q": "Seviye sistemi nasıl çalışır?",
+          "a": "Üye yazdıkça veya seste vakit geçirdikçe XP kazanır. Belirli XP eşiklerinde seviye atlar; rol ödülleri tanımlanmışsa otomatik verilir."
+        },
+        {
+          "q": "Mesaj başına ne kadar XP veriliyor?",
+          "a": "‘XP Per Mesaj’ ayarındaki değer kadar. ‘Rastgele XP’ açıkken min/max aralığında değişen miktar verilir."
+        },
+        {
+          "q": "Cooldown ne demek?",
+          "a": "Aynı kullanıcının çok hızlı XP toplamasını engelleyen bekleme süresidir. Önerilen 30-60 saniyedir."
+        },
+        {
+          "q": "Belirli kanalları hariç tutabilir miyim?",
+          "a": "Evet, ‘Yok Sayılan Kanallar’ alanından spam veya komut kanallarını dışlayabilirsiniz."
+        },
+        {
+          "q": "Rol ödülleri nasıl tanımlanır?",
+          "a": "Aşağıdaki ‘Rol Ödülleri’ tablosuna seviye + rol şeklinde ekleme yapın. ‘Aktif Et’ açık olmalıdır."
+        },
+        {
+          "q": "Eski rol kaldırılsın mı yeni eklensin mi?",
+          "a": "Varsayılan olarak yeni rolü ekler, eskiyi kaldırmaz. Yığılma istemiyorsanız ‘Tek rol modu’nu açın."
+        },
+        {
+          "q": "Seviye atlama bildirimi nereye gider?",
+          "a": "Tanımladığınız bildirim kanalına ya da DM'e gönderilir. Bildirimleri kapatabilirsiniz."
+        },
+        {
+          "q": "Üye XP'si sıfırlanabilir mi?",
+          "a": "Evet, panelden ‘Sıfırla’ ile bireysel veya tüm sunucu sıfırlanabilir. İşlem geri alınamaz."
+        },
+        {
+          "q": "XP verileri başka sunucuya aktarılır mı?",
+          "a": "Hayır. Veriler sunucu bazlı saklanır. Yedekleme/sunucu klonlama ile aktarılabilir."
+        },
+        {
+          "q": "Liderlik tablosu var mı?",
+          "a": "Evet. Discord komutu (örn. /level top) ya da panelin İstatistik Kanalı modülünden görüntüleyebilirsiniz."
+        }
+      ]
+    },
+    "botInviteLeaderboard": {
+      "title": "Davet sıralaması",
+      "items": [
+        {
+          "q": "Bu sayfa neyi gösterir?",
+          "a": "Sunucuya en çok üye davet edenleri sayısal olarak listeler. Toplam, gerçek (kalıcı), bırakan ve sahte davetler ayrı gösterilir."
+        },
+        {
+          "q": "Sayım nasıl yapılıyor?",
+          "a": "Üye katılırken hangi davet bağlantısının kullanıldığı izlenir. Botun ‘Manage Server’ izni olmalıdır."
+        },
+        {
+          "q": "Sahte davet ne demek?",
+          "a": "Hesap yaşı çok küçük olan veya kısa sürede ayrılan davetlerdir. Spam botlarını ayırt etmek için kullanılır."
+        },
+        {
+          "q": "Belirli zaman aralığını filtreleyebilir miyim?",
+          "a": "Evet, üstteki tarih aralığı seçicisi ile hafta/ay/özel tarih filtreleyebilirsiniz."
+        },
+        {
+          "q": "Davet ödülü tanımlamak mümkün mü?",
+          "a": "Evet, davet sayısına göre rol verme ‘Davet Ödülleri’ kısmından yapılır. Bot 'Manage Roles' yetkisi ister."
+        },
+        {
+          "q": "Üyenin davet ettiği kişiyi görebilir miyim?",
+          "a": "Detay üzerine tıkladığınızda davet edilen üyelerin listesi açılır."
+        },
+        {
+          "q": "Sayılar Discord ile uyuşmuyor?",
+          "a": "Discord cache'i nedeniyle gecikme olabilir. ‘Senkronize et’ ile en güncel halini çekebilirsiniz."
+        },
+        {
+          "q": "Geçmiş davetler de hesaplanıyor mu?",
+          "a": "Bot eklenmeden öncekiler için ‘taban değer’ atayabilirsiniz; sonrası gerçek zamanlı sayılır."
+        },
+        {
+          "q": "Liderliği sıfırlayabilir miyim?",
+          "a": "Evet, ‘Sıfırla’ butonu ile tüm sunucu sıfırlanır. Eylem geri alınamaz, dikkatle kullanın."
+        },
+        {
+          "q": "Liste publik bir yerde gösterilebilir mi?",
+          "a": "İstatistik Kanalı modülü ile sıralamayı kanal başlıklarına yansıtabilirsiniz."
+        }
+      ]
+    },
+    "botApplications": {
+      "title": "Başvuru formları",
+      "items": [
+        {
+          "q": "Başvuru formu ne işe yarar?",
+          "a": "Üyelerin staff/jüri/etkinlik gibi bir konum için başvurmasına izin veren formlardır. Bot soruları DM veya kanal yoluyla iletir, cevapları yöneticiye gösterir."
+        },
+        {
+          "q": "Form alanlarını nasıl ekleyeceğim?",
+          "a": "Panel form yapıcısı ile her alanı (label, tip, zorunlu) ekleyebilirsiniz. JSON yazmaya gerek yoktur."
+        },
+        {
+          "q": "Hangi alan tipleri var?",
+          "a": "Kısa metin, uzun metin, sayı, tarih ve seçim listesi desteklenir. Her alan için zorunlu/iste işaretlenebilir."
+        },
+        {
+          "q": "Üye formu nereden doldurur?",
+          "a": "Bot, başvuru kanalına bir 'Başvuru Yap' butonu yerleştirir. Üye bunu tıklayınca DM ile veya modal pencereyle başvuruyu doldurur."
+        },
+        {
+          "q": "Cevaplar nereye iletilir?",
+          "a": "‘Sonuç kanalı’ olarak seçtiğiniz kanala embed olarak gelir; moderatörler 'Onayla / Reddet' butonlarıyla işlem yapar."
+        },
+        {
+          "q": "Onaylanan üyeye otomatik rol verebilir miyim?",
+          "a": "Evet, ‘Onayda verilecek rol’ alanı tanımlanırsa onay anında rol atanır."
+        },
+        {
+          "q": "Aynı üye birden çok kez başvurabilir mi?",
+          "a": "‘Cooldown’ ayarına göre yeni başvuru atılabilir. Default olarak 24 saat bekleme uygulanır."
+        },
+        {
+          "q": "Başvuru geçmişi tutuluyor mu?",
+          "a": "Evet, başvurular kayıt altında tutulur; panelde ayrı bir ‘Geçmiş’ sekmesi yerine liste veya detay görünümünden erişilir."
+        },
+        {
+          "q": "Form sorularını sonradan değiştirirsem eskiler etkilenir mi?",
+          "a": "Hayır, eski cevaplar ait olduğu form sürümüyle saklanır. Yeni başvuru güncel formla doldurulur."
+        },
+        {
+          "q": "Çoklu form (örneğin staff ve etkinlik) tanımlayabilir miyim?",
+          "a": "Evet, sayfada birden çok form oluşturup her biri için ayrı kanal/rol/sorular tanımlayabilirsiniz."
+        }
+      ]
+    },
+    "botMusic": {
+      "title": "Müzik",
+      "items": [
+        {
+          "q": "Müzik nasıl çaldırılır?",
+          "a": "Sunucuda /play <şarkı veya URL> komutuyla bot ses kanalına girer ve çalmaya başlar. Panel sadece kuralları yapılandırır."
+        },
+        {
+          "q": "Hangi platformlar destekleniyor?",
+          "a": "YouTube, Spotify (link), SoundCloud ve doğrudan ses URL'leri desteklenir. Spotify çalma listelerinin tamamı eşleştirilerek çalınır."
+        },
+        {
+          "q": "Bot ses kanalına girmiyor?",
+          "a": "Botun ‘Connect’ ve ‘Speak’ izinleri olmalıdır. Ayrıca komutu veren üyenin ses kanalında olması gerekir."
+        },
+        {
+          "q": "Kuyruğu nasıl yönetirim?",
+          "a": "Discord’da /music-queue sırayı gösterir; /music-skip, /music-pause, /music-resume gibi müzik slash komutlarıyla kontrol edilir. Panel müzik oynatıcısı değil kural/limit tarafını etkiler."
+        },
+        {
+          "q": "Maksimum kuyruk uzunluğu ne kadar?",
+          "a": "Limitler tarife ve sunucu politikasına göre belirlenir; müzik önceliği ekranında panelden limit girilmez (bilgilendirme)."
+        },
+        {
+          "q": "Belirli kullanıcılar şarkı eklesin diye sınırlamak mümkün mü?",
+          "a": "Rol/kanal kısıtları müzik motoru ve izin katmanında uygulanır; bu sayfadaki metinler genel rehber niteliğindedir."
+        },
+        {
+          "q": "Aynı kullanıcı kaç şarkı ekleyebilir?",
+          "a": "Kullanıcı başına şarkı ve bekleme süreleri tarafımızca tanımlı limitlerle sınırlanır; panelden tek tek ayarlanmaz."
+        },
+        {
+          "q": "Müzik ses kalitesi ayarlanabilir mi?",
+          "a": "Bit hızı ayarı ile düzenlenir. Düşük internetli sunucularda 96-128 kbps, kaliteli sunucularda 192-256 kbps önerilir."
+        },
+        {
+          "q": "Bot 1 saatten uzun sessizlikte ne yapar?",
+          "a": "Otomatik olarak ses kanalından çıkar (‘boşta bırakma’ ayarı). Bu süre özelleştirilebilir."
+        }
+      ]
+    },
+    "botTicketPanel": {
+      "title": "Destek paneli (ticket)",
+      "items": [
+        {
+          "q": "Destek paneli ne işe yarar?",
+          "a": "Üyelerin yardım talebi açabilmesi için bir 'Talep Aç' butonu/menüsü oluşturur. Tıklayınca özel bir talep kanalı yaratılır."
+        },
+        {
+          "q": "Talep kanalını kim görür?",
+          "a": "Sadece talep eden üye, ‘Talep Yöneticisi Roller’ ve seçili moderatörler. Diğer üyeler kanalı göremez."
+        },
+        {
+          "q": "Birden fazla talep kategorisi (örn. Bug/Soru) tanımlayabilir miyim?",
+          "a": "Evet, panelden çoklu menü/buton seçeneği etkinleştirip her tip için ayrı sorular tanımlayabilirsiniz."
+        },
+        {
+          "q": "Talep kapanınca ne olur?",
+          "a": "Kanal arşivlenir veya silinir; transkript log kanalına HTML/embed olarak gönderilir."
+        },
+        {
+          "q": "Transkript nedir?",
+          "a": "Talep süresince yazılan tüm mesajların kayıt halidir. Sonradan inceleme için saklanır."
+        },
+        {
+          "q": "Aynı üye birden fazla talep açabilir mi?",
+          "a": "Birden fazla eşzamanlı talep ve ‘çoklu talep’ anahtarı bu panel sürümünde yapılandırılmaz; davranış bot ve sunucu kurallarınıza bağlıdır."
+        },
+        {
+          "q": "Talep kanal isimleri nasıl olur?",
+          "a": "Bot genelde anlamlı bir kanal adı üretir; panelden özel isim şablonu (ör. ticket-{username}) düzenlenmez."
+        },
+        {
+          "q": "Talebe yönetici nasıl katılır?",
+          "a": "Ticket kanalına otomatik eklenir. Ayrıca ‘Üstlen’ butonuyla atayan rolü değiştirilebilir."
+        },
+        {
+          "q": "Talep limiti ayarlanabilir mi?",
+          "a": "Kullanıcı veya sunucu başına aktif talep limiti bu ekranda ayrı alan olarak yoktur."
+        },
+        {
+          "q": "Talep verileri ne kadar saklanır?",
+          "a": "Aktif talepler kalıcıdır; arşiv süreleri ayrı retention ekranı yerine operasyonel politikaya bağlıdır (varsayılan süre iddiası için destek ile teyit edin)."
+        }
+      ]
+    },
+    "botModerator": {
+      "title": "Moderasyon",
+      "items": [
+        {
+          "q": "Bu sayfa ne içerir?",
+          "a": "Anti-spam, küfür filtresi, link/davet engeli, mention spam ve karakter taşması gibi temel moderasyon kurallarını yapılandırır."
+        },
+        {
+          "q": "Kuralı bir kanalda devre dışı bırakabilir miyim?",
+          "a": "Bu sürümde kanal bazlı muafiyet listesi yoktur; kural tüm uygun kanallara uygulanır."
+        },
+        {
+          "q": "Belirli rol kuraldan muaf olsun istiyorum?",
+          "a": "Bu sürümde rol bazlı muafiyet alanı yoktur."
+        },
+        {
+          "q": "Aksiyon ne kadar sıkı olabilir?",
+          "a": "Devre dışı, mesaj silme, uyarma ve mesaj sil + uyarma seçenekleri vardır. Time-out, kick ve ban bu sayfadan seçilmez."
+        },
+        {
+          "q": "Bot benim mesajlarımı da silebilir mi?",
+          "a": "Evet; bot rolünüzden yüksek yetkili değilseniz veya kural kapsamına giriyorsanız mesajınız da silinebilir."
+        },
+        {
+          "q": "Moderasyon olayları loglanıyor mu?",
+          "a": "Evet, log kanalı tanımlıysa her aksiyon için ayrı kayıt atılır. ‘Moderasyon Kayıtları’ sayfasından da görebilirsiniz."
+        },
+        {
+          "q": "Yanlış aksiyon aldıysa nasıl geri alınır?",
+          "a": "Bu sayfadaki aksiyonlar çoğunlukla mesaj silme/uyarıdır; Discord üzerinden manuel düzeltme gerekir. İleri seviye geri alma için Moderasyon Kayıtları ekranına bakın."
+        },
+        {
+          "q": "Küfür listesini özelleştirebilir miyim?",
+          "a": "Evet, ‘Özel kelime listesi’ alanına eklemeler yapabilirsiniz. Liste sunucuya özeldir."
+        },
+        {
+          "q": "Bot bypass etmek isteyenleri yakalar mı?",
+          "a": "Aksanlı/karışık karakterli bypass'lar normalleştirme ile yakalanır. Tam başarı için AI moderasyon önerilir."
+        },
+        {
+          "q": "AI moderasyonla nasıl entegre olur?",
+          "a": "Bu sayfa anahtar/desen tabanlıdır. Bağlamsal değerlendirme isterseniz Akıllı Moderasyon (AI) sayfasını birlikte kullanın."
+        }
+      ]
+    },
+    "botAiModeration": {
+      "title": "Akıllı moderasyon (AI)",
+      "items": [
+        {
+          "q": "AI moderasyon nasıl çalışır?",
+          "a": "Bot, gönderilen mesajları yapay zeka modeline göndererek toxicity, hate, sexual, harassment, self_harm gibi kategorilerde puanlar; eşiğe göre log/sil/timeout uygular."
+        },
+        {
+          "q": "Hassasiyet (Düşük/Normal/Yüksek) ne anlama geliyor?",
+          "a": "Yüksek hassasiyet daha düşük eşikte tetiklenir, daha çok mesajı yakalar. Düşük hassasiyet daha az müdahale eder. Spam/troll yoğun sunucularda yüksek önerilir."
+        },
+        {
+          "q": "Hangi kanalları muaf tutmalıyım?",
+          "a": "Şaka/küfür içeren kanallar (örn. genel sohbet 18+ kategorileri), bot test kanalları ve özel sohbet kanalları muaf tutulabilir."
+        },
+        {
+          "q": "Tüm dilleri tanır mı?",
+          "a": "Türkçe başta olmak üzere desteklenen 12 dilde tanır. Karışık dil yazımları normalleştirilir."
+        },
+        {
+          "q": "Kişisel saldırı (hakaret) için hangi aksiyon önerilir?",
+          "a": "İlk seferde 'log + uyarı', tekrar ederse 'time-out' önerilir. Doğrudan ban özel ihlal için tutulmalıdır."
+        },
+        {
+          "q": "False-positive (yanlış pozitif) nasıl azaltılır?",
+          "a": "‘Hariç tutulacak kanalları’ ayarlayın, hassasiyeti normal tutun ve gerekiyorsa kelime istisnaları ekleyin."
+        },
+        {
+          "q": "Bot gönderdiği aksiyonları gösterebilir mi?",
+          "a": "Evet, ‘İnceleme kayıtları’ sekmesinde son tetiklenen vakaları kanal/üye/skor ile görebilirsiniz."
+        },
+        {
+          "q": "Saklama süresi ne kadar?",
+          "a": "Varsayılan 30 gün. Veriler kapatılırsa süreç sonunda otomatik silinir."
+        },
+        {
+          "q": "AI maliyeti var mı?",
+          "a": "Standart kullanım sunucu kotasına dahildir; limit aşımında panel hata mesajı gösterir."
+        },
+        {
+          "q": "Tüm mesajları kontrol ediyor mu?",
+          "a": "‘Sample rate’ ile tüm mesajların belirli bir yüzdesi (örn. %50, %100) kontrol edilebilir. Kotayı yönetmek için faydalıdır."
+        }
+      ]
+    },
+    "botModerationLogs": {
+      "title": "Moderasyon kayıtları",
+      "items": [
+        {
+          "q": "Bu sayfa neyi listeler?",
+          "a": "Moderasyonla ilgili kayıtları filtreleyerek listeler; aksiyon türleri ekranda desteklenenlerle sınırlıdır (silme, uyarı, time-out, kick, ban hepsi garanti değildir)."
+        },
+        {
+          "q": "Filtreler nasıl çalışıyor?",
+          "a": "Aksiyon, kural tipi, kanal, kaynak (manuel / AI / kelime filtresi) ve tarih aralığı seçilebilir. Birden çok filtre birlikte uygulanır."
+        },
+        {
+          "q": "Bir aksiyonu geri alabilir miyim?",
+          "a": "Geri alma bu sürümde her aksiyon için sunulmayabilir; mümkünse Discord veya ilgili modül üzerinden düzeltin."
+        },
+        {
+          "q": "Log dışa aktarılabilir mi?",
+          "a": "Evet; Kayıtlar kartındaki CSV ve JSON düğmeleri o an yüklenmiş (filtrelenmiş) listeyi indirir. API sorgu limiti nedeniyle en fazla 100 satır dahil edilir; daha uzun aralıklar için tarihi bölüp tekrarlayın."
+        },
+        {
+          "q": "Aksiyonların kaynağı ne anlama geliyor?",
+          "a": "manual manuel işlem, ai AI moderasyon, keyword kelime/kural filtresi anlamına gelir (etiketler panelde Türkçe görünebilir)."
+        },
+        {
+          "q": "Üyeyi sürekli vuruyorsa ne yapmalıyım?",
+          "a": "Geçmişine bakıp yeniden ihlal varsa daha sıkı aksiyon (time-out → ban) uygulayabilirsiniz."
+        },
+        {
+          "q": "Dahili otomatik aksiyonlar nasıl ayrılır?",
+          "a": "Kaynak filtresinden AI moderasyon veya kelime filtresi seçerek otomatik veya kural tabanlı kayıtları daraltabilirsiniz."
+        },
+        {
+          "q": "Detayda hangi bilgi var?",
+          "a": "Seçilen kayıtta kayıt kimliği, mesaj kimliği, sebep anahtarı, bildirim/hata kodu, JSON parametreler ve varsa AI skor özeti gösterilir. Üye tanımlayıcıları hash olarak tutulur."
+        },
+        {
+          "q": "Veriler ne kadar saklanır?",
+          "a": "Varsayılan 90 gün. Süre sonunda kayıtlar otomatik silinir."
+        },
+        {
+          "q": "Toplu silme/temizleme yapılabilir mi?",
+          "a": "Bu sürümde filtre sonuçlarına göre toplu silme/arşivleme düğmesi yoktur."
+        }
+      ]
+    },
+    "botAuditLogs": {
+      "title": "Değişiklik kayıtları (audit)",
+      "items": [
+        {
+          "q": "Audit kaydı nedir?",
+          "a": "Panel veya bot üzerinden yapılan ayar/yapılandırma değişikliklerinin kaydıdır. Kim, ne zaman, neyi değiştirmiş gösterilir."
+        },
+        {
+          "q": "Hangi değişiklikler buraya düşer?",
+          "a": "Modül açma/kapama, kanal/rol seçimleri, eşik güncellemeleri ve form/şablon değişiklikleri loglanır."
+        },
+        {
+          "q": "Önce/Sonra karşılaştırması ne işe yarar?",
+          "a": "Kaydın eski hali ile yeni hali yan yana gösterilir; bilinçli/yanlış bir değişiklik anında fark edilir."
+        },
+        {
+          "q": "Aksiyon ve kaynak filtresi nedir?",
+          "a": "Hangi modüle ait olduğunu (kaynak: ai_moderation, ticket vs.) ve hangi işlemin yapıldığını (aksiyon: oluşturma/güncelleme/silme) gösterir."
+        },
+        {
+          "q": "Moderatör hatası fark ettim, geri alabilir miyim?",
+          "a": "Audit kaydının üstünden ‘Bu değişikliği geri al’ ile bir kısmını otomatik geri alabilirsiniz; karmaşık değişiklikler manuel düzeltilir."
+        },
+        {
+          "q": "Kayıtlar değiştirilemez mi?",
+          "a": "Hayır, audit log salt-okunur olarak saklanır. Sadece sistemin kendisi yazabilir, sizin kullanıcı yetkiniz yoktur."
+        },
+        {
+          "q": "Saklama süresi ne kadar?",
+          "a": "Varsayılan 180 gün."
+        },
+        {
+          "q": "Kim hangi değişikliği yapmış görebiliyor muyum?",
+          "a": "Evet, ‘Actor’ alanı işlem yapan kullanıcının Discord ID'si ve adıyla görünür."
+        },
+        {
+          "q": "API üzerinden çekebilir miyim?",
+          "a": "Audit log kayıtları panelden görüntülenir; dışa aktarma seçenekleri modüle göre değişir."
+        },
+        {
+          "q": "Kayıt çok fazla, performansı etkiler mi?",
+          "a": "Hayır. Sayfa sayfalama ve filtre ile çalışır; sadece kullanıcı talep ettiğinde veri çeker."
+        }
+      ]
+    },
+    "botLogChannel": {
+      "title": "Log kanalı",
+      "items": [
+        {
+          "q": "Log kanalı modülü ne yapar?",
+          "a": "Sunucuda yaşanan üye katılım/çıkış, mesaj silme/düzenleme, ses olayları, rol değişiklikleri vb. olayların loglandığı kanalları belirler."
+        },
+        {
+          "q": "Tek kanala mı yoksa farklı kanallara mı log?",
+          "a": "Her log türünü ayrı kanala atayabilirsiniz. ‘Yeni kategori + tüm log kanalları’ ile otomatik olarak yapılandırma da mümkündür."
+        },
+        {
+          "q": "Hangi log türleri var?",
+          "a": "Üye, mesaj, kanal, rol, ses, davet, moderasyon, audit ve bot kategorileri vardır."
+        },
+        {
+          "q": "Mesaj loglarını niye göremiyorum?",
+          "a": "Botun ‘View Audit Log’ ve ‘Read Message History’ izinleri olmalı. Ayrıca kanal görünür ve okunabilir olmalı."
+        },
+        {
+          "q": "Log mesajları çok fazla, daraltabilir miyim?",
+          "a": "Her log türü için ayrı pasif/aktif anahtarı vardır; gereksiz olanları kapatabilirsiniz."
+        },
+        {
+          "q": "Embed mi düz mesaj mı?",
+          "a": "Embed varsayılandır; renk ve ikonla sınıflandırma yapılır. İsterseniz düz metne çevirebilirsiniz (eski Discord istemcileri için)."
+        },
+        {
+          "q": "Belirli kanalları log dışında tutabilir miyim?",
+          "a": "Evet, mesaj logları için ‘Yok Sayılan Kanallar’ alanı vardır. Hassas/özel kanallar dışlanabilir."
+        },
+        {
+          "q": "Log kanalı silindiyse ne olur?",
+          "a": "Bot logu gönderemez ve hata loglar; yeni bir kanal seçmek gerekir."
+        },
+        {
+          "q": "Log saklama süresi var mı?",
+          "a": "Discord'a yazılan mesajlar Discord politikasına göre kalır. Panel ayrıca 90 günlük arşiv tutar."
+        },
+        {
+          "q": "Log kanalını rol bazında kısıtlayabilir miyim?",
+          "a": "Evet, log kanalını sadece moderatör rolüne özel yapabilirsiniz; üyeler göremez."
+        }
+      ]
+    },
+    "botCustomCommand": {
+      "title": "Özel komut (basit)",
+      "items": [
+        {
+          "q": "Özel komut nedir?",
+          "a": "Sunucunuza özel /komut tanımlamanıza izin verir. Üyeler komutu çalıştırınca tanımladığınız aksiyonu (genelde mesaj gönderme) bot uygular."
+        },
+        {
+          "q": "Basit görünümde neler yapılabilir?",
+          "a": "Mesaj gönderme, embed cevabı ve kısa bilgi yanıtları yapılır. Daha karmaşık akış için 'Gelişmiş' görünümünü kullanın."
+        },
+        {
+          "q": "Komut adı nasıl olmalı?",
+          "a": "Küçük harf ve tire (-) içerebilir. Türkçe karakterler otomatik dönüştürülür (ş→s, ç→c gibi)."
+        },
+        {
+          "q": "Aynı komut ismi tekrar olabilir mi?",
+          "a": "Hayır, her komut adı sunucu içinde benzersizdir. Mevcut isim kullanıldığında uyarılırsınız."
+        },
+        {
+          "q": "Komutu sadece belirli rol kullansın istiyorum?",
+          "a": "‘İzin Verilen Roller’ alanına rolü ekleyin. Diğer roller komutu kullanamaz."
+        },
+        {
+          "q": "Cooldown ne işe yarar?",
+          "a": "Aynı kullanıcının komutu spam yapmasını engelleyen kısa bekleme süresidir; saniye olarak girilir."
+        },
+        {
+          "q": "Komutu sadece bir kanalda çalıştırabilir miyim?",
+          "a": "Evet, ‘Komutları bu kanalla sınırla’ açıkken yalnızca seçili kanalda çalışır."
+        },
+        {
+          "q": "Komut kullanımları sabitlensin demek?",
+          "a": "Komut yanıtının panelde sabit kayıtlı olması; sunucu silinince bile komut tanımı korunur."
+        },
+        {
+          "q": "Yer tutucu var mı?",
+          "a": "Evet, {user}, {server}, {channel} gibi placeholder'lar yanıtta otomatik dolar."
+        },
+        {
+          "q": "Komut Discord'da hemen görünüyor mu?",
+          "a": "Evet, kayıt sonrası bot Discord komut listesini günceller. Bazen Discord cache'i nedeniyle 5-10 dakika sürebilir."
+        }
+      ]
+    },
+    "botCustomCommandAdvanced": {
+      "title": "Özel komut (gelişmiş)",
+      "items": [
+        {
+          "q": "Gelişmiş görünüm basit'ten farkı ne?",
+          "a": "Gelişmiş görünümde mesaj gönderme dışında rol verme/alma, kanal oluşturma, üye taşıma, gömülü mesaj gönderme ve birden çok aksiyonu bir komuta bağlama desteklenir."
+        },
+        {
+          "q": "Bir komuta birden çok aksiyon ekleyebilir miyim?",
+          "a": "Evet, ‘Aksiyonlar’ listesine sırayla ekleme yaparsınız. Bot çalıştırma sırasında hepsini sırayla uygular."
+        },
+        {
+          "q": "Aksiyon sırası önemli mi?",
+          "a": "Evet. Örneğin önce rol verip sonra mesaj göndermek isterseniz sıralama şart olur."
+        },
+        {
+          "q": "Hangi rol/üye değişiklikleri yapılabilir?",
+          "a": "Rol verme, rol kaldırma, üye taşıma, sesten atma; ayrıca timeout uygulama desteklenir."
+        },
+        {
+          "q": "Koşullu çalıştırma var mı?",
+          "a": "‘Koşul’ alanı ile rol/kanal kontrolü yapılabilir. Karşılanmazsa komut sessizce sonlanır."
+        },
+        {
+          "q": "Komut argümanı (parametre) tanımlanabilir mi?",
+          "a": "Evet, kullanıcıdan girdi alacak slash parametreleri eklersiniz; cevapta {arg.adı} ile kullanılır."
+        },
+        {
+          "q": "Hata olursa ne olur?",
+          "a": "Bot, ilk başarısız aksiyonda durur ve audit loga hata kaydı düşer. Diğer aksiyonlar çalıştırılmaz."
+        },
+        {
+          "q": "Karmaşık akışta önizleme yapabilir miyim?",
+          "a": "Evet, ‘Test et’ butonu ile aksiyonları gerçek sunucuda kuru çalıştırma (dry-run) yapabilirsiniz."
+        },
+        {
+          "q": "Eski sürüme dönmek mümkün mü?",
+          "a": "Audit log'dan eski tanım gelir; ‘Bu sürüme dön’ ile aktif komut yapılabilir."
+        }
+      ]
+    },
+    "botTemporaryVoiceChannel": {
+      "title": "Geçici ses odaları",
+      "items": [
+        {
+          "q": "Geçici ses kanalı nedir?",
+          "a": "Belirlediğiniz ‘lobi’ kanalına giren üyeye otomatik olarak özel bir ses kanalı oluşturulur. Üye ayrılınca kanal silinir."
+        },
+        {
+          "q": "Hangi kanal lobi seçilmeli?",
+          "a": "Üyelerin sıkça toplandığı, default ‘Genel Sesli’ tipi bir kanal lobi olabilir. ‘Lobi Kanalı Seç’ alanına yazın."
+        },
+        {
+          "q": "Oluşan kanalın izinlerini sahibi mi belirler?",
+          "a": "Evet. Sahibi kilitle/aç, kullanıcı sınırı, isim değiştirme, üye atma gibi işlemleri komut/butonlarla yapar."
+        },
+        {
+          "q": "Lobiyle aynı kategoride mi açılır?",
+          "a": "Varsayılan olarak evet. Farklı bir kategori istiyorsanız ‘Mevcut bir kategorinin altında’ ile seçim yapın."
+        },
+        {
+          "q": "Kullanıcı sınırı kaç olabilir?",
+          "a": "Discord limiti olan 99'a kadardır. ‘Kullanıcı Sınırı’ alanına default değeri yazabilirsiniz."
+        },
+        {
+          "q": "Kanal adını dinamik yapabilir miyim?",
+          "a": "Evet, ‘Geçici Kanal Adı’ şablonu {user} ve {server} desteği vardır. Örneğin ‘{user}'un Odası’ olabilir."
+        },
+        {
+          "q": "Bot kanalı hemen siliyor mu?",
+          "a": "‘Kanalın Silinme Süresi’ ayarına göre boşalır boşalmaz veya birkaç saniye gecikmeli silinir."
+        },
+        {
+          "q": "Sahibi sunucudan ayrılırsa ne olur?",
+          "a": "Sahiplik kilidini geçen ilk üyeye veya seçilmiş bir politikaya göre devredilebilir; aksi halde kanal silinir."
+        },
+        {
+          "q": "Lobi izinleriyle senkron ne demek?",
+          "a": "Lobi kanalında olan rol erişimleri yeni oluşan geçici kanala da uygulanır. Manuel ayar yapmaya gerek kalmaz."
+        },
+        {
+          "q": "Aynı anda kaç geçici kanal olabilir?",
+          "a": "Sunucu kotası panelde gösterilir; limit aşımında yeni kayıt eklenemez."
+        }
+      ]
+    },
+    "botStatisticsChannel": {
+      "title": "İstatistik kanalları",
+      "items": [
+        {
+          "q": "İstatistik kanalı nedir?",
+          "a": "Sunucu sayaçlarını (üye sayısı, online, bot, role, davet vs.) ses kanalı başlığında gösteren özel kanallardır."
+        },
+        {
+          "q": "Hangi sayaçlar destekleniyor?",
+          "a": "Ekrandaki sabit sayaç türleri listesi geçerlidir; offline/invite/özel sayaç adları burada iddia edilmez — yeni tür eklemek için ürün güncellemesi gerekir."
+        },
+        {
+          "q": "Sayaç ne sıklıkla güncellenir?",
+          "a": "Discord rate limiti nedeniyle 5-10 dakikada bir güncellenir. Daha sık güncelleme platforma göre kısıtlıdır."
+        },
+        {
+          "q": "Kanal başlığı nasıl şekillenir?",
+          "a": "‘Şablon’ alanı ile özelleştirilir; desteklenen yer tutucular ekranda belirtildiği gibidir (ör. {kind}, {count}). {value} yerine bu yer tutucuları kullanın."
+        },
+        {
+          "q": "Kanalda kim konuşabilir?",
+          "a": "Varsayılan olarak hiç kimse. İstatistik kanalı gösterimliktir; @everyone için ‘Connect’ yetkisi kapatılır."
+        },
+        {
+          "q": "Çoklu sayaç mümkün mü?",
+          "a": "Evet, farklı türde birden fazla istatistik kanalı oluşturabilirsiniz; her biri kendi şablonuyla yönetilir."
+        },
+        {
+          "q": "Sayaç yanlış görünüyor?",
+          "a": "Discord'un cache'i nedeniyle olabilir. ‘Senkronize et’ ile veriler tazelenir."
+        },
+        {
+          "q": "Bot olmadan da görünür mü?",
+          "a": "Bot çalışmıyorsa eski değerle kalır; güncellemeler durur. Bot tekrar online olunca devam eder."
+        },
+        {
+          "q": "Kanalı silersem sayaç tanımı da silinir mi?",
+          "a": "Sayaç tanımı silinmez, sadece kanal bağlantısı kopar. Yeni bir kanal seçip bağlayabilirsiniz."
+        }
+      ]
+    },
+    "botAutorole": {
+      "title": "Otomatik rol",
+      "items": [
+        {
+          "q": "Otomatik rol nedir?",
+          "a": "Yeni katılan üyeye, belirli bir koşula uyan üyeye veya bot kullanıcısına otomatik rol atayan modüldür."
+        },
+        {
+          "q": "Birden çok rol verebilir miyim?",
+          "a": "Evet, listeden birden fazla rol seçebilirsiniz. Discord rol limiti dahilinde tümü atanır."
+        },
+        {
+          "q": "Botların kendisine rol atanabilir mi?",
+          "a": "Evet, ‘Bot rolü’ ayrı bir alan olarak tanımlanır. Botlar normal otomatik rolleri almaz."
+        },
+        {
+          "q": "Yetersiz yetki hatası alıyorum?",
+          "a": "Botun rolü, vereceği rolden yukarıda olmalıdır. Ayrıca ‘Manage Roles’ izni gereklidir."
+        },
+        {
+          "q": "Üye katılım zamanına göre koşul olur mu?",
+          "a": "‘Minimum hesap yaşı (gün)’ alanı ile yeni hesapları geçici hariç tutabilirsiniz; alt sınır karşılanınca rol verilir."
+        },
+        {
+          "q": "Hesap yaşı koşulu güvenliği artırır mı?",
+          "a": "Evet, raid'lerde sahte/yeni hesapları filtrelemeye yardımcı olur."
+        },
+        {
+          "q": "Mevcut üyelere de uygulanır mı?",
+          "a": "Yeni katılanlara otomatik atanır. Mevcut üyelere uygulamak için ‘Toplu uygula’ butonu kullanılır."
+        },
+        {
+          "q": "Rol atama gecikmesi olur mu?",
+          "a": "‘Gecikme (saniye)’ alanı ile geciktirme uygulayabilirsiniz; raid önleyici amaçlı kullanılır."
+        },
+        {
+          "q": "Üye rolü reddederse?",
+          "a": "Discord'da üye rolü reddedemez; rolü kaldırırsa bot tekrar atayabilir (ayar açıkken). Açık değilse bir kez verilir."
+        },
+        {
+          "q": "Otomatik rolleri loglayabilir miyim?",
+          "a": "Evet, log kanalı tanımlıysa kim ne zaman hangi rolü almış log kanalına yazılır."
+        }
+      ]
+    },
+    "botBirthday": {
+      "title": "Doğum günleri",
+      "items": [
+        {
+          "q": "Doğum günü modülü ne yapar?",
+          "a": "Üyelerin kayıt ettirdiği doğum gününde otomatik kutlama mesajı gönderir, isteğe bağlı doğum günü rolü atar."
+        },
+        {
+          "q": "Üye doğum gününü nasıl kayıt eder?",
+          "a": "Bot komutu (örn. /dogumgunu) ile veya başvuru benzeri modal pencereyle kaydeder. Sadece ay/gün ve isteğe bağlı yıl alınır."
+        },
+        {
+          "q": "Yıl bilgisi gerekli mi?",
+          "a": "Hayır. Sadece ay/gün yeterlidir. Yıl girilirse yaş hesaplanır; girilmezse sadece kutlama yapılır."
+        },
+        {
+          "q": "Kutlama saati ne?",
+          "a": "Sunucunun saat dilimine göre 09:00 (varsayılan) önerilir; ‘Kontrol Saati’ ile özelleştirilebilir."
+        },
+        {
+          "q": "Birden fazla üyenin doğum günü aynı gün olursa?",
+          "a": "Bot tüm doğum gününü olan üyeleri tek mesajda etiketler veya listeye dahil eder; spam olmaz."
+        },
+        {
+          "q": "Doğum günü rolü ne kadar sürer?",
+          "a": "Varsayılan olarak 24 saat (saatlerle ayarlanabilir). Süre dolunca otomatik kaldırılır."
+        },
+        {
+          "q": "Üye doğum gününü sildirebilir mi?",
+          "a": "Evet, kendi komutuyla veya panele iletilen ‘Verileri sil’ butonu ile silebilir."
+        },
+        {
+          "q": "Yaş gizleme seçeneği var mı?",
+          "a": "Evet, üye sadece ay/gün vermeyi tercih edebilir; yaş alınmaz ve gösterilmez."
+        },
+        {
+          "q": "Bildirim kanalı yoksa ne olur?",
+          "a": "Modül çalışmaz. Bildirim kanalı + isteğe bağlı genel kanalı tanımlamanız gerekir."
+        },
+        {
+          "q": "Önceki yıllar tekrar mı kutlanıyor?",
+          "a": "Evet. Doğum günü her yıl yeniden tetiklenir. Üye ayrılırsa kayıt korunur ama bildirim atılmaz."
+        }
+      ]
+    },
+    "botReminder": {
+      "title": "Hatırlatıcılar",
+      "items": [
+        {
+          "q": "Hatırlatıcı modülü neye yarar?",
+          "a": "Belirli bir tarih/saatte üyeye veya kanala otomatik mesaj atar. Etkinlik, ödev, randevu hatırlatması gibi amaçlar için kullanılır."
+        },
+        {
+          "q": "Tek seferlik mi tekrarlı mı?",
+          "a": "Her ikisi de mümkün. Tek seferlik tarihler bir kez tetiklenir; tekrarlı için günlük/haftalık/aylık seçilir."
+        },
+        {
+          "q": "Hatırlatma DM mi kanalda mı?",
+          "a": "Her ikisi de seçilebilir. Üyenin DM'si açık değilse kanal varsa orada gönderilir."
+        },
+        {
+          "q": "Saat dilimi nasıl ayarlanır?",
+          "a": "Sunucunun ana saat dilimi varsayılır; üye kendi saat dilimini /timezone benzeri bir komutla belirleyebilir."
+        },
+        {
+          "q": "Birden fazla hatırlatıcı tanımlayabilir miyim?",
+          "a": "Evet, listeye eklediğiniz her hatırlatıcı bağımsız çalışır. Sunucu kotası panelde gösterilir."
+        },
+        {
+          "q": "Hatırlatıcı silinince geçmiş etkilenir mi?",
+          "a": "Hayır. Geçmiş gönderimler kanalda/log'ta korunur. Yalnızca bundan sonraki tetikleme iptal olur."
+        },
+        {
+          "q": "Etkinlik için hatırlatma mı?",
+          "a": "Discord etkinliklerine entegre olarak başlamadan X dk önce uyaran tetikleyici tanımlanabilir."
+        },
+        {
+          "q": "Mesaj içinde değişken kullanılır mı?",
+          "a": "Evet, {user}, {date}, {time} gibi placeholder'lar değer ile dolar."
+        },
+        {
+          "q": "Hatırlatıcı çalışmazsa nedeni ne?",
+          "a": "Bot izni veya kanal bulunmaması, kullanıcı DM kapalı olması veya bot çevrimdışı olabilir; loglara bakın."
+        },
+        {
+          "q": "Geçmiş hatırlatıcıların kaydı tutulur mu?",
+          "a": "Evet, sayfada ‘Geçmiş’ sekmesi son 90 günlük hatırlatmaları gösterir."
+        }
+      ]
+    },
+    "botReports": {
+      "title": "Raporlar",
+      "items": [
+        {
+          "q": "Raporlar sayfası neyi sunar?",
+          "a": "Sunucunun büyüme, etkileşim, moderasyon olayları, davet performansı gibi metriklerini grafik ve özet halinde sunar."
+        },
+        {
+          "q": "Hangi zaman aralıklarına bakabilirim?",
+          "a": "Son 7 gün, 30 gün, 90 gün ve özel tarih aralığı seçilebilir."
+        },
+        {
+          "q": "Raporlar PDF/Excel olarak indirilir mi?",
+          "a": "Evet, üst sağdaki ‘Dışa Aktar’ ile PDF veya Excel formatında indirebilirsiniz."
+        },
+        {
+          "q": "Veriler ne kadar geriye gider?",
+          "a": "Varsayılan 90 gün saklama uygulanır. Daha eski veriler için Excel dışa aktarımını kullanabilirsiniz."
+        },
+        {
+          "q": "Anlık veri gerçek zamanlı mı?",
+          "a": "Hayır, raporlar günlük olarak hesaplanır. Saatlik canlı veri için Dashboard sayfasını kullanın."
+        },
+        {
+          "q": "Üye etkileşimi neye dayanır?",
+          "a": "Mesaj sayısı, sesli vakit, davet, tepki ve komut kullanımına dayanır. Bot mesajları hariç tutulur."
+        },
+        {
+          "q": "Yöneticiler arası karşılaştırma var mı?",
+          "a": "Evet, ‘Personel performansı’ kısmında moderasyon aksiyonu, ticket cevap süresi gibi metrikler görüntülenir."
+        },
+        {
+          "q": "Belirli kanal/rol filtrelenebilir mi?",
+          "a": "Evet, raporun sağ üstündeki filtreler ile sadece belirli kanal/rol bazında görüntülenebilir."
+        },
+        {
+          "q": "Sıralamayı değiştirebilir miyim?",
+          "a": "Tablolardaki sütun başlığına tıklayarak artan/azalan sıralama yapabilirsiniz."
+        },
+        {
+          "q": "Veri eksik veya tutarsız?",
+          "a": "Bot çevrimdışı kaldığı saatlerde olaylar kaydedilemez. Bu yüzden 'eksik aralıklar' sayfasında işaretlenir."
+        }
+      ]
+    },
+    "botLocale": {
+      "title": "Sunucu dili",
+      "items": [
+        {
+          "q": "Bot dili ne anlama gelir?",
+          "a": "Botun bu sunucuda göndereceği mesajların dilini belirler. 12 dil arasından seçim yapılır."
+        },
+        {
+          "q": "Üyenin diline göre değiştirilebilir mi?",
+          "a": "Şu an sunucu bazlıdır. İleride üye bazlı tercih planlanmaktadır."
+        },
+        {
+          "q": "Fallback dili ne işe yarar?",
+          "a": "Seçili dilde bir mesaj/komut çevirisi yoksa fallback dil kullanılır. Genelde Türkçe veya İngilizce seçilir."
+        },
+        {
+          "q": "Dili değiştirdiğimde tüm mesajlar güncellenir mi?",
+          "a": "Yeni gönderilen mesajlar yeni dilde olur. Geçmiş mesajlar düzenlenmez (Discord izin vermez)."
+        },
+        {
+          "q": "Eksik anahtar varsa ne olur?",
+          "a": "Eksik anahtar bulunduğunda fallback dilden alınır; uyarı verilir."
+        },
+        {
+          "q": "Özel komutlarda da dil seçimi geçerli mi?",
+          "a": "Hayır, özel komutlarda kendi yazdığınız metin gönderilir. Bot dilinden bağımsızdır."
+        },
+        {
+          "q": "Yeni dil ekleyebilir miyim?",
+          "a": "Şu an için sadece desteklenen 12 dil aktif. Yeni dil önerilerinizi destek formundan iletebilirsiniz."
+        },
+        {
+          "q": "AI moderasyon dili buradan mı belirleniyor?",
+          "a": "AI çoklu dilde çalışır, ayrı bir dil seçimi yapılmaz. Bu sayfa sadece bot mesajlarını etkiler."
+        },
+        {
+          "q": "Dil değişikliği audit log'a düşer mi?",
+          "a": "Evet, dil değişikliği bir konfigürasyon güncellemesi olarak audit log'a kaydedilir."
+        }
+      ]
+    },
+    "botGuilds": {
+      "title": "Sunucu yönetimi",
+      "items": [
+        {
+          "q": "Bu sayfa neyi yönetir?",
+          "a": "Hesabınıza bağlı tüm sunucuların botla ilişkisini ve genel ayarlarını üst seviyede yönetmenizi sağlar."
+        },
+        {
+          "q": "Bir sunucudan botu kaldırabilir miyim?",
+          "a": "Evet, ‘Botu kaldır’ butonu ile bot ayrılır. Verileriniz 30 gün boyunca panelde tutulur ve geri yüklenebilir."
+        },
+        {
+          "q": "Sunucu adını panelden değiştirebilir miyim?",
+          "a": "Hayır. Sunucu adı Discord tarafında değiştirilir; panel buradan yansıtır."
+        },
+        {
+          "q": "Sunucular arası ayar kopyalanabilir mi?",
+          "a": "Evet, ‘Yapılandırmayı kopyala’ ile bir sunucudan diğerine modül yapılandırmasını taşıyabilirsiniz."
+        },
+        {
+          "q": "Bir sunucuda sorun var, nasıl tanımlarım?",
+          "a": "Listeden seçip ‘Tanılama Çalıştır’ deyin. İzinler, kanal/rol referansları ve abonelik durumu kontrol edilir."
+        },
+        {
+          "q": "Birden çok sunucu için toplu işlem var mı?",
+          "a": "Evet, sol taraftaki çoklu seçimle toplu modül açma/kapama yapabilirsiniz."
+        },
+        {
+          "q": "Bot verileri ne zaman silinir?",
+          "a": "Bot bir sunucudan ayrıldıktan 30 gün sonra ilişkili veri otomatik silinir; öncesinde geri yükleme mümkündür."
+        },
+        {
+          "q": "Yöneticiyi panele davet edebilir miyim?",
+          "a": "Discord rolü ‘Sunucuyu Yönet’ verilen herkes panele otomatik erişir; ayrı davet sistemi yoktur."
+        },
+        {
+          "q": "Sunucu silinirse ne olur?",
+          "a": "Discord sunucu silinirse panel kaydı 7 gün sonra arşivlenir, veri retention politikasına uygun saklanır."
+        }
+      ]
+    },
+    "botCustomBots": {
+      "title": "Özel bot",
+      "items": [
+        {
+          "q": "Özel bot ne demek?",
+          "a": "Kendi adınız/markanızla ayrı bir Discord bot uygulaması çalıştırma imkanıdır. Mevcut bot çekirdeği üzerinde ama farklı isim/avatar/komutlarla görünür."
+        },
+        {
+          "q": "Bot Token nerede alınır?",
+          "a": "Discord Developer Portal > Application > Bot bölümünden Token al butonuyla alınır. Token paylaşılmaz, panele güvenli olarak yapıştırılır."
+        },
+        {
+          "q": "Token'ı nereye yapıştırmalıyım?",
+          "a": "‘Bot Token *’ alanına yapıştırın. Token şifreli olarak saklanır, panele bir daha plain olarak gösterilmez."
+        },
+        {
+          "q": "Birden fazla özel bot çalıştırabilir miyim?",
+          "a": "Hayır, hesap başına yalnızca 1 özel bot tanımlanabilir."
+        },
+        {
+          "q": "Komutlar mevcut botla aynı mı?",
+          "a": "Çekirdek özellikler aynıdır; bot adı ve avatar farklıdır. Slash komut adlarını bu panelden özelleştiremezsiniz (Discord uygulama/komut kaydı ile belirlenir)."
+        },
+        {
+          "q": "Bot çevrimdışı görünüyor?",
+          "a": "Token doğru girildi mi, bot Discord'da uygulamaya bağlandı mı, intent ayarları açık mı kontrol edin. Hata logları sayfada görünür."
+        },
+        {
+          "q": "Kendi avatarımı eklemek için?",
+          "a": "Özel Bot sayfasındaki Bot Kişiselleştirici bölümünden ikon ve banner yükleyebilir, bot adını ve durum/aktivite metnini ayarlayabilirsiniz. Kaydettikten sonra bot çalışıyorsa değişiklikler Discord profiline uygulanır."
+        },
+        {
+          "q": "Token sızdı, ne yapmalıyım?",
+          "a": "Discord Developer Portal'dan token'ı sıfırlayın ve panele yeni token'ı yapıştırın. Eski token sıfırlandığı anda işlevsiz olur."
+        },
+        {
+          "q": "Aynı sunucuda birden çok özel bot olur mu?",
+          "a": "Hesabınızda yalnızca bir özel bot tanımlanabilir. Aynı sunucuda ana Deveng botu ile birlikte bu tek özel botu kullanabilirsiniz."
+        },
+        {
+          "q": "Özel botu durdurabilir miyim?",
+          "a": "Evet, ‘Pasif yap’ butonu ile bot çalışmasını durdurursunuz. Token ve ayarlar saklı kalır."
+        }
+      ]
+    }
+  }
+}

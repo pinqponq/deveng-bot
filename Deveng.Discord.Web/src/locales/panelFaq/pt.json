@@ -1,0 +1,1620 @@
+{
+  "section": {
+    "title": "Perguntas frequentes",
+    "description": "Respostas para as principais dúvidas sobre esta página."
+  },
+  "pages": {
+    "apps": {
+      "title": "Seletor de servidor",
+      "items": [
+        {
+          "q": "Para que serve esta página?",
+          "a": "Aqui são listados todos os servidores da sua conta do Discord. Você seleciona o servidor que quer configurar ou convida o bot para um servidor onde ele ainda não está."
+        },
+        {
+          "q": "Por que um dos meus servidores não aparece na lista?",
+          "a": "Só aparecem servidores em que você é dono ou tem a permissão 'Gerenciar Servidor'. Confirme que esse cargo está atribuído a você no Discord e atualize a página."
+        },
+        {
+          "q": "O que acontece quando clico em 'Adicionar bot'?",
+          "a": "A tela de convite de bot do Discord é aberta. Você adiciona o bot ao servidor selecionado com as permissões necessárias e, em seguida, ele aparece como 'Adicionado' nesta lista."
+        },
+        {
+          "q": "Adicionei o bot mas ainda aparece como 'não adicionado'. O que faço?",
+          "a": "Às vezes há um atraso por causa do cache do Discord. Aguarde alguns segundos e atualize a página; se persistir, remova o bot do servidor e convide novamente."
+        },
+        {
+          "q": "Como pesquiso entre os servidores?",
+          "a": "Basta digitar parte do nome do servidor na caixa de pesquisa no topo. A lista é filtrada em tempo real."
+        },
+        {
+          "q": "Como é feita a ordenação?",
+          "a": "Servidores que já têm o bot aparecem primeiro; depois vêm os outros servidores em que você tem permissão. Dentro de cada grupo, a ordem é alfabética."
+        },
+        {
+          "q": "Se eu tenho vários servidores, preciso configurar cada um separadamente?",
+          "a": "Sim, as configurações são por servidor. Para cada servidor, você seleciona o bot, entra no painel e ajusta os módulos desejados."
+        },
+        {
+          "q": "Quais permissões devo conceder ao convidar o bot?",
+          "a": "Recomendamos manter as permissões padrão da tela de convite. Se você restringi-las, alguns recursos (atribuir cargos, apagar mensagens, criar canais de voz etc.) podem não funcionar."
+        },
+        {
+          "q": "Um servidor que acabei de entrar não aparece na lista?",
+          "a": "Não é necessário sair do Discord e entrar de novo; basta clicar no botão de atualizar no canto superior direito da página. Se ainda assim não aparecer, faça logout e login no painel."
+        },
+        {
+          "q": "Como volto para a tela de seleção depois de escolher um servidor?",
+          "a": "Clique no nome do servidor no menu lateral e use 'Trocar Servidor', ou vá direto para o endereço /apps."
+        }
+      ]
+    },
+    "selectServer": {
+      "title": "Lista de servidores",
+      "items": [
+        {
+          "q": "Por que esta página é exibida?",
+          "a": "Você é redirecionado para cá quando ainda não selecionou um servidor ou quando não tem acesso ao servidor selecionado."
+        },
+        {
+          "q": "Todos os meus servidores aparecem aqui?",
+          "a": "Não. Só aparecem os servidores que você pode gerenciar (dos quais é dono ou nos quais tem 'Gerenciar Servidor')."
+        },
+        {
+          "q": "O que faço se a lista estiver vazia?",
+          "a": "Confirme que sua conta do Discord tem permissão em pelo menos um servidor. Se acabou de receber a permissão, atualize a página."
+        },
+        {
+          "q": "O que acontece quando seleciono um servidor?",
+          "a": "Ele é salvo como servidor ativo e você é levado para o dashboard; todas as opções do menu lateral passam a valer para esse servidor."
+        },
+        {
+          "q": "Selecionei o servidor errado, como troco?",
+          "a": "Clique no nome do servidor no canto superior esquerdo e use 'Trocar Servidor', ou escolha outro em /apps."
+        },
+        {
+          "q": "Para que serve o ícone ao lado do nome do servidor?",
+          "a": "É o próprio ícone do servidor no Discord. Se o servidor não tiver ícone, é mostrada a primeira letra do nome."
+        },
+        {
+          "q": "A lista não atualiza depois de mudar algo na conta do Discord?",
+          "a": "Faça logout e login novamente. Quando sua sessão do Discord é renovada, a lista volta a ficar atualizada."
+        },
+        {
+          "q": "Posso gerenciar um servidor do qual não sou dono?",
+          "a": "Sim, desde que você tenha a permissão 'Gerenciar Servidor'. Caso contrário, o Discord nem entrega esse servidor como gerenciável para a API."
+        },
+        {
+          "q": "E se o bot ainda não estiver no servidor selecionado?",
+          "a": "Você é direcionado para a página de convite do bot; depois do convite, a seleção continua de onde parou."
+        },
+        {
+          "q": "Posso ir direto para um servidor pela URL?",
+          "a": "Sim, use /dashboard/<serverId>. Se você não tiver permissão, será redirecionado de volta para esta página."
+        }
+      ]
+    },
+    "error": {
+      "title": "Página de erro",
+      "items": [
+        {
+          "q": "Por que esta página apareceu?",
+          "a": "Ocorreu um erro inesperado durante uma operação. Pode estar relacionado ao estado do servidor, a uma sessão expirada ou a falta de permissão."
+        },
+        {
+          "q": "Como resolvo o erro?",
+          "a": "Primeiro tente atualizar a página. Se persistir, faça logout e login no painel; se ainda continuar, abra um chamado para o suporte."
+        },
+        {
+          "q": "Vejo um código de erro, o que significa?",
+          "a": "401: sessão expirada; 403: sem permissão; 404: recurso não encontrado; 500: erro do servidor; 503: serviço temporariamente indisponível."
+        },
+        {
+          "q": "Vou perder meus dados?",
+          "a": "Não. As configurações salvas ficam guardadas no banco de dados; o erro afeta apenas a requisição daquele momento."
+        },
+        {
+          "q": "O botão 'Tentar novamente' é seguro?",
+          "a": "Sim, ele apenas reenvia a última requisição; não cria registros duplicados."
+        },
+        {
+          "q": "Continuo recebendo o mesmo erro, o que faço?",
+          "a": "Limpe o cache do navegador e selecione o servidor de novo em /apps. O problema também pode ser de rede."
+        },
+        {
+          "q": "O bot está funcionando, mas o painel dá erro?",
+          "a": "A conexão entre o bot e o Discord está em ordem; o problema pode ser na API do painel. Tente novamente em alguns minutos."
+        },
+        {
+          "q": "Preciso reportar o erro?",
+          "a": "Se você informar o código de erro e o que estava fazendo, a solução sai mais rápido. Abra um chamado pela página da Central de Ajuda."
+        },
+        {
+          "q": "Está acontecendo só no celular?",
+          "a": "Alguns navegadores apagam cookies de sessão de forma agressiva. Atualize o navegador ou tente pelo computador."
+        },
+        {
+          "q": "Existe backup dos meus dados?",
+          "a": "As configurações do painel são por servidor. Use Registos de auditoria para revisar o histórico de alterações."
+        }
+      ]
+    },
+    "dashboard": {
+      "title": "Resumo do servidor",
+      "items": [
+        {
+          "q": "O que vejo nesta tela?",
+          "a": "Um resumo em tempo real do servidor selecionado: módulos ativos, eventos recentes, número de membros, status do bot e cards de acesso rápido."
+        },
+        {
+          "q": "Por que o número de membros é diferente do mostrado no Discord?",
+          "a": "Os dados vêm do cache do Discord e da última atualização recebida pelo bot. Pode haver alguns minutos de atraso."
+        },
+        {
+          "q": "Quais módulos posso abrir daqui?",
+          "a": "Os cards de acesso rápido levam direto para boas-vindas, moderação, canal de logs e outras configurações usadas com frequência."
+        },
+        {
+          "q": "O que mostra a seção 'Atividades recentes'?",
+          "a": "Um resumo das ações importantes feitas pelo bot recentemente (boas-vindas, envio de logs, moderação)."
+        },
+        {
+          "q": "O que significa o módulo estar 'Ativo'?",
+          "a": "Significa que ele está habilitado (interruptor ligado) e que os canais/cargos necessários estão configurados corretamente."
+        },
+        {
+          "q": "Como funciona o card de server quota?",
+          "a": "Se o servidor tiver assinatura mostra o tempo restante e os benefícios. Se não, leva para a tela de server quota."
+        },
+        {
+          "q": "O bot aparece como offline, o que faço?",
+          "a": "Verifique no Discord o cargo do bot e a conexão de internet. Se o problema persistir, peça ajuda pela Central de Ajuda."
+        },
+        {
+          "q": "Os dados desta tela são atualizados em tempo real?",
+          "a": "Os dados são carregados ao abrir a página e atualizados em segundo plano a cada 30 segundos. Para um valor imediato, atualize a página."
+        },
+        {
+          "q": "Quem pode ver esta tela?",
+          "a": "Qualquer pessoa com permissão para gerenciar o servidor. Não há um nível de permissão separado para membros/auxiliares."
+        },
+        {
+          "q": "Onde encontro dados mais detalhados?",
+          "a": "As páginas de Canais de Estatísticas, Ranking de Convites e Relatórios oferecem métricas mais profundas."
+        }
+      ]
+    },
+    "welcome": {
+      "title": "Boas-vindas do painel",
+      "items": [
+        {
+          "q": "Para que serve esta página?",
+          "a": "É a tela de boas-vindas que aparece no primeiro acesso ao painel, explicando rapidamente como ele funciona."
+        },
+        {
+          "q": "Esta tela aparece toda vez que eu entro?",
+          "a": "Não. Aparece somente no primeiro convite/acesso. Nos próximos logins você vai direto para o dashboard."
+        },
+        {
+          "q": "Para qual página devo ir primeiro?",
+          "a": "Recomendamos configurar antes 'Configurações Gerais' e 'Canal de Logs', e depois ir definindo os módulos específicos (boas-vindas, moderação etc.)."
+        },
+        {
+          "q": "Preciso configurar tudo agora?",
+          "a": "Não. Você pode ativar e configurar os módulos que quiser quando quiser. Módulos sem configuração ficam apenas inativos."
+        },
+        {
+          "q": "Existe vídeo ou documentação introdutória?",
+          "a": "Sim, na página da Central de Ajuda você encontra guias curtos por módulo."
+        },
+        {
+          "q": "Posso pular esses passos?",
+          "a": "Sim, o botão 'Pular' leva você direto para /dashboard/<serverId>."
+        },
+        {
+          "q": "Trabalhamos com vários administradores. Todos veem o mesmo conteúdo?",
+          "a": "Sim. Qualquer pessoa com permissão de administrador acessa o mesmo painel; mas todas as alterações ficam registradas no audit log."
+        },
+        {
+          "q": "Quais módulos costumam ser configurados primeiro?",
+          "a": "Mensagem de boas-vindas, moderação, canal de logs, cargo automático e aniversários são os mais comuns logo no início."
+        },
+        {
+          "q": "O que é server quota e ele é obrigatório?",
+          "a": "O server quota libera recursos avançados (feeds ilimitados, moderação por IA aprimorada etc.) e é opcional. Os recursos básicos são gratuitos."
+        },
+        {
+          "q": "Posso desativar completamente um módulo que não vou usar?",
+          "a": "Sim. Na página do módulo, basta usar 'Desativar módulo' ou desligar o interruptor 'Ativo'; os dados ficam preservados e podem ser reativados depois."
+        }
+      ]
+    },
+    "tasks": {
+      "title": "Acompanhamento de tarefas",
+      "items": [
+        {
+          "q": "O que é esta página?",
+          "a": "Aqui ficam listadas as tarefas que você acompanha pelo painel para a gestão do servidor. Você pode adicionar tarefas e atualizar o status delas."
+        },
+        {
+          "q": "Como crio uma tarefa?",
+          "a": "Clique em 'Nova tarefa' e informe o título e, se quiser, uma descrição. Também é possível escolher quem atribuiu/recebeu e adicionar etiquetas."
+        },
+        {
+          "q": "Quem pode ver as tarefas?",
+          "a": "Qualquer membro com permissão para gerenciar o servidor. As tarefas são vinculadas ao servidor e não passam para outro."
+        },
+        {
+          "q": "O que acontece com as tarefas concluídas?",
+          "a": "Ficam guardadas na aba 'Concluídas'. Enquanto não forem apagadas, o registro permanece."
+        },
+        {
+          "q": "Dá para importar/exportar tarefas?",
+          "a": "Sim. Em 'Importar' você pode criar tarefas em lote a partir de JSON/CSV; em 'Exportar' baixa as existentes."
+        },
+        {
+          "q": "Vai parar alguma notificação no Discord?",
+          "a": "Sim. Se houver canal de logs configurado, a criação e mudanças de status das tarefas são resumidas lá."
+        },
+        {
+          "q": "Funciona para trabalho em equipe?",
+          "a": "Sim. Cada tarefa aceita comentários e mudanças de status; quem alterou e quando aparece no audit log."
+        },
+        {
+          "q": "Tarefas excluídas podem ser recuperadas?",
+          "a": "Não, a exclusão é definitiva. Para evitar perda acidental, recomenda-se usar o status 'Concluída' em vez de excluir."
+        },
+        {
+          "q": "Como recebo notificações sobre tarefas atribuídas a mim?",
+          "a": "Os usuários com DM aberta recebem aviso por mensagem direta. Se a DM estiver fechada, a notificação aparece só no painel."
+        },
+        {
+          "q": "Dá para gerenciar tarefas por comandos do Discord?",
+          "a": "Por enquanto, só pelo painel. A integração com comandos está planejada para o futuro."
+        }
+      ]
+    },
+    "helpCenter": {
+      "title": "Central de ajuda",
+      "items": [
+        {
+          "q": "O que tem na Central de Ajuda?",
+          "a": "Guias por módulo, soluções para erros frequentes e a opção de abrir um chamado de suporte."
+        },
+        {
+          "q": "Não estou achando o assunto que procuro?",
+          "a": "Use a caixa de pesquisa no topo com palavras-chave. Se não houver resultado, abra um chamado em 'Suporte'."
+        },
+        {
+          "q": "Como falo com o time de suporte?",
+          "a": "O botão 'Fale conosco' no fim da página abre o formulário de suporte. Você também pode entrar no nosso servidor de suporte do Discord."
+        },
+        {
+          "q": "Quanto tempo leva para receber resposta?",
+          "a": "Em horário comercial, a resposta sai em até 24 horas."
+        },
+        {
+          "q": "Como devo enviar um relatório de bug?",
+          "a": "Inclua a página onde aconteceu, os passos que você fez e, se houver, o código de erro e prints. Quanto mais reproduzível o cenário, melhor."
+        },
+        {
+          "q": "Existe um fórum da comunidade?",
+          "a": "Sim, no nosso servidor de suporte do Discord há canais de comunidade onde você pode tirar dúvidas com outros usuários."
+        },
+        {
+          "q": "Como envio assuntos confidenciais?",
+          "a": "O formulário de suporte é o canal indicado para temas privados. Para tokens, dados pessoais ou conteúdo sensível, prefira o formulário em vez de canais públicos."
+        },
+        {
+          "q": "Existe documentação completa?",
+          "a": "Sim. No link 'Documentação' você acessa o manual detalhado de cada módulo."
+        },
+        {
+          "q": "Tem assistente com IA?",
+          "a": "Por enquanto, o assistente dentro do painel está em fase beta. Quando estiver disponível, ele aparece na caixa de pesquisa."
+        },
+        {
+          "q": "Onde mando minhas sugestões?",
+          "a": "No formulário de suporte, escolha a categoria 'Sugestão' e envie sua proposta de novo recurso."
+        }
+      ]
+    },
+    "botWelcome": {
+      "title": "Mensagem de boas-vindas",
+      "items": [
+        {
+          "q": "Para que serve este módulo?",
+          "a": "Configura a mensagem de boas-vindas enviada automaticamente quando um novo membro entra no servidor. Pode ser mensagem de canal, embed ou um cartão personalizado de boas-vindas."
+        },
+        {
+          "q": "Como mostro o nome do usuário na mensagem?",
+          "a": "Use placeholders como {user}, {username} e {server}. Eles são preenchidos automaticamente quando o membro entra."
+        },
+        {
+          "q": "Posso enviar tanto no canal quanto na DM?",
+          "a": "Sim. Na aba superior, 'Mensagem de Boas-vindas' é para o canal e 'DM' é para a mensagem direta. As duas funcionam de forma independente."
+        },
+        {
+          "q": "Pode acontecer de a DM não ser entregue?",
+          "a": "Se o membro tem DM fechada ou bloqueou o bot, o envio falha. Esse caso aparece como 'Não entregue' no canal de logs."
+        },
+        {
+          "q": "Como é o cartão de boas-vindas?",
+          "a": "É uma imagem personalizada com avatar, plano de fundo e o nome do usuário. As cores e textos são customizados pelas opções da tela."
+        },
+        {
+          "q": "Qual a diferença entre embed e mensagem comum?",
+          "a": "O embed aparece dentro de uma caixa colorida com título, descrição e rodapé; a mensagem comum é uma mensagem normal do Discord."
+        },
+        {
+          "q": "A mensagem não está saindo, o que devo verificar?",
+          "a": "1) Se o módulo está 'Ativo'; 2) se o canal de destino está selecionado; 3) se o bot tem permissão de Enviar Mensagens nele; 4) se o evento de entrada (guildMemberAdd) está habilitado nas permissões do convite do bot."
+        },
+        {
+          "q": "Posso atribuir um cargo automático ao novo membro?",
+          "a": "Sim. No campo 'Cargo a atribuir' você escolhe qual cargo será dado a quem entrar."
+        },
+        {
+          "q": "Dá para enviar mensagem só para membros com determinada condição?",
+          "a": "Diretamente neste módulo, ainda não. Para condições mais elaboradas, use Cargo Automático ou um Comando Personalizado."
+        },
+        {
+          "q": "Como faço uma prévia?",
+          "a": "O botão 'Pré-visualizar' simula a mensagem com a configuração atual e envia para você por DM, sem afetar o membro real."
+        }
+      ]
+    },
+    "botGoodbye": {
+      "title": "Mensagem de despedida",
+      "items": [
+        {
+          "q": "Quando a mensagem de despedida é enviada?",
+          "a": "É disparada quando um membro sai do servidor (saída espontânea, kick ou ban)."
+        },
+        {
+          "q": "É enviada também quando o membro é banido?",
+          "a": "Sim, por padrão. Se preferir, ative a opção 'Excluir membros banidos'."
+        },
+        {
+          "q": "Quais placeholders posso usar?",
+          "a": "Você pode usar {user}, {username}, {server} e {memberCount}."
+        },
+        {
+          "q": "Não quero anunciar a saída de membros, é possível?",
+          "a": "Basta desativar o módulo. Todas as mensagens de despedida param."
+        },
+        {
+          "q": "Posso enviar mensagens diferentes para kick/ban/saída?",
+          "a": "Sim. As abas superiores permitem definir um modelo separado para cada caso."
+        },
+        {
+          "q": "Posso enviar a despedida no canal de logs em vez do canal público?",
+          "a": "Defina o canal de logs como 'Canal de Destino'. Para evitar mistura, recomendamos canais separados."
+        },
+        {
+          "q": "O bot pode mostrar o avatar do membro que saiu?",
+          "a": "Sim. O cartão de DM e a thumbnail do embed servem para isso."
+        },
+        {
+          "q": "Se o membro voltar, a mensagem de despedida é apagada?",
+          "a": "Não, a mensagem antiga continua no canal. O bot não apaga automaticamente."
+        },
+        {
+          "q": "Dá para ter mensagens em vários idiomas?",
+          "a": "O idioma do servidor é definido em 'Idioma do Bot'; um envio multilíngue automático não é feito pelo bot."
+        },
+        {
+          "q": "Posso enviar a despedida em vários canais?",
+          "a": "Por enquanto, somente um canal é suportado. Para mais de um canal, é possível criar um Comando Personalizado."
+        }
+      ]
+    },
+    "botEmbedMessage": {
+      "title": "Mensagem rica (embed)",
+      "items": [
+        {
+          "q": "O que é uma mensagem embed?",
+          "a": "É uma mensagem profissional do Discord exibida em uma caixa colorida com título, descrição e campos."
+        },
+        {
+          "q": "O que dá para fazer nesta página?",
+          "a": "Você pode escolher um modelo pronto, preencher título, descrição, rodapé, thumbnail e imagem, e enviar para o canal desejado."
+        },
+        {
+          "q": "Como escolho a cor?",
+          "a": "Defina por código Hex (ex.: #5865F2) ou pelo seletor visual. A barra lateral esquerda do embed aparece com essa cor."
+        },
+        {
+          "q": "Dá para editar a mensagem depois de enviada?",
+          "a": "Sim. Com o ID da mensagem, você pode editar um embed existente. Em vez de enviar uma nova mensagem, ele atualiza a atual."
+        },
+        {
+          "q": "Quantos campos posso adicionar?",
+          "a": "Dentro do limite do Discord, até 25 campos por embed. Quando o limite é atingido, o painel exibe um aviso."
+        },
+        {
+          "q": "Posso usar placeholders?",
+          "a": "Sim. {server}, {memberCount} e variáveis criadas em comandos personalizados são resolvidos no momento do envio."
+        },
+        {
+          "q": "Dá para agendar a mensagem?",
+          "a": "Esta página é só para envios imediatos. Para agendamento, use o módulo 'Anúncio Agendado'."
+        },
+        {
+          "q": "Não tenho certeza se a prévia está correta?",
+          "a": "A pré-visualização ao lado mostra como o embed vai ficar; verifique tudo antes de enviar."
+        },
+        {
+          "q": "Mandei um embed errado, o que faço?",
+          "a": "Pegue o ID da mensagem e use 'Editar' para corrigir, ou apague pelo Discord."
+        },
+        {
+          "q": "E se o bot não tiver permissão para embeds?",
+          "a": "Sem 'Inserir Links', o bot envia apenas texto puro. Adicione essa permissão ao cargo do bot."
+        }
+      ]
+    },
+    "botReactionRole": {
+      "title": "Cargos por reação",
+      "items": [
+        {
+          "q": "O que é um cargo por reação?",
+          "a": "É um sistema que atribui ou remove cargos automaticamente para membros que reagem com determinada emoji em uma mensagem específica."
+        },
+        {
+          "q": "Como escolho a mensagem?",
+          "a": "Você informa o canal e o ID da mensagem ou pede para o bot criar uma nova mensagem para vincular."
+        },
+        {
+          "q": "Quantas emojis posso usar na mesma mensagem?",
+          "a": "Até o limite do Discord, que é 20 reações distintas. Acima disso, o bot não consegue adicionar a reação."
+        },
+        {
+          "q": "Posso usar emojis personalizadas?",
+          "a": "Sim, dá para escolher emojis personalizadas do servidor. O bot precisa estar no servidor onde a emoji é hospedada."
+        },
+        {
+          "q": "Se o membro retira a reação, o cargo é removido?",
+          "a": "Sim, esse é o comportamento padrão. Se você ativar o modo 'Uma vez somente', remover a reação não tira o cargo."
+        },
+        {
+          "q": "Mover a mensagem de canal afeta o cargo por reação?",
+          "a": "Mudanças de canal não afetam. Se a mensagem for apagada, o cargo por reação para de funcionar."
+        },
+        {
+          "q": "O bot diz que não consegue dar o cargo, por quê?",
+          "a": "O cargo do bot precisa estar acima do cargo a ser atribuído na hierarquia. Também é necessária a permissão 'Gerenciar Cargos'."
+        },
+        {
+          "q": "Posso impedir que o membro pegue vários cargos?",
+          "a": "Sim, o modo 'Seleção única' limita a uma escolha de cargo por mensagem."
+        },
+        {
+          "q": "Quero limpar mensagens antigas em massa, como faço?",
+          "a": "Selecione a mensagem na lista e clique em 'Excluir'. Apenas a configuração do cargo por reação é apagada; a mensagem do canal continua."
+        },
+        {
+          "q": "Os cargos por reação geram logs?",
+          "a": "Sim. Se o canal de logs estiver configurado, cada cargo concedido/removido aparece com info do membro e da mensagem."
+        }
+      ]
+    },
+    "botScheduledAnnouncement": {
+      "title": "Anúncio agendado",
+      "items": [
+        {
+          "q": "O que é um anúncio agendado?",
+          "a": "É uma mensagem enviada automaticamente em uma data/hora específica ou de forma recorrente. Pode ser embed ou texto puro."
+        },
+        {
+          "q": "Qual fuso horário é usado?",
+          "a": "O fuso horário definido no servidor (configuração de Fuso Horário) é a base. Você também pode informar em UTC."
+        },
+        {
+          "q": "Como configuro um anúncio recorrente?",
+          "a": "Use o período diário/semanal/mensal. Para padrões mais específicos (estilo cron), use o campo 'Avançado'."
+        },
+        {
+          "q": "Posso cancelar um anúncio?",
+          "a": "Selecione o anúncio na lista e desative-o ou exclua. Desativar mantém o histórico salvo."
+        },
+        {
+          "q": "Dá para editar a mensagem?",
+          "a": "Sim. Se ainda não foi enviada, você pode mudar conteúdo e horário. Cópias já enviadas não são editadas (precisaria do recurso 'Editar mensagem' separado)."
+        },
+        {
+          "q": "Mencionar @everyone funciona?",
+          "a": "Sim, desde que o bot tenha a permissão 'Mencionar @everyone'. Caso contrário, @everyone aparece como texto, sem disparar a notificação."
+        },
+        {
+          "q": "Posso enviar para vários canais ao mesmo tempo?",
+          "a": "Cada anúncio é enviado a um único canal. Para o mesmo conteúdo em mais canais, crie vários anúncios agendados."
+        },
+        {
+          "q": "Consigo ver os envios anteriores?",
+          "a": "Sim, na aba 'Histórico' aparecem os envios recentes e o status (sucesso/falha)."
+        },
+        {
+          "q": "O que acontece se um envio falhar?",
+          "a": "Se o bot perdeu permissão ou o canal foi apagado, o erro é registrado; o anúncio não é cancelado automaticamente e tenta novamente na próxima recorrência."
+        },
+        {
+          "q": "Dá para incluir imagens?",
+          "a": "Quando o envio é feito como embed, você pode adicionar thumbnail e imagem; em texto puro, anexos pelo Discord não são usados."
+        }
+      ]
+    },
+    "botFeeds": {
+      "title": "Feeds (YouTube/Twitch/RSS)",
+      "items": [
+        {
+          "q": "Para que serve a notificação de feed?",
+          "a": "Quando o canal do YouTube/Twitch ou o RSS escolhido publica conteúdo novo, o bot envia automaticamente um aviso ao canal de destino."
+        },
+        {
+          "q": "Por que não preciso colocar a URL completa do YouTube/Twitch?",
+          "a": "Basta o nome ou handle do canal. O bot adiciona automaticamente https://www.youtube.com/ ou https://www.twitch.tv/. Isso evita que você cole uma URL errada."
+        },
+        {
+          "q": "Como deve ser o link RSS?",
+          "a": "Tem que ser uma URL RSS/Atom válida (ex.: https://site.com/feed.xml). O botão de pré-visualização verifica se ela pode ser lida."
+        },
+        {
+          "q": "Qual a frequência de checagem?",
+          "a": "O padrão é 15 minutos (900 segundos). No intervalos menores são possíveis. Intervalos muito curtos podem ser limitados pela própria plataforma."
+        },
+        {
+          "q": "Não está vindo conteúdo novo, o que faço?",
+          "a": "Use a pré-visualização para confirmar se a fonte está ativa. Verifique se o nome do canal está correto e se o conteúdo foi publicado nos últimos 2 dias."
+        },
+        {
+          "q": "Posso mencionar um cargo específico?",
+          "a": "Sim. No campo 'Cargo a mencionar' selecione o cargo. O bot pinga esse cargo ao enviar a mensagem."
+        },
+        {
+          "q": "Ele envia todo o conteúdo antigo?",
+          "a": "Não. A partir do momento em que você cria a inscrição, só são notificados os conteúdos publicados depois disso."
+        },
+        {
+          "q": "Posso trocar a fonte do feed?",
+          "a": "Sim. Selecione na lista e use 'Editar' para mudar URL/canal/cargo. Trocar a URL zera o filtro de envios anteriores."
+        },
+        {
+          "q": "Ele detecta lives do YouTube?",
+          "a": "Sim. Quando uma live do canal começa, é enviada uma notificação separada."
+        }
+      ]
+    },
+    "botPoll": {
+      "title": "Enquetes",
+      "items": [
+        {
+          "q": "Como crio uma enquete?",
+          "a": "Informe pergunta, opções, canal de destino e duração e clique em 'Criar'. O bot envia ao canal uma enquete onde reações com emoji são contadas como votos."
+        },
+        {
+          "q": "Quantas opções posso adicionar?",
+          "a": "Até 20 opções, respeitando o limite do Discord. Menos opções deixam o resultado mais rápido e claro."
+        },
+        {
+          "q": "O que é a opção de voto múltiplo?",
+          "a": "Quando ligada, um membro pode votar em várias opções. Quando desligada, ele só pode escolher uma."
+        },
+        {
+          "q": "O que acontece quando a enquete termina?",
+          "a": "O bot 'tranca' a mensagem e envia um resumo com os resultados e o vencedor. Se não houver duração, você pode encerrar manualmente em 'Finalizar'."
+        },
+        {
+          "q": "Dá para ver quem votou?",
+          "a": "Apenas moderadores conseguem ver os votos detalhados na aba 'Detalhes do voto'. No modo anônimo, isso fica desativado."
+        },
+        {
+          "q": "Posso editar a enquete?",
+          "a": "Apenas o texto da pergunta e a duração. Adicionar/remover opções zeraria os votos atuais e por isso é bloqueado."
+        },
+        {
+          "q": "Posso restringir a enquete a um cargo?",
+          "a": "Sim. No campo 'Cargos permitidos', você limita quem pode votar; reações de outros membros não contam."
+        },
+        {
+          "q": "Os resultados das enquetes são salvos?",
+          "a": "Sim. As enquetes anteriores e seus resultados ficam listados na página e podem ser consultados a qualquer momento."
+        },
+        {
+          "q": "Dá para aplicar automaticamente a opção mais votada?",
+          "a": "Por enquanto a enquete só mostra o resultado. Para uma ação automática, use um Comando Personalizado."
+        },
+        {
+          "q": "Posso mencionar usuários no anúncio da enquete?",
+          "a": "Sim. No título ou na descrição, é possível usar @everyone ou @cargo, desde que o bot tenha a permissão necessária."
+        }
+      ]
+    },
+    "botGiveaway": {
+      "title": "Sorteios",
+      "items": [
+        {
+          "q": "Como começo um sorteio?",
+          "a": "Informe nome, prêmio, número de ganhadores, canal e data de término. O bot vai aceitando participantes pela reação até o prazo final."
+        },
+        {
+          "q": "Qual é a reação para participar?",
+          "a": "Por padrão, é 🎉. Cada membro que reagir com essa emoji entra na lista de participantes."
+        },
+        {
+          "q": "Posso ter mais de um ganhador?",
+          "a": "Sim. No campo 'Número de ganhadores' você define a quantidade. Ao final, o bot sorteia aleatoriamente o total escolhido."
+        },
+        {
+          "q": "Como filtro os participantes?",
+          "a": "É possível restringir a quem tem determinado cargo ou cuja conta tenha idade mínima. Esses controles ficam em 'Avançado'."
+        },
+        {
+          "q": "Posso encerrar o sorteio antes da hora?",
+          "a": "Sim. Selecione o sorteio na lista e clique em 'Finalizar' para encerrar imediatamente."
+        },
+        {
+          "q": "Quero refazer o sorteio?",
+          "a": "O botão 'Sortear novamente' escolhe um novo ganhador; você decide se os antigos ganhadores podem entrar de novo ou ficar de fora."
+        },
+        {
+          "q": "O bot avisa o ganhador por DM?",
+          "a": "Sim, se o usuário tem DM aberta, ele recebe a notificação; caso contrário, é apenas mencionado no canal."
+        },
+        {
+          "q": "E se a mensagem do sorteio for apagada?",
+          "a": "O sorteio é cancelado automaticamente e o evento é registrado em log. Você precisa criar um novo sorteio."
+        },
+        {
+          "q": "Os sorteios ficam guardados?",
+          "a": "Sim. Na aba 'Histórico' ficam todos os sorteios e ganhadores anteriores."
+        },
+        {
+          "q": "Posso excluir certas pessoas do sorteio?",
+          "a": "Sim. Em 'Cargos ignorados' ou 'Usuários ignorados' você define quem fica de fora."
+        }
+      ]
+    },
+    "botLevel": {
+      "title": "Sistema de níveis",
+      "items": [
+        {
+          "q": "Como funciona o sistema de níveis?",
+          "a": "Os membros ganham XP escrevendo em texto ou conversando em voz. Ao atingir certos limiares de XP, sobem de nível; se houver recompensas configuradas, recebem cargos automaticamente."
+        },
+        {
+          "q": "Quanto XP é dado por mensagem?",
+          "a": "O valor configurado em 'XP por mensagem'. Se 'XP aleatório' estiver ativo, o valor varia entre o mínimo e o máximo definidos."
+        },
+        {
+          "q": "O que é o cooldown?",
+          "a": "É um tempo de espera para evitar que o mesmo usuário acumule XP rápido demais. Recomendamos entre 30 e 60 segundos."
+        },
+        {
+          "q": "Posso excluir certos canais do XP?",
+          "a": "Sim. Em 'Canais ignorados' você pode tirar canais de spam, comandos etc. da contagem."
+        },
+        {
+          "q": "Como configuro recompensas por cargo?",
+          "a": "Na tabela 'Recompensas de cargo' você adiciona pares nível + cargo. O interruptor 'Ativar' precisa estar ligado."
+        },
+        {
+          "q": "O cargo antigo é removido quando ganho um novo?",
+          "a": "Por padrão, o cargo novo é somado e o anterior continua. Se não quiser acumular, ative o 'Modo de cargo único'."
+        },
+        {
+          "q": "Onde aparece a notificação de subida de nível?",
+          "a": "No canal de notificação configurado ou na DM do membro. As notificações podem ser desativadas."
+        },
+        {
+          "q": "O XP de um membro pode ser zerado?",
+          "a": "Sim. Pelo painel, em 'Resetar', dá para zerar individualmente ou o servidor inteiro. A ação é irreversível."
+        },
+        {
+          "q": "Os dados de XP migram para outro servidor?",
+          "a": "Não. Os dados são por servidor e não podem ser copiados entre servidores."
+        },
+        {
+          "q": "Existe ranking de níveis?",
+          "a": "Sim. Por comando do Discord (ex.: /level top) ou pelo módulo de Canais de Estatísticas do painel."
+        }
+      ]
+    },
+    "botInviteLeaderboard": {
+      "title": "Ranking de convites",
+      "items": [
+        {
+          "q": "O que esta página mostra?",
+          "a": "Lista, em ordem numérica, quem mais trouxe membros para o servidor. Total, convites reais (que ficaram), saídas e convites falsos aparecem separadamente."
+        },
+        {
+          "q": "Como é feita a contagem?",
+          "a": "Quando alguém entra, o bot identifica qual link de convite foi usado. Para isso, o bot precisa da permissão 'Gerenciar Servidor'."
+        },
+        {
+          "q": "O que é um convite falso?",
+          "a": "Convites de contas muito recentes ou que saem rapidamente. Servem para distinguir bots de spam dos convites reais."
+        },
+        {
+          "q": "Dá para filtrar por período?",
+          "a": "Sim. O seletor de datas no topo permite filtrar por semana, mês ou intervalo personalizado."
+        },
+        {
+          "q": "Posso definir recompensas por convite?",
+          "a": "Sim. Em 'Recompensas por convite' dá para atribuir cargo conforme o número de convites. O bot precisa de 'Gerenciar Cargos'."
+        },
+        {
+          "q": "Consigo ver quem o membro convidou?",
+          "a": "Sim. Ao clicar nos detalhes do membro, aparece a lista das pessoas que ele convidou."
+        },
+        {
+          "q": "Os números não batem com o Discord, por quê?",
+          "a": "Pode haver atraso por causa do cache do Discord. Use 'Sincronizar' para puxar o estado mais recente."
+        },
+        {
+          "q": "Os convites antigos contam?",
+          "a": "Para o período anterior à entrada do bot, dá para definir um valor base; depois disso, a contagem é em tempo real."
+        },
+        {
+          "q": "Posso resetar o ranking?",
+          "a": "Sim. O botão 'Resetar' zera o servidor inteiro. A ação é definitiva, use com cautela."
+        },
+        {
+          "q": "Dá para mostrar o ranking publicamente?",
+          "a": "Com o módulo de Canais de Estatísticas, você pode espelhar parte do ranking nos títulos dos canais."
+        }
+      ]
+    },
+    "botApplications": {
+      "title": "Formulários de candidatura",
+      "items": [
+        {
+          "q": "Para que servem os formulários de candidatura?",
+          "a": "Permitem que membros se candidatem a uma vaga (staff, jurados, eventos etc.). O bot envia as perguntas por DM ou canal e mostra as respostas para os admins."
+        },
+        {
+          "q": "Como adiciono os campos do formulário?",
+          "a": "Use o construtor de formulários do painel para incluir cada campo (rótulo, tipo, obrigatoriedade). Não é preciso escrever JSON."
+        },
+        {
+          "q": "Quais tipos de campo estão disponíveis?",
+          "a": "Texto curto, texto longo, número, data e lista de seleção. Cada campo pode ser marcado como obrigatório."
+        },
+        {
+          "q": "Onde o membro preenche o formulário?",
+          "a": "O bot coloca um botão 'Candidatar-se' no canal de candidaturas. Ao clicar, o membro responde por DM ou em uma janela modal."
+        },
+        {
+          "q": "Para onde vão as respostas?",
+          "a": "Para o 'Canal de resultados' que você definir, em formato de embed; os moderadores agem com os botões 'Aprovar / Rejeitar'."
+        },
+        {
+          "q": "Posso atribuir cargo automaticamente ao aprovar?",
+          "a": "Sim. Se 'Cargo na aprovação' estiver definido, o cargo é entregue assim que a candidatura é aprovada."
+        },
+        {
+          "q": "O mesmo membro pode se candidatar várias vezes?",
+          "a": "Depende do cooldown. Por padrão, é exigida uma espera de 24 horas entre candidaturas."
+        },
+        {
+          "q": "O histórico de candidaturas fica salvo?",
+          "a": "Sim. Na aba 'Histórico' você vê todas as candidaturas e os respectivos status."
+        },
+        {
+          "q": "Se eu mudar as perguntas do formulário, as antigas mudam?",
+          "a": "Não. As respostas antigas continuam ligadas à versão do formulário em que foram feitas. Novas candidaturas usam a versão atual."
+        },
+        {
+          "q": "Posso ter vários formulários (ex.: staff e eventos)?",
+          "a": "Sim. Dá para criar múltiplos formulários, cada um com canal/cargo/perguntas próprios."
+        }
+      ]
+    },
+    "botMusic": {
+      "title": "Música",
+      "items": [
+        {
+          "q": "Como toco música?",
+          "a": "Use o comando /play <música ou URL> no servidor; o bot entra no canal de voz e começa a tocar. O painel só configura as regras."
+        },
+        {
+          "q": "Quais plataformas são suportadas?",
+          "a": "YouTube, Spotify (link), SoundCloud e URLs de áudio diretas. As playlists do Spotify são reproduzidas com correspondência de faixas."
+        },
+        {
+          "q": "O bot não entra no canal de voz, o que faço?",
+          "a": "O bot precisa das permissões 'Conectar' e 'Falar'. Além disso, quem usa o comando deve estar em um canal de voz."
+        },
+        {
+          "q": "Como gerencio a fila?",
+          "a": "/queue mostra a ordem; /skip pula, /pause pausa, /resume retoma. Pelo painel, você também acompanha o que está tocando."
+        },
+        {
+          "q": "Qual o tamanho máximo da fila?",
+          "a": "Em servidores comuns, 100; o limite é maior. O valor pode ser ajustado em 'Tamanho máximo da fila'."
+        },
+        {
+          "q": "Dá para limitar quem pode adicionar músicas?",
+          "a": "Sim. Em 'Cargos permitidos', defina quais cargos podem usar os comandos de música."
+        },
+        {
+          "q": "Quantas músicas cada usuário pode adicionar?",
+          "a": "O limite 'Músicas por usuário' evita que um único membro encha a fila."
+        },
+        {
+          "q": "A qualidade do áudio é configurável?",
+          "a": "Sim, pela taxa de bits. Para servidores com internet limitada, 96-128 kbps; em servidores com banda boa, 192-256 kbps."
+        },
+        {
+          "q": "O que o bot faz após mais de 1 hora em silêncio?",
+          "a": "Sai do canal de voz automaticamente (ajuste 'Tempo ocioso'). Esse tempo pode ser personalizado."
+        },
+        {
+          "q": "Quais são as vantagens de música?",
+          "a": "Fila maior, busca mais rápida e filtros avançados (bassboost, nightcore etc.) ficam disponíveis."
+        }
+      ]
+    },
+    "botTicketPanel": {
+      "title": "Painel de tickets",
+      "items": [
+        {
+          "q": "Para que serve o painel de tickets?",
+          "a": "Cria um botão/menu 'Abrir ticket' para que os membros peçam ajuda. Ao clicar, é aberto um canal privado para atender ao chamado."
+        },
+        {
+          "q": "Quem vê o canal do ticket?",
+          "a": "Somente o membro que abriu, os 'Cargos de gerência de tickets' e os moderadores selecionados. Os demais membros não enxergam o canal."
+        },
+        {
+          "q": "Posso ter várias categorias de ticket (ex.: Bug/Dúvida)?",
+          "a": "Sim. No painel, ative o menu/botões múltiplos e configure perguntas próprias para cada tipo."
+        },
+        {
+          "q": "O que acontece quando o ticket é fechado?",
+          "a": "O canal é arquivado ou apagado, e o transcript é enviado ao canal de logs em formato HTML/embed."
+        },
+        {
+          "q": "O que é um transcript?",
+          "a": "É o registro com todas as mensagens trocadas durante o ticket, salvo para consulta posterior."
+        },
+        {
+          "q": "O mesmo membro pode abrir vários tickets?",
+          "a": "Por padrão, não. Se 'Múltiplos tickets' estiver ligado, ele pode ter mais de um ativo ao mesmo tempo."
+        },
+        {
+          "q": "Como ficam os nomes dos canais de ticket?",
+          "a": "São criados automaticamente com modelos como 'ticket-{username}' ou 'ticket-{count}'. O formato pode ser alterado."
+        },
+        {
+          "q": "Como um moderador entra no ticket?",
+          "a": "Os moderadores são adicionados automaticamente. Também há um botão 'Assumir' que permite trocar o cargo responsável."
+        },
+        {
+          "q": "Existe limite de tickets?",
+          "a": "Sim. Há limites configuráveis por servidor e por usuário para tickets ativos."
+        },
+        {
+          "q": "Por quanto tempo os dados dos tickets ficam guardados?",
+          "a": "Tickets ativos são mantidos enquanto existirem; os arquivados seguem a configuração de retenção (90 dias por padrão)."
+        }
+      ]
+    },
+    "botModerator": {
+      "title": "Moderação",
+      "items": [
+        {
+          "q": "O que esta página inclui?",
+          "a": "Configura regras básicas de moderação como antispam, filtro de palavras de baixo calão, bloqueio de links/convites, spam de menções e excesso de caracteres."
+        },
+        {
+          "q": "Posso desativar uma regra em um canal específico?",
+          "a": "Sim. Em 'Canais ignorados' você isenta canais escolhidos da regra."
+        },
+        {
+          "q": "Quero que um cargo seja imune à moderação?",
+          "a": "Adicione esse cargo em 'Cargos ignorados'; os membros com ele não serão punidos pelas regras."
+        },
+        {
+          "q": "Quão rígidas podem ser as ações?",
+          "a": "É possível escolher entre apagar mensagem, advertência, time-out, kick e ban. A escolha varia conforme os limiares definidos."
+        },
+        {
+          "q": "O bot pode apagar minhas mensagens também?",
+          "a": "Sim, se o seu cargo estiver abaixo do cargo do bot na hierarquia ou se você não estiver em 'Cargos ignorados'."
+        },
+        {
+          "q": "Os eventos de moderação são registrados?",
+          "a": "Sim. Se o canal de logs estiver definido, cada ação tem seu registro. Você também pode consultar pela página 'Registros de Moderação'."
+        },
+        {
+          "q": "Como reverto uma ação errada?",
+          "a": "Em registros de time-out e ban há um botão 'Desfazer'. Mensagens apagadas não podem ser restauradas."
+        },
+        {
+          "q": "Dá para personalizar a lista de palavras proibidas?",
+          "a": "Sim. Em 'Lista de palavras personalizada' você adiciona termos próprios; a lista é exclusiva do servidor."
+        },
+        {
+          "q": "O bot consegue pegar tentativas de bypass?",
+          "a": "Sim, bypasses com acentos ou caracteres misturados são detectados via normalização. Para detecção mais robusta, use também a moderação por IA."
+        },
+        {
+          "q": "Como combina com a moderação por IA?",
+          "a": "Esta página é baseada em palavras-chave e padrões. Para análise contextual, use a página de Moderação Inteligente (IA) em conjunto."
+        }
+      ]
+    },
+    "botAiModeration": {
+      "title": "Moderação inteligente (IA)",
+      "items": [
+        {
+          "q": "Como a moderação por IA funciona?",
+          "a": "O bot envia as mensagens a um modelo de IA, que dá pontuação em categorias como toxicity, hate, sexual, harassment e self_harm; com base no limiar, aplica log/exclusão/time-out."
+        },
+        {
+          "q": "O que significam os níveis de sensibilidade (Baixa/Normal/Alta)?",
+          "a": "Sensibilidade alta dispara com limiares menores e pega mais mensagens. Sensibilidade baixa age menos. Em servidores com muito spam/troll, recomendamos a alta."
+        },
+        {
+          "q": "Quais canais devo isentar?",
+          "a": "Canais com bate-papo aberto/18+, canais de teste do bot e canais de conversa privada costumam ser isentos."
+        },
+        {
+          "q": "Suporta vários idiomas?",
+          "a": "Sim, principalmente português, com suporte a 12 idiomas. Mistura de línguas é normalizada."
+        },
+        {
+          "q": "Qual ação é recomendada para insultos pessoais?",
+          "a": "Na primeira ocorrência, 'log + advertência'; em reincidência, 'time-out'. O ban deve ser reservado para casos mais graves."
+        },
+        {
+          "q": "Como reduzo falsos positivos?",
+          "a": "Defina canais isentos, mantenha a sensibilidade em normal e adicione exceções de palavras quando necessário."
+        },
+        {
+          "q": "Dá para ver as ações que o bot tomou?",
+          "a": "Sim. Na aba 'Registros de análise' aparecem as ocorrências recentes com canal, membro e pontuação."
+        },
+        {
+          "q": "Por quanto tempo os dados ficam guardados?",
+          "a": "Padrão: 30 dias; no 90 dias. Se o módulo for desativado, os dados são apagados ao final do período."
+        },
+        {
+          "q": "Há custo da IA?",
+          "a": "O uso padrão já está incluso na cota do servidor. No a cota de mensagens é maior."
+        },
+        {
+          "q": "Toda mensagem é analisada?",
+          "a": "Com a 'Sample rate', você pode analisar uma porcentagem das mensagens (ex.: 50%, 100%). É útil para gerenciar a cota."
+        }
+      ]
+    },
+    "botModerationLogs": {
+      "title": "Registros de moderação",
+      "items": [
+        {
+          "q": "O que esta página lista?",
+          "a": "Registros de moderação com filtros aplicados; os tipos de ação suportados são apenas os mostrados na interface — exclusão, advertência, time-out, kick e ban não estão todos garantidos."
+        },
+        {
+          "q": "Como funcionam os filtros?",
+          "a": "Você pode escolher ação, tipo de regra, canal, origem (manual / IA / filtro de palavras) e intervalo de datas. Vários filtros podem ser combinados."
+        },
+        {
+          "q": "Posso reverter uma ação?",
+          "a": "Nesta versão não há desfazer para todas as ações; corrija no Discord ou no módulo relevante quando possível."
+        },
+        {
+          "q": "Dá para exportar os logs?",
+          "a": "Sim — os botões CSV e JSON no cartão «Registros» baixam a lista carregada no momento (filtrada). Vale o limite da consulta à API (até 100 linhas); divida o intervalo de datas para períodos maiores."
+        },
+        {
+          "q": "O que significa a 'origem' das ações?",
+          "a": "manual = ação manual, ai = moderação IA, keyword = filtro de palavras/regras (rótulos podem aparecer localizados)."
+        },
+        {
+          "q": "Um membro está sendo punido com frequência, o que faço?",
+          "a": "Verifique o histórico dele e, se houver reincidência, considere ações mais firmes (time-out → ban)."
+        },
+        {
+          "q": "Como diferencio ações automáticas do bot?",
+          "a": "Restrinja pelo filtro de origem escolhendo moderação IA ou filtro de palavras para casos automáticos ou baseados em regras."
+        },
+        {
+          "q": "Quais informações o detalhe traz?",
+          "a": "Para a linha selecionada: id do registro, id da mensagem, chave do motivo, código de aviso/erro, parâmetros JSON e resumo de pontuação IA quando houver. Identificadores de usuário ficam como hash."
+        },
+        {
+          "q": "Por quanto tempo os logs são guardados?",
+          "a": "Padrão: 90 dias; server quota: 1 ano. Após esse período, os registros são apagados automaticamente."
+        },
+        {
+          "q": "Posso fazer limpeza em massa?",
+          "a": "Esta versão não tem botão de exclusão ou arquivamento em massa para resultados filtrados."
+        }
+      ]
+    },
+    "botAuditLogs": {
+      "title": "Registros de auditoria",
+      "items": [
+        {
+          "q": "O que é o registro de auditoria?",
+          "a": "É o histórico das mudanças de configuração feitas pelo painel ou pelo bot. Mostra quem fez o quê e quando."
+        },
+        {
+          "q": "Quais alterações vão para cá?",
+          "a": "Ativar/desativar módulos, escolher canais/cargos, atualizar limiares, ações de server quota e mudanças em formulários/templates."
+        },
+        {
+          "q": "Para que serve a comparação 'Antes/Depois'?",
+          "a": "Mostra lado a lado o estado anterior e o atual do registro, facilitando identificar uma alteração intencional ou indevida."
+        },
+        {
+          "q": "O que são os filtros de ação e origem?",
+          "a": "Indicam de qual módulo a alteração veio (origem: ai_moderation, ticket etc.) e o tipo de ação (criação/atualização/exclusão)."
+        },
+        {
+          "q": "Vi um erro de moderador, dá para reverter?",
+          "a": "Sim, em parte. No registro existe um botão 'Desfazer esta alteração' que reverte automaticamente quando possível; mudanças complexas são corrigidas manualmente."
+        },
+        {
+          "q": "Os registros podem ser editados?",
+          "a": "Não, o audit log é somente leitura. Apenas o sistema escreve nele; nem usuários têm permissão."
+        },
+        {
+          "q": "Por quanto tempo são guardados?",
+          "a": "Padrão: 180 dias; server quota: 1 ano."
+        },
+        {
+          "q": "Consigo ver quem fez cada alteração?",
+          "a": "Sim. O campo 'Actor' mostra o ID e o nome do usuário do Discord que fez a alteração."
+        },
+        {
+          "q": "Posso consultar via API?",
+          "a": "Em contas a API de audit log fica disponível. Veja detalhes na seção de integrações."
+        },
+        {
+          "q": "Tantos registros assim impactam a performance?",
+          "a": "Não. A página usa paginação e filtros; os dados só são carregados sob demanda."
+        }
+      ]
+    },
+    "botLogChannel": {
+      "title": "Canal de logs",
+      "items": [
+        {
+          "q": "Para que serve o módulo de canal de logs?",
+          "a": "Define em quais canais ficam registrados os eventos do servidor: entradas/saídas de membros, edição/exclusão de mensagens, eventos de voz, mudanças de cargo etc."
+        },
+        {
+          "q": "Os logs ficam em um único canal ou em vários?",
+          "a": "Você pode atribuir cada tipo de log a um canal diferente. Em 'Nova categoria + todos os canais de log' o painel cria a estrutura automaticamente."
+        },
+        {
+          "q": "Quais tipos de log existem?",
+          "a": "Membros, mensagens, canais, cargos, voz, convites, moderação, auditoria, bot e server quota."
+        },
+        {
+          "q": "Por que não estou vendo os logs de mensagens?",
+          "a": "O bot precisa ter 'Ver Registro de Auditoria' e 'Ler Histórico de Mensagens'. O canal também precisa estar visível e legível para o bot."
+        },
+        {
+          "q": "Estão saindo muitos logs, dá para reduzir?",
+          "a": "Cada tipo de log tem um interruptor próprio; basta desligar os que você não usa."
+        },
+        {
+          "q": "Embed ou texto puro?",
+          "a": "Embed é o padrão; cores e ícones ajudam a categorizar. Você pode trocar para texto puro (útil para clientes Discord antigos)."
+        },
+        {
+          "q": "Posso excluir certos canais dos logs?",
+          "a": "Sim. Em logs de mensagens, há o campo 'Canais ignorados'. Canais sensíveis/privados podem ser excluídos."
+        },
+        {
+          "q": "E se o canal de log for apagado?",
+          "a": "O bot não consegue enviar e registra um erro; basta selecionar um novo canal."
+        },
+        {
+          "q": "Os logs são guardados por quanto tempo?",
+          "a": "As mensagens enviadas ao Discord seguem a política do Discord. O painel ainda mantém um arquivo próprio por 90 dias."
+        },
+        {
+          "q": "Dá para limitar o canal de log a um cargo?",
+          "a": "Sim. Você pode tornar o canal visível apenas para o cargo de moderador; os membros comuns não o veem."
+        }
+      ]
+    },
+    "botCustomCommand": {
+      "title": "Comando personalizado (simples)",
+      "items": [
+        {
+          "q": "O que é um comando personalizado?",
+          "a": "Permite criar comandos /específicos para o seu servidor. Quando o membro usa o comando, o bot executa a ação que você definiu (geralmente, enviar uma mensagem)."
+        },
+        {
+          "q": "O que dá para fazer no modo simples?",
+          "a": "Enviar mensagens, responder com embed e dar respostas curtas de informação. Para fluxos mais complexos, use o modo 'Avançado'."
+        },
+        {
+          "q": "Como deve ser o nome do comando?",
+          "a": "Pode conter letras minúsculas e hífens (-). Caracteres acentuados são convertidos automaticamente (á→a, ç→c etc.)."
+        },
+        {
+          "q": "Posso ter dois comandos com o mesmo nome?",
+          "a": "Não. Cada nome de comando é único dentro do servidor. Se você tentar reutilizar, recebe um aviso."
+        },
+        {
+          "q": "Quero que só certos cargos usem o comando?",
+          "a": "Adicione o cargo em 'Cargos permitidos'. Os demais cargos não conseguem executar o comando."
+        },
+        {
+          "q": "Para que serve o cooldown?",
+          "a": "É um pequeno tempo de espera para impedir spam do mesmo usuário; informa-se em segundos."
+        },
+        {
+          "q": "Posso restringir o comando a um único canal?",
+          "a": "Sim. Com 'Restringir comandos a este canal' ativado, ele só funciona no canal escolhido."
+        },
+        {
+          "q": "O que significa 'fixar' o comando?",
+          "a": "É manter a definição do comando salva no painel; mesmo que o servidor seja excluído, a definição permanece."
+        },
+        {
+          "q": "Existem placeholders?",
+          "a": "Sim. {user}, {server}, {channel} e outros placeholders são preenchidos automaticamente na resposta."
+        },
+        {
+          "q": "O comando aparece no Discord na hora?",
+          "a": "Sim, depois de salvar, o bot atualiza a lista de comandos no Discord. Por causa do cache, às vezes leva 5 a 10 minutos."
+        }
+      ]
+    },
+    "botCustomCommandAdvanced": {
+      "title": "Comando personalizado (avançado)",
+      "items": [
+        {
+          "q": "Qual a diferença entre o avançado e o simples?",
+          "a": "No avançado, além de enviar mensagens, dá para atribuir/remover cargos, criar canais, mover membros, enviar embeds e encadear várias ações em um único comando."
+        },
+        {
+          "q": "Posso ter várias ações em um mesmo comando?",
+          "a": "Sim. Em 'Ações' você adiciona uma após a outra; o bot executa todas em sequência."
+        },
+        {
+          "q": "A ordem das ações importa?",
+          "a": "Sim. Se você quer, por exemplo, atribuir um cargo antes de enviar a mensagem, a ordem importa."
+        },
+        {
+          "q": "Quais mudanças de cargo/membro podem ser feitas?",
+          "a": "Atribuir cargo, remover cargo, mover membro, desconectar de voz e aplicar timeout."
+        },
+        {
+          "q": "Existe execução condicional?",
+          "a": "Sim. No campo 'Condição', você pode checar cargo/canal. Se a condição não for atendida, o comando termina silenciosamente."
+        },
+        {
+          "q": "Posso definir argumentos (parâmetros) no comando?",
+          "a": "Sim. Você adiciona parâmetros do tipo slash; na resposta, usa-se {arg.nome} para acessá-los."
+        },
+        {
+          "q": "O que acontece se uma ação falhar?",
+          "a": "O bot interrompe na primeira ação que falhar e registra o erro no audit log. As ações seguintes não são executadas."
+        },
+        {
+          "q": "Existem ações exclusivas para server quota?",
+          "a": "Sim. As ações de webhook e integração com APIs externas só ficam disponíveis."
+        },
+        {
+          "q": "Dá para testar fluxos complexos sem afetar o servidor?",
+          "a": "Sim. O botão 'Testar' permite executar as ações em modo dry-run no próprio servidor."
+        },
+        {
+          "q": "Posso voltar para uma versão anterior do comando?",
+          "a": "Sim. No audit log, encontra-se a definição antiga; com 'Restaurar esta versão' ela volta a ser ativa."
+        }
+      ]
+    },
+    "botTemporaryVoiceChannel": {
+      "title": "Canais de voz temporários",
+      "items": [
+        {
+          "q": "O que é um canal de voz temporário?",
+          "a": "Quando um membro entra no canal 'lobby' configurado, o bot cria um canal de voz pessoal para ele. Quando o membro sai, o canal é excluído."
+        },
+        {
+          "q": "Qual canal devo escolher como lobby?",
+          "a": "Um canal de voz comum frequentemente usado pelos membros. Defina-o em 'Selecionar canal lobby'."
+        },
+        {
+          "q": "Quem controla as permissões do canal criado?",
+          "a": "O dono do canal. Ele pode trancar/destrancar, definir limite, renomear, expulsar membros etc., usando comandos/botões."
+        },
+        {
+          "q": "O canal é criado na mesma categoria do lobby?",
+          "a": "Por padrão sim. Se quiser uma categoria diferente, use a opção 'Sob uma categoria existente'."
+        },
+        {
+          "q": "Qual o limite de usuários?",
+          "a": "O limite do Discord é de 99. Você define o valor padrão em 'Limite de usuários'."
+        },
+        {
+          "q": "Dá para tornar o nome do canal dinâmico?",
+          "a": "Sim. O modelo de 'Nome do canal temporário' aceita {user} e {server}. Exemplo: 'Sala de {user}'."
+        },
+        {
+          "q": "O bot apaga o canal imediatamente quando esvazia?",
+          "a": "Conforme a configuração 'Tempo para excluir o canal', a exclusão é imediata ou com alguns segundos de atraso."
+        },
+        {
+          "q": "E se o dono sair do servidor?",
+          "a": "A propriedade pode ser passada ao primeiro membro que ainda está no canal ou conforme a política configurada; se ninguém estiver, o canal é apagado."
+        },
+        {
+          "q": "O que significa sincronizar permissões com o lobby?",
+          "a": "As permissões de cargo do canal lobby são aplicadas ao canal temporário recém-criado. Você não precisa configurar manualmente."
+        },
+        {
+          "q": "Quantos canais temporários podem existir ao mesmo tempo?",
+          "a": "Em servidores comuns, recomendamos 25. No o limite é maior e há recursos extras de gerenciamento."
+        }
+      ]
+    },
+    "botStatisticsChannel": {
+      "title": "Canais de estatísticas",
+      "items": [
+        {
+          "q": "O que é um canal de estatísticas?",
+          "a": "São canais especiais (geralmente de voz) que mostram contadores do servidor (total de membros, online, bots, cargos, convites etc.) no nome do canal."
+        },
+        {
+          "q": "Quais contadores são suportados?",
+          "a": "Total de membros, online, offline, bots, quantidade de membros em determinado cargo, total de convites e quantidade de canais/eventos personalizados."
+        },
+        {
+          "q": "Com que frequência o contador atualiza?",
+          "a": "Por causa do limite do Discord, a cada 5 a 10 minutos. Atualizações mais rápidas são restringidas pela plataforma."
+        },
+        {
+          "q": "Como o nome do canal é montado?",
+          "a": "Pelo modelo configurado; {value} é o próprio valor do contador. Ex.: 'Membros: {value}'."
+        },
+        {
+          "q": "Quem pode falar nesses canais?",
+          "a": "Por padrão, ninguém. O canal é apenas decorativo; a permissão 'Conectar' fica desativada para @everyone."
+        },
+        {
+          "q": "Posso ter vários contadores ao mesmo tempo?",
+          "a": "Sim. Você cria múltiplos canais de estatísticas, cada um com o próprio modelo."
+        },
+        {
+          "q": "O contador parece errado, o que aconteceu?",
+          "a": "Pode ser por causa do cache do Discord. Use 'Sincronizar' para forçar a atualização dos dados."
+        },
+        {
+          "q": "E se o bot ficar offline?",
+          "a": "Os valores ficam congelados; as atualizações param até o bot voltar a ficar online."
+        },
+        {
+          "q": "Quais as diferenças?",
+          "a": "Atualização mais frequente, mais contadores e suporte a filtros/grupos personalizados ficam disponíveis."
+        },
+        {
+          "q": "Se eu apagar o canal, a configuração some?",
+          "a": "A definição do contador permanece; só o vínculo com o canal é perdido. Você pode escolher um novo canal e religar."
+        }
+      ]
+    },
+    "botAutorole": {
+      "title": "Cargo automático",
+      "items": [
+        {
+          "q": "O que é o cargo automático?",
+          "a": "É o módulo que atribui um cargo automaticamente a quem entra no servidor, a quem cumpre certas condições ou a contas de bot."
+        },
+        {
+          "q": "Posso atribuir mais de um cargo?",
+          "a": "Sim, dá para escolher vários cargos da lista; todos são atribuídos, respeitando o limite de cargos do Discord."
+        },
+        {
+          "q": "Bots também recebem cargo automático?",
+          "a": "Sim. Há um campo separado 'Cargo de bot'. Os bots não recebem os cargos automáticos comuns."
+        },
+        {
+          "q": "Estou recebendo erro de permissão insuficiente, por quê?",
+          "a": "O cargo do bot precisa estar acima do cargo a ser dado na hierarquia. Também é necessária a permissão 'Gerenciar Cargos'."
+        },
+        {
+          "q": "Existe condição baseada na idade da conta do membro?",
+          "a": "Sim. O campo 'Idade mínima da conta (dias)' filtra contas muito novas; quando o tempo mínimo é atingido, o cargo é entregue."
+        },
+        {
+          "q": "Filtrar por idade da conta aumenta a segurança?",
+          "a": "Sim. Ajuda a barrar contas falsas/recém-criadas usadas em ataques tipo raid."
+        },
+        {
+          "q": "Aplica também aos membros já existentes?",
+          "a": "Por padrão, só aos novos. Para os antigos, há o botão 'Aplicar em massa'."
+        },
+        {
+          "q": "Existe atraso na atribuição?",
+          "a": "Sim. O campo 'Atraso (segundos)' permite configurar uma espera; é usado como medida antiraid."
+        },
+        {
+          "q": "E se o membro recusar o cargo?",
+          "a": "No Discord, o membro não pode recusar; se ele tirar o cargo, o bot pode reaplicar (com a opção ativada). Sem ela, é dado apenas uma vez."
+        },
+        {
+          "q": "Os cargos automáticos são logados?",
+          "a": "Sim. Se o canal de logs está configurado, fica registrado quem recebeu qual cargo e quando."
+        }
+      ]
+    },
+    "botBirthday": {
+      "title": "Aniversários",
+      "items": [
+        {
+          "q": "O que faz o módulo de aniversários?",
+          "a": "No dia do aniversário cadastrado pelo membro, o bot envia uma mensagem de parabéns e, opcionalmente, atribui um cargo de aniversariante."
+        },
+        {
+          "q": "Como o membro cadastra o aniversário?",
+          "a": "Por um comando do bot (ex.: /aniversario) ou por uma janela modal. São pedidos apenas dia/mês e, opcionalmente, o ano."
+        },
+        {
+          "q": "O ano é obrigatório?",
+          "a": "Não. Dia/mês já são suficientes. Se o ano for informado, a idade é calculada; sem o ano, só ocorre a comemoração."
+        },
+        {
+          "q": "A que horas o bot parabeniza?",
+          "a": "Por padrão, 09:00 no fuso do servidor; o 'Horário de verificação' pode ser personalizado."
+        },
+        {
+          "q": "E se vários aniversários caírem no mesmo dia?",
+          "a": "O bot menciona todos em uma única mensagem ou os adiciona a uma lista; não gera spam."
+        },
+        {
+          "q": "Quanto tempo dura o cargo de aniversariante?",
+          "a": "Por padrão, 24 horas (configurável em horas). Quando o tempo acaba, o cargo é removido automaticamente."
+        },
+        {
+          "q": "O membro pode apagar o próprio aniversário?",
+          "a": "Sim. Pelo próprio comando ou pelo botão 'Apagar dados' enviado pelo painel."
+        },
+        {
+          "q": "Existe a opção de esconder a idade?",
+          "a": "Sim. O membro pode informar apenas dia/mês; assim a idade não é obtida nem mostrada."
+        },
+        {
+          "q": "E se eu não definir o canal de notificação?",
+          "a": "O módulo não funciona. É preciso definir um canal de notificação e, opcionalmente, um canal geral."
+        },
+        {
+          "q": "O aniversário se repete a cada ano?",
+          "a": "Sim. A cada ano o aniversário é disparado novamente. Se o membro sair, o registro fica salvo, mas o aviso não é enviado."
+        }
+      ]
+    },
+    "botReminder": {
+      "title": "Lembretes",
+      "items": [
+        {
+          "q": "Para que serve o módulo de lembretes?",
+          "a": "Para enviar uma mensagem automática para um membro ou canal numa data/horário definidos. Útil para eventos, tarefas, compromissos etc."
+        },
+        {
+          "q": "Únicos ou recorrentes?",
+          "a": "Os dois. Lembretes únicos disparam uma única vez; os recorrentes seguem padrão diário/semanal/mensal."
+        },
+        {
+          "q": "O lembrete vai por DM ou para o canal?",
+          "a": "Os dois são possíveis. Se a DM do membro estiver fechada e houver um canal definido, ele cai no canal."
+        },
+        {
+          "q": "Como configuro o fuso horário?",
+          "a": "O fuso principal do servidor é o padrão; o membro pode definir o fuso pessoal por um comando como /timezone."
+        },
+        {
+          "q": "Posso ter vários lembretes ao mesmo tempo?",
+          "a": "Sim. Cada lembrete adicionado funciona de forma independente. O server quota aumenta o limite."
+        },
+        {
+          "q": "Apagar um lembrete afeta o histórico?",
+          "a": "Não. Os envios anteriores ficam preservados nos canais/logs. Só o próximo disparo é cancelado."
+        },
+        {
+          "q": "Funciona com eventos do Discord?",
+          "a": "Sim. É possível criar um gatilho que avisa X minutos antes do começo de um evento."
+        },
+        {
+          "q": "Posso usar variáveis na mensagem?",
+          "a": "Sim. Placeholders como {user}, {date} e {time} são preenchidos no envio."
+        },
+        {
+          "q": "Por que meu lembrete não disparou?",
+          "a": "Pode ser falta de permissão do bot, canal inexistente, DM fechada ou bot offline; verifique os logs."
+        },
+        {
+          "q": "Os lembretes antigos ficam registrados?",
+          "a": "Sim. Na aba 'Histórico', você vê os lembretes dos últimos 90 dias."
+        }
+      ]
+    },
+    "botReports": {
+      "title": "Relatórios",
+      "items": [
+        {
+          "q": "O que a página de relatórios mostra?",
+          "a": "Métricas como crescimento, engajamento, eventos de moderação e desempenho de convites em forma de gráficos e resumos."
+        },
+        {
+          "q": "Quais períodos posso analisar?",
+          "a": "Últimos 7, 30 ou 90 dias e também intervalos personalizados."
+        },
+        {
+          "q": "Posso baixar os relatórios em PDF/Excel?",
+          "a": "Sim, em 'Exportar' (canto superior direito) você baixa em PDF ou Excel (com modelos avançados)."
+        },
+        {
+          "q": "Até quando os dados ficam disponíveis?",
+          "a": "Padrão: 90 dias; server quota: 1 ano. Para dados mais antigos, use exportações Excel."
+        },
+        {
+          "q": "Os dados são em tempo real?",
+          "a": "Não. Os relatórios são calculados diariamente. Para dados em tempo real, use a página do dashboard."
+        },
+        {
+          "q": "No que se baseia o engajamento dos membros?",
+          "a": "Em mensagens enviadas, tempo em voz, convites, reações e uso de comandos. Mensagens de bots não contam."
+        },
+        {
+          "q": "Tem comparação entre membros da equipe?",
+          "a": "Sim. Em 'Performance da equipe', ficam métricas como ações de moderação e tempo de resposta de tickets."
+        },
+        {
+          "q": "Posso filtrar por canal ou cargo?",
+          "a": "Sim. Os filtros no canto superior direito do relatório permitem analisar somente um canal/cargo."
+        },
+        {
+          "q": "Dá para mudar a ordenação?",
+          "a": "Sim. Clique no cabeçalho da coluna na tabela para alternar entre crescente e decrescente."
+        },
+        {
+          "q": "Os dados parecem incompletos, o que pode ser?",
+          "a": "Quando o bot ficou offline, eventos não foram registrados. Esses períodos aparecem como 'lacunas' no relatório."
+        }
+      ]
+    },
+    "botLocale": {
+      "title": "Idioma do servidor",
+      "items": [
+        {
+          "q": "O que é o idioma do bot?",
+          "a": "É o idioma das mensagens que o bot envia neste servidor. Há 12 idiomas para escolher."
+        },
+        {
+          "q": "Posso variar conforme o idioma do membro?",
+          "a": "Hoje a configuração é por servidor. Preferência por membro está planejada para o futuro."
+        },
+        {
+          "q": "Para que serve o idioma de fallback?",
+          "a": "Quando uma tradução não existe no idioma escolhido, o bot usa o de fallback. Geralmente, são definidos português ou inglês."
+        },
+        {
+          "q": "Mudar o idioma atualiza as mensagens antigas?",
+          "a": "Não. Apenas as próximas mensagens saem no idioma novo. As anteriores não são editadas (o Discord não permite)."
+        },
+        {
+          "q": "E se houver chave faltando?",
+          "a": "O bot usa a tradução do idioma de fallback e exibe um aviso."
+        },
+        {
+          "q": "A escolha de idioma vale para comandos personalizados?",
+          "a": "Não. Em comandos personalizados, o bot manda exatamente o texto que você escreveu. Eles independem do idioma do bot."
+        },
+        {
+          "q": "Posso adicionar um novo idioma?",
+          "a": "Por enquanto, apenas os 12 idiomas suportados. Sugestões podem ser enviadas pelo formulário de suporte."
+        },
+        {
+          "q": "O idioma da moderação por IA é definido aqui?",
+          "a": "Não. A IA opera em vários idiomas simultaneamente. Esta página afeta apenas as mensagens do bot."
+        },
+        {
+          "q": "A mudança de idioma vai para o audit log?",
+          "a": "Sim. A mudança de idioma é registrada como atualização de configuração no audit log."
+        }
+      ]
+    },
+    "botGuilds": {
+      "title": "Gerenciamento de servidores",
+      "items": [
+        {
+          "q": "O que esta página gerencia?",
+          "a": "Os servidores ligados à sua conta, a relação deles com o bot, o status de server quota e as configurações gerais em alto nível."
+        },
+        {
+          "q": "Posso remover o bot de um servidor?",
+          "a": "Sim. Em 'Remover bot', o bot deixa o servidor. Seus dados ficam por 30 dias no painel e podem ser restaurados nesse prazo."
+        },
+        {
+          "q": "Posso mudar o nome do servidor pelo painel?",
+          "a": "Não. O nome do servidor é alterado no Discord; o painel apenas reflete o que está lá."
+        },
+        {
+          "q": "Dá para copiar configurações entre servidores?",
+          "a": "Sim. Em 'Copiar configuração', você leva a configuração dos módulos de um servidor para outro."
+        },
+        {
+          "q": "Como diagnostico problemas em um servidor?",
+          "a": "Selecione o servidor e use 'Executar diagnóstico'; o painel verifica permissões, referências de canais/cargos e o status da assinatura."
+        },
+        {
+          "q": "Existem operações em lote para vários servidores?",
+          "a": "Sim. Marcando vários servidores no lado esquerdo, você pode ativar/desativar módulos em massa."
+        },
+        {
+          "q": "Quando os dados do bot são apagados de um servidor?",
+          "a": "Trinta dias depois de o bot deixar o servidor; antes disso, dá para restaurar."
+        },
+        {
+          "q": "Posso ter server quota em vários servidores?",
+          "a": "Sim. Cada servidor tem sua própria assinatura, com datas de renovação independentes."
+        },
+        {
+          "q": "Posso convidar outros administradores para o painel?",
+          "a": "Quem tem 'Gerenciar Servidor' no Discord acessa automaticamente o painel; não há um sistema de convites próprio."
+        },
+        {
+          "q": "E se o servidor do Discord for excluído?",
+          "a": "Os registros do painel passam para o arquivo após 7 dias e são guardados conforme a política de retenção."
+        }
+      ]
+    },
+    "botCustomBots": {
+      "title": "Bot privado",
+      "items": [
+        {
+          "q": "O que é um bot personalizado?",
+          "a": "É a possibilidade de rodar uma aplicação de bot do Discord com seu próprio nome/marca. O núcleo é o mesmo, mas o bot aparece com nome, avatar e comandos próprios."
+        },
+        {
+          "q": "Onde consigo o token do bot?",
+          "a": "Em Discord Developer Portal > Application > Bot, no botão 'Reset Token'. O token nunca deve ser compartilhado; cole-o no painel com segurança."
+        },
+        {
+          "q": "Onde devo colar o token?",
+          "a": "No campo 'Bot Token *'. O token fica criptografado e não é mais exibido no painel em texto aberto."
+        },
+        {
+          "q": "Posso ter mais de um bot personalizado?",
+          "a": "Não — apenas um bot privado pode ser registrado por conta."
+        },
+        {
+          "q": "Os comandos são iguais aos do bot principal?",
+          "a": "Os recursos centrais são os mesmos; o que muda é o nome e o avatar. Você pode personalizar nomes de comandos."
+        },
+        {
+          "q": "Meu bot está aparecendo offline, e agora?",
+          "a": "Confira se o token foi inserido corretamente, se o bot foi vinculado à aplicação no Discord e se as intents estão habilitadas. Os logs de erro aparecem na página."
+        },
+        {
+          "q": "Como adiciono o avatar?",
+          "a": "Suba o avatar do bot pelo perfil da aplicação no Discord; o painel não gerencia o avatar separadamente."
+        },
+        {
+          "q": "Vazei meu token, o que faço?",
+          "a": "Vá ao Discord Developer Portal e reseteo token; depois cole o novo token no painel. Ao resetar, o token antigo deixa de funcionar imediatamente."
+        },
+        {
+          "q": "Dá para ter vários bots personalizados no mesmo servidor?",
+          "a": "Só é possível um bot privado por conta. Você pode usá-lo junto ao bot principal Deveng no mesmo servidor."
+        },
+        {
+          "q": "Posso pausar um bot personalizado?",
+          "a": "Sim. O botão 'Desativar' interrompe a execução do bot. O token e as configurações continuam guardados."
+        }
+      ]
+    }
+  }
+}

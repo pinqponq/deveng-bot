@@ -1,0 +1,7 @@
+node : files 70 uniqueLabels 186
+At C:\Users\ataka\AppData\Local\Temp\ps-script-c8b8ad53-dddb-4c46-981e-e1adf0cf4a9d.ps1:87 char:46
++ ... scord.Web"; node ./scripts/collect-panel-form-labels.mjs 2> .tmp-labe ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (files 70 uniqueLabels 186:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

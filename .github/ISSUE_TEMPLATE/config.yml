@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/pinqponq/deveng-bot/security/advisories/new
+    about: Privately report security issues (do not open a public issue).
+  - name: Documentation
+    url: https://github.com/pinqponq/deveng-bot/blob/main/README.md
+    about: Quick start and architecture docs.
+  - name: Türkçe README
+    url: https://github.com/pinqponq/deveng-bot/blob/main/README.tr.md
+    about: Türkçe kurulum ve genel bakış.

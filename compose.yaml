@@ -1,0 +1,201 @@
+name: deveng
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-deveng}
+      POSTGRES_USER: ${POSTGRES_USER:-deveng}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD required}
+    ports:
+      - "${POSTGRES_HOST_PORT:-5432}:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    networks: [deveng]
+
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--requirepass", "${REDIS_PASSWORD:?REDIS_PASSWORD required}"]
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli -a \"$$REDIS_PASSWORD\" ping | grep -q PONG"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD:?REDIS_PASSWORD required}
+    networks: [deveng]
+
+  api:
+    build:
+      context: ./Deveng.Discord
+      dockerfile: Deveng.Discord.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: ${ASPNETCORE_ENVIRONMENT:-Development}
+      ASPNETCORE_URLS: http://+:9000
+      ConnectionStrings__DefaultConnection: Host=postgres;Port=5432;Database=${POSTGRES_DB:-deveng};Username=${POSTGRES_USER:-deveng};Password=${POSTGRES_PASSWORD};SSL Mode=Disable;GSS Encryption Mode=Disable
+      Redis__Host: redis
+      Redis__Port: "6379"
+      Redis__User: ""
+      Redis__Password: ${REDIS_PASSWORD}
+      Redis__Database: "0"
+      Redis__AbortOnConnectFail: "false"
+      BotToken: ${BOT_TOKEN:?BOT_TOKEN required}
+      Auth__Discord__ClientId: ${DISCORD_CLIENT_ID:?DISCORD_CLIENT_ID required}
+      Auth__Discord__ClientSecret: ${DISCORD_CLIENT_SECRET:?DISCORD_CLIENT_SECRET required}
+      Auth__Discord__RedirectUri: ${DISCORD_REDIRECT_URI:-http://localhost:3000/auth/discord/callback}
+      Auth__Discord__AllowedRedirectUris__0: ${DISCORD_REDIRECT_URI:-http://localhost:3000/auth/discord/callback}
+      Auth__Discord__AllowedRedirectUris__1: http://127.0.0.1:3000/auth/discord/callback
+      Bot__HttpServerUrl: http://bot:3005
+      Bot__SharedSecret: ${BOT_SHARED_SECRET:?BOT_SHARED_SECRET required}
+      Cors__AllowedOrigins__0: ${CORS_ORIGIN:-http://localhost:3000}
+      Cors__AllowedOrigins__1: http://127.0.0.1:3000
+      AIModeration__Provider: ${AI_MODERATION_PROVIDER:-none}
+      AIModeration__OllamaBaseUrl: ${OLLAMA_BASE_URL:-http://ollama:11434}
+      AIModeration__OllamaModel: ${OLLAMA_MODEL:-llama3.1:8b}
+      Spotify__Enabled: ${SPOTIFY_ENABLED:-true}
+      Spotify__ClientId: ${SPOTIFY_CLIENT_ID:-}
+      Spotify__ClientSecret: ${SPOTIFY_CLIENT_SECRET:-}
+      Spotify__Market: ${SPOTIFY_MARKET:-TR}
+      Spotify__RedirectUri: ${SPOTIFY_REDIRECT_URI:-http://127.0.0.1:3000/auth/spotify/callback}
+      Spotify__AuthFlow: authorization_code
+    ports:
+      - "${API_HOST_PORT:-9000}:9000"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:9000/health || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 40s
+    networks: [deveng]
+
+  web:
+    build:
+      context: ./Deveng.Discord.Web
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: production
+      PORT: "3000"
+      BOT_API_URL: http://api:9000
+      DISCORD_CLIENT_ID: ${DISCORD_CLIENT_ID}
+      DISCORD_CLIENT_SECRET: ${DISCORD_CLIENT_SECRET}
+      DISCORD_REDIRECT_URI: ${DISCORD_REDIRECT_URI:-http://localhost:3000/auth/discord/callback}
+      DISCORD_BOT_TOKEN: ${BOT_TOKEN}
+      SESSION_SECRET: ${SESSION_SECRET:?SESSION_SECRET required}
+      REDIS_URL: redis://:${REDIS_PASSWORD}@redis:6379
+      CORS_ALLOWED_ORIGINS: ${CORS_ORIGIN:-http://localhost:3000},http://127.0.0.1:3000
+      PUBLIC_PANEL_BASE_URL: ${PUBLIC_PANEL_BASE_URL:-http://localhost:3000}
+      PUBLIC_API_URL: ${PUBLIC_API_URL:-}
+      PUBLIC_DISCORD_CLIENT_ID: ${DISCORD_CLIENT_ID}
+      SESSION_COOKIE_SECURE: ${SESSION_COOKIE_SECURE:-0}
+      SESSION_COOKIE_NAME: ${SESSION_COOKIE_NAME:-deveng.sid}
+      ES_LOG_DISABLED: "1"
+    ports:
+      - "${WEB_HOST_PORT:-3000}:3000"
+    depends_on:
+      api:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:3000/health || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    networks: [deveng]
+
+  bot:
+    build:
+      context: ./Deveng.Discord.Bot
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: production
+      BOT_TOKEN: ${BOT_TOKEN}
+      BOT_CLIENT_ID: ${DISCORD_CLIENT_ID}
+      DEFAULT_LANGUAGE: ${DEFAULT_LANGUAGE:-tr}
+      API_BASE_URL: http://api:9000
+      HTTP_SERVER_PORT: "3005"
+      REDIS_URL: redis://:${REDIS_PASSWORD}@redis:6379
+      REDIS_PASSWORD: ${REDIS_PASSWORD}
+      BOT_SHARED_SECRET: ${BOT_SHARED_SECRET}
+      BOT_CORS_ORIGIN: ${CORS_ORIGIN:-http://localhost:3000}
+      PANEL_BASE_URL: ${PUBLIC_PANEL_BASE_URL:-http://localhost:3000}
+      ES_LOG_DISABLED: "1"
+      LAVALINK_HOST: ${LAVALINK_HOST:-}
+      LAVALINK_PORT: ${LAVALINK_PORT:-2333}
+      LAVALINK_PASSWORD: ${LAVALINK_PASSWORD:-}
+    depends_on:
+      api:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:3005/health || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 40s
+    networks: [deveng]
+
+  yt-cipher:
+    profiles: [music]
+    image: ghcr.io/kikkia/yt-cipher:master
+    environment:
+      OVERRIDE_PLAYER_VARIANT: IAS
+      PORT: "8001"
+      HOST: "0.0.0.0"
+    networks: [deveng]
+    restart: unless-stopped
+
+  lavalink:
+    profiles: [music]
+    image: ghcr.io/lavalink-devs/lavalink:4
+    environment:
+      SERVER_PORT: 2333
+      LAVALINK_SERVER_PASSWORD: ${LAVALINK_PASSWORD:-youshallnotpass}
+      SPOTIFY_CLIENT_ID: ${SPOTIFY_CLIENT_ID:-}
+      SPOTIFY_CLIENT_SECRET: ${SPOTIFY_CLIENT_SECRET:-}
+      SPOTIFY_MARKET: ${SPOTIFY_MARKET:-TR}
+      PLUGINS_LAVASRC_SPOTIFY_CLIENTID: ${SPOTIFY_CLIENT_ID:-}
+      PLUGINS_LAVASRC_SPOTIFY_CLIENTSECRET: ${SPOTIFY_CLIENT_SECRET:-}
+      PLUGINS_LAVASRC_SOURCES_SPOTIFY: "true"
+    volumes:
+      - ./deploy/lavalink/application.yml:/opt/Lavalink/application.yml:ro
+    depends_on:
+      - yt-cipher
+    networks: [deveng]
+    restart: unless-stopped
+
+  ollama:
+    profiles: [ai]
+    image: ollama/ollama:0.9.0
+    ports:
+      - "${OLLAMA_HOST_PORT:-11434}:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+    healthcheck:
+      test: ["CMD-SHELL", "ollama list >/dev/null 2>&1 || exit 1"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+      start_period: 20s
+    networks: [deveng]
+
+networks:
+  deveng:
+
+volumes:
+  postgres-data:
+  ollama-data:

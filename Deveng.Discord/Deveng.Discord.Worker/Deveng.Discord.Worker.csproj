@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Deveng.Discord.Worker</RootNamespace>
+    <Description>Zamanlayıcı + RabbitMQ tüketicisi — hatırlatıcı/poll/istatistik işleri Bot HTTP üzerinden tetiklenir.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.7" />
+    <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.15.3" />
+    <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.15.3" />
+    <PackageReference Include="RabbitMQ.Client" Version="7.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Deveng.Discord.Scheduling.Contracts\Deveng.Discord.Scheduling.Contracts.csproj" />
+    <ProjectReference Include="..\Deveng.Discord.Infrastructure\Deveng.Discord.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

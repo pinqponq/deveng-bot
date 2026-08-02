@@ -1,0 +1,1616 @@
+{
+  "section": {
+    "title": "Foire aux questions",
+    "description": "Réponses aux questions fréquentes sur cette page."
+  },
+  "pages": {
+    "apps": {
+      "title": "Sélecteur de serveur",
+      "items": [
+        {
+          "q": "À quoi sert cette page ?",
+          "a": "Cet écran liste tous les serveurs Discord de votre compte. Vous y choisissez le serveur à configurer, ou vous y invitez le bot sur un serveur où il n'est pas encore présent."
+        },
+        {
+          "q": "Pourquoi l'un de mes serveurs n'apparaît-il pas dans la liste ?",
+          "a": "Seuls les serveurs dont vous êtes propriétaire ou pour lesquels vous avez la permission « Gérer le serveur » sont affichés. Vérifiez que vous avez bien ce rôle sur Discord puis rechargez la page."
+        },
+        {
+          "q": "Que se passe-t-il quand je clique sur « Ajouter le bot » ?",
+          "a": "L'écran d'invitation Discord s'ouvre. Vous ajoutez le bot au serveur choisi avec les permissions nécessaires ; ensuite, le serveur est marqué comme « Ajouté » dans la liste."
+        },
+        {
+          "q": "J'ai invité le bot mais il apparaît toujours comme « non ajouté », que faire ?",
+          "a": "Il y a parfois un délai dû au cache de Discord. Patientez quelques secondes et rechargez la page ; si le problème persiste, expulsez le bot du serveur puis réinvitez-le."
+        },
+        {
+          "q": "Comment rechercher un serveur ?",
+          "a": "Saisissez une partie du nom du serveur dans le champ de recherche en haut. La liste se filtre en temps réel."
+        },
+        {
+          "q": "Comment la liste est-elle triée ?",
+          "a": "Les serveurs où le bot est déjà présent apparaissent en premier, suivis des autres serveurs que vous pouvez gérer. Au sein de chaque groupe, le tri est alphabétique."
+        },
+        {
+          "q": "Si j'ai plusieurs serveurs, dois-je tous les configurer un par un ?",
+          "a": "Oui, les réglages sont propres à chaque serveur. Sélectionnez chaque serveur, ouvrez le tableau de bord et configurez les modules souhaités."
+        },
+        {
+          "q": "Quelles permissions accorder lors de l'invitation du bot ?",
+          "a": "Nous recommandons de conserver les permissions par défaut. Si vous les restreignez, certaines fonctions (attribution de rôle, suppression de message, création de salons vocaux, etc.) peuvent ne plus fonctionner."
+        },
+        {
+          "q": "Un serveur que je viens d'ajouter n'apparaît pas ?",
+          "a": "Inutile de vous déconnecter de Discord ; il suffit d'utiliser le bouton de rafraîchissement en haut à droite de la page. Si rien ne change, déconnectez-vous puis reconnectez-vous au panneau."
+        },
+        {
+          "q": "Comment revenir en arrière après avoir choisi un serveur ?",
+          "a": "Cliquez sur le nom du serveur dans le menu de gauche et choisissez « Changer de serveur », ou allez directement à /apps."
+        }
+      ]
+    },
+    "selectServer": {
+      "title": "Liste des serveurs",
+      "items": [
+        {
+          "q": "Pourquoi cette page s'affiche-t-elle ?",
+          "a": "Vous êtes redirigé ici lorsque vous n'avez pas encore choisi de serveur ou que vous n'avez pas accès au serveur sélectionné."
+        },
+        {
+          "q": "Tous mes serveurs sont-ils affichés ?",
+          "a": "Non, seuls les serveurs que vous pouvez gérer (en tant que propriétaire ou avec la permission « Gérer le serveur ») apparaissent."
+        },
+        {
+          "q": "Que faire si la liste est vide ?",
+          "a": "Vérifiez que vous avez bien la permission requise sur au moins un serveur Discord. Si elle vient d'être attribuée, rechargez la page."
+        },
+        {
+          "q": "Que se passe-t-il quand je sélectionne un serveur ?",
+          "a": "Il devient le serveur actif et vous êtes redirigé vers le tableau de bord ; tous les réglages du menu de gauche s'appliquent à ce serveur."
+        },
+        {
+          "q": "J'ai sélectionné le mauvais serveur, comment changer ?",
+          "a": "Cliquez sur le nom du serveur en haut à gauche et utilisez « Changer de serveur », ou choisissez un autre serveur depuis /apps."
+        },
+        {
+          "q": "Que représente l'icône à côté du nom du serveur ?",
+          "a": "C'est l'icône Discord du serveur. S'il n'en a pas, la première lettre du nom est affichée."
+        },
+        {
+          "q": "La liste ne se met pas à jour après un changement de compte ?",
+          "a": "Déconnectez-vous puis reconnectez-vous. La liste se rafraîchit dès que votre session Discord est renouvelée."
+        },
+        {
+          "q": "Puis-je gérer un serveur dont je ne suis pas propriétaire ?",
+          "a": "Oui, mais seulement si vous avez la permission « Gérer le serveur ». Sinon, Discord ne renvoie pas ce serveur comme gérable via l'API."
+        },
+        {
+          "q": "Que se passe-t-il si le bot n'est pas sur le serveur choisi ?",
+          "a": "Vous êtes d'abord redirigé vers la page d'invitation du bot ; après l'invitation, la sélection se poursuit."
+        },
+        {
+          "q": "Puis-je accéder à un serveur directement par l'URL ?",
+          "a": "Oui, en utilisant /dashboard/<serverId>. Si vous n'avez pas la permission, vous serez renvoyé sur cette page."
+        }
+      ]
+    },
+    "error": {
+      "title": "Page d'erreur",
+      "items": [
+        {
+          "q": "Pourquoi cette page s'est-elle affichée ?",
+          "a": "Une erreur inattendue s'est produite pendant une opération. Cela peut être lié à l'état momentané du serveur, à une session expirée ou à un problème de permissions."
+        },
+        {
+          "q": "Comment résoudre l'erreur ?",
+          "a": "Essayez d'abord de recharger la page. Si elle persiste, déconnectez-vous puis reconnectez-vous au panneau ; en cas de récidive, contactez le support."
+        },
+        {
+          "q": "Je vois un code d'erreur, que signifie-t-il ?",
+          "a": "401 : session expirée, 403 : pas de permission, 404 : ressource introuvable, 500 : erreur serveur, 503 : service temporairement indisponible."
+        },
+        {
+          "q": "Mes données sont-elles perdues ?",
+          "a": "Non. Les paramètres enregistrés restent en base de données ; cette erreur n'affecte que la requête en cours."
+        },
+        {
+          "q": "Le bouton « Réessayer » est-il sûr ?",
+          "a": "Oui, il rejoue uniquement la dernière requête ; il ne crée pas de doublons."
+        },
+        {
+          "q": "Je tombe toujours sur la même erreur ?",
+          "a": "Videz le cache du navigateur et resélectionnez le serveur via /apps. Une coupure réseau peut aussi en être la cause."
+        },
+        {
+          "q": "Le bot fonctionne mais le panneau renvoie une erreur ?",
+          "a": "La connexion entre Discord et le bot est indépendante ; le souci peut venir de l'API du panneau. Réessayez dans quelques minutes."
+        },
+        {
+          "q": "Dois-je signaler l'erreur ?",
+          "a": "Si vous communiquez le code d'erreur et l'action effectuée, la résolution est plus rapide. Vous pouvez ouvrir un ticket depuis le Centre d'aide."
+        },
+        {
+          "q": "Cela arrive-t-il uniquement sur mobile ?",
+          "a": "Certains navigateurs mobiles suppriment agressivement les cookies de session. Mettez votre navigateur à jour ou essayez depuis un ordinateur."
+        },
+        {
+          "q": "Existe-t-il des sauvegardes de mes données ?",
+          "a": "Oui. La page Sauvegarde du serveur permet de consulter les dernières sauvegardes et, si besoin, de les restaurer."
+        }
+      ]
+    },
+    "dashboard": {
+      "title": "Vue d'ensemble du serveur",
+      "items": [
+        {
+          "q": "Que vois-je sur cet écran ?",
+          "a": "Une vue en temps réel du serveur sélectionné : modules actifs, événements récents, nombre de membres, état du bot et cartes d'accès rapide."
+        },
+        {
+          "q": "Pourquoi le nombre de membres diffère-t-il de Discord ?",
+          "a": "Les données proviennent du cache de Discord, mises à jour à la dernière information reçue par le bot. Un léger décalage de quelques minutes est possible."
+        },
+        {
+          "q": "Quels modules puis-je ouvrir d'ici ?",
+          "a": "Les cartes d'accès rapide vous emmènent vers le message de bienvenue, la modération, le salon de logs et plusieurs réglages couramment utilisés."
+        },
+        {
+          "q": "Que montre la section des événements récents ?",
+          "a": "Un résumé des actions importantes effectuées récemment par le bot (bienvenue, envoi de logs, modération)."
+        },
+        {
+          "q": "Que signifie qu'un module est « Actif » ?",
+          "a": "L'option correspondante est activée (interrupteur sur ON) et les salons/rôles requis sont correctement configurés."
+        },
+        {
+          "q": "Comment fonctionne la carte server quota ?",
+          "a": "Si le serveur dispose d'un abonnement la durée restante et les avantages y sont résumés. Sinon, elle redirige vers la page server quota."
+        },
+        {
+          "q": "Le bot apparaît hors ligne, que faire ?",
+          "a": "Vérifiez le rôle du bot sur Discord et la connexion réseau. Si le problème persiste, ouvrez un ticket depuis le Centre d'aide."
+        },
+        {
+          "q": "Les informations sont-elles rafraîchies en temps réel ?",
+          "a": "Les données sont chargées à l'ouverture de la page puis rafraîchies en arrière-plan toutes les 30 secondes. Pour une mise à jour immédiate, rechargez la page."
+        },
+        {
+          "q": "Qui peut consulter cette page ?",
+          "a": "Toute personne possédant la permission « Gérer le serveur ». Il n'y a pas d'autorisation distincte pour les rôles de support ou de membre."
+        },
+        {
+          "q": "Où trouver des données plus détaillées ?",
+          "a": "Les pages Salons de statistiques, Classement des invitations et Rapports proposent des indicateurs plus poussés."
+        }
+      ]
+    },
+    "welcome": {
+      "title": "Bienvenue dans le panneau",
+      "items": [
+        {
+          "q": "À quoi cette page est-elle destinée ?",
+          "a": "C'est l'écran d'accueil qui vous présente brièvement le fonctionnement du panneau lors de votre première connexion."
+        },
+        {
+          "q": "Cet écran apparaît-il à chaque ouverture ?",
+          "a": "Non. Il s'affiche uniquement après une invitation ou lors de la première connexion. Ensuite, vous êtes redirigé directement vers le tableau de bord."
+        },
+        {
+          "q": "Vers quelle page commencer ?",
+          "a": "Nous recommandons de configurer d'abord les sections « Paramètres généraux » et « Salon de logs », puis les modules spécifiques (bienvenue, modération, etc.)."
+        },
+        {
+          "q": "Dois-je tout configurer immédiatement ?",
+          "a": "Non. Vous pouvez activer et configurer les modules au fur et à mesure de vos besoins. Les modules incomplets restent simplement inactifs."
+        },
+        {
+          "q": "Existe-t-il une vidéo ou un guide ?",
+          "a": "Oui, le Centre d'aide propose des guides courts par module."
+        },
+        {
+          "q": "Puis-je passer ces étapes ?",
+          "a": "Le bouton « Passer » vous emmène directement à l'écran principal /dashboard/<serverId>/."
+        },
+        {
+          "q": "Plusieurs administrateurs gèrent notre serveur, voient-ils tous la même chose ?",
+          "a": "Oui. Toutes les personnes ayant la permission d'administrateur accèdent au même panneau ; les changements sont consignés dans le journal d'audit."
+        },
+        {
+          "q": "Quels modules sont conseillés pour la configuration initiale ?",
+          "a": "Le message de bienvenue, la modération, le salon de logs, le rôle automatique et les anniversaires sont les plus souvent configurés en premier."
+        },
+        {
+          "q": "Qu'est-ce que server quota et est-ce obligatoire ?",
+          "a": "server quota est optionnel et débloque des fonctionnalités avancées (flux illimités, modération IA évoluée, etc.). Les fonctions de base restent gratuites."
+        },
+        {
+          "q": "Puis-je désactiver complètement un module dont je n'ai pas besoin ?",
+          "a": "Oui. Sur la page concernée, utilisez « Désactiver le module » ou l'interrupteur « Actif » ; les données sont conservées et le module peut être réactivé à tout moment."
+        }
+      ]
+    },
+    "tasks": {
+      "title": "Suivi des tâches",
+      "items": [
+        {
+          "q": "Quelle est cette page ?",
+          "a": "Un écran qui liste les tâches que vous suivez dans le panneau pour la gestion du serveur. Vous pouvez en ajouter et mettre leur statut à jour."
+        },
+        {
+          "q": "Comment créer une tâche ?",
+          "a": "Cliquez sur « Nouvelle tâche », saisissez un titre et, en option, une description. Vous pouvez préciser l'auteur, l'attributaire et les étiquettes."
+        },
+        {
+          "q": "Qui peut voir les tâches ?",
+          "a": "Toute personne ayant la permission de gérer le serveur. Les tâches sont liées au serveur et ne sont pas partagées avec d'autres serveurs."
+        },
+        {
+          "q": "Que deviennent les tâches terminées ?",
+          "a": "Elles restent dans l'onglet « Terminées ». Tant que vous ne les supprimez pas, elles sont conservées."
+        },
+        {
+          "q": "Puis-je importer/exporter des tâches ?",
+          "a": "Oui. « Importer » accepte du JSON/CSV pour créer plusieurs tâches d'un coup, et « Exporter » télécharge la liste actuelle."
+        },
+        {
+          "q": "Y a-t-il une notification dans Discord ?",
+          "a": "Oui. Si un salon de logs est configuré, la création et le changement de statut y sont résumés."
+        },
+        {
+          "q": "Peut-on travailler en équipe ?",
+          "a": "Oui. Chaque tâche prend en charge les commentaires et les mises à jour de statut ; le journal d'audit indique qui a modifié quoi et quand."
+        },
+        {
+          "q": "Une tâche supprimée peut-elle être restaurée ?",
+          "a": "Non, la suppression est définitive. Pour éviter les suppressions accidentelles, préférez le statut « Terminée »."
+        },
+        {
+          "q": "Comment l'attributaire est-il notifié ?",
+          "a": "Les utilisateurs dont les MP sont ouverts reçoivent une notification Discord ; sinon, elle n'apparaît que dans le panneau."
+        },
+        {
+          "q": "Les tâches peuvent-elles être gérées via les commandes Discord ?",
+          "a": "Pour le moment, uniquement via le panneau. L'intégration des commandes est prévue dans la feuille de route."
+        }
+      ]
+    },
+    "helpCenter": {
+      "title": "Centre d'aide",
+      "items": [
+        {
+          "q": "Que contient le Centre d'aide ?",
+          "a": "Des guides d'utilisation par module, les erreurs courantes et la possibilité d'ouvrir un ticket de support."
+        },
+        {
+          "q": "Je ne trouve pas mon sujet ?",
+          "a": "Saisissez un mot-clé dans le champ de recherche en haut. Si rien ne correspond, ouvrez un ticket via « Demande de support »."
+        },
+        {
+          "q": "Comment contacter l'équipe support ?",
+          "a": "Le bouton « Nous contacter » en bas de la page ouvre le formulaire de support. Vous pouvez aussi rejoindre notre serveur Discord d'assistance."
+        },
+        {
+          "q": "En combien de temps recevrai-je une réponse ?",
+          "a": "Pendant les heures ouvrées, généralement sous 24 heures. Les comptes server quota sont traités en priorité."
+        },
+        {
+          "q": "Comment signaler un bug ?",
+          "a": "Indiquez la page concernée, les étapes effectuées et, le cas échéant, le code d'erreur ou une capture d'écran. Plus le scénario est reproductible, plus la résolution est rapide."
+        },
+        {
+          "q": "Existe-t-il un forum communautaire ?",
+          "a": "Oui, notre serveur Discord d'assistance comporte des salons communautaires où vous pouvez poser des questions à d'autres utilisateurs."
+        },
+        {
+          "q": "Comment transmettre des informations confidentielles ?",
+          "a": "Le formulaire de support sert à la communication privée. Pour des tokens, des informations personnelles ou du contenu sensible, privilégiez ce formulaire."
+        },
+        {
+          "q": "Existe-t-il une documentation ?",
+          "a": "Oui. Le lien « Documentation » mène aux guides détaillés de chaque module."
+        },
+        {
+          "q": "Y a-t-il un assistant IA ?",
+          "a": "Un assistant intégré au panneau est actuellement en bêta. Lorsqu'il est disponible, il apparaît dans le champ de recherche."
+        },
+        {
+          "q": "Où proposer mes idées ?",
+          "a": "Choisissez la catégorie « Suggestion » dans le formulaire de support pour soumettre vos demandes de fonctionnalités."
+        }
+      ]
+    },
+    "botWelcome": {
+      "title": "Message de bienvenue",
+      "items": [
+        {
+          "q": "À quoi sert ce module ?",
+          "a": "Il configure le message envoyé automatiquement lorsqu'un nouveau membre rejoint le serveur. Vous pouvez choisir un message de salon, un embed ou une carte de bienvenue personnalisée."
+        },
+        {
+          "q": "Comment afficher le nom de l'utilisateur dans le message ?",
+          "a": "Utilisez les espaces réservés {user}, {username} et {server}. Ils sont automatiquement remplacés à l'arrivée du membre."
+        },
+        {
+          "q": "Puis-je envoyer à la fois dans un salon et en MP ?",
+          "a": "Oui. L'onglet « Message de bienvenue » concerne le salon et l'onglet « MP » le message privé. Les deux fonctionnent indépendamment."
+        },
+        {
+          "q": "Pourquoi un MP peut-il échouer ?",
+          "a": "Si le membre a désactivé ses MP ou s'il a bloqué le bot, l'envoi échoue. Cela apparaît comme « Non remis » dans le salon de logs."
+        },
+        {
+          "q": "À quoi ressemble la carte de bienvenue ?",
+          "a": "C'est une image personnalisée combinant l'avatar, un fond et le nom d'utilisateur. Les couleurs et les textes se règlent depuis cette page."
+        },
+        {
+          "q": "Quelle différence entre embed et message simple ?",
+          "a": "L'embed s'affiche dans un cadre coloré avec titre/description/footer ; le message simple est un message Discord classique."
+        },
+        {
+          "q": "Le message ne s'envoie pas, que vérifier ?",
+          "a": "1) le module est-il « Actif » ; 2) un salon cible est-il sélectionné ; 3) le bot a-t-il la permission d'envoyer des messages dans ce salon ; 4) l'événement guildMemberAdd s'est-il bien produit (les intents doivent être activés sur le portail développeur Discord)."
+        },
+        {
+          "q": "Puis-je attribuer un rôle automatiquement ?",
+          "a": "Oui. Le champ « Rôle à attribuer » permet de donner un rôle au nouveau membre dès son arrivée."
+        },
+        {
+          "q": "Le message peut-il être limité à certains membres ?",
+          "a": "Pas directement dans ce module. Pour des conditions avancées, utilisez Rôle automatique ou une commande personnalisée."
+        },
+        {
+          "q": "Comment obtenir un aperçu ?",
+          "a": "Le bouton « Aperçu » simule le message avec les paramètres actuels et vous l'envoie en MP ; aucun vrai membre n'est notifié."
+        }
+      ]
+    },
+    "botGoodbye": {
+      "title": "Message d'au revoir",
+      "items": [
+        {
+          "q": "Quand le message d'au revoir est-il envoyé ?",
+          "a": "Lorsqu'un membre quitte le serveur (départ volontaire, expulsion ou bannissement)."
+        },
+        {
+          "q": "Le message s'envoie-t-il aussi pour un membre banni ?",
+          "a": "Oui par défaut. Vous pouvez activer « Exclure les membres bannis » pour les ignorer."
+        },
+        {
+          "q": "Quels espaces réservés sont disponibles ?",
+          "a": "{user}, {username}, {server} et {memberCount}."
+        },
+        {
+          "q": "Je ne veux pas annoncer les départs ?",
+          "a": "Il suffit de désactiver le module ; tous les messages d'au revoir s'arrêtent."
+        },
+        {
+          "q": "Puis-je différencier kick/ban/leave ?",
+          "a": "Oui. Les onglets en haut permettent de définir un modèle distinct pour chaque cas."
+        },
+        {
+          "q": "Le message peut-il aller dans le salon de logs au lieu d'un autre ?",
+          "a": "Choisissez le salon de logs comme « Salon cible ». Pour éviter le mélange, deux salons distincts restent recommandés."
+        },
+        {
+          "q": "Le bot peut-il afficher l'avatar du membre qui part ?",
+          "a": "Oui. La carte MP et la miniature d'embed peuvent contenir l'avatar."
+        },
+        {
+          "q": "Le message d'au revoir est-il supprimé si le membre revient ?",
+          "a": "Non, l'ancien message reste dans le salon. Le bot ne le supprime pas automatiquement."
+        },
+        {
+          "q": "Puis-je avoir un message différent par langue ?",
+          "a": "La langue principale du serveur est définie dans le réglage « Langue du bot » ; le multilingue n'est pas géré automatiquement côté bot."
+        },
+        {
+          "q": "Le message d'au revoir peut-il aller dans plusieurs salons ?",
+          "a": "Pour l'instant, un seul salon est pris en charge. Pour plusieurs salons, utilisez une commande personnalisée."
+        }
+      ]
+    },
+    "botEmbedMessage": {
+      "title": "Message enrichi (embed)",
+      "items": [
+        {
+          "q": "Qu'est-ce qu'un message embed ?",
+          "a": "Un type de message Discord présenté dans un cadre coloré avec titre, description et champs supplémentaires, pour un rendu professionnel."
+        },
+        {
+          "q": "Que puis-je faire sur cette page ?",
+          "a": "Choisir un modèle prêt, remplir titre/description/footer/miniature/image puis envoyer le tout dans le salon cible."
+        },
+        {
+          "q": "Comment choisir une couleur ?",
+          "a": "Indiquez un code hex (par ex. #5865F2) ou utilisez le sélecteur. La barre de gauche de l'embed prend cette couleur."
+        },
+        {
+          "q": "Un message déjà envoyé peut-il être modifié ?",
+          "a": "Oui. Avec son « ID de message », vous pouvez éditer un embed existant. Le bot le met à jour au lieu d'en envoyer un nouveau."
+        },
+        {
+          "q": "Puis-je ajouter plusieurs champs ?",
+          "a": "Jusqu'à 25 champs (limite Discord). Au-delà, un avertissement s'affiche."
+        },
+        {
+          "q": "Puis-je utiliser des espaces réservés ?",
+          "a": "Oui. {server}, {memberCount} et les variables définies dans les commandes personnalisées sont remplacés au moment de l'envoi."
+        },
+        {
+          "q": "Puis-je planifier le message ?",
+          "a": "Cette page est destinée à un envoi immédiat. Pour la planification, utilisez le module « Annonce planifiée »."
+        },
+        {
+          "q": "Je ne suis pas sûr du rendu final ?",
+          "a": "L'aperçu en direct sur la droite affiche le résultat tel qu'il sera envoyé."
+        },
+        {
+          "q": "J'ai envoyé un embed incorrect ?",
+          "a": "Récupérez l'ID du message et utilisez « Modifier » pour le corriger, ou supprimez-le directement depuis Discord."
+        },
+        {
+          "q": "Que se passe-t-il si le bot n'a pas la permission embed ?",
+          "a": "Sans la permission « Intégrer des liens », seul du texte brut est envoyé. Ajoutez cette permission au rôle du bot."
+        }
+      ]
+    },
+    "botReactionRole": {
+      "title": "Rôles de réaction",
+      "items": [
+        {
+          "q": "Qu'est-ce qu'un rôle de réaction ?",
+          "a": "Un système qui attribue ou retire automatiquement un rôle à un membre lorsqu'il réagit avec un emoji précis sur un message donné."
+        },
+        {
+          "q": "Comment choisir le message ?",
+          "a": "Indiquez le salon cible et l'ID du message, ou laissez le bot créer un nouveau message."
+        },
+        {
+          "q": "Combien d'emojis peut-on lier à un même message ?",
+          "a": "Jusqu'à la limite Discord de 20 réactions différentes. Au-delà, le bot ne peut plus en ajouter."
+        },
+        {
+          "q": "Puis-je utiliser des emojis personnalisés ?",
+          "a": "Oui, vous pouvez sélectionner les emojis personnalisés du serveur. Le bot doit être présent sur le serveur qui les héberge."
+        },
+        {
+          "q": "Si le membre retire sa réaction, le rôle est-il retiré ?",
+          "a": "Oui par défaut. Si le mode « Permanent » est activé, retirer la réaction n'affecte pas le rôle."
+        },
+        {
+          "q": "Le rôle de réaction fonctionne-t-il si le message change de salon ?",
+          "a": "Le déplacement entre salons n'a pas d'effet. En revanche, si le message est supprimé, le rôle de réaction cesse de fonctionner."
+        },
+        {
+          "q": "Le bot ne parvient pas à attribuer le rôle ?",
+          "a": "Le rôle du bot doit être plus haut dans la hiérarchie que le rôle attribué. Il faut aussi la permission « Gérer les rôles »."
+        },
+        {
+          "q": "Puis-je empêcher un membre de choisir plusieurs rôles ?",
+          "a": "Le mode « Sélection unique » limite à un seul rôle par message."
+        },
+        {
+          "q": "Comment supprimer en masse les anciens messages ?",
+          "a": "Sélectionnez le message dans la liste puis cliquez sur « Supprimer ». Seule la définition du rôle de réaction est supprimée ; le message reste dans le salon."
+        },
+        {
+          "q": "Les attributions sont-elles consignées dans les logs ?",
+          "a": "Oui ; si un salon de logs est configuré, les rôles ajoutés/retirés et les informations de message y apparaissent."
+        }
+      ]
+    },
+    "botScheduledAnnouncement": {
+      "title": "Annonce planifiée",
+      "items": [
+        {
+          "q": "Qu'est-ce qu'une annonce planifiée ?",
+          "a": "Un message envoyé automatiquement à une date/heure précise, ou de manière récurrente. Il peut être en texte simple ou en embed."
+        },
+        {
+          "q": "Quel fuseau horaire est utilisé ?",
+          "a": "Le fuseau configuré pour le serveur (réglage « Fuseau horaire »). Vous pouvez aussi saisir l'heure en UTC."
+        },
+        {
+          "q": "Comment créer une annonce récurrente ?",
+          "a": "Choisissez quotidien/hebdomadaire/mensuel ; pour une fréquence personnalisée de type cron, utilisez le champ « Avancé »."
+        },
+        {
+          "q": "Puis-je annuler une annonce ?",
+          "a": "Désactivez ou supprimez l'annonce dans la liste. La désactivation conserve l'historique tout en arrêtant les envois."
+        },
+        {
+          "q": "Peut-on modifier une annonce ?",
+          "a": "Oui, tant qu'elle n'a pas été envoyée, le contenu et l'horaire sont modifiables. Les copies déjà envoyées ne sont pas mises à jour (utilisez la fonction de modification d'embed)."
+        },
+        {
+          "q": "La mention @everyone fonctionne-t-elle ?",
+          "a": "Oui, à condition que le bot ait la permission « Mentionner @everyone ». Sinon, le texte affiche @everyone mais aucune notification n'est déclenchée."
+        },
+        {
+          "q": "Puis-je envoyer dans plusieurs salons à la fois ?",
+          "a": "Une annonce concerne un seul salon. Dupliquez-la pour cibler d'autres salons."
+        },
+        {
+          "q": "Puis-je voir l'historique des envois ?",
+          "a": "Oui, l'onglet « Historique » liste les envois récents et leur statut (réussi/échec)."
+        },
+        {
+          "q": "Que se passe-t-il en cas d'échec d'envoi ?",
+          "a": "Si une permission manque ou que le salon a été supprimé, une erreur est journalisée ; l'annonce n'est pas arrêtée automatiquement et sera retentée à la prochaine occurrence."
+        },
+        {
+          "q": "Peut-on ajouter des images ?",
+          "a": "En mode embed, des miniatures et images sont acceptées ; en texte simple, l'attachement d'images Discord n'est pas géré ici."
+        }
+      ]
+    },
+    "botFeeds": {
+      "title": "Annonces de flux (YouTube/Twitch/RSS)",
+      "items": [
+        {
+          "q": "À quoi sert une annonce de flux ?",
+          "a": "Lorsqu'un nouveau contenu est publié sur la source YouTube/Twitch/RSS choisie, le bot envoie automatiquement une annonce dans le salon cible."
+        },
+        {
+          "q": "Pourquoi ne pas saisir l'URL complète pour YouTube/Twitch ?",
+          "a": "Le nom de chaîne ou le handle suffit. Le bot ajoute automatiquement https://www.youtube.com/ ou https://www.twitch.tv/ pour éviter les erreurs d'URL."
+        },
+        {
+          "q": "Quel format pour un lien RSS ?",
+          "a": "Une URL RSS/Atom valide (par ex. https://site.com/feed.xml). Le bouton « Aperçu » permet de vérifier que le bot peut la lire."
+        },
+        {
+          "q": "Quelle est la fréquence de vérification ?",
+          "a": "Par défaut, toutes les 15 minutes (900 s). server quota permet des intervalles plus courts ; les fréquences trop élevées peuvent être limitées par la plateforme."
+        },
+        {
+          "q": "Aucun nouveau contenu n'arrive, que faire ?",
+          "a": "Utilisez « Aperçu » pour vérifier que la source est joignable. Vérifiez aussi l'orthographe du nom de chaîne et qu'un contenu a été publié dans les derniers jours."
+        },
+        {
+          "q": "Puis-je mentionner un rôle particulier ?",
+          "a": "Oui, sélectionnez-le dans le champ « Rôle à mentionner » ; le bot le pingue lors de l'envoi."
+        },
+        {
+          "q": "Les anciens contenus sont-ils également envoyés ?",
+          "a": "Non. Seuls les contenus publiés après la création de l'abonnement déclenchent une annonce."
+        },
+        {
+          "q": "Puis-je changer la source d'un flux ?",
+          "a": "Oui, choisissez l'entrée dans la liste puis « Modifier » pour changer l'URL/le salon/le rôle. Modifier l'URL réinitialise le filtre d'historique des envois."
+        },
+        {
+          "q": "Les diffusions YouTube en direct sont-elles détectées ?",
+          "a": "Oui. Lorsque la chaîne lance un live, une annonce dédiée est envoyée."
+        }
+      ]
+    },
+    "botPoll": {
+      "title": "Sondages",
+      "items": [
+        {
+          "q": "Comment créer un sondage ?",
+          "a": "Saisissez la question, les options, le salon cible et la durée puis cliquez sur « Créer ». Le bot publie une annonce dans laquelle les réactions emoji comptent comme des votes."
+        },
+        {
+          "q": "Combien d'options puis-je ajouter ?",
+          "a": "Jusqu'à la limite Discord de 20. Moins d'options donne souvent un résultat plus clair."
+        },
+        {
+          "q": "À quoi sert l'option de vote multiple ?",
+          "a": "Activée, un membre peut voter pour plusieurs choix. Désactivée, un seul choix est autorisé."
+        },
+        {
+          "q": "Que se passe-t-il à la fin du sondage ?",
+          "a": "Le bot verrouille le message et publie un récapitulatif avec les résultats et le gagnant. Sans durée, vous pouvez cliquer manuellement sur « Terminer »."
+        },
+        {
+          "q": "Puis-je voir qui a voté ?",
+          "a": "Seuls les modérateurs peuvent consulter l'onglet « Détail des votes ». En mode anonyme, cette possibilité est désactivée."
+        },
+        {
+          "q": "Puis-je modifier un sondage en cours ?",
+          "a": "Seuls le texte de la question et la durée sont modifiables. Ajouter ou supprimer des options remettrait à zéro les votes existants, c'est donc bloqué."
+        },
+        {
+          "q": "Puis-je restreindre la participation à certains rôles ?",
+          "a": "Oui, avec le champ « Rôles autorisés » ; les votes des autres rôles ne sont pas comptabilisés."
+        },
+        {
+          "q": "Les résultats sont-ils enregistrés ?",
+          "a": "Oui. Les sondages passés et leurs résultats sont consultables sur cette page à tout moment."
+        },
+        {
+          "q": "Le sondage peut-il appliquer automatiquement le choix gagnant ?",
+          "a": "Pour l'instant, seul l'affichage des résultats est disponible. Pour une action automatique, écrivez une commande personnalisée."
+        },
+        {
+          "q": "Puis-je mentionner des utilisateurs dans l'annonce ?",
+          "a": "Oui. Vous pouvez utiliser @everyone ou @rôle dans le titre/description du sondage, sous réserve des permissions appropriées."
+        }
+      ]
+    },
+    "botGiveaway": {
+      "title": "Tirages au sort",
+      "items": [
+        {
+          "q": "Comment lancer un tirage au sort ?",
+          "a": "Indiquez le nom, le lot, le nombre de gagnants, le salon et la date de fin. Le bot collecte les participations par réaction jusqu'à la date prévue."
+        },
+        {
+          "q": "Quelle réaction permet de participer ?",
+          "a": "L'emoji 🎉 par défaut. Tout membre qui réagit avec cet emoji est ajouté à la liste des participants."
+        },
+        {
+          "q": "Plusieurs gagnants sont-ils possibles ?",
+          "a": "Oui, via le champ « Nombre de gagnants ». À la fin, le bot tire au sort autant de gagnants."
+        },
+        {
+          "q": "Comment filtrer les participants ?",
+          "a": "Vous pouvez restreindre par rôle requis ou par ancienneté minimale du compte, dans la section « Avancé »."
+        },
+        {
+          "q": "Puis-je terminer un tirage en avance ?",
+          "a": "Oui, sélectionnez-le dans la liste et cliquez sur « Terminer » pour le clôturer immédiatement."
+        },
+        {
+          "q": "Je veux refaire le tirage ?",
+          "a": "Le bouton « Relancer » permet de retirer un nouveau gagnant ; les anciens peuvent être inclus ou exclus."
+        },
+        {
+          "q": "Le bot prévient-il les gagnants en MP ?",
+          "a": "Oui, si leurs MP sont ouverts ; sinon, ils sont seulement mentionnés dans le salon."
+        },
+        {
+          "q": "Que se passe-t-il si le message du tirage est supprimé ?",
+          "a": "Le tirage est automatiquement annulé et journalisé. Vous devrez en lancer un nouveau."
+        },
+        {
+          "q": "Les tirages sont-ils archivés ?",
+          "a": "Oui. L'onglet « Historique » conserve tous les tirages et leurs gagnants."
+        },
+        {
+          "q": "Puis-je exclure certaines personnes ?",
+          "a": "Oui, via les champs « Rôles ignorés » ou « Utilisateurs ignorés »."
+        }
+      ]
+    },
+    "botLevel": {
+      "title": "Système de niveaux",
+      "items": [
+        {
+          "q": "Comment fonctionne le système de niveaux ?",
+          "a": "Les membres gagnent de l'XP en écrivant ou en passant du temps en vocal. À certains seuils, ils montent de niveau et reçoivent automatiquement les rôles configurés en récompense."
+        },
+        {
+          "q": "Combien d'XP par message ?",
+          "a": "La valeur définie dans « XP par message ». Lorsque « XP aléatoire » est activé, l'XP attribuée varie entre une valeur min et max."
+        },
+        {
+          "q": "Que signifie le cooldown ?",
+          "a": "Un délai d'attente qui empêche un membre de gagner de l'XP trop rapidement. 30 à 60 secondes sont recommandées."
+        },
+        {
+          "q": "Puis-je exclure certains salons ?",
+          "a": "Oui, via le champ « Salons ignorés » pour exclure les salons de spam ou de commandes."
+        },
+        {
+          "q": "Comment définir des rôles de récompense ?",
+          "a": "Ajoutez des entrées niveau + rôle dans le tableau « Rôles de récompense ». L'option « Activer » doit être enclenchée."
+        },
+        {
+          "q": "Le rôle précédent doit-il être retiré ou cumulé ?",
+          "a": "Par défaut, le nouveau rôle est ajouté sans retirer l'ancien. Pour éviter l'accumulation, activez « Mode rôle unique »."
+        },
+        {
+          "q": "Où va la notification de montée de niveau ?",
+          "a": "Vers le salon de notification configuré ou en MP. Vous pouvez aussi désactiver les notifications."
+        },
+        {
+          "q": "L'XP d'un membre peut-elle être réinitialisée ?",
+          "a": "Oui, le bouton « Réinitialiser » permet de remettre à zéro un membre ou tout le serveur. L'opération est irréversible."
+        },
+        {
+          "q": "L'XP est-elle transférable d'un serveur à l'autre ?",
+          "a": "Non. Les données sont stockées par serveur. Elles peuvent être transférées via la sauvegarde ou le clonage de serveur."
+        },
+        {
+          "q": "Existe-t-il un classement ?",
+          "a": "Oui. Via la commande Discord (par ex. /level top) ou depuis le module Salons de statistiques du panneau."
+        }
+      ]
+    },
+    "botInviteLeaderboard": {
+      "title": "Classement des invitations",
+      "items": [
+        {
+          "q": "Que montre cette page ?",
+          "a": "La liste des plus gros inviteurs du serveur, avec les chiffres détaillés : total, réelles (durables), parties et fausses invitations."
+        },
+        {
+          "q": "Comment le comptage est-il effectué ?",
+          "a": "À chaque arrivée de membre, le bot suit le lien d'invitation utilisé. Le bot doit avoir la permission « Gérer le serveur »."
+        },
+        {
+          "q": "Qu'est-ce qu'une fausse invitation ?",
+          "a": "Une invitation provenant d'un compte très récent ou d'un membre parti rapidement. Elle aide à filtrer les bots de spam."
+        },
+        {
+          "q": "Puis-je filtrer par période ?",
+          "a": "Oui, le sélecteur de plage de dates en haut permet de filtrer par semaine/mois/dates personnalisées."
+        },
+        {
+          "q": "Peut-on définir des récompenses d'invitation ?",
+          "a": "Oui, dans la section « Récompenses d'invitation », attribuez un rôle selon le nombre d'invitations. Le bot a besoin de la permission « Gérer les rôles »."
+        },
+        {
+          "q": "Puis-je voir qui un membre a invité ?",
+          "a": "En cliquant sur les détails, la liste des membres invités s'ouvre."
+        },
+        {
+          "q": "Les chiffres ne correspondent pas à Discord ?",
+          "a": "Le cache de Discord peut introduire un décalage. Le bouton « Synchroniser » récupère l'état le plus récent."
+        },
+        {
+          "q": "Les anciennes invitations sont-elles comptées ?",
+          "a": "Pour celles antérieures à l'ajout du bot, vous pouvez définir une « valeur de base » ; ensuite, le comptage se fait en temps réel."
+        },
+        {
+          "q": "Puis-je réinitialiser le classement ?",
+          "a": "Oui, le bouton « Réinitialiser » remet l'ensemble du serveur à zéro. L'action est irréversible, à utiliser avec précaution."
+        },
+        {
+          "q": "Le classement peut-il être affiché publiquement ?",
+          "a": "Avec le module Salons de statistiques, vous pouvez afficher le classement dans les noms de salons."
+        }
+      ]
+    },
+    "botApplications": {
+      "title": "Formulaires de candidature",
+      "items": [
+        {
+          "q": "À quoi sert un formulaire de candidature ?",
+          "a": "Il permet aux membres de postuler pour un poste (staff, jury, événement, etc.). Le bot transmet les questions par MP ou via un salon, puis présente les réponses aux administrateurs."
+        },
+        {
+          "q": "Comment ajouter des champs au formulaire ?",
+          "a": "Via le constructeur de formulaire du panneau, ajoutez chaque champ (label, type, obligatoire). Aucune écriture JSON n'est nécessaire."
+        },
+        {
+          "q": "Quels types de champs existe-t-il ?",
+          "a": "Texte court, texte long, nombre, date et liste déroulante. Chaque champ peut être marqué obligatoire/facultatif."
+        },
+        {
+          "q": "Où le membre remplit-il le formulaire ?",
+          "a": "Le bot place un bouton « Postuler » dans le salon de candidature. En cliquant, le membre remplit le formulaire en MP ou via une fenêtre modale."
+        },
+        {
+          "q": "Où arrivent les réponses ?",
+          "a": "Dans le « Salon des résultats » que vous avez choisi, sous forme d'embed ; les modérateurs disposent de boutons « Approuver/Refuser »."
+        },
+        {
+          "q": "Puis-je attribuer automatiquement un rôle au candidat accepté ?",
+          "a": "Oui, si le champ « Rôle à attribuer à l'approbation » est défini, le rôle est donné dès la validation."
+        },
+        {
+          "q": "Un même membre peut-il candidater plusieurs fois ?",
+          "a": "Selon le « temps de recharge » défini, oui. Par défaut, un délai de 24 heures s'applique."
+        },
+        {
+          "q": "L'historique des candidatures est-il conservé ?",
+          "a": "Oui. L'onglet « Historique » affiche toutes les candidatures et leur statut."
+        },
+        {
+          "q": "Si je modifie les questions, les anciennes candidatures sont-elles touchées ?",
+          "a": "Non, les anciennes réponses restent liées à la version du formulaire au moment de leur soumission. Les nouvelles candidatures utilisent la version actuelle."
+        },
+        {
+          "q": "Puis-je créer plusieurs formulaires (staff, événement, etc.) ?",
+          "a": "Oui, vous pouvez créer plusieurs formulaires sur cette page, chacun avec son salon, ses rôles et ses questions."
+        }
+      ]
+    },
+    "botMusic": {
+      "title": "Musique",
+      "items": [
+        {
+          "q": "Comment lancer une musique ?",
+          "a": "Sur le serveur, exécutez /play <titre ou URL> ; le bot rejoint le salon vocal et démarre la lecture. Le panneau ne sert qu'à configurer les règles."
+        },
+        {
+          "q": "Quelles plateformes sont prises en charge ?",
+          "a": "YouTube, Spotify (liens), SoundCloud et les URL audio directes. Les playlists Spotify sont jouées en faisant correspondre chaque morceau."
+        },
+        {
+          "q": "Le bot ne rejoint pas le salon vocal ?",
+          "a": "Le bot doit avoir les permissions « Se connecter » et « Parler ». L'utilisateur qui lance la commande doit lui-même être dans un salon vocal."
+        },
+        {
+          "q": "Comment gérer la file d'attente ?",
+          "a": "/queue affiche la file ; /skip passe au suivant, /pause met en pause, /resume reprend. Le panneau permet aussi de voir le morceau en cours."
+        },
+        {
+          "q": "Quelle est la longueur maximale de la file ?",
+          "a": "Sur les serveurs standards, 100 morceaux ; en la limite est plus élevée. Personnalisable via « Taille max de la file »."
+        },
+        {
+          "q": "Puis-je restreindre qui peut ajouter des morceaux ?",
+          "a": "Oui, le champ « Rôles autorisés » permet de désigner les rôles habilités."
+        },
+        {
+          "q": "Combien de morceaux un même utilisateur peut-il ajouter ?",
+          "a": "La limite « Morceaux par utilisateur » empêche le spam."
+        },
+        {
+          "q": "La qualité audio est-elle réglable ?",
+          "a": "Oui, via le bitrate. 96–128 kbps sont recommandés pour les connexions modestes ; 192–256 kbps pour les serveurs disposant d'une bonne bande passante."
+        },
+        {
+          "q": "Que fait le bot après une longue inactivité ?",
+          "a": "Il quitte automatiquement le salon vocal après le délai d'inactivité (paramètre « Quitter au repos »). Cette durée est personnalisable."
+        },
+        {
+          "q": "Quels avantages musicaux server quota offre-t-il ?",
+          "a": "Une file plus longue, des recherches plus rapides et des filtres avancés (bassboost, nightcore, etc.) sont inclus dans server quota."
+        }
+      ]
+    },
+    "botTicketPanel": {
+      "title": "Panneau de support (tickets)",
+      "items": [
+        {
+          "q": "À quoi sert le panneau de support ?",
+          "a": "Il met à disposition des membres un bouton/menu « Ouvrir un ticket » pour demander de l'aide. Chaque clic crée un salon de ticket privé."
+        },
+        {
+          "q": "Qui peut voir le salon de ticket ?",
+          "a": "Uniquement le membre qui a ouvert le ticket, les rôles définis comme « Gestionnaires de tickets » et les modérateurs sélectionnés. Les autres membres ne le voient pas."
+        },
+        {
+          "q": "Puis-je définir plusieurs catégories (Bug/Question, etc.) ?",
+          "a": "Oui, activez le mode multi-bouton/menu et définissez des questions spécifiques pour chaque catégorie."
+        },
+        {
+          "q": "Que se passe-t-il à la fermeture d'un ticket ?",
+          "a": "Le salon est archivé ou supprimé ; une transcription est envoyée dans le salon de logs en HTML/embed."
+        },
+        {
+          "q": "Qu'est-ce qu'une transcription ?",
+          "a": "Un enregistrement de tous les messages échangés pendant le ticket, conservé pour relecture ultérieure."
+        },
+        {
+          "q": "Un même membre peut-il ouvrir plusieurs tickets ?",
+          "a": "Par défaut non. Si « Tickets multiples » est activé, plusieurs tickets actifs peuvent coexister."
+        },
+        {
+          "q": "Comment sont nommés les salons de ticket ?",
+          "a": "Selon un modèle automatique du type « ticket-{username} » ou « ticket-{count} ». Le format est personnalisable."
+        },
+        {
+          "q": "Comment un modérateur rejoint-il un ticket ?",
+          "a": "Il est ajouté automatiquement au salon. Le bouton « Prendre en charge » permet aussi d'assigner le ticket à un modérateur."
+        },
+        {
+          "q": "Le nombre de tickets est-il limitable ?",
+          "a": "Oui, par serveur et par utilisateur, le nombre de tickets actifs peut être limité."
+        },
+        {
+          "q": "Combien de temps les données de ticket sont-elles conservées ?",
+          "a": "Les tickets actifs sont permanents ; les archives suivent la politique de rétention (90 jours par défaut)."
+        }
+      ]
+    },
+    "botModerator": {
+      "title": "Modération",
+      "items": [
+        {
+          "q": "Que contient cette page ?",
+          "a": "Les règles de modération de base : anti-spam, filtre d'insultes, blocage de liens/invitations, anti-spam de mentions et débordement de caractères."
+        },
+        {
+          "q": "Puis-je désactiver une règle dans certains salons ?",
+          "a": "Oui, le champ « Salons ignorés » permet d'exempter certains salons d'une règle."
+        },
+        {
+          "q": "Je veux exempter un rôle de la modération ?",
+          "a": "Ajoutez ce rôle dans « Rôles ignorés » ; ses membres ne déclenchent plus la modération."
+        },
+        {
+          "q": "À quel point l'action peut-elle être stricte ?",
+          "a": "Vous choisissez parmi : suppression du message, avertissement, exclusion temporaire, expulsion ou bannissement. Le déclenchement dépend des seuils configurés."
+        },
+        {
+          "q": "Le bot peut-il supprimer mes propres messages ?",
+          "a": "Oui, si votre rôle est plus bas que celui du bot dans la hiérarchie ou si vous n'êtes pas dans « Rôles ignorés »."
+        },
+        {
+          "q": "Les événements de modération sont-ils journalisés ?",
+          "a": "Oui, si un salon de logs est configuré, chaque action y est consignée. Vous pouvez aussi consulter la page « Journaux de modération »."
+        },
+        {
+          "q": "Comment annuler une mauvaise action ?",
+          "a": "Pour les exclusions temporaires/bannissements, le bouton « Annuler » est disponible. Une suppression de message ne se restaure pas."
+        },
+        {
+          "q": "Puis-je personnaliser la liste de mots interdits ?",
+          "a": "Oui, le champ « Liste de mots personnalisée » permet d'ajouter vos propres entrées. Cette liste est propre au serveur."
+        },
+        {
+          "q": "Le bot détecte-t-il les contournements ?",
+          "a": "Les variantes accentuées ou avec caractères mélangés sont détectées via la normalisation. Pour une couverture complète, combinez avec la modération IA."
+        },
+        {
+          "q": "Comment cela s'intègre-t-il à la modération IA ?",
+          "a": "Cette page est basée sur des mots-clés/motifs. Pour une analyse contextuelle, utilisez la page Modération intelligente (IA) en complément."
+        }
+      ]
+    },
+    "botAiModeration": {
+      "title": "Modération intelligente (IA)",
+      "items": [
+        {
+          "q": "Comment fonctionne la modération IA ?",
+          "a": "Le bot envoie les messages à un modèle d'IA qui les note dans des catégories comme toxicité, haine, contenu sexuel, harcèlement, automutilation ; selon les seuils, il journalise/supprime/applique une exclusion temporaire."
+        },
+        {
+          "q": "Que signifient les niveaux de sensibilité (Bas/Normal/Haut) ?",
+          "a": "Une sensibilité élevée déclenche à des seuils plus bas et capte plus de messages ; basse, elle agit moins. Pour les serveurs envahis de spam/trolls, élevée est recommandée."
+        },
+        {
+          "q": "Quels salons exempter ?",
+          "a": "Les salons où l'humour/le langage cru est toléré (par ex. salons 18+ généraux), les salons de test du bot et les salons privés peuvent être exemptés."
+        },
+        {
+          "q": "Toutes les langues sont-elles reconnues ?",
+          "a": "Le turc et 11 autres langues prises en charge — soit 12 au total — sont reconnus. Les écritures mixtes sont normalisées."
+        },
+        {
+          "q": "Quelle action recommander pour une attaque personnelle ?",
+          "a": "Au premier incident, « log + avertissement » ; en cas de récidive, exclusion temporaire. Le bannissement est à réserver aux infractions graves."
+        },
+        {
+          "q": "Comment réduire les faux positifs ?",
+          "a": "Configurez les « salons à exclure », gardez la sensibilité sur Normal et ajoutez des exceptions de mots si nécessaire."
+        },
+        {
+          "q": "Le bot peut-il afficher les actions prises ?",
+          "a": "Oui, l'onglet « Journaux d'analyse » liste les déclenchements récents avec salon/membre/score."
+        },
+        {
+          "q": "Quelle est la durée de conservation ?",
+          "a": "30 jours par défaut, 90 jours. Si la fonction est désactivée, les données sont supprimées à l'échéance."
+        },
+        {
+          "q": "L'IA a-t-elle un coût ?",
+          "a": "L'usage standard est inclus dans le quota du serveur. server quota offre un quota de messages plus élevé."
+        },
+        {
+          "q": "Tous les messages sont-ils analysés ?",
+          "a": "Avec le « Sample rate », vous pouvez analyser un pourcentage des messages (50 %, 100 %, etc.). C'est utile pour gérer le quota."
+        }
+      ]
+    },
+    "botModerationLogs": {
+      "title": "Journaux de modération",
+      "items": [
+        {
+          "q": "Que liste cette page ?",
+          "a": "Des entrées liées à la modération avec filtres appliqués ; seuls les types d'action affichés dans l'interface sont pris en charge — suppression, avertissement, exclusion temporaire, expulsion et bannissement ne sont pas tous garantis."
+        },
+        {
+          "q": "Comment fonctionnent les filtres ?",
+          "a": "Action, type de règle, salon, source (manuel / IA / filtre de mots) et plage de dates peuvent être choisis. Plusieurs filtres s'appliquent ensemble."
+        },
+        {
+          "q": "Puis-je annuler une action depuis ici ?",
+          "a": "L'annulation n'est pas proposée pour chaque action dans cette version ; corrigez si possible dans Discord ou le module concerné."
+        },
+        {
+          "q": "Les journaux sont-ils exportables ?",
+          "a": "Oui — les boutons CSV et JSON sur la carte « Enregistrements » téléchargent la liste actuellement chargée (filtrée). La limite de requête API s'applique (jusqu'à 100 lignes) ; fractionnez la plage de dates pour des périodes plus longues."
+        },
+        {
+          "q": "Que signifient les sources d'action ?",
+          "a": "manual = action manuelle, ai = modération IA, keyword = filtre de mots/règles (les libellés peuvent être localisés dans le panneau)."
+        },
+        {
+          "q": "Que faire si un membre est constamment sanctionné ?",
+          "a": "Consultez son historique ; en cas de récidive, escaladez l'action (exclusion temporaire → bannissement)."
+        },
+        {
+          "q": "Comment isoler les actions automatiques ?",
+          "a": "Affinez avec le filtre source en choisissant modération IA ou filtre de mots pour les cas automatiques ou basés sur des règles."
+        },
+        {
+          "q": "Quelles informations dans le détail ?",
+          "a": "Pour la ligne sélectionnée : identifiant d'enregistrement, identifiant de message, clé de motif, code d'avis/erreur, paramètres JSON et résumé de score IA éventuel. Les identifiants utilisateur sont stockés sous forme de hachage."
+        },
+        {
+          "q": "Combien de temps les données sont-elles conservées ?",
+          "a": "90 jours en standard, 1 an. À l'échéance, les enregistrements sont supprimés automatiquement."
+        },
+        {
+          "q": "Peut-on faire des suppressions/nettoyages en masse ?",
+          "a": "Cette version n'a pas de bouton de suppression ou d'archivage en masse pour les résultats filtrés."
+        }
+      ]
+    },
+    "botAuditLogs": {
+      "title": "Journaux de modifications (audit)",
+      "items": [
+        {
+          "q": "Qu'est-ce qu'un enregistrement d'audit ?",
+          "a": "Un journal des changements de configuration effectués via le panneau ou le bot. Il indique qui a modifié quoi et quand."
+        },
+        {
+          "q": "Quels changements sont enregistrés ?",
+          "a": "Activation/désactivation de modules, sélections de salon/rôle, mises à jour de seuils, opérations server quota et modifications de formulaires/modèles."
+        },
+        {
+          "q": "À quoi sert la comparaison avant/après ?",
+          "a": "Elle affiche côte à côte l'ancien et le nouvel état ; un changement intentionnel ou erroné se repère immédiatement."
+        },
+        {
+          "q": "Que représentent les filtres action et ressource ?",
+          "a": "La ressource indique le module concerné (ai_moderation, ticket, etc.) et l'action précise l'opération (création/mise à jour/suppression)."
+        },
+        {
+          "q": "J'ai repéré une erreur d'un modérateur, puis-je l'annuler ?",
+          "a": "Depuis l'enregistrement d'audit, « Annuler ce changement » revient automatiquement en arrière pour des modifications simples ; les changements complexes nécessitent une correction manuelle."
+        },
+        {
+          "q": "Les enregistrements peuvent-ils être modifiés ?",
+          "a": "Non, le journal d'audit est en lecture seule. Seul le système peut écrire ; aucun utilisateur n'a ce droit."
+        },
+        {
+          "q": "Quelle est la durée de conservation ?",
+          "a": "180 jours en standard, 1 an. Pour les changements importants, faire des sauvegardes séparées est conseillé."
+        },
+        {
+          "q": "Puis-je voir qui a fait chaque changement ?",
+          "a": "Oui, le champ « Acteur » indique l'ID Discord et le nom de l'utilisateur."
+        },
+        {
+          "q": "Puis-je récupérer les journaux via API ?",
+          "a": "Oui, sur les comptes l'accès API au journal d'audit est disponible. Détails dans la section Intégrations."
+        },
+        {
+          "q": "Les enregistrements nombreux affectent-ils les performances ?",
+          "a": "Non. La page utilise pagination et filtres ; les données ne sont chargées qu'à la demande."
+        }
+      ]
+    },
+    "botLogChannel": {
+      "title": "Salon de logs",
+      "items": [
+        {
+          "q": "À quoi sert le module de salon de logs ?",
+          "a": "Il définit les salons où journaliser les événements du serveur : arrivées/départs, suppressions/modifications de messages, événements vocaux, changements de rôle, etc."
+        },
+        {
+          "q": "Un seul salon ou plusieurs ?",
+          "a": "Vous pouvez assigner chaque type de log à un salon distinct. L'option « Nouvelle catégorie + tous les salons de log » permet aussi une configuration automatique."
+        },
+        {
+          "q": "Quels types de logs existent ?",
+          "a": "Membre, message, salon, rôle, vocal, invitation, modération, audit, bot et server quota."
+        },
+        {
+          "q": "Pourquoi je ne vois pas les logs de messages ?",
+          "a": "Le bot doit avoir les permissions « Voir le journal d'audit » et « Voir l'historique des messages », et le salon doit être visible et lisible."
+        },
+        {
+          "q": "Les logs sont trop nombreux, comment les réduire ?",
+          "a": "Chaque type de log dispose de son propre interrupteur ; désactivez ceux qui ne vous servent pas."
+        },
+        {
+          "q": "Embed ou texte simple ?",
+          "a": "L'embed est par défaut ; il classe par couleur/icône. Vous pouvez passer en texte simple (utile pour les anciens clients Discord)."
+        },
+        {
+          "q": "Puis-je exclure certains salons des logs ?",
+          "a": "Oui, pour les logs de messages, le champ « Salons ignorés » permet d'exclure les salons sensibles ou privés."
+        },
+        {
+          "q": "Que se passe-t-il si le salon de logs est supprimé ?",
+          "a": "Le bot ne peut plus envoyer de log et journalise une erreur ; il faut sélectionner un nouveau salon."
+        },
+        {
+          "q": "Existe-t-il une durée de rétention pour les logs ?",
+          "a": "Les messages écrits sur Discord sont conservés selon la politique Discord. Le panneau conserve aussi un archivage de 90 jours."
+        },
+        {
+          "q": "Puis-je restreindre le salon de logs à certains rôles ?",
+          "a": "Oui, configurez le salon pour qu'il ne soit visible que par les rôles de modération ; les membres ordinaires ne le verront pas."
+        }
+      ]
+    },
+    "botCustomCommand": {
+      "title": "Commande personnalisée (simple)",
+      "items": [
+        {
+          "q": "Qu'est-ce qu'une commande personnalisée ?",
+          "a": "Elle vous permet de définir une commande slash propre à votre serveur. Lorsqu'un membre l'exécute, le bot effectue l'action que vous avez définie (le plus souvent l'envoi d'un message)."
+        },
+        {
+          "q": "Que peut-on faire en vue simple ?",
+          "a": "Envoyer un message, une réponse en embed et de courtes informations. Pour des flux plus complexes, utilisez la vue « Avancée »."
+        },
+        {
+          "q": "À quoi doit ressembler le nom de la commande ?",
+          "a": "Lettres minuscules et tirets (-) uniquement. Les caractères turcs sont automatiquement convertis (ş→s, ç→c, etc.)."
+        },
+        {
+          "q": "Le même nom peut-il être réutilisé ?",
+          "a": "Non, chaque nom de commande est unique au sein du serveur. En cas de doublon, vous serez averti."
+        },
+        {
+          "q": "Je veux qu'un seul rôle puisse utiliser la commande ?",
+          "a": "Ajoutez ce rôle dans « Rôles autorisés ». Les autres rôles ne pourront pas l'utiliser."
+        },
+        {
+          "q": "À quoi sert le temps de recharge ?",
+          "a": "C'est un court délai d'attente qui empêche un même utilisateur de spammer la commande ; il s'exprime en secondes."
+        },
+        {
+          "q": "Puis-je restreindre la commande à un seul salon ?",
+          "a": "Oui, en activant « Limiter cette commande à ce salon » et en sélectionnant le salon souhaité."
+        },
+        {
+          "q": "Que signifie « épingler les utilisations de commande » ?",
+          "a": "La réponse de la commande reste enregistrée dans le panneau ; même si le serveur est réinitialisé, la définition est conservée."
+        },
+        {
+          "q": "Y a-t-il des espaces réservés ?",
+          "a": "Oui, des espaces réservés comme {user}, {server}, {channel} sont remplacés à l'exécution."
+        },
+        {
+          "q": "La commande apparaît-elle immédiatement sur Discord ?",
+          "a": "Oui, après enregistrement, le bot met à jour la liste des commandes Discord. Le cache de Discord peut occasionnellement prendre 5 à 10 minutes."
+        }
+      ]
+    },
+    "botCustomCommandAdvanced": {
+      "title": "Commande personnalisée (avancée)",
+      "items": [
+        {
+          "q": "Qu'est-ce qui change par rapport à la vue simple ?",
+          "a": "En plus de l'envoi de messages, vous disposez de l'attribution/retrait de rôle, la création de salon, le déplacement de membre, l'envoi d'embed et l'enchaînement de plusieurs actions dans une seule commande."
+        },
+        {
+          "q": "Puis-je ajouter plusieurs actions à une commande ?",
+          "a": "Oui, ajoutez-les successivement dans la liste « Actions ». Le bot les exécute dans l'ordre lors de l'exécution."
+        },
+        {
+          "q": "L'ordre des actions est-il important ?",
+          "a": "Oui. Par exemple, attribuer un rôle puis envoyer un message ne donne pas le même résultat que l'inverse."
+        },
+        {
+          "q": "Quels changements sur les rôles/membres sont possibles ?",
+          "a": "Attribution/retrait de rôle, déplacement de membre, expulsion d'un salon vocal, application d'une exclusion temporaire."
+        },
+        {
+          "q": "Y a-t-il une exécution conditionnelle ?",
+          "a": "Oui, le champ « Condition » vérifie le rôle ou le salon. Si la condition n'est pas remplie, la commande s'arrête silencieusement."
+        },
+        {
+          "q": "Puis-je définir des arguments (paramètres) ?",
+          "a": "Oui, vous ajoutez des paramètres slash, et vous les utilisez dans la réponse via {arg.name}."
+        },
+        {
+          "q": "Que se passe-t-il en cas d'erreur ?",
+          "a": "Le bot s'arrête à la première action en échec et inscrit une erreur dans le journal d'audit. Les actions suivantes ne sont pas exécutées."
+        },
+        {
+          "q": "Puis-je tester un flux complexe en aperçu ?",
+          "a": "Oui, le bouton « Tester » exécute les actions à blanc (dry-run) sur le serveur réel."
+        },
+        {
+          "q": "Puis-je revenir à une ancienne version ?",
+          "a": "Depuis le journal d'audit, l'ancienne définition est récupérable ; « Revenir à cette version » la rend active."
+        }
+      ]
+    },
+    "botTemporaryVoiceChannel": {
+      "title": "Salons vocaux temporaires",
+      "items": [
+        {
+          "q": "Qu'est-ce qu'un salon vocal temporaire ?",
+          "a": "Lorsqu'un membre rejoint le salon « lobby » désigné, le bot lui crée automatiquement un salon vocal privé. Il est supprimé à son départ."
+        },
+        {
+          "q": "Quel salon doit servir de lobby ?",
+          "a": "Un salon vocal souvent fréquenté, typiquement un salon « Vocal général », est un bon choix. Indiquez-le dans « Salon lobby »."
+        },
+        {
+          "q": "Qui contrôle les permissions du nouveau salon ?",
+          "a": "Son propriétaire. Il peut le verrouiller/déverrouiller, fixer une limite d'utilisateurs, le renommer et expulser des membres via des commandes/boutons."
+        },
+        {
+          "q": "Le salon est-il créé dans la même catégorie que le lobby ?",
+          "a": "Par défaut oui. Pour une autre catégorie, utilisez « Sous une catégorie existante »."
+        },
+        {
+          "q": "Quelle limite d'utilisateurs peut-on définir ?",
+          "a": "Jusqu'à la limite Discord de 99. Saisissez la valeur par défaut dans « Limite d'utilisateurs »."
+        },
+        {
+          "q": "Puis-je rendre le nom du salon dynamique ?",
+          "a": "Oui, le modèle « Nom du salon temporaire » prend en charge {user} et {server}, par ex. « Salon de {user} »."
+        },
+        {
+          "q": "Le bot supprime-t-il le salon immédiatement ?",
+          "a": "Selon le réglage « Délai de suppression du salon », immédiatement à la sortie ou avec quelques secondes de retard."
+        },
+        {
+          "q": "Que se passe-t-il si le propriétaire quitte le serveur ?",
+          "a": "La propriété est transférée au premier membre éligible ou selon la politique choisie ; sinon, le salon est supprimé."
+        },
+        {
+          "q": "Que signifie « synchroniser avec les permissions du lobby » ?",
+          "a": "Les accès par rôle du salon lobby sont appliqués au nouveau salon temporaire — pas besoin de configuration manuelle."
+        },
+        {
+          "q": "Combien de salons temporaires simultanément ?",
+          "a": "Sur un serveur standard, 25 sont recommandés. En la limite augmente et la gestion avancée est activée."
+        }
+      ]
+    },
+    "botStatisticsChannel": {
+      "title": "Salons de statistiques",
+      "items": [
+        {
+          "q": "Qu'est-ce qu'un salon de statistiques ?",
+          "a": "Des salons vocaux dédiés qui affichent dans leur nom des compteurs du serveur (membres, en ligne, bots, rôle, invitations, etc.)."
+        },
+        {
+          "q": "Quels compteurs sont pris en charge ?",
+          "a": "Total membres, en ligne, hors ligne, bots, nombre de membres pour un rôle donné, total d'invitations et compteurs personnalisés de salon/événement."
+        },
+        {
+          "q": "À quelle fréquence le compteur est-il mis à jour ?",
+          "a": "Toutes les 5 à 10 minutes en raison des limites de débit de Discord. Les mises à jour plus fréquentes sont restreintes par la plateforme."
+        },
+        {
+          "q": "Comment se compose le nom du salon ?",
+          "a": "Via le champ « Modèle » ; la variable {value} représente le compteur. Par ex. « Membres : {value} »."
+        },
+        {
+          "q": "Qui peut parler dans ce salon ?",
+          "a": "Personne par défaut. Le salon de statistiques est purement indicatif ; la permission « Se connecter » est désactivée pour @everyone."
+        },
+        {
+          "q": "Plusieurs compteurs sont-ils possibles ?",
+          "a": "Oui, vous pouvez créer plusieurs salons de statistiques de types différents, chacun avec son propre modèle."
+        },
+        {
+          "q": "Le compteur semble incorrect ?",
+          "a": "Cela peut venir du cache de Discord. Le bouton « Synchroniser » force le rafraîchissement."
+        },
+        {
+          "q": "Si le bot est hors service, voit-on quand même le compteur ?",
+          "a": "Oui, l'ancienne valeur reste affichée mais les mises à jour s'arrêtent. Elles reprennent dès que le bot est de nouveau en ligne."
+        },
+        {
+          "q": "Quelles différences avec server quota ?",
+          "a": "Des intervalles de mise à jour plus courts, plus de compteurs et des filtres/groupes avancés sont inclus."
+        },
+        {
+          "q": "Si je supprime le salon, la définition du compteur l'est-elle aussi ?",
+          "a": "Non, la définition reste, seul le lien au salon est rompu. Vous pouvez réassocier un nouveau salon."
+        }
+      ]
+    },
+    "botAutorole": {
+      "title": "Rôle automatique",
+      "items": [
+        {
+          "q": "Qu'est-ce que le rôle automatique ?",
+          "a": "Un module qui attribue automatiquement un rôle aux nouveaux arrivants, aux membres remplissant une condition donnée ou aux comptes bots."
+        },
+        {
+          "q": "Puis-je attribuer plusieurs rôles ?",
+          "a": "Oui, sélectionnez plusieurs rôles dans la liste. Tous sont attribués dans la limite des règles Discord sur les rôles."
+        },
+        {
+          "q": "Peut-on attribuer un rôle aux bots ?",
+          "a": "Oui, le champ « Rôle des bots » est distinct. Les bots ne reçoivent pas le rôle automatique des membres standards."
+        },
+        {
+          "q": "Je reçois une erreur de permission insuffisante ?",
+          "a": "Le rôle du bot doit être plus haut que le rôle attribué dans la hiérarchie. La permission « Gérer les rôles » est également requise."
+        },
+        {
+          "q": "Peut-on conditionner le rôle à l'arrivée du membre ?",
+          "a": "Le champ « Âge minimum du compte (jours) » permet d'exclure temporairement les comptes trop récents ; le rôle est attribué une fois le seuil atteint."
+        },
+        {
+          "q": "La condition d'âge de compte renforce-t-elle la sécurité ?",
+          "a": "Oui, elle aide à filtrer les comptes neufs/factices lors d'un raid."
+        },
+        {
+          "q": "Le module s'applique-t-il aussi aux membres existants ?",
+          "a": "Il agit automatiquement pour les nouveaux membres. Pour les membres existants, utilisez le bouton « Appliquer en masse »."
+        },
+        {
+          "q": "Peut-on retarder l'attribution du rôle ?",
+          "a": "Oui, le champ « Délai (secondes) » permet d'introduire un délai ; utile contre les raids."
+        },
+        {
+          "q": "Que se passe-t-il si le membre retire le rôle ?",
+          "a": "Sur Discord, un membre ne peut pas le refuser ; s'il le retire, le bot peut le réattribuer (si l'option est activée). Sinon, il est attribué une seule fois."
+        },
+        {
+          "q": "Les rôles automatiques sont-ils journalisés ?",
+          "a": "Oui, si un salon de logs est défini, qui a reçu quel rôle et quand est consigné dans ce salon."
+        }
+      ]
+    },
+    "botBirthday": {
+      "title": "Anniversaires",
+      "items": [
+        {
+          "q": "Que fait le module d'anniversaire ?",
+          "a": "Il envoie automatiquement un message de félicitations à la date enregistrée par le membre, et peut attribuer un rôle d'anniversaire optionnel."
+        },
+        {
+          "q": "Comment un membre enregistre-t-il son anniversaire ?",
+          "a": "Via une commande du bot (par ex. /dogumgunu) ou via une fenêtre modale similaire à un formulaire. Seuls le mois/jour sont demandés ; l'année est facultative."
+        },
+        {
+          "q": "L'année est-elle obligatoire ?",
+          "a": "Non, mois/jour suffisent. Avec l'année, l'âge est calculé ; sans elle, seules les félicitations sont envoyées."
+        },
+        {
+          "q": "À quelle heure les félicitations sont-elles envoyées ?",
+          "a": "À 09:00 (par défaut) selon le fuseau horaire du serveur ; configurable via « Heure de vérification »."
+        },
+        {
+          "q": "Si plusieurs membres ont leur anniversaire le même jour ?",
+          "a": "Le bot mentionne tous les membres concernés dans un même message ou les ajoute à une liste — pas de spam."
+        },
+        {
+          "q": "Combien de temps dure le rôle d'anniversaire ?",
+          "a": "24 heures par défaut (réglable en heures). Il est retiré automatiquement à l'expiration."
+        },
+        {
+          "q": "Un membre peut-il supprimer ses données ?",
+          "a": "Oui, via sa propre commande ou le bouton « Supprimer mes données » mis à disposition."
+        },
+        {
+          "q": "L'âge peut-il rester caché ?",
+          "a": "Oui, le membre peut ne fournir que mois/jour ; l'âge n'est ni stocké ni affiché."
+        },
+        {
+          "q": "Que se passe-t-il sans salon de notification ?",
+          "a": "Le module ne fonctionne pas. Vous devez définir un salon de notification, et éventuellement un salon public général."
+        },
+        {
+          "q": "Les années précédentes sont-elles à nouveau célébrées ?",
+          "a": "Oui, l'anniversaire se déclenche chaque année. Si le membre quitte le serveur, l'enregistrement est conservé mais aucune notification n'est envoyée."
+        }
+      ]
+    },
+    "botReminder": {
+      "title": "Rappels",
+      "items": [
+        {
+          "q": "À quoi sert le module de rappels ?",
+          "a": "Il envoie automatiquement un message à un membre ou un salon à une date/heure précise. Idéal pour les événements, devoirs, rendez-vous."
+        },
+        {
+          "q": "Unique ou récurrent ?",
+          "a": "Les deux sont possibles. Les rappels uniques se déclenchent une seule fois ; les récurrents utilisent une planification quotidienne/hebdomadaire/mensuelle."
+        },
+        {
+          "q": "Le rappel est-il envoyé en MP ou dans un salon ?",
+          "a": "Les deux options existent. Si les MP du membre sont fermés, le rappel est envoyé dans le salon défini, le cas échéant."
+        },
+        {
+          "q": "Comment configurer le fuseau horaire ?",
+          "a": "Le fuseau principal du serveur est utilisé par défaut ; un membre peut définir le sien avec une commande de type /timezone."
+        },
+        {
+          "q": "Plusieurs rappels par serveur sont-ils possibles ?",
+          "a": "Oui, chaque rappel ajouté à la liste fonctionne indépendamment. La limite est plus élevée."
+        },
+        {
+          "q": "Si je supprime un rappel, l'historique est-il affecté ?",
+          "a": "Non. Les envois passés restent dans le salon/les logs. Seules les futures occurrences sont annulées."
+        },
+        {
+          "q": "Puis-je créer un rappel pour un événement ?",
+          "a": "Un déclencheur intégré aux événements Discord prévient X minutes avant le début."
+        },
+        {
+          "q": "Les variables sont-elles utilisables ?",
+          "a": "Oui, des espaces réservés comme {user}, {date}, {time} sont remplacés par leurs valeurs."
+        },
+        {
+          "q": "Pourquoi un rappel ne s'est-il pas déclenché ?",
+          "a": "Permissions du bot manquantes, salon introuvable, MP fermés ou bot hors ligne — consultez les logs."
+        },
+        {
+          "q": "L'historique des rappels est-il conservé ?",
+          "a": "Oui, l'onglet « Historique » sur la page affiche les rappels des 90 derniers jours."
+        }
+      ]
+    },
+    "botReports": {
+      "title": "Rapports",
+      "items": [
+        {
+          "q": "Que propose la page des rapports ?",
+          "a": "Des indicateurs visuels de croissance, d'engagement, d'événements de modération et de performance des invitations — sous forme de graphiques et résumés."
+        },
+        {
+          "q": "Quelles plages de temps sont disponibles ?",
+          "a": "7 derniers jours, 30 jours, 90 jours et plage de dates personnalisée."
+        },
+        {
+          "q": "Les rapports sont-ils téléchargeables en PDF/Excel ?",
+          "a": "Oui, le bouton « Exporter » en haut à droite télécharge en PDF ou Excel (modèles avancés)."
+        },
+        {
+          "q": "Jusqu'à quand remontent les données ?",
+          "a": "90 jours en standard, 1 an. Pour des données plus anciennes, utilisez vos sauvegardes/exports Excel."
+        },
+        {
+          "q": "Les rapports sont-ils en temps réel ?",
+          "a": "Non, ils sont calculés quotidiennement. Pour des données en direct (par heure), utilisez le tableau de bord."
+        },
+        {
+          "q": "Sur quoi est basé l'engagement des membres ?",
+          "a": "Sur le nombre de messages, le temps en vocal, les invitations, les réactions et l'usage des commandes. Les messages des bots sont exclus."
+        },
+        {
+          "q": "Y a-t-il une comparaison entre administrateurs ?",
+          "a": "Oui, la section « Performance du staff » présente les actions de modération, les temps de réponse aux tickets, etc."
+        },
+        {
+          "q": "Peut-on filtrer par salon/rôle ?",
+          "a": "Oui, les filtres en haut à droite des rapports permettent de cibler des salons/rôles spécifiques."
+        },
+        {
+          "q": "Puis-je changer le tri des tableaux ?",
+          "a": "Oui, en cliquant sur l'en-tête de colonne, vous basculez entre tri croissant et décroissant."
+        },
+        {
+          "q": "Les données sont incomplètes ou incohérentes ?",
+          "a": "Pendant les périodes où le bot était hors ligne, les événements ne sont pas enregistrés. Ces périodes sont signalées dans la section « Intervalles manquants »."
+        }
+      ]
+    },
+    "botLocale": {
+      "title": "Langue du serveur",
+      "items": [
+        {
+          "q": "Que signifie la langue du bot ?",
+          "a": "Elle détermine la langue des messages que le bot enverra sur ce serveur. Choisissez parmi 12 langues prises en charge."
+        },
+        {
+          "q": "Peut-on l'adapter à la langue de chaque membre ?",
+          "a": "Pour l'instant, le réglage est par serveur. Une préférence par membre est dans la feuille de route."
+        },
+        {
+          "q": "À quoi sert la langue de repli ?",
+          "a": "Lorsqu'un message/commande n'est pas traduit dans la langue active, la langue de repli est utilisée. Le turc ou l'anglais sont les choix les plus courants."
+        },
+        {
+          "q": "Les anciens messages sont-ils mis à jour si je change de langue ?",
+          "a": "Les nouveaux messages sont dans la nouvelle langue ; les messages passés ne sont pas modifiés (Discord ne le permet pas)."
+        },
+        {
+          "q": "Que se passe-t-il s'il manque une clé ?",
+          "a": "Lorsque c'est détecté, la langue de repli est utilisée et un avertissement est émis."
+        },
+        {
+          "q": "Le choix de langue s'applique-t-il aux commandes personnalisées ?",
+          "a": "Non, dans les commandes personnalisées c'est votre propre texte qui est envoyé ; il est indépendant de la langue du bot."
+        },
+        {
+          "q": "Puis-je ajouter une nouvelle langue ?",
+          "a": "Pour l'instant, seules les 12 langues prises en charge sont actives. Vous pouvez proposer de nouvelles langues via le formulaire de support."
+        },
+        {
+          "q": "La langue de la modération IA se règle-t-elle ici ?",
+          "a": "L'IA fonctionne en multilingue ; aucun choix de langue distinct n'est nécessaire. Cette page n'affecte que les messages du bot."
+        },
+        {
+          "q": "Le changement de langue apparaît-il dans le journal d'audit ?",
+          "a": "Oui, il est consigné dans le journal d'audit comme une mise à jour de configuration."
+        }
+      ]
+    },
+    "botGuilds": {
+      "title": "Gestion des serveurs",
+      "items": [
+        {
+          "q": "Que gère cette page ?",
+          "a": "Une vue d'ensemble haut niveau de tous vos serveurs liés au compte : présence du bot, statut server quota et configuration générale."
+        },
+        {
+          "q": "Puis-je retirer le bot d'un serveur ?",
+          "a": "Oui, le bouton « Retirer le bot » fait sortir le bot. Vos données sont conservées 30 jours dans le panneau et peuvent être restaurées."
+        },
+        {
+          "q": "Puis-je renommer un serveur depuis le panneau ?",
+          "a": "Non. Le nom du serveur se modifie côté Discord ; le panneau ne fait que le refléter."
+        },
+        {
+          "q": "Puis-je copier les paramètres entre serveurs ?",
+          "a": "Oui, « Copier la configuration » permet de transférer le paramétrage des modules d'un serveur à un autre."
+        },
+        {
+          "q": "Comment diagnostiquer un problème sur un serveur ?",
+          "a": "Sélectionnez le serveur dans la liste puis « Lancer le diagnostic ». Permissions, références de salon/rôle et statut d'abonnement sont vérifiés."
+        },
+        {
+          "q": "Existe-t-il des actions en masse sur plusieurs serveurs ?",
+          "a": "Oui, via la sélection multiple à gauche, vous pouvez activer/désactiver des modules ou lancer des sauvegardes en masse."
+        },
+        {
+          "q": "Quand les données du bot sont-elles supprimées ?",
+          "a": "30 jours après le départ du bot d'un serveur, les données associées sont supprimées automatiquement ; avant cela, la restauration reste possible."
+        },
+        {
+          "q": "server quota peut-il être actif sur plusieurs serveurs ?",
+          "a": "Oui, chaque serveur peut avoir son propre abonnement avec des dates de renouvellement indépendantes."
+        },
+        {
+          "q": "Puis-je inviter un administrateur dans le panneau ?",
+          "a": "Toute personne disposant du rôle Discord « Gérer le serveur » accède automatiquement au panneau ; il n'y a pas de système d'invitation distinct."
+        },
+        {
+          "q": "Que se passe-t-il si un serveur est supprimé ?",
+          "a": "Si un serveur est supprimé sur Discord, son enregistrement dans le panneau est archivé après 7 jours, conformément à la politique de rétention."
+        }
+      ]
+    },
+    "botCustomBots": {
+      "title": "Bot privé",
+      "items": [
+        {
+          "q": "Qu'est-ce qu'un bot personnalisé ?",
+          "a": "C'est la possibilité de faire tourner un bot Discord distinct à votre nom/marque. Il utilise le même cœur que le bot existant mais apparaît avec un nom/avatar/commandes différents."
+        },
+        {
+          "q": "Où récupérer le token du bot ?",
+          "a": "Dans le portail développeur Discord > Application > section Bot, via le bouton « Récupérer le token ». Le token ne se partage pas et se colle dans le panneau de manière sécurisée."
+        },
+        {
+          "q": "Où dois-je coller le token ?",
+          "a": "Dans le champ « Bot Token * ». Le token est stocké de manière chiffrée et n'est plus affiché en clair dans le panneau."
+        },
+        {
+          "q": "Puis-je faire tourner plusieurs bots personnalisés ?",
+          "a": "Non — un seul bot privé peut être enregistré par compte."
+        },
+        {
+          "q": "Les commandes sont-elles identiques au bot principal ?",
+          "a": "Les fonctions de base sont identiques ; seuls le nom et l'avatar du bot changent. Vous pouvez aussi personnaliser les noms de commandes."
+        },
+        {
+          "q": "Mon bot apparaît hors ligne ?",
+          "a": "Vérifiez que le token est correct, que le bot est bien lié à l'application Discord et que les intents sont activés. Les logs d'erreur s'affichent sur cette page."
+        },
+        {
+          "q": "Comment ajouter mon propre avatar ?",
+          "a": "Téléchargez l'avatar depuis le profil de l'application sur Discord. Le panneau ne gère pas l'avatar."
+        },
+        {
+          "q": "Mon token a fuité, que faire ?",
+          "a": "Réinitialisez le token depuis le portail développeur Discord et collez le nouveau dans le panneau. L'ancien devient inopérant dès la réinitialisation."
+        },
+        {
+          "q": "Plusieurs bots personnalisés sur le même serveur ?",
+          "a": "Un seul bot privé par compte. Vous pouvez l'utiliser avec le bot principal Deveng sur le même serveur."
+        },
+        {
+          "q": "Puis-je arrêter un bot personnalisé ?",
+          "a": "Oui, le bouton « Mettre en pause » stoppe le bot. Le token et les paramètres restent conservés."
+        }
+      ]
+    }
+  }
+}

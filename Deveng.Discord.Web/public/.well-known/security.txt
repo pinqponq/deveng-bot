@@ -1,0 +1,6 @@
+Contact: mailto:security@deveng.global
+Expires: 2027-01-01T00:00:00.000Z
+Preferred-Languages: tr, en
+Canonical: https://deveng.app/.well-known/security.txt
+Policy: https://deveng.app/security
+Acknowledgments: https://deveng.app/security#acknowledgments

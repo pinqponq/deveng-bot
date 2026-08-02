@@ -1,0 +1,28 @@
+# Version-update PRs disabled (open-pull-requests-limit: 0).
+# Enable Dependabot security alerts / security updates in GitHub Settings → Code security
+# without flooding the repo with major/minor bump PRs on day one.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 0
+
+  - package-ecosystem: npm
+    directory: "/Deveng.Discord.Bot"
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 0
+
+  - package-ecosystem: npm
+    directory: "/Deveng.Discord.Web"
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 0
+
+  - package-ecosystem: nuget
+    directory: "/Deveng.Discord"
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 0

@@ -1,0 +1,1616 @@
+{
+  "section": {
+    "title": "Häufig gestellte Fragen",
+    "description": "Antworten auf die häufigsten Fragen zu dieser Seite."
+  },
+  "pages": {
+    "apps": {
+      "title": "Server-Auswahl",
+      "items": [
+        {
+          "q": "Wofür ist diese Seite gedacht?",
+          "a": "Hier werden alle Discord-Server deines Kontos aufgelistet. Du wählst einen Server zum Konfigurieren aus oder lädst den Bot in einen Server ein, in dem er noch nicht ist."
+        },
+        {
+          "q": "Warum erscheint einer meiner Server nicht in der Liste?",
+          "a": "Es werden nur Server angezeigt, in denen du Inhaber bist oder die Berechtigung „Server verwalten“ besitzt. Stelle sicher, dass du diese Rolle in Discord hast und lade die Seite neu."
+        },
+        {
+          "q": "Was passiert beim Klick auf „Bot hinzufügen“?",
+          "a": "Discords Einladungsdialog wird geöffnet. Nach Erteilen der empfohlenen Berechtigungen tritt der Bot dem Server bei und der Eintrag wird hier auf „Hinzugefügt“ gesetzt."
+        },
+        {
+          "q": "Ich habe den Bot eingeladen, aber er steht weiterhin als „nicht hinzugefügt“. Was tun?",
+          "a": "Manchmal verzögert sich das durch Discords Cache. Warte ein paar Sekunden und lade neu; bleibt das Problem, kicke den Bot und lade ihn erneut ein."
+        },
+        {
+          "q": "Wie suche ich nach einem Server?",
+          "a": "Gib im Suchfeld oben einen Teil des Servernamens ein. Die Liste wird in Echtzeit gefiltert."
+        },
+        {
+          "q": "Wie ist die Liste sortiert?",
+          "a": "Server mit Bot werden zuerst angezeigt, danach folgen die übrigen verwaltbaren Server. Innerhalb jeder Gruppe wird alphabetisch sortiert."
+        },
+        {
+          "q": "Muss ich jeden Server einzeln einrichten?",
+          "a": "Ja, die Einstellungen sind serverbezogen. Wähle nacheinander jeden Server und konfiguriere die gewünschten Module im Dashboard."
+        },
+        {
+          "q": "Welche Berechtigungen sollte ich beim Einladen erteilen?",
+          "a": "Behalte am besten die voreingestellten Berechtigungen. Werden sie eingeschränkt, funktionieren manche Funktionen (Rollenvergabe, Nachrichten löschen, Sprachkanäle erstellen) eventuell nicht."
+        },
+        {
+          "q": "Ein neu hinzugefügter Server taucht nicht auf?",
+          "a": "Du musst dich nicht ausloggen — verwende einfach den Refresh-Button rechts oben. Wenn er weiterhin fehlt, melde dich einmal vom Panel ab und wieder an."
+        },
+        {
+          "q": "Wie wechsle ich nach der Auswahl einen Server?",
+          "a": "Klicke in der linken Seitenleiste auf den Servernamen und wähle „Server wechseln“ oder gehe direkt zu /apps."
+        }
+      ]
+    },
+    "selectServer": {
+      "title": "Serverliste",
+      "items": [
+        {
+          "q": "Warum sehe ich diese Seite?",
+          "a": "Du wirst hierher umgeleitet, wenn du noch keinen Server ausgewählt hast oder dein gewählter Server für dich nicht erreichbar ist."
+        },
+        {
+          "q": "Sehe ich hier alle meine Server?",
+          "a": "Nein — nur Server, die du verwalten kannst (Inhaber oder Berechtigung „Server verwalten“)."
+        },
+        {
+          "q": "Was tun, wenn die Liste leer ist?",
+          "a": "Stelle sicher, dass du in mindestens einem Discord-Server die Berechtigung „Server verwalten“ besitzt. Bei Neuvergabe lade die Seite neu."
+        },
+        {
+          "q": "Was passiert bei der Auswahl eines Servers?",
+          "a": "Er wird als aktiver Server gespeichert und du wirst zum Dashboard weitergeleitet — alle Einstellungen in der Seitenleiste betreffen ab jetzt diesen Server."
+        },
+        {
+          "q": "Ich habe den falschen Server gewählt — wie wechsle ich?",
+          "a": "Klicke oben links auf den Servernamen und nutze „Server wechseln“ oder wähle einen anderen Server unter /apps."
+        },
+        {
+          "q": "Was bedeutet das Symbol neben jedem Server?",
+          "a": "Es ist das Discord-Server-Icon. Hat ein Server keines, wird der erste Buchstabe des Namens angezeigt."
+        },
+        {
+          "q": "Die Liste wird nach einer Discord-Änderung nicht aktualisiert?",
+          "a": "Melde dich vom Panel ab und wieder an. Damit wird die Discord-Sitzung neu geladen und die Liste aktualisiert."
+        },
+        {
+          "q": "Kann ich einen Server verwalten, der mir nicht gehört?",
+          "a": "Ja, sofern du die Berechtigung „Server verwalten“ besitzt. Andernfalls liefert Discord ihn nicht als verwaltbar aus."
+        },
+        {
+          "q": "Was passiert, wenn der Bot nicht im gewählten Server ist?",
+          "a": "Du wirst zuerst zur Bot-Einladung geleitet; nach erfolgreichem Einladen wird die Auswahl fortgesetzt."
+        },
+        {
+          "q": "Kann ich einen Server direkt per URL öffnen?",
+          "a": "Ja — nutze /dashboard/<serverId>. Fehlt dir die Berechtigung, wirst du auf diese Seite zurückgeleitet."
+        }
+      ]
+    },
+    "error": {
+      "title": "Fehlerseite",
+      "items": [
+        {
+          "q": "Warum sehe ich diese Seite?",
+          "a": "Während einer Aktion ist ein unerwarteter Fehler aufgetreten. Ursache können temporäre Ausfälle, abgelaufene Sitzungen oder fehlende Berechtigungen sein."
+        },
+        {
+          "q": "Wie behebe ich den Fehler?",
+          "a": "Lade zuerst die Seite neu. Bleibt das Problem, melde dich ab und wieder an; persistiert der Fehler, wende dich an den Support."
+        },
+        {
+          "q": "Was bedeuten die Fehlercodes?",
+          "a": "401: Sitzung abgelaufen, 403: keine Berechtigung, 404: Ressource nicht gefunden, 500: Serverfehler, 503: Dienst vorübergehend nicht verfügbar."
+        },
+        {
+          "q": "Gehen meine Daten verloren?",
+          "a": "Nein. Gespeicherte Einstellungen bleiben in der Datenbank — der Fehler betrifft nur die fehlgeschlagene Anfrage."
+        },
+        {
+          "q": "Ist „Erneut versuchen“ sicher?",
+          "a": "Ja. Es wird nur die letzte Anfrage wiederholt — keine doppelten Datensätze."
+        },
+        {
+          "q": "Ich erhalte ständig denselben Fehler — was nun?",
+          "a": "Leere den Browser-Cache und wähle den Server unter /apps neu aus. Auch Netzwerkausfälle können die Ursache sein."
+        },
+        {
+          "q": "Der Bot funktioniert, aber das Panel hat einen Fehler?",
+          "a": "Die Verbindung des Bots zu Discord ist davon unabhängig. Die Panel-API kann temporär haken — versuche es in wenigen Minuten erneut."
+        },
+        {
+          "q": "Soll ich den Fehler melden?",
+          "a": "Wenn du Fehlercode und deine Aktion mitteilst, geht die Behebung schneller. Öffne ein Ticket im Hilfecenter."
+        },
+        {
+          "q": "Tritt das nur auf dem Handy auf?",
+          "a": "Manche Browser löschen Sitzungs-Cookies aggressiv. Aktualisiere deinen Browser oder nutze einen Desktop."
+        },
+        {
+          "q": "Gibt es Backups meiner Daten?",
+          "a": "Ja. Auf der Seite „Server-Backup“ findest du aktuelle Snapshots und kannst sie wiederherstellen."
+        }
+      ]
+    },
+    "dashboard": {
+      "title": "Server-Übersicht",
+      "items": [
+        {
+          "q": "Was zeigt dieses Dashboard?",
+          "a": "Eine Live-Übersicht des gewählten Servers — aktive Module, kürzliche Ereignisse, Mitgliederanzahl, Bot-Status und Schnellzugriffskarten."
+        },
+        {
+          "q": "Warum weicht die Mitgliederzahl von Discord ab?",
+          "a": "Sie spiegelt das wider, was der Bot zwischengespeichert hat. Discord propagiert Ereignisse mit kleiner Verzögerung — wenige Minuten Lag sind möglich."
+        },
+        {
+          "q": "Welche Module erreiche ich von hier?",
+          "a": "Über die Schnellzugriffskarten gelangst du zu Willkommen, Moderation, Logkanal und einigen häufig genutzten Seiten."
+        },
+        {
+          "q": "Was zeigt die Aktivitätsleiste?",
+          "a": "Eine Zusammenfassung der letzten relevanten Aktionen des Bots (Willkommen, Log-Versand, Moderation)."
+        },
+        {
+          "q": "Was bedeutet „Aktiv“ bei einem Modul?",
+          "a": "Der Schalter ist eingeschaltet und die nötige Kanal-/Rollen-Konfiguration ist gültig."
+        },
+        {
+          "q": "Wie funktioniert die server quota-Karte?",
+          "a": "Bei aktivem server quota-Abo werden Restlaufzeit und Vorteile angezeigt. Sonst verlinkt sie auf die server quota-Seite."
+        },
+        {
+          "q": "Der Bot scheint offline — was tun?",
+          "a": "Prüfe Bot-Rolle und Netzwerk in Discord. Bleibt das Problem, öffne ein Support-Ticket im Hilfecenter."
+        },
+        {
+          "q": "Sind die Daten live oder gecacht?",
+          "a": "Sie werden beim Seitenaufruf geladen und alle 30 Sekunden aktualisiert. Für sofortige Aktualisierung lade die Seite neu."
+        },
+        {
+          "q": "Wer kann diese Seite sehen?",
+          "a": "Jede Person mit der Berechtigung „Server verwalten“. Eine separate Autorisierung für Moderatoren gibt es nicht."
+        },
+        {
+          "q": "Wo finde ich tiefere Auswertungen?",
+          "a": "Statistik-Kanal, Einladungs-Rangliste und Berichte liefern detailliertere Metriken."
+        }
+      ]
+    },
+    "welcome": {
+      "title": "Panel-Begrüßung",
+      "items": [
+        {
+          "q": "Wofür ist diese Seite?",
+          "a": "Sie begrüßt dich bei der ersten Anmeldung und erläutert kurz das Panel-Layout."
+        },
+        {
+          "q": "Erscheint sie bei jedem Aufruf?",
+          "a": "Nein — nur beim ersten Besuch oder direkt nach der Bot-Einladung. Spätere Besuche öffnen direkt das Dashboard."
+        },
+        {
+          "q": "Wo soll ich von hier starten?",
+          "a": "Wir empfehlen, zunächst „Allgemeine Einstellungen“ und „Logkanal“ einzurichten, danach spezifische Module (Willkommen, Moderation usw.)."
+        },
+        {
+          "q": "Muss ich jetzt alles konfigurieren?",
+          "a": "Nein — Module lassen sich jederzeit aktivieren und konfigurieren. Unkonfigurierte Module bleiben einfach inaktiv."
+        },
+        {
+          "q": "Gibt es Anleitungen oder Videos?",
+          "a": "Ja. Im Hilfecenter findest du modulweise Kurzanleitungen."
+        },
+        {
+          "q": "Kann ich den Onboarding-Flow überspringen?",
+          "a": "Klicke „Überspringen“, um direkt zum Dashboard zu gelangen."
+        },
+        {
+          "q": "Mehrere Admins verwalten unseren Server — sehen alle dasselbe?",
+          "a": "Ja. Alle mit „Server verwalten“ sehen dasselbe Panel; ihre Änderungen werden im Audit-Log protokolliert."
+        },
+        {
+          "q": "Welche Module sind die typischen Ersteinrichtungen?",
+          "a": "Willkommensnachricht, Moderation, Logkanal, Auto-Rolle und Geburtstage werden am häufigsten zuerst konfiguriert."
+        },
+        {
+          "q": "Was ist server quota und ist es Pflicht?",
+          "a": "server quota schaltet höhere Limits und erweiterte Funktionen frei. Kernfunktionen bleiben kostenlos verfügbar."
+        },
+        {
+          "q": "Kann ich ein nicht benötigtes Modul deaktivieren?",
+          "a": "Ja. Jedes Modul hat einen Schalter — deine Daten bleiben erhalten und das Modul kann später wieder aktiviert werden."
+        }
+      ]
+    },
+    "tasks": {
+      "title": "Aufgabenverfolgung",
+      "items": [
+        {
+          "q": "Wofür ist diese Seite?",
+          "a": "Ein Aufgaben-Tracker im Panel für die Server-Verwaltung. Du kannst Aufgaben anlegen, ihren Status ändern und sie zuweisen."
+        },
+        {
+          "q": "Wie erstelle ich eine Aufgabe?",
+          "a": "Klicke „Neue Aufgabe“, gib Titel und optionale Beschreibung ein und wähle Zugewiesenen sowie Tags."
+        },
+        {
+          "q": "Wer sieht diese Aufgaben?",
+          "a": "Alle mit „Server verwalten“ auf diesem Server. Aufgaben sind serverbezogen und werden nicht auf andere Server übertragen."
+        },
+        {
+          "q": "Was passiert mit erledigten Aufgaben?",
+          "a": "Sie verbleiben im Tab „Erledigt“. Sie werden nicht automatisch gelöscht."
+        },
+        {
+          "q": "Kann ich Aufgaben importieren/exportieren?",
+          "a": "Ja — „Importieren“ akzeptiert JSON/CSV, „Exportieren“ lädt die aktuelle Liste herunter."
+        },
+        {
+          "q": "Werden Änderungen in Discord angezeigt?",
+          "a": "Ja — bei konfiguriertem Logkanal werden Erstellung und Statuswechsel dort zusammengefasst."
+        },
+        {
+          "q": "Können wir im Team zusammenarbeiten?",
+          "a": "Ja. Jede Aufgabe unterstützt Kommentare und Statusupdates; das Audit-Log zeigt, wer was wann geändert hat."
+        },
+        {
+          "q": "Sind gelöschte Aufgaben wiederherstellbar?",
+          "a": "Nein — Löschen ist endgültig. Verwende den Status „Erledigt“ als sanftes Archiv."
+        },
+        {
+          "q": "Wie werden Zugewiesene benachrichtigt?",
+          "a": "Nutzer mit aktiver DM erhalten eine Benachrichtigung über Discord; sonst erscheint sie nur im Panel."
+        },
+        {
+          "q": "Sind Aufgaben über Discord-Befehle verwaltbar?",
+          "a": "Aktuell nur über das Panel. Slash-Command-Integration ist auf der Roadmap."
+        }
+      ]
+    },
+    "helpCenter": {
+      "title": "Hilfecenter",
+      "items": [
+        {
+          "q": "Was bietet das Hilfecenter?",
+          "a": "Modulweise Anleitungen, häufige Probleme und die Möglichkeit, ein Support-Ticket zu öffnen."
+        },
+        {
+          "q": "Ich finde mein Thema nicht — was nun?",
+          "a": "Probiere Schlüsselwörter im Suchfeld. Wenn nichts passt, öffne ein Ticket über das Support-Formular."
+        },
+        {
+          "q": "Wie kontaktiere ich den Support?",
+          "a": "Über den Button „Kontakt“ unten oder über unseren Discord-Support-Server."
+        },
+        {
+          "q": "Wie schnell antwortet der Support?",
+          "a": "Innerhalb der Geschäftszeiten meist binnen 24 Stunden. server quota-Konten werden bevorzugt behandelt."
+        },
+        {
+          "q": "Wie reiche ich einen Bug-Report ein?",
+          "a": "Nenne die Seite, die Schritte und ggf. Fehlercode/Screenshots. Reproduzierbare Szenarien werden schneller behoben."
+        },
+        {
+          "q": "Gibt es ein Community-Forum?",
+          "a": "Ja — unser Discord-Support-Server hat Community-Kanäle, in denen du Fragen stellen kannst."
+        },
+        {
+          "q": "Wie sende ich vertrauliche Informationen?",
+          "a": "Nutze das Support-Formular für privaten Austausch. Tokens oder persönliche Daten nicht in öffentliche Kanäle posten."
+        },
+        {
+          "q": "Gibt es eine Entwickler-Dokumentation?",
+          "a": "Ja — der Link „Dokumentation“ führt zu detaillierten Modul-Anleitungen."
+        },
+        {
+          "q": "Gibt es einen KI-Assistenten?",
+          "a": "Ein In-Panel-Assistent ist derzeit in der Beta-Phase. Sobald verfügbar, erscheint er im Suchfeld."
+        },
+        {
+          "q": "Wo gebe ich Feature-Vorschläge ab?",
+          "a": "Wähle im Support-Formular die Kategorie „Vorschlag“."
+        }
+      ]
+    },
+    "botWelcome": {
+      "title": "Willkommensnachricht",
+      "items": [
+        {
+          "q": "Was macht dieses Modul?",
+          "a": "Es sendet automatisch eine Nachricht, wenn ein neues Mitglied beitritt. Möglich sind einfache Nachricht, Embed oder eine eigene Willkommenskarte."
+        },
+        {
+          "q": "Wie binde ich den Benutzernamen ein?",
+          "a": "Verwende die Platzhalter {user}, {username} und {server}. Sie werden beim Beitritt automatisch ersetzt."
+        },
+        {
+          "q": "Kann ich gleichzeitig in den Kanal und per DM senden?",
+          "a": "Ja — die Tabs „Kanalnachricht“ und „DM“ sind unabhängig und werden separat konfiguriert."
+        },
+        {
+          "q": "Warum kann eine DM fehlschlagen?",
+          "a": "Mitglieder mit deaktivierten DMs oder die den Bot blockiert haben sind unerreichbar. Im Logkanal erscheint dies als „Zustellung fehlgeschlagen“."
+        },
+        {
+          "q": "Wie sieht die Willkommenskarte aus?",
+          "a": "Ein Bild aus Avatar + Hintergrund + Benutzername. Farben und Texte werden auf dieser Seite angepasst."
+        },
+        {
+          "q": "Was unterscheidet Embed und Klartext?",
+          "a": "Embeds erscheinen in einer farbigen Box mit Titel/Beschreibung/Footer; Klartext ist eine normale Discord-Nachricht."
+        },
+        {
+          "q": "Es wird keine Willkommensnachricht gesendet — was prüfen?",
+          "a": "1) Modul aktiv, 2) Zielkanal gesetzt, 3) Bot hat „Nachrichten senden“, 4) Es lag ein echter guildMemberAdd-Event vor (Intents im Discord Developer Portal aktiv)."
+        },
+        {
+          "q": "Kann ich automatisch eine Rolle vergeben?",
+          "a": "Ja — das Feld „Zu vergebende Rolle“ weist beitretenden Mitgliedern automatisch eine Rolle zu."
+        },
+        {
+          "q": "Können Begrüßungen auf bestimmte Mitglieder beschränkt werden?",
+          "a": "Hier nicht direkt. Für Bedingungen verwende Auto-Rolle oder einen benutzerdefinierten Befehl."
+        },
+        {
+          "q": "Gibt es eine Vorschau?",
+          "a": "Ja — die Schaltfläche „Vorschau“ schickt dir eine Simulation per DM, ohne ein echtes Mitglied zu betreffen."
+        }
+      ]
+    },
+    "botGoodbye": {
+      "title": "Abschiedsnachricht",
+      "items": [
+        {
+          "q": "Wann wird die Abschiedsnachricht gesendet?",
+          "a": "Wenn ein Mitglied den Server verlässt — freiwillig, durch Kick oder Bann."
+        },
+        {
+          "q": "Wird die Nachricht auch bei gebannten Mitgliedern gesendet?",
+          "a": "Standardmäßig ja. Aktiviere „Gebannte Mitglieder ausschließen“, um sie zu überspringen."
+        },
+        {
+          "q": "Welche Platzhalter werden unterstützt?",
+          "a": "{user}, {username}, {server}, {memberCount}."
+        },
+        {
+          "q": "Ich möchte Abgänge nicht ankündigen?",
+          "a": "Deaktiviere einfach das Modul — alle Abschiedsnachrichten stoppen."
+        },
+        {
+          "q": "Kann ich für Kick/Bann/Verlassen unterschiedliche Templates nutzen?",
+          "a": "Ja — verwende die Tabs, um pro Grund ein eigenes Template zu definieren."
+        },
+        {
+          "q": "Soll die Nachricht in den Logkanal statt einen separaten Kanal gehen?",
+          "a": "Setze „Zielkanal“ auf den Logkanal. Saubere Trennung ist meist übersichtlicher."
+        },
+        {
+          "q": "Kann der Bot den Avatar des verlassenden Mitglieds zeigen?",
+          "a": "Ja — die DM-Karte und das Embed-Thumbnail können den Avatar enthalten."
+        },
+        {
+          "q": "Wird die Nachricht entfernt, wenn das Mitglied wieder beitritt?",
+          "a": "Nein — alte Nachrichten bleiben im Kanal; der Bot löscht sie nicht automatisch."
+        },
+        {
+          "q": "Kann ich pro Sprache eine andere Nachricht verwenden?",
+          "a": "Der Bot nutzt die Server-Sprache. Mehrsprachige Nachrichten sind nicht eingebaut."
+        },
+        {
+          "q": "Kann die Abschiedsnachricht in mehrere Kanäle gehen?",
+          "a": "Aktuell ein Kanal. Für mehrere Kanäle kannst du einen benutzerdefinierten Befehl nutzen."
+        }
+      ]
+    },
+    "botEmbedMessage": {
+      "title": "Reichhaltige (Embed) Nachricht",
+      "items": [
+        {
+          "q": "Was ist ein Embed?",
+          "a": "Eine Discord-Nachricht innerhalb einer farbigen Box mit Titel, Beschreibung und zusätzlichen Feldern."
+        },
+        {
+          "q": "Was kann ich auf dieser Seite tun?",
+          "a": "Eine Vorlage wählen, Titel/Beschreibung/Footer/Thumbnail/Bild ausfüllen und das Embed in den Zielkanal senden."
+        },
+        {
+          "q": "Wie wähle ich eine Farbe?",
+          "a": "Hex-Wert eingeben (z. B. #5865F2) oder den Farbwähler nutzen. Die linke Embed-Leiste übernimmt diese Farbe."
+        },
+        {
+          "q": "Kann ich ein gesendetes Embed bearbeiten?",
+          "a": "Ja — gib die Nachrichten-ID an und das bestehende Embed wird aktualisiert (statt neu gesendet)."
+        },
+        {
+          "q": "Kann ich mehrere Felder hinzufügen?",
+          "a": "Bis zu 25 Felder (Discord-Limit). Darüber hinaus warnt das Panel."
+        },
+        {
+          "q": "Werden Platzhalter unterstützt?",
+          "a": "Ja — {server}, {memberCount} und in benutzerdefinierten Befehlen definierte Variablen werden beim Senden ersetzt."
+        },
+        {
+          "q": "Kann ich das Embed planen?",
+          "a": "Diese Seite ist für sofortiges Senden. Für zeitversetzten/wiederkehrenden Versand nutze „Geplante Ankündigung“."
+        },
+        {
+          "q": "Wie sehe ich das Endergebnis vorab?",
+          "a": "Rechts wird beim Bearbeiten eine Live-Vorschau gezeigt."
+        },
+        {
+          "q": "Ich habe ein falsches Embed gesendet — was nun?",
+          "a": "Suche die Nachrichten-ID und nutze „Bearbeiten“, oder lösche sie direkt in Discord."
+        },
+        {
+          "q": "Was, wenn dem Bot die Embed-Berechtigung fehlt?",
+          "a": "Ohne „Links einbetten“ rendert Discord nur Klartext. Füge die Berechtigung der Bot-Rolle hinzu."
+        }
+      ]
+    },
+    "botReactionRole": {
+      "title": "Reaktionsrollen",
+      "items": [
+        {
+          "q": "Was ist eine Reaktionsrolle?",
+          "a": "Ein System, das einem Mitglied eine Rolle zuweist oder entzieht, wenn es mit einem bestimmten Emoji auf eine Nachricht reagiert."
+        },
+        {
+          "q": "Wie wähle ich die Nachricht?",
+          "a": "Gib Kanal- und Nachrichten-ID an, oder lass den Bot eine neue Nachricht erstellen."
+        },
+        {
+          "q": "Wie viele Emojis pro Nachricht?",
+          "a": "Bis zum Discord-Limit von 20 unterschiedlichen Reaktionen."
+        },
+        {
+          "q": "Kann ich benutzerdefinierte Emojis nutzen?",
+          "a": "Ja, eigene Server-Emojis funktionieren — der Bot muss im Server liegen, der das Emoji bereitstellt."
+        },
+        {
+          "q": "Wird die Rolle entfernt, wenn die Reaktion entfernt wird?",
+          "a": "Standardmäßig ja. Aktiviere „Sticky“-Modus, um die Rolle auch nach Entfernen der Reaktion zu behalten."
+        },
+        {
+          "q": "Funktioniert es auch bei Kanalwechsel der Nachricht?",
+          "a": "Ja — Verschieben zwischen Kanälen ist unkritisch. Wird die Nachricht gelöscht, ist die Reaktionsrolle deaktiviert."
+        },
+        {
+          "q": "Der Bot kann die Rolle nicht vergeben?",
+          "a": "Seine höchste Rolle muss über der zu vergebenden Rolle liegen, und er benötigt „Rollen verwalten“."
+        },
+        {
+          "q": "Kann ein Mitglied pro Nachricht nur eine Rolle wählen?",
+          "a": "Ja — aktiviere „Einzelauswahl“, damit pro Nachricht nur eine Rolle vergeben wird."
+        },
+        {
+          "q": "Wie lösche ich alte Reaktionsrollen massenhaft?",
+          "a": "Wähle den Eintrag aus der Liste und klicke „Löschen“. Nur die Bindung wird entfernt — die Nachricht bleibt im Kanal."
+        },
+        {
+          "q": "Werden Reaktionsrollen-Ereignisse geloggt?",
+          "a": "Ja — bei konfiguriertem Logkanal werden Vergaben/Entfernungen mit Mitglied- und Nachrichteninfos protokolliert."
+        }
+      ]
+    },
+    "botScheduledAnnouncement": {
+      "title": "Geplante Ankündigung",
+      "items": [
+        {
+          "q": "Was ist eine geplante Ankündigung?",
+          "a": "Eine Nachricht, die zu einem festgelegten Zeitpunkt automatisch gesendet wird, optional wiederkehrend. Klartext oder Embed."
+        },
+        {
+          "q": "Welche Zeitzone wird verwendet?",
+          "a": "Die konfigurierte Server-Zeitzone — du kannst auch UTC explizit angeben."
+        },
+        {
+          "q": "Wie richte ich wiederkehrende Ankündigungen ein?",
+          "a": "Wähle täglich/wöchentlich/monatlich, oder verwende das Erweitert-Feld für Cron-ähnliche Muster."
+        },
+        {
+          "q": "Kann ich eine Ankündigung abbrechen?",
+          "a": "Deaktiviere oder lösche sie aus der Liste. Deaktivieren bewahrt den Verlauf, stoppt aber Versendungen."
+        },
+        {
+          "q": "Kann ich eine geplante Nachricht bearbeiten?",
+          "a": "Ja, vor dem Versand. Bereits gesendete Kopien werden nicht bearbeitet — nutze die Embed-Bearbeitung."
+        },
+        {
+          "q": "Funktioniert @everyone?",
+          "a": "Ja, sofern der Bot die Berechtigung „Alle erwähnen“ hat. Ohne diese erscheint der Text, jedoch ohne Benachrichtigung."
+        },
+        {
+          "q": "Kann ich denselben Text in mehrere Kanäle gleichzeitig senden?",
+          "a": "Jede Ankündigung adressiert einen Kanal. Dupliziere sie für weitere Kanäle."
+        },
+        {
+          "q": "Sehe ich vergangene Versendungen?",
+          "a": "Ja — der Tab „Verlauf“ zeigt jüngste Versendungen mit Erfolg-/Fehlerstatus."
+        },
+        {
+          "q": "Was passiert bei Fehlversand?",
+          "a": "Berechtigungsfehler oder gelöschte Kanäle erzeugen einen Logeintrag, stoppen aber den Zeitplan nicht. Der nächste Lauf wird erneut versucht."
+        },
+        {
+          "q": "Kann ich Bilder anhängen?",
+          "a": "Im Embed-Modus — Thumbnails/Bilder werden unterstützt. Klartext erlaubt hier keinen Bildanhang."
+        }
+      ]
+    },
+    "botFeeds": {
+      "title": "Feed-Ankündigungen (YouTube/Twitch/RSS)",
+      "items": [
+        {
+          "q": "Was macht dieses Modul?",
+          "a": "Es überwacht eine YouTube-/Twitch-/RSS-Quelle und postet eine Ankündigung in den gewählten Kanal, sobald neuer Inhalt erscheint."
+        },
+        {
+          "q": "Warum keine vollständige URL für YouTube/Twitch?",
+          "a": "Der Bot setzt automatisch https://www.youtube.com/ bzw. https://www.twitch.tv/ voran — du gibst nur den Kanalnamen ein. So werden defekte URLs vermieden."
+        },
+        {
+          "q": "Welches Format soll ein RSS-Link haben?",
+          "a": "Eine gültige RSS-/Atom-URL (z. B. https://site.com/feed.xml). Mit „Vorschau“ kannst du prüfen, ob der Bot sie erreicht."
+        },
+        {
+          "q": "Wie oft wird die Quelle geprüft?",
+          "a": "Standard alle 15 Minuten (900 s). server quota erlaubt kürzere Intervalle; sehr kurze Intervalle können vom Anbieter limitiert werden."
+        },
+        {
+          "q": "Es kommen keine neuen Inhalte — was prüfen?",
+          "a": "Nutze „Vorschau“, um die Quelle zu validieren. Stelle sicher, dass der Kanalname korrekt ist und kürzlich Inhalte veröffentlicht wurden."
+        },
+        {
+          "q": "Kann ich pro Post eine Rolle erwähnen?",
+          "a": "Ja — wähle eine Rolle unter „Erwähnte Rolle“; der Bot pingt sie beim Versand."
+        },
+        {
+          "q": "Werden auch alte Inhalte gepostet?",
+          "a": "Nein — nur Inhalte, die nach Erstellung des Abos veröffentlicht wurden, werden angekündigt."
+        },
+        {
+          "q": "Kann ich die Quell-URL später ändern?",
+          "a": "Ja — beim Editieren der URL wird der Verlaufsfilter zurückgesetzt, sodass ab da neu erkannt wird."
+        },
+        {
+          "q": "Werden YouTube-Livestreams erkannt?",
+          "a": "Ja — Livestreams lösen eine separate Ankündigung aus."
+        }
+      ]
+    },
+    "botPoll": {
+      "title": "Umfragen",
+      "items": [
+        {
+          "q": "Wie erstelle ich eine Umfrage?",
+          "a": "Frage, Optionen, Zielkanal und Dauer eingeben und auf „Erstellen“ klicken. Der Bot postet eine Nachricht, in der Reaktionen als Stimmen zählen."
+        },
+        {
+          "q": "Wie viele Optionen kann ich anlegen?",
+          "a": "Bis zum Discord-Limit von 20. Weniger Optionen ergeben meist klarere Ergebnisse."
+        },
+        {
+          "q": "Was bewirkt Mehrfachabstimmung?",
+          "a": "Eingeschaltet kann ein Mitglied mehrere Optionen auswählen. Ausgeschaltet zählt nur eine Stimme pro Mitglied."
+        },
+        {
+          "q": "Was passiert beim Ende der Umfrage?",
+          "a": "Der Bot sperrt die Nachricht und postet eine Zusammenfassung inkl. Gewinner. Du kannst auch manuell beenden."
+        },
+        {
+          "q": "Kann ich sehen, wer abgestimmt hat?",
+          "a": "Moderatoren sehen die Liste im Tab „Stimm-Details“ — außer im Anonym-Modus."
+        },
+        {
+          "q": "Kann ich eine laufende Umfrage bearbeiten?",
+          "a": "Nur Frage und Dauer. Optionen zu ändern würde bestehende Stimmen ungültig machen."
+        },
+        {
+          "q": "Kann ich auf bestimmte Rollen beschränken?",
+          "a": "Ja — füge Rollen unter „Erlaubte Rollen“ hinzu. Reaktionen anderer zählen nicht."
+        },
+        {
+          "q": "Werden Umfragen archiviert?",
+          "a": "Ja — sie sind auf dieser Seite mit Ergebnissen einsehbar."
+        },
+        {
+          "q": "Kann das Ergebnis automatisch angewendet werden?",
+          "a": "Aktuell zeigt der Bot nur Ergebnisse. Für Automatik-Aktionen nutze einen benutzerdefinierten Befehl."
+        },
+        {
+          "q": "Kann ich Mitglieder in der Umfrage erwähnen?",
+          "a": "Ja — @everyone oder Rollen in Frage/Beschreibung; abhängig von Bot-Berechtigungen."
+        }
+      ]
+    },
+    "botGiveaway": {
+      "title": "Gewinnspiele",
+      "items": [
+        {
+          "q": "Wie starte ich ein Gewinnspiel?",
+          "a": "Name, Preis, Anzahl Gewinner, Kanal und Enddatum eingeben. Der Bot sammelt Teilnehmer per Reaktion bis zum Enddatum."
+        },
+        {
+          "q": "Welche Reaktion zählt als Teilnahme?",
+          "a": "Standardmäßig 🎉. Jeder, der mit diesem Emoji reagiert, wird zur Teilnehmerliste hinzugefügt."
+        },
+        {
+          "q": "Mehrere Gewinner möglich?",
+          "a": "Ja — setze „Anzahl Gewinner“. Der Bot zieht am Ende entsprechend viele Zufallsgewinner."
+        },
+        {
+          "q": "Kann ich Teilnehmer filtern?",
+          "a": "Ja — beschränke nach Rolle oder Mindest-Kontoalter unter „Erweitert“."
+        },
+        {
+          "q": "Kann ich vorzeitig beenden?",
+          "a": "Ja — wähle es in der Liste und klicke „Beenden“."
+        },
+        {
+          "q": "Kann ich Gewinner neu auslosen?",
+          "a": "Ja — „Erneut ziehen“ wählt einen neuen Gewinner; Originalgewinner können ein- oder ausgeschlossen werden."
+        },
+        {
+          "q": "Schickt der Bot Gewinnern eine DM?",
+          "a": "Nur wenn ihre DMs offen sind. Sonst werden sie im Kanal gepingt."
+        },
+        {
+          "q": "Was, wenn die Gewinnspiel-Nachricht gelöscht wird?",
+          "a": "Es wird automatisch storniert und protokolliert. Du startest ein neues."
+        },
+        {
+          "q": "Werden Gewinnspiele archiviert?",
+          "a": "Ja — der Tab „Verlauf“ enthält alle Gewinnspiele und Gewinner."
+        },
+        {
+          "q": "Kann ich bestimmte Mitglieder ausschließen?",
+          "a": "Ja — „Ausgeschlossene Rollen“ oder „Ausgeschlossene Nutzer“ entfernen sie aus der Ziehung."
+        }
+      ]
+    },
+    "botLevel": {
+      "title": "Level-System",
+      "items": [
+        {
+          "q": "Wie funktioniert das Level-System?",
+          "a": "Mitglieder erhalten XP fürs Schreiben oder für Zeit im Sprachkanal. Bei XP-Schwellen steigen sie auf; konfigurierte Rollen werden automatisch vergeben."
+        },
+        {
+          "q": "Wie viel XP pro Nachricht?",
+          "a": "Der Wert „XP pro Nachricht“. Bei aktiviertem „Zufalls-XP“ wird zwischen Min/Max zufällig vergeben."
+        },
+        {
+          "q": "Was bedeutet Cooldown?",
+          "a": "Eine Wartezeit, die verhindert, dass Mitglieder zu schnell XP sammeln. 30–60 Sekunden sind empfohlen."
+        },
+        {
+          "q": "Kann ich Kanäle ausschließen?",
+          "a": "Ja — „Ignorierte Kanäle“ überspringt Spam- oder Befehlskanäle."
+        },
+        {
+          "q": "Wie definiere ich Rollen-Belohnungen?",
+          "a": "Trage Level + Rolle in der Tabelle „Rollen-Belohnungen“ ein und aktiviere den Schalter."
+        },
+        {
+          "q": "Soll die alte Belohnungsrolle ersetzt oder gestapelt werden?",
+          "a": "Standardmäßig werden Rollen gestapelt. Aktiviere „Einzel-Rollen-Modus“, damit nur eine bleibt."
+        },
+        {
+          "q": "Wohin gehen Aufstiegs-Benachrichtigungen?",
+          "a": "An den konfigurierten Kanal oder per DM. Du kannst Benachrichtigungen auch komplett deaktivieren."
+        },
+        {
+          "q": "Kann ich die XP eines Mitglieds zurücksetzen?",
+          "a": "Ja — individuelle oder server-weite Resets sind möglich. Die Aktion ist nicht rückgängig."
+        },
+        {
+          "q": "Sind XP zwischen Servern übertragbar?",
+          "a": "Nein — XP sind serverbezogen. Mit Backup-/Klon-Tools übertragbar."
+        },
+        {
+          "q": "Gibt es eine Bestenliste?",
+          "a": "Ja — per Discord-Befehl (z. B. /level top) oder über das Modul „Statistik-Kanal“."
+        }
+      ]
+    },
+    "botInviteLeaderboard": {
+      "title": "Einladungs-Rangliste",
+      "items": [
+        {
+          "q": "Was zeigt diese Seite?",
+          "a": "Sie listet Mitglieder nach Anzahl ihrer Einladungen. Gesamt, echt (geblieben), verlassen und Fake-Einladungen werden separat dargestellt."
+        },
+        {
+          "q": "Wie werden Einladungen gezählt?",
+          "a": "Durch Verfolgen, welcher Einladungslink jedes neue Mitglied genutzt hat. Der Bot benötigt „Server verwalten“."
+        },
+        {
+          "q": "Was ist eine Fake-Einladung?",
+          "a": "Eine Einladung von einem sehr jungen Konto oder einem Mitglied, das sofort ging. Sie werden zur Spam-Filterung markiert."
+        },
+        {
+          "q": "Kann ich nach Datumsbereich filtern?",
+          "a": "Ja — verwende den Datumswähler für wöchentlich/monatlich/individuelle Zeiträume."
+        },
+        {
+          "q": "Kann ich Einladungs-Belohnungen einrichten?",
+          "a": "Ja — im Bereich „Einladungs-Belohnungen“ legst du Rollen-Belohnungen pro Einladungszahl an. „Rollen verwalten“ wird benötigt."
+        },
+        {
+          "q": "Sehe ich, wen ein Mitglied eingeladen hat?",
+          "a": "Ja — das Aufklappen einer Zeile zeigt die Liste eingeladener Nutzer."
+        },
+        {
+          "q": "Die Zahlen weichen von Discord ab — warum?",
+          "a": "Discord-Caching kann Verzögerungen verursachen. Mit „Synchronisieren“ holst du die aktuellen Daten."
+        },
+        {
+          "q": "Werden Einladungen vor dem Bot-Beitritt gezählt?",
+          "a": "Du kannst einen Basiswert für ältere Einladungen setzen. Alles ab dem Bot-Beitritt ist Echtzeit."
+        },
+        {
+          "q": "Kann ich die Rangliste zurücksetzen?",
+          "a": "Ja — „Zurücksetzen“ leert den gesamten Server. Die Aktion ist endgültig."
+        },
+        {
+          "q": "Kann ich die Rangliste öffentlich anzeigen?",
+          "a": "Ja — über das Modul „Statistik-Kanal“ in Sprachkanalnamen einblenden."
+        }
+      ]
+    },
+    "botApplications": {
+      "title": "Bewerbungsformulare",
+      "items": [
+        {
+          "q": "Was ist ein Bewerbungsformular?",
+          "a": "Ein mehrteiliges Formular für Staff-/Jury-/Event-Bewerbungen. Der Bot sammelt Antworten und legt sie Moderatoren zur Prüfung vor."
+        },
+        {
+          "q": "Wie füge ich Felder hinzu?",
+          "a": "Mit dem Panel-Form-Builder — Felder mit Label, Typ und Pflichtmarkierung anlegen. Kein JSON nötig."
+        },
+        {
+          "q": "Welche Feldtypen gibt es?",
+          "a": "Kurztext, Langtext, Zahl, Datum und Auswahlliste. Jedes Feld kann pflicht/optional sein."
+        },
+        {
+          "q": "Wo füllt das Mitglied das Formular aus?",
+          "a": "Der Bot postet einen „Bewerben“-Button im gewählten Kanal. Mitglieder öffnen ihn per DM oder Modal."
+        },
+        {
+          "q": "Wohin gehen die Antworten?",
+          "a": "An den konfigurierten „Ergebniskanal“ als Embed mit Genehmigen-/Ablehnen-Buttons für Moderatoren."
+        },
+        {
+          "q": "Können angenommene Bewerber eine Rolle bekommen?",
+          "a": "Ja — setze „Rolle bei Annahme“; sie wird bei Genehmigung automatisch vergeben."
+        },
+        {
+          "q": "Kann sich dasselbe Mitglied mehrfach bewerben?",
+          "a": "Vorbehaltlich eines Cooldowns (Standard 24 h) sind weitere Bewerbungen erlaubt."
+        },
+        {
+          "q": "Werden Bewerbungsverläufe gespeichert?",
+          "a": "Ja — der Tab „Verlauf“ zeigt jede Bewerbung samt Status."
+        },
+        {
+          "q": "Ändern sich alte Antworten, wenn ich das Formular bearbeite?",
+          "a": "Nein — alte Antworten bleiben an die Formularversion gebunden, in der sie eingereicht wurden."
+        },
+        {
+          "q": "Mehrere Formulare (z. B. Staff und Event) möglich?",
+          "a": "Ja — definiere mehrere Formulare mit eigenen Kanälen/Rollen/Fragen."
+        }
+      ]
+    },
+    "botMusic": {
+      "title": "Musik",
+      "items": [
+        {
+          "q": "Wie spielt man Musik ab?",
+          "a": "Im Server /play <Track oder URL> ausführen. Der Bot tritt deinem Sprachkanal bei und beginnt mit der Wiedergabe. Das Panel konfiguriert nur die Regeln."
+        },
+        {
+          "q": "Welche Plattformen werden unterstützt?",
+          "a": "YouTube, Spotify (Links), SoundCloud und direkte Audio-URLs. Spotify-Playlists werden Track für Track gematcht."
+        },
+        {
+          "q": "Der Bot tritt nicht dem Sprachkanal bei?",
+          "a": "Er benötigt „Verbinden“ und „Sprechen“, und du musst beim Ausführen von /play in einem Sprachkanal sein."
+        },
+        {
+          "q": "Wie verwalte ich die Warteschlange?",
+          "a": "/queue zeigt sie, /skip überspringt, /pause pausiert, /resume setzt fort. Das Panel zeigt zusätzlich den aktuell laufenden Titel."
+        },
+        {
+          "q": "Wie lang darf die Warteschlange sein?",
+          "a": "Standard 100 für Standard-Server; server quota erweitert dies. Anpassbar über „Max. Warteschlange“."
+        },
+        {
+          "q": "Kann ich beschränken, wer Songs anfragen darf?",
+          "a": "Ja — „Erlaubte Rollen“ steuert die Berechtigung."
+        },
+        {
+          "q": "Wie viele Songs darf ein Nutzer in die Warteschlange legen?",
+          "a": "„Songs pro Nutzer“ setzt ein Anti-Spam-Limit."
+        },
+        {
+          "q": "Kann ich die Audioqualität anpassen?",
+          "a": "Ja — über „Bitrate“. 96–128 kbps für schwächere Verbindungen, 192–256 kbps wenn Discord es erlaubt."
+        },
+        {
+          "q": "Was tut der Bot bei langer Stille?",
+          "a": "Er trennt sich automatisch nach dem Idle-Timeout (konfigurierbar)."
+        },
+        {
+          "q": "Was bringt server quota-Musik?",
+          "a": "Längere Warteschlangen, schnellere Suche und erweiterte Filter (Bassboost, Nightcore usw.)."
+        }
+      ]
+    },
+    "botTicketPanel": {
+      "title": "Support-Panel (Tickets)",
+      "items": [
+        {
+          "q": "Was ist das Ticket-Panel?",
+          "a": "Ein Button/Menü, mit dem Mitglieder private Support-Kanäle öffnen. Jeder Klick erstellt einen eigenen Ticket-Kanal."
+        },
+        {
+          "q": "Wer sieht einen Ticket-Kanal?",
+          "a": "Nur die anfragende Person, die konfigurierten „Ticket-Manager-Rollen“ und ausgewählte Moderatoren. Für alle anderen ist er ausgeblendet."
+        },
+        {
+          "q": "Mehrere Ticket-Kategorien (z. B. Bug/Frage)?",
+          "a": "Ja — aktiviere Multi-Button/Menü-Modus und definiere pro Typ eigene Fragen."
+        },
+        {
+          "q": "Was passiert beim Schließen eines Tickets?",
+          "a": "Der Kanal wird archiviert oder gelöscht; ein Transcript geht als HTML/Embed an den Logkanal."
+        },
+        {
+          "q": "Was ist ein Transcript?",
+          "a": "Eine persistierte Aufzeichnung aller im Ticket ausgetauschten Nachrichten zur späteren Einsicht."
+        },
+        {
+          "q": "Kann ein Mitglied mehrere Tickets gleichzeitig öffnen?",
+          "a": "Standardmäßig nein. „Mehrere Tickets“ aktivieren erlaubt mehrere aktive Tickets pro Mitglied."
+        },
+        {
+          "q": "Wie heißen Ticket-Kanäle?",
+          "a": "Automatisch generiert nach Vorlage wie „ticket-{username}“ oder „ticket-{count}“. Format anpassbar."
+        },
+        {
+          "q": "Wie tritt ein Moderator dem Ticket bei?",
+          "a": "Sie werden automatisch hinzugefügt. „Übernehmen“ weist das Ticket einem Moderator zu."
+        },
+        {
+          "q": "Kann ich die Anzahl Tickets begrenzen?",
+          "a": "Ja — Server- und Nutzer-Limits für aktive Tickets."
+        },
+        {
+          "q": "Wie lange bleiben Ticket-Daten?",
+          "a": "Aktive Tickets sind persistent; Archive folgen der Aufbewahrungseinstellung (Standard 90 Tage)."
+        }
+      ]
+    },
+    "botModerator": {
+      "title": "Moderation",
+      "items": [
+        {
+          "q": "Was deckt diese Seite ab?",
+          "a": "Anti-Spam, Schimpfwortfilter, Link-/Einladungssperre, Mention-Spam und Nachrichtenflut."
+        },
+        {
+          "q": "Kann ich eine Regel in bestimmten Kanälen deaktivieren?",
+          "a": "Ja — „Ignorierte Kanäle“ schließt sie aus."
+        },
+        {
+          "q": "Bestimmte Rollen von Moderation ausnehmen?",
+          "a": "Trage sie unter „Ignorierte Rollen“ ein; ihre Nachrichten umgehen die Regeln."
+        },
+        {
+          "q": "Welche Aktionen stehen zur Verfügung?",
+          "a": "Löschen, Verwarnen, Time-out, Kick, Bann — basierend auf konfigurierbaren Schwellenwerten."
+        },
+        {
+          "q": "Kann der Bot meine eigenen Nachrichten löschen?",
+          "a": "Ja, sofern deine Rolle nicht über der Bot-Rolle steht oder du in „Ignorierte Rollen“ bist."
+        },
+        {
+          "q": "Werden Moderationsereignisse geloggt?",
+          "a": "Ja — jede Aktion geht an den Logkanal und ist unter „Moderationsprotokolle“ einsehbar."
+        },
+        {
+          "q": "Wie mache ich eine falsche Aktion rückgängig?",
+          "a": "Time-outs und Banns haben einen Rückgängig-Button. Löschungen sind irreversibel."
+        },
+        {
+          "q": "Kann ich die Schimpfwortliste anpassen?",
+          "a": "Ja — „Eigene Wortliste“ erlaubt servereigene Einträge."
+        },
+        {
+          "q": "Werden Bypass-Versuche erkannt?",
+          "a": "Meist ja durch Normalisierung. Für vollständige Abdeckung kombiniere mit KI-Moderation."
+        },
+        {
+          "q": "Wie integriert sich das mit KI-Moderation?",
+          "a": "Diese Seite ist keyword-/musterbasiert. Für kontextbezogene Moderation nutze parallel die KI-Moderation."
+        }
+      ]
+    },
+    "botAiModeration": {
+      "title": "KI-Moderation",
+      "items": [
+        {
+          "q": "Wie funktioniert KI-Moderation?",
+          "a": "Der Bot bewertet Nachrichten in Kategorien wie Toxicity, Hate, Sexual, Harassment, Self-Harm und führt je nach Schwelle Log/Löschen/Time-out aus."
+        },
+        {
+          "q": "Was bedeutet Empfindlichkeit (Niedrig/Normal/Hoch)?",
+          "a": "Hoch löst bei niedrigeren Werten aus und erfasst mehr Nachrichten. Niedrig greift weniger. Hoch ist auf spam-/troll-lastigen Servern empfehlenswert."
+        },
+        {
+          "q": "Welche Kanäle ausschließen?",
+          "a": "Kanäle mit erlaubtem Erwachsenen-Banter (z. B. 18+ Allgemein), Bot-Test- und private Chat-Kanäle."
+        },
+        {
+          "q": "Werden alle Sprachen abgedeckt?",
+          "a": "Türkisch und die anderen 11 unterstützten Sprachen — auch normalisierte Mischschreibungen."
+        },
+        {
+          "q": "Empfohlene Aktion bei Beleidigungen?",
+          "a": "Erst Log + Verwarnen; bei Wiederholung Time-out. Bann nur für schwere Verstöße."
+        },
+        {
+          "q": "Wie reduziere ich False-Positives?",
+          "a": "Ausgeschlossene Kanäle konfigurieren, Empfindlichkeit auf Normal halten und ggf. Wort-Ausnahmen ergänzen."
+        },
+        {
+          "q": "Sehe ich getroffene Aktionen?",
+          "a": "Ja — „Prüfprotokolle“ listet jüngste Auslöser mit Kanal/Nutzer/Score."
+        },
+        {
+          "q": "Wie lange werden KI-Daten aufbewahrt?",
+          "a": "Standard 30 Tage, server quota 90 Tage. Bei Deaktivierung werden geplante Löschungen ausgeführt."
+        },
+        {
+          "q": "Gibt es KI-Nutzungskosten?",
+          "a": "Standardnutzung ist enthalten. server quota-Tarife gewähren ein höheres Nachrichten-Kontingent."
+        },
+        {
+          "q": "Wird jede Nachricht geprüft?",
+          "a": "Über „Sample-Rate“ einen Prozentsatz (z. B. 50 %, 100 %) prüfen. Hilfreich beim Kontingent-Management."
+        }
+      ]
+    },
+    "botModerationLogs": {
+      "title": "Moderationsprotokolle",
+      "items": [
+        {
+          "q": "Was listet diese Seite?",
+          "a": "Moderationsbezogene Einträge mit aktiven Filtern; unterstützte Aktionstypen sind nur die in der Oberfläche gezeigten — Löschen, Verwarnen, Time-out, Kick und Bann sind nicht alle garantiert."
+        },
+        {
+          "q": "Wie funktionieren die Filter?",
+          "a": "Aktion, Regeltyp, Kanal, Quelle (manuell / KI / Wortfilter) und Datumsbereich lassen sich auswählen. Mehrere Filter wirken zusammen."
+        },
+        {
+          "q": "Kann ich eine Aktion von hier rückgängig machen?",
+          "a": "Rückgängig ist in dieser Version nicht für jede Aktion verfügbar; korrigieren Sie nach Möglichkeit in Discord oder im jeweiligen Modul."
+        },
+        {
+          "q": "Kann ich die Logs exportieren?",
+          "a": "Ja — mit CSV oder JSON auf der Karte „Einträge“ laden Sie die aktuell geladene (gefilterte) Liste herunter. Es gilt die API-Abfragelimitierung (bis zu 100 Zeilen); teilen Sie den Zeitraum für längere Auswertungen auf."
+        },
+        {
+          "q": "Was bedeuten die Quellwerte?",
+          "a": "manual = manuelle Aktion, ai = KI-Moderation, keyword = Wort-/Regelfilter (Beschriftungen können lokalisiert sein)."
+        },
+        {
+          "q": "Was tun, wenn ein Mitglied immer wieder erfasst wird?",
+          "a": "Verlauf prüfen — bei Wiederholungen Aktion eskalieren (Time-out → Bann)."
+        },
+        {
+          "q": "Wie isoliere ich automatisierte Aktionen?",
+          "a": "Filtern Sie die Quelle nach KI-Moderation oder Wortfilter, um automatische oder regelbasierte Fälle einzugrenzen."
+        },
+        {
+          "q": "Was steht in der Detailansicht?",
+          "a": "Für die ausgewählte Zeile: Datensatz-ID, Nachrichten-ID, Grundschlüssel, Hinweis-/Fehlercode, JSON-Parameter und optional KI-Score-Zusammenfassung. Nutzerkennungen werden als Hash gespeichert."
+        },
+        {
+          "q": "Wie lange werden Datensätze gespeichert?",
+          "a": "Standard 90 Tage, server quota 1 Jahr. Danach automatische Löschung."
+        },
+        {
+          "q": "Massenlöschung möglich?",
+          "a": "In dieser Version gibt es keine Massenlösch- oder Archiv-Schaltfläche für Filterergebnisse."
+        }
+      ]
+    },
+    "botAuditLogs": {
+      "title": "Änderungsprotokolle (Audit)",
+      "items": [
+        {
+          "q": "Was ist ein Audit-Eintrag?",
+          "a": "Ein zeitgestempeltes Protokoll jeder Konfigurationsänderung über Panel oder Bot — wer hat was wann geändert."
+        },
+        {
+          "q": "Welche Änderungen werden erfasst?",
+          "a": "Modul-Schalter, Kanal-/Rollen-Auswahl, Schwellenwerte, server quota-Vorgänge sowie Formular-/Vorlagenänderungen."
+        },
+        {
+          "q": "Wozu der Vorher/Nachher-Vergleich?",
+          "a": "Eine Side-by-Side-Anzeige des alten und neuen Zustands — versehentliche Änderungen sind sofort erkennbar."
+        },
+        {
+          "q": "Was bedeuten Aktion- und Ressource-Filter?",
+          "a": "Ressource = welches Modul (ai_moderation, ticket usw.). Aktion = die Operation (Erstellen/Aktualisieren/Löschen)."
+        },
+        {
+          "q": "Kann ich eine falsche Änderung rückgängig machen?",
+          "a": "„Diese Änderung rückgängig“ stellt einfache Updates wieder her. Komplexe Ketten erfordern manuelle Korrekturen."
+        },
+        {
+          "q": "Sind Datensätze editierbar?",
+          "a": "Nein — Audit-Logs sind append-only. Nur das System schreibt sie."
+        },
+        {
+          "q": "Wie lange werden sie aufbewahrt?",
+          "a": "Standard 180 Tage, server quota 1 Jahr. Sichere wichtige Änderungen separat per Backup."
+        },
+        {
+          "q": "Sehe ich, wer geändert hat?",
+          "a": "Ja — das Feld „Actor“ zeigt Discord-ID und Name."
+        },
+        {
+          "q": "Kann ich Logs per API abrufen?",
+          "a": "Ja — server quota-Pläne enthalten Audit-Log-API-Zugriff. Details siehe Integrationen."
+        },
+        {
+          "q": "Beeinträchtigen viele Datensätze die Performance?",
+          "a": "Nein — die Seite ist paginiert und gefiltert; Daten werden bei Bedarf geladen."
+        }
+      ]
+    },
+    "botLogChannel": {
+      "title": "Logkanal",
+      "items": [
+        {
+          "q": "Was macht dieses Modul?",
+          "a": "Es weist Server-Ereignisse (Beitritte/Austritte, Bearbeitungen/Löschungen, Sprachänderungen, Rollenänderungen) Logkanälen zu."
+        },
+        {
+          "q": "Ein Kanal für alles oder pro Kategorie?",
+          "a": "Du kannst jeden Log-Typ in einen eigenen Kanal leiten oder per „Neue Kategorie + automatische Kanäle“ alles auf einmal einrichten."
+        },
+        {
+          "q": "Welche Log-Kategorien gibt es?",
+          "a": "Mitglied, Nachricht, Kanal, Rolle, Sprache, Einladung, Moderation, Audit, Bot, server quota."
+        },
+        {
+          "q": "Warum sehe ich keine Nachrichtenlogs?",
+          "a": "Der Bot benötigt „Audit-Log ansehen“ und „Nachrichtenverlauf lesen“ und muss den Kanal sehen können."
+        },
+        {
+          "q": "Logs sind zu laut — wie reduzieren?",
+          "a": "Jeder Log-Typ hat einen eigenen Schalter; deaktiviere unnötige."
+        },
+        {
+          "q": "Embed oder Klartext?",
+          "a": "Embeds standardmäßig, mit Farb-/Icon-Klassifizierung. Auf Klartext umstellbar (für ältere Clients)."
+        },
+        {
+          "q": "Kann ich Kanäle aus Nachrichtenlogs ausschließen?",
+          "a": "Ja — „Ignorierte Kanäle“ schließt sensible/private aus."
+        },
+        {
+          "q": "Was passiert, wenn der Logkanal gelöscht wird?",
+          "a": "Der Bot kann nicht zustellen und protokolliert einen Fehler; du musst einen neuen Kanal wählen."
+        },
+        {
+          "q": "Gibt es eine Log-Aufbewahrung?",
+          "a": "Discord behält Nachrichten gemäß seinen Richtlinien. Das Panel führt zusätzlich ein 90-Tage-Archiv."
+        },
+        {
+          "q": "Kann ich Logkanäle per Rolle einschränken?",
+          "a": "Ja — mache den Kanal nur für Moderatoren sichtbar, sodass Mitglieder ihn nicht lesen."
+        }
+      ]
+    },
+    "botCustomCommand": {
+      "title": "Benutzerdef. Befehl (Basis)",
+      "items": [
+        {
+          "q": "Was ist ein benutzerdefinierter Befehl?",
+          "a": "Damit definierst du eigene /Befehle für deinen Server. Wenn Mitglieder ihn ausführen, wirkt der Bot die konfigurierte Aktion — typischerweise Nachrichten senden."
+        },
+        {
+          "q": "Was kann die Basis-Ansicht?",
+          "a": "Klartext, Embed-Antworten und kurze Infos. Für komplexe Abläufe nutze die erweiterte Ansicht."
+        },
+        {
+          "q": "Wie sollte der Befehlsname aussehen?",
+          "a": "Nur Kleinbuchstaben und Bindestriche (-). Türkische Zeichen werden normalisiert (ş→s, ç→c)."
+        },
+        {
+          "q": "Kann ich denselben Namen wiederverwenden?",
+          "a": "Nein — Namen sind serverweit eindeutig. Bei Konflikten warnt das Formular."
+        },
+        {
+          "q": "Wie beschränke ich, wer ausführen darf?",
+          "a": "Füge Rollen unter „Erlaubte Rollen“ hinzu. Andere erhalten einen Berechtigungsfehler."
+        },
+        {
+          "q": "Wofür ist der Cooldown?",
+          "a": "Eine kurze Wartezeit pro Nutzer gegen Spam — in Sekunden."
+        },
+        {
+          "q": "Befehl auf einen Kanal beschränken?",
+          "a": "Ja — „Auf diesen Kanal beschränken“ aktivieren und einen wählen."
+        },
+        {
+          "q": "Was bedeutet „Befehlseinsätze fixieren“?",
+          "a": "Sperrt die Antwort des Befehls — bleibt im Panel, selbst wenn der Server zurückgesetzt wird."
+        },
+        {
+          "q": "Werden Platzhalter unterstützt?",
+          "a": "Ja — {user}, {server}, {channel} u. a. werden zur Laufzeit ersetzt."
+        },
+        {
+          "q": "Erscheint der Befehl sofort in Discord?",
+          "a": "Ja — Discord-Caching kann die Verbreitung gelegentlich um 5–10 Minuten verzögern."
+        }
+      ]
+    },
+    "botCustomCommandAdvanced": {
+      "title": "Benutzerdef. Befehl (Erweitert)",
+      "items": [
+        {
+          "q": "Was ist anders als die Basis-Ansicht?",
+          "a": "Über Nachrichten hinaus: Rollenvergaben/-entzüge, Kanalanlage, Mitglieder verschieben, Embeds senden und Verkettung mehrerer Aktionen pro Befehl."
+        },
+        {
+          "q": "Mehrere Aktionen pro Befehl?",
+          "a": "Ja — füge sie der Aktionsliste hinzu; der Bot führt sie der Reihe nach aus."
+        },
+        {
+          "q": "Spielt die Aktionsreihenfolge eine Rolle?",
+          "a": "Ja. „Rolle vergeben dann Nachricht senden“ vs. „Nachricht senden dann Rolle vergeben“ liefern andere Resultate."
+        },
+        {
+          "q": "Welche Rollen-/Mitglieder-Aktionen sind möglich?",
+          "a": "Rolle vergeben/entziehen, Mitglieder verschieben, aus Sprachkanal kicken, Time-out anwenden."
+        },
+        {
+          "q": "Gibt es Bedingungen?",
+          "a": "Ja — das Bedingungsfeld prüft Rollen-/Kanalstatus. Bei Nichterfüllung endet der Befehl still."
+        },
+        {
+          "q": "Kann ich Argumente entgegennehmen?",
+          "a": "Ja — definiere Slash-Parameter und referenziere sie in der Antwort über {arg.name}."
+        },
+        {
+          "q": "Was passiert bei Fehlern?",
+          "a": "Der Bot bricht beim ersten fehlgeschlagenen Schritt ab und protokolliert ihn im Audit-Log; nachfolgende Schritte laufen nicht."
+        },
+        {
+          "q": "Quota-gated-Aktionen?",
+          "a": "Ja — Webhook-Aufrufe und API-Integrationen sind server quota-exklusiv."
+        },
+        {
+          "q": "Kann ich einen komplexen Flow als Test ausführen?",
+          "a": "Ja — „Testen“ führt einen Dry-Run im Live-Server aus."
+        },
+        {
+          "q": "Kann ich auf eine frühere Version zurück?",
+          "a": "Ja — öffne den Audit-Eintrag und nutze „Auf diese Version zurück“."
+        }
+      ]
+    },
+    "botTemporaryVoiceChannel": {
+      "title": "Private Sprachräume",
+      "items": [
+        {
+          "q": "Was ist ein temporärer Sprachkanal?",
+          "a": "Sobald ein Nutzer dem konfigurierten Lobby-Sprachkanal beitritt, erstellt der Bot einen privaten Kanal für ihn. Beim Verlassen wird er entfernt."
+        },
+        {
+          "q": "Welcher Kanal sollte Lobby sein?",
+          "a": "Ein häufig genutzter Sprachkanal (oft „Allgemein Sprache“) unter „Lobby-Kanal“ wählen."
+        },
+        {
+          "q": "Wer kontrolliert die Berechtigungen des neuen Kanals?",
+          "a": "Der Inhaber — er kann sperren/entsperren, Nutzerlimit setzen, umbenennen und Mitglieder kicken (per Befehl/Buttons)."
+        },
+        {
+          "q": "Wird der neue Kanal in der Kategorie der Lobby erstellt?",
+          "a": "Standardmäßig ja. Wähle eine andere unter „Unter bestehender Kategorie“."
+        },
+        {
+          "q": "Wie hoch ist das Nutzerlimit?",
+          "a": "Bis zum Discord-Maximum von 99. Setze den Standard mit „Nutzerlimit“."
+        },
+        {
+          "q": "Kann ich den Kanalnamen als Vorlage angeben?",
+          "a": "Ja — „Temporärer Kanalname“ unterstützt {user} und {server}, z. B. „{user}'s Raum“."
+        },
+        {
+          "q": "Löscht der Bot den Kanal sofort?",
+          "a": "Gemäß „Verzögerung Kanal-Löschung“ — sofort oder nach wenigen Sekunden Leerstand."
+        },
+        {
+          "q": "Was passiert, wenn der Inhaber den Server verlässt?",
+          "a": "Übergabe an das nächste berechtigte Mitglied oder gemäß deiner Richtlinie. Sonst wird der Kanal entfernt."
+        },
+        {
+          "q": "Was bedeutet „Mit Lobby-Berechtigungen synchronisieren“?",
+          "a": "Rollen-Berechtigungen der Lobby werden auf jeden neuen privaten Kanal übertragen — keine manuelle Einrichtung nötig."
+        },
+        {
+          "q": "Wie viele temporäre Kanäle gleichzeitig?",
+          "a": "Empfohlen 25 im Standard-Plan. server quota erhöht das Limit und schaltet Verwaltungsfunktionen frei."
+        }
+      ]
+    },
+    "botStatisticsChannel": {
+      "title": "Statistik-Kanäle",
+      "items": [
+        {
+          "q": "Was ist ein Statistik-Kanal?",
+          "a": "Sprachkanäle, deren Name Server-Zähler anzeigt (Mitglieder, online, Bots, Rollenanzahl, Einladungen)."
+        },
+        {
+          "q": "Welche Zähler werden unterstützt?",
+          "a": "Gesamtmitglieder, online, offline, Bots, Mitglieder einer Rolle, Gesamteinladungen und benutzerdefinierte Zähler."
+        },
+        {
+          "q": "Wie oft wird aktualisiert?",
+          "a": "Alle 5–10 Minuten wegen Discord-Rate-Limits. Häufigere Updates sind nicht möglich."
+        },
+        {
+          "q": "Wie wird der Kanalname formatiert?",
+          "a": "Über das Feld „Vorlage“; {value} wird durch den Zähler ersetzt, z. B. „Mitglieder: {value}“."
+        },
+        {
+          "q": "Wer darf im Kanal sprechen?",
+          "a": "Standardmäßig niemand — diese Kanäle sind nur Anzeige; @everyone „Verbinden“ ist deaktiviert."
+        },
+        {
+          "q": "Mehrere Zähler möglich?",
+          "a": "Ja — beliebig viele Statistik-Kanäle mit eigener Vorlage."
+        },
+        {
+          "q": "Die Zahl wirkt falsch — was tun?",
+          "a": "Wahrscheinlich Discord-Cache. „Synchronisieren“ erzwingt einen Refresh."
+        },
+        {
+          "q": "Wird der Wert auch ohne Bot aktualisiert?",
+          "a": "Er friert auf dem letzten Wert ein; Updates kommen nach Wiederverbindung des Bots zurück."
+        },
+        {
+          "q": "Was bringt server quota hier?",
+          "a": "Schnelleres Refresh, mehr Zähler und erweiterte Filter/Gruppen."
+        },
+        {
+          "q": "Wenn ich den Kanal lösche, verliere ich den Zähler?",
+          "a": "Nein — nur die Bindung zum Kanal. Verknüpfe jederzeit einen neuen Kanal."
+        }
+      ]
+    },
+    "botAutorole": {
+      "title": "Auto-Rolle",
+      "items": [
+        {
+          "q": "Was ist Auto-Rolle?",
+          "a": "Sie weist neue Mitglieder, bestimmte Mitglieder oder Bots automatisch eine oder mehrere Rollen zu."
+        },
+        {
+          "q": "Mehrere Rollen vergeben?",
+          "a": "Ja — wähle mehrere Rollen. Alle werden im Rahmen der Discord-Rollen-Limits vergeben."
+        },
+        {
+          "q": "Bekommen Bots eine Rolle automatisch?",
+          "a": "Ja — das Feld „Bot-Rolle“ ist separat und Bots erhalten nicht die regulären Auto-Rollen."
+        },
+        {
+          "q": "Berechtigungsfehler erhalten?",
+          "a": "Die höchste Rolle des Bots muss über der zu vergebenden Rolle stehen, plus „Rollen verwalten“."
+        },
+        {
+          "q": "Bedingungen anhand des Kontoalters?",
+          "a": "Ja — „Mindest-Kontoalter (Tage)“ verzögert die Vergabe bis zum Erreichen des Schwellenwerts."
+        },
+        {
+          "q": "Hilft die Altersbedingung gegen Raids?",
+          "a": "Ja — sie filtert frische/Wegwerf-Konten während eines Raids aus."
+        },
+        {
+          "q": "Werden auch bestehende Mitglieder zugewiesen?",
+          "a": "Standardmäßig nur Neuzugänge. „Auf alle anwenden“ führt eine einmalige Massen-Vergabe durch."
+        },
+        {
+          "q": "Kann ich die Vergabe verzögern?",
+          "a": "Ja — „Verzögerung (Sekunden)“ verschiebt die Rolle, hilfreich als Anti-Raid."
+        },
+        {
+          "q": "Was, wenn ein Mitglied die Rolle selbst entfernt?",
+          "a": "Bei aktivem „Erneut anwenden“ vergibt der Bot sie wieder; sonst einmalig."
+        },
+        {
+          "q": "Werden Auto-Rollen-Ereignisse geloggt?",
+          "a": "Ja — der Logkanal verzeichnet, wer wann welche Rolle erhalten hat."
+        }
+      ]
+    },
+    "botBirthday": {
+      "title": "Geburtstage",
+      "items": [
+        {
+          "q": "Was macht das Geburtstagsmodul?",
+          "a": "Es gratuliert Mitgliedern an ihrem hinterlegten Datum und vergibt optional eine temporäre Geburtstagsrolle."
+        },
+        {
+          "q": "Wie hinterlegen Mitglieder ihren Geburtstag?",
+          "a": "Per Bot-Befehl (z. B. /birthday) oder Modal-Formular. Nur Monat/Tag werden benötigt; Jahr ist optional."
+        },
+        {
+          "q": "Ist das Jahr nötig?",
+          "a": "Nein — Monat/Tag genügen. Mit Jahr wird Alter berechnet; ohne Jahr nur die Glückwunschnachricht."
+        },
+        {
+          "q": "Wann am Tag wird gratuliert?",
+          "a": "Standard 09:00 Server-Zeit. Über „Prüfstunde“ konfigurierbar."
+        },
+        {
+          "q": "Mehrere Geburtstage am selben Tag?",
+          "a": "Der Bot taggt alle in einer Nachricht — kein Spam."
+        },
+        {
+          "q": "Wie lange bleibt die Geburtstagsrolle?",
+          "a": "Standard 24 Stunden (in Stunden konfigurierbar). Sie wird automatisch entfernt."
+        },
+        {
+          "q": "Kann ein Mitglied seine Daten löschen?",
+          "a": "Ja — per eigenem Befehl oder über den Button „Meine Daten löschen“."
+        },
+        {
+          "q": "Kann das Alter verborgen bleiben?",
+          "a": "Ja — Mitglieder dürfen nur Monat/Tag eintragen; kein Alter wird gespeichert/angezeigt."
+        },
+        {
+          "q": "Was, wenn kein Benachrichtigungskanal gesetzt ist?",
+          "a": "Das Modul läuft nicht. Konfiguriere Benachrichtigungskanal und (optional) öffentliche Kanäle."
+        },
+        {
+          "q": "Werden vorherige Jahre erneut gefeiert?",
+          "a": "Ja — jährlich. Verlässt das Mitglied den Server, bleiben Daten erhalten, aber es gibt keine Benachrichtigung."
+        }
+      ]
+    },
+    "botReminder": {
+      "title": "Erinnerungen",
+      "items": [
+        {
+          "q": "Was macht das Erinnerungs-Modul?",
+          "a": "Es sendet eine Nachricht zu einem bestimmten Zeitpunkt an ein Mitglied oder einen Kanal — Events, Deadlines, Termine."
+        },
+        {
+          "q": "Einmalig oder wiederkehrend?",
+          "a": "Beides. Einmalige feuern einmal; wiederkehrende nutzen tägliche/wöchentliche/monatliche Pläne."
+        },
+        {
+          "q": "DM oder Kanal?",
+          "a": "Beides. Bei geschlossenen DMs und vorhandenem Kanal nutzt der Bot den Kanal."
+        },
+        {
+          "q": "Wie werden Zeitzonen gehandhabt?",
+          "a": "Server-Zeitzone als Standard. Mitglieder können /timezone setzen."
+        },
+        {
+          "q": "Mehrere Erinnerungen pro Server?",
+          "a": "Ja — jede läuft unabhängig; server quota erhöht das Limit."
+        },
+        {
+          "q": "Beim Löschen einer Erinnerung — was mit dem Verlauf?",
+          "a": "Vergangene Versendungen bleiben in Kanälen/Logs. Nur zukünftige Termine werden abgesagt."
+        },
+        {
+          "q": "Kann ich Erinnerungen an Events binden?",
+          "a": "server quota integriert sich mit Discord-Events und feuert X Minuten vor Beginn."
+        },
+        {
+          "q": "Werden Platzhalter unterstützt?",
+          "a": "Ja — {user}, {date}, {time} werden bei Versand ersetzt."
+        },
+        {
+          "q": "Warum hat eine Erinnerung nicht ausgelöst?",
+          "a": "Mögliche Ursachen: fehlende Bot-Berechtigung, fehlender Kanal, geschlossene DMs oder offline Bot. Logs prüfen."
+        },
+        {
+          "q": "Wird ein Erinnerungs-Verlauf gespeichert?",
+          "a": "Ja — der Tab „Verlauf“ zeigt die letzten 90 Tage."
+        }
+      ]
+    },
+    "botReports": {
+      "title": "Berichte",
+      "items": [
+        {
+          "q": "Was bietet die Berichte-Seite?",
+          "a": "Visuelle Auswertungen zu Wachstum, Engagement, Moderationsereignissen und Einladungs-Performance — Diagramme und Zusammenfassungen."
+        },
+        {
+          "q": "Welche Zeiträume sind verfügbar?",
+          "a": "Letzte 7/30/90 Tage und benutzerdefiniertes Datum."
+        },
+        {
+          "q": "Kann ich Berichte als PDF/Excel laden?",
+          "a": "Ja — „Exportieren“ rechts oben liefert PDF oder Excel (erweiterte Vorlagen mit server quota)."
+        },
+        {
+          "q": "Wie weit zurück reichen die Daten?",
+          "a": "Standard 90 Tage, server quota 1 Jahr. Für längere Zeiträume nutze Backups/Exporte."
+        },
+        {
+          "q": "Sind die Berichte in Echtzeit?",
+          "a": "Nein — sie werden täglich neu berechnet. Für Echtzeit nutze das Dashboard."
+        },
+        {
+          "q": "Wie wird Engagement gemessen?",
+          "a": "Nachrichten, Sprachzeit, Einladungen, Reaktionen und Befehlsnutzung. Bot-Nachrichten werden ausgeschlossen."
+        },
+        {
+          "q": "Gibt es einen Vergleich der Staff-Mitglieder?",
+          "a": "Ja — „Staff-Performance“ zeigt Mod-Aktionen, Ticket-Antwortzeiten u. a."
+        },
+        {
+          "q": "Filter nach Kanal/Rolle?",
+          "a": "Ja — die Filter rechts oben jedes Berichts."
+        },
+        {
+          "q": "Kann ich Tabellen sortieren?",
+          "a": "Ja — Klick auf eine Spaltenüberschrift wechselt aufsteigend/absteigend."
+        },
+        {
+          "q": "Warum fehlen einige Zeiträume?",
+          "a": "Bot-Ausfallzeiten verursachen Lücken. Sie werden im Bereich „Fehlende Intervalle“ markiert."
+        }
+      ]
+    },
+    "botLocale": {
+      "title": "Server-Sprache",
+      "items": [
+        {
+          "q": "Was bedeutet Bot-Sprache?",
+          "a": "Sie steuert die Sprache der Bot-Nachrichten auf diesem Server. Wähle aus 12 unterstützten Sprachen."
+        },
+        {
+          "q": "Sprache pro Mitglied?",
+          "a": "Aktuell server-weit. Pro-Nutzer-Präferenzen sind auf der Roadmap."
+        },
+        {
+          "q": "Wozu die Fallback-Sprache?",
+          "a": "Wird verwendet, wenn eine Übersetzung in der aktiven Sprache fehlt. Üblich sind Türkisch oder Englisch."
+        },
+        {
+          "q": "Aktualisieren sich alle Nachrichten beim Sprachwechsel?",
+          "a": "Neue Nachrichten nutzen die neue Sprache. Vergangene Nachrichten werden nicht bearbeitet (Discord erlaubt das nicht)."
+        },
+        {
+          "q": "Was passiert mit fehlenden Schlüsseln?",
+          "a": "Es wird auf die Fallback-Sprache zurückgegriffen und eine Warnung ausgelöst."
+        },
+        {
+          "q": "Gilt die Sprache für benutzerdefinierte Befehle?",
+          "a": "Nein — der Text in benutzerdefinierten Befehlen ist deiner und unabhängig von der Bot-Sprache."
+        },
+        {
+          "q": "Kann ich eine neue Sprache hinzufügen?",
+          "a": "Aktuell sind nur die 12 unterstützten Sprachen aktiv. Vorschläge über das Support-Formular."
+        },
+        {
+          "q": "Beeinflusst die Sprache die KI-Moderation?",
+          "a": "KI ist mehrsprachig und davon nicht betroffen. Diese Seite steuert nur Bot-Nachrichten."
+        },
+        {
+          "q": "Werden Sprachänderungen geloggt?",
+          "a": "Ja — Sprachänderungen erscheinen im Audit-Log als Konfigurationsupdate."
+        }
+      ]
+    },
+    "botGuilds": {
+      "title": "Server-Verwaltung",
+      "items": [
+        {
+          "q": "Was verwaltet diese Seite?",
+          "a": "Eine Übersicht aller Server deines Kontos — Bot-Status, server quota und High-Level-Konfiguration."
+        },
+        {
+          "q": "Kann ich den Bot von einem Server entfernen?",
+          "a": "Ja — „Bot entfernen“ lässt den Bot austreten. Daten werden 30 Tage aufbewahrt und können wiederhergestellt werden."
+        },
+        {
+          "q": "Kann ich einen Server hier umbenennen?",
+          "a": "Nein — Server-Namen werden in Discord verwaltet; das Panel spiegelt sie wider."
+        },
+        {
+          "q": "Einstellungen zwischen Servern kopieren?",
+          "a": "Ja — „Konfiguration kopieren“ überträgt Modul-Setup auf einen anderen Server."
+        },
+        {
+          "q": "Wie diagnostiziere ich ein Server-Problem?",
+          "a": "Server auswählen und „Diagnose ausführen“ — geprüft werden Berechtigungen, Kanal-/Rollen-Referenzen und Abo-Status."
+        },
+        {
+          "q": "Massenoperationen über mehrere Server?",
+          "a": "Ja — über die Mehrfachauswahl links Module aktivieren/deaktivieren oder Backups in Massen ausführen."
+        },
+        {
+          "q": "Wann werden Bot-Daten gelöscht?",
+          "a": "30 Tage nach dem Verlassen des Servers durch den Bot werden zugehörige Daten automatisch entfernt — vorher wiederherstellbar."
+        },
+        {
+          "q": "Kann ich Admins ins Panel einladen?",
+          "a": "Jede Person mit „Server verwalten“ erhält automatisch Panel-Zugriff; ein separates Einladungssystem gibt es nicht."
+        },
+        {
+          "q": "Was passiert, wenn ein Server in Discord gelöscht wird?",
+          "a": "Nach 7 Tagen wird der Panel-Datensatz gemäß der Aufbewahrungsrichtlinie archiviert."
+        }
+      ]
+    },
+    "botCustomBots": {
+      "title": "Privater Bot",
+      "items": [
+        {
+          "q": "Was ist ein eigener Bot?",
+          "a": "Ein separater Discord-Bot unter deinem Branding (Avatar/Befehle), der dieselbe Engine nutzt."
+        },
+        {
+          "q": "Woher bekomme ich ein Bot-Token?",
+          "a": "Aus dem Discord Developer Portal > Anwendung > Bot. Tokens sind privat — vorsichtig in das Panel einfügen."
+        },
+        {
+          "q": "Wo füge ich das Token ein?",
+          "a": "Im Feld „Bot-Token“. Es wird verschlüsselt gespeichert und nie wieder im Klartext angezeigt."
+        },
+        {
+          "q": "Mehrere eigene Bots gleichzeitig?",
+          "a": "Nein — pro Konto kann nur ein privater Bot registriert werden."
+        },
+        {
+          "q": "Sind die Befehle dieselben wie beim Hauptbot?",
+          "a": "Kernfunktionen sind identisch; Name und Avatar unterscheiden sich. Befehlsnamen können angepasst werden."
+        },
+        {
+          "q": "Mein eigener Bot ist offline?",
+          "a": "Prüfe Token, Anwendung im Discord eingerichtet, Intents aktiviert. Fehler werden auf dieser Seite angezeigt."
+        },
+        {
+          "q": "Wie setze ich den Avatar?",
+          "a": "Im Discord Developer Portal in der Anwendung — das Panel verwaltet keinen Avatar."
+        },
+        {
+          "q": "Mein Token ist geleakt — was tun?",
+          "a": "Token im Developer Portal zurücksetzen und neues einfügen. Das alte Token ist sofort ungültig."
+        },
+        {
+          "q": "Mehrere eigene Bots im selben Server?",
+          "a": "Pro Konto ist nur ein privater Bot möglich. Sie können ihn zusammen mit dem Haupt-Deveng-Bot auf demselben Server nutzen."
+        },
+        {
+          "q": "Kann ich einen eigenen Bot pausieren?",
+          "a": "Ja — „Pausieren“ stoppt den Bot. Token und Einstellungen bleiben erhalten."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /apps
+Disallow: /select-server
+Disallow: /auth
+Disallow: /sign-in
+Disallow: /sign-up
+Disallow: /forgot-password
+Disallow: /otp
+Disallow: /clerk
+
+Sitemap: https://deveng.app/sitemap.xml

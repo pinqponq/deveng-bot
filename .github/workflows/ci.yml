@@ -1,0 +1,129 @@
+name: CI
+
+# Build, typecheck, and tests. Path-filtered per component.
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+# Required for dorny/paths-filter on pull_request (avoids "Resource not accessible by integration").
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  changes:
+    name: Detect changes
+    runs-on: ubuntu-latest
+    outputs:
+      bot: ${{ steps.filter.outputs.bot }}
+      web: ${{ steps.filter.outputs.web }}
+      api: ${{ steps.filter.outputs.api }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            bot:
+              - 'Deveng.Discord.Bot/**'
+              - '.github/workflows/ci.yml'
+            web:
+              - 'Deveng.Discord.Web/**'
+              - '.github/workflows/ci.yml'
+            api:
+              - 'Deveng.Discord/**'
+              - '.github/workflows/ci.yml'
+
+  bot:
+    name: Bot (build + test)
+    needs: changes
+    if: needs.changes.outputs.bot == 'true'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Deveng.Discord.Bot
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: Deveng.Discord.Bot/package-lock.json
+      - run: npm ci
+      - run: npm run build
+      - run: npm test
+
+  web:
+    name: Web (build + test)
+    needs: changes
+    if: needs.changes.outputs.web == 'true'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Deveng.Discord.Web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+          cache-dependency-path: Deveng.Discord.Web/pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+      - run: pnpm test
+      - name: Lint (non-blocking)
+        run: pnpm lint
+        continue-on-error: true
+
+  api:
+    name: API (.NET test)
+    needs: changes
+    if: needs.changes.outputs.api == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - run: dotnet test Deveng.Discord/Deveng.Discord.sln --nologo
+
+  ci-success:
+    name: CI
+    needs: [changes, bot, web, api]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify required jobs
+        run: |
+          failed=0
+
+          if [ "${{ needs.changes.result }}" != "success" ]; then
+            echo "Detect changes failed: ${{ needs.changes.result }}"
+            failed=1
+          fi
+
+          if [ "${{ needs.changes.outputs.bot }}" = "true" ] && [ "${{ needs.bot.result }}" != "success" ]; then
+            echo "Bot job failed or was cancelled."
+            failed=1
+          fi
+
+          if [ "${{ needs.changes.outputs.web }}" = "true" ] && [ "${{ needs.web.result }}" != "success" ]; then
+            echo "Web job failed or was cancelled."
+            failed=1
+          fi
+
+          if [ "${{ needs.changes.outputs.api }}" = "true" ] && [ "${{ needs.api.result }}" != "success" ]; then
+            echo "API job failed or was cancelled."
+            failed=1
+          fi
+
+          if [ $failed -ne 0 ]; then
+            exit 1
+          fi
+
+          echo "CI passed. bot=${{ needs.changes.outputs.bot }} web=${{ needs.changes.outputs.web }} api=${{ needs.changes.outputs.api }}"
