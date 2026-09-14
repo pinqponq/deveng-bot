@@ -1,7 +1,8 @@
-import { AttachmentBuilder, MessageFlags, type ButtonInteraction } from 'discord.js';
+import { AttachmentBuilder, MessageFlags, type ButtonInteraction, type StringSelectMenuInteraction } from 'discord.js';
 import { musicManager } from '../music/musicManager';
 import { createEphemeralMusicControlPanel, createNowPlayingMessage } from '../music/musicEmbeds';
 import { permissionService } from '../music/permissionService';
+import { resolvePick } from '../music/searchPickStore';
 import { logError } from '../utils/logger';
 
 function formatDuration(ms?: number): string {
@@ -170,6 +171,69 @@ export async function handleMusicButton(interaction: ButtonInteraction): Promise
       await interaction.editReply({ content }).catch((e) => logError('musicButtonHandler:errorEditReply', e, 'debug'));
     } else if (interaction.isRepliable()) {
       await interaction.reply({ content, flags: MessageFlags.Ephemeral }).catch((e) => logError('musicButtonHandler:errorReply', e, 'debug'));
+    }
+  }
+}
+
+/**
+ * Handles picking a track from a search result select menu (`music:pick:<source>:<token>`).
+ * Plays the exact track the user selected.
+ */
+export async function handleMusicSelect(interaction: StringSelectMenuInteraction): Promise<void> {
+  try {
+    if (!interaction.guildId) {
+      await interaction.reply({ content: 'Bu işlem sadece sunucularda kullanılabilir.', flags: MessageFlags.Ephemeral }).catch((e) => logError('musicSelect:guildOnlyReply', e, 'debug'));
+      return;
+    }
+
+    const permCheck = permissionService
+      .canUseMusic(interaction)
+      .catch((error): { allowed: boolean; reason?: string } => {
+        logError('musicSelect:permissionCheck', error, 'warn');
+        return { allowed: true };
+      });
+    const permission = await Promise.race<{ allowed: boolean; reason?: string }>([
+      permCheck,
+      new Promise<{ allowed: boolean }>((resolve) => setTimeout(() => resolve({ allowed: true }), 2500)),
+    ]);
+    if (!permission.allowed) {
+      await interaction.reply({ content: permission.reason ?? 'Bu işlem için yetkiniz yok.', flags: MessageFlags.Ephemeral }).catch((e) => logError('musicSelect:permissionReply', e, 'debug'));
+      return;
+    }
+
+    // customId format: music:pick:<source>:<token>
+    const token = interaction.customId.split(':')[3] ?? '';
+    const index = Number(interaction.values[0]);
+    const track = Number.isInteger(index) ? resolvePick(token, index) : undefined;
+    if (!track) {
+      await interaction.reply({ content: 'Bu arama sonucu artık geçerli değil. Komutu yeniden çalıştırın.', flags: MessageFlags.Ephemeral }).catch((e) => logError('musicSelect:expiredReply', e, 'debug'));
+      return;
+    }
+
+    const voiceChannelId = permissionService.getVoiceChannelId(interaction);
+    if (!voiceChannelId) {
+      await interaction.reply({ content: 'Müzik başlatmak için önce bir ses kanalına katılmalısınız.', flags: MessageFlags.Ephemeral });
+      return;
+    }
+
+    await interaction.deferReply({ flags: MessageFlags.Ephemeral });
+    const state = await musicManager.play({
+      guildId: interaction.guildId,
+      clientId: interaction.client.application?.id,
+      query: track.uri ?? track.title,
+      requester: permissionService.getRequester(interaction),
+      voiceChannelId,
+      textChannelId: interaction.channelId,
+      playNext: false,
+    });
+    await interaction.editReply(`🎵 **${state.nowPlaying?.title ?? track.title}** ${state.status === 'playing' ? 'çalıyor.' : 'sıraya eklendi.'}`);
+  } catch (error) {
+    const content = error instanceof Error && error.message ? error.message.slice(0, 1900) : 'Şarkı başlatılamadı.';
+    console.error('[ERROR] Müzik seçim hatası:', error);
+    if (interaction.deferred && !interaction.replied) {
+      await interaction.editReply({ content }).catch((e) => logError('musicSelect:errorEditReply', e, 'debug'));
+    } else if (interaction.isRepliable() && !interaction.replied) {
+      await interaction.reply({ content, flags: MessageFlags.Ephemeral }).catch((e) => logError('musicSelect:errorReply', e, 'debug'));
     }
   }
 }
