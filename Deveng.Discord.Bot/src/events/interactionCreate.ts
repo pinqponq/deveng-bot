@@ -35,6 +35,11 @@ export async function handleInteractionCreate(interaction: Interaction): Promise
           await handleMusicButton(interaction);
           return;
         }
+        if (interaction.isStringSelectMenu() && interaction.customId.startsWith('music:')) {
+          const { handleMusicSelect } = await import('./musicButtonHandler');
+          await handleMusicSelect(interaction);
+          return;
+        }
         if (interaction.isButton() && interaction.customId.startsWith('deveng:auto:')) {
           const { handleAutomationButton } = await import('../automation/automationEngine');
           await handleAutomationButton(interaction);

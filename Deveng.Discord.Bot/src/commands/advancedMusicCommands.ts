@@ -1,7 +1,11 @@
-import { AttachmentBuilder, ChatInputCommandInteraction, EmbedBuilder, SlashCommandBuilder, MessageFlags } from 'discord.js';
+import { AttachmentBuilder, ActionRowBuilder, ChatInputCommandInteraction, EmbedBuilder, SlashCommandBuilder, MessageFlags, StringSelectMenuBuilder } from 'discord.js';
 import { musicManager } from '../music/musicManager';
 import { permissionService } from '../music/permissionService';
+import { rememberSearch } from '../music/searchPickStore';
 import type { MusicControlAction, MusicTrack } from '../music/types';
+
+const MAX_SEARCH_RESULTS = 5;
+const MAX_SELECT_LABEL_LENGTH = 95;
 
 type MusicCommand = {
   data: any;
@@ -85,6 +89,26 @@ function trackEmbed(title: string, tracks: MusicTrack[]): EmbedBuilder {
         ? tracks.slice(0, 10).map((track, index) => `${index + 1}. **${track.title}** - ${track.author || track.source} (${formatDuration(track.durationMs)})`).join('\n')
         : 'Kayıt bulunamadı.',
     );
+}
+
+/** Select menu so users can pick a search result; picking plays that exact track. */
+function pickMenuRow(sourceKey: 'youtube' | 'soundcloud', tracks: MusicTrack[]): ActionRowBuilder<StringSelectMenuBuilder> | undefined {
+  const options = tracks.slice(0, MAX_SEARCH_RESULTS).map((track, index) => {
+    const description = [track.author, formatDuration(track.durationMs)].filter(Boolean).join(' | ');
+    return {
+      label: `${track.title}`.replace(/\s+/g, ' ').trim().slice(0, MAX_SELECT_LABEL_LENGTH) || 'Bilinmeyen şarkı',
+      description: description ? description.replace(/\s+/g, ' ').trim().slice(0, MAX_SELECT_LABEL_LENGTH) : undefined,
+      value: String(index),
+    };
+  });
+  if (!options.length) return undefined;
+  const token = rememberSearch(tracks);
+  return new ActionRowBuilder<StringSelectMenuBuilder>().addComponents(
+    new StringSelectMenuBuilder()
+      .setCustomId(`music:pick:${sourceKey}:${token}`)
+      .setPlaceholder('Çalmak için bir sonuç seçin')
+      .addOptions(options),
+  );
 }
 
 export const advancedMusicCommands: Record<string, MusicCommand> = {
@@ -215,8 +239,9 @@ export const advancedMusicCommands: Record<string, MusicCommand> = {
     async execute(interaction) {
       await interaction.deferReply({ flags: MessageFlags.Ephemeral });
       if (!(await requireGuild(interaction))) return;
-      const tracks = await musicManager.search({ query: interaction.options.getString('query', true), limit: 5 });
-      await interaction.editReply({ embeds: [trackEmbed('Arama Sonuçları', tracks)] });
+      const tracks = await musicManager.search({ query: interaction.options.getString('query', true), limit: MAX_SEARCH_RESULTS });
+      const pickRow = pickMenuRow('youtube', tracks);
+      await interaction.editReply({ embeds: [trackEmbed('Arama Sonuçları', tracks)], components: pickRow ? [pickRow] : [] });
     },
   },
   'music-soundcloud': {
@@ -227,8 +252,9 @@ export const advancedMusicCommands: Record<string, MusicCommand> = {
     async execute(interaction) {
       await interaction.deferReply({ flags: MessageFlags.Ephemeral });
       if (!(await requireGuild(interaction))) return;
-      const tracks = await musicManager.search({ query: interaction.options.getString('query', true), source: 'soundcloud', limit: 5 });
-      await interaction.editReply({ embeds: [trackEmbed('SoundCloud Sonuçları', tracks)] });
+      const tracks = await musicManager.search({ query: interaction.options.getString('query', true), source: 'soundcloud', limit: MAX_SEARCH_RESULTS });
+      const pickRow = pickMenuRow('soundcloud', tracks);
+      await interaction.editReply({ embeds: [trackEmbed('SoundCloud Sonuçları', tracks)], components: pickRow ? [pickRow] : [] });
     },
   },
   'music-lyrics': {

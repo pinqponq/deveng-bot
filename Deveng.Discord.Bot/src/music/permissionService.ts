@@ -1,4 +1,4 @@
-import type { ButtonInteraction, ChatInputCommandInteraction, GuildMember } from 'discord.js';
+import type { ButtonInteraction, ChatInputCommandInteraction, GuildMember, StringSelectMenuInteraction } from 'discord.js';
 import { apiRequest } from '../utils/apiClient';
 import { logError } from '../utils/logger';
 
@@ -11,19 +11,19 @@ type MusicSettingsResponse = {
 };
 
 export class PermissionService {
-  getRequester(interaction: ChatInputCommandInteraction): { id: string; username?: string } {
+  getRequester(interaction: ChatInputCommandInteraction | StringSelectMenuInteraction): { id: string; username?: string } {
     return {
       id: interaction.user.id,
       username: interaction.user.username,
     };
   }
 
-  getVoiceChannelId(interaction: ChatInputCommandInteraction): string | undefined {
+  getVoiceChannelId(interaction: ChatInputCommandInteraction | StringSelectMenuInteraction): string | undefined {
     const member = interaction.member as GuildMember | null;
     return member?.voice?.channelId ?? undefined;
   }
 
-  async canUseMusic(interaction: ChatInputCommandInteraction | ButtonInteraction): Promise<{ allowed: boolean; reason?: string }> {
+  async canUseMusic(interaction: ChatInputCommandInteraction | ButtonInteraction | StringSelectMenuInteraction): Promise<{ allowed: boolean; reason?: string }> {
     if (!interaction.guildId) {
       return { allowed: false, reason: 'Bu işlem sadece sunucularda kullanılabilir.' };
     }
