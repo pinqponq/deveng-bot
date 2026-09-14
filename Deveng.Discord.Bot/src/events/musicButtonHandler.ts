@@ -5,6 +5,9 @@ import { permissionService } from '../music/permissionService';
 import { resolvePick } from '../music/searchPickStore';
 import { logError } from '../utils/logger';
 
+const PERMISSION_CHECK_TIMEOUT_MS = 2500;
+const DISCORD_MESSAGE_CAP = 1900;
+
 function formatDuration(ms?: number): string {
   if (!ms || ms <= 0) return 'canlı';
   const totalSeconds = Math.floor(ms / 1000);
@@ -32,7 +35,7 @@ export async function handleMusicButton(interaction: ButtonInteraction): Promise
     });
   const permission = await Promise.race<{ allowed: boolean; reason?: string }>([
     permCheck,
-    new Promise<{ allowed: boolean }>((resolve) => setTimeout(() => resolve({ allowed: true }), 2500)),
+    new Promise<{ allowed: boolean }>((resolve) => setTimeout(() => resolve({ allowed: true }), PERMISSION_CHECK_TIMEOUT_MS)),
   ]);
   if (!permission.allowed) {
     await interaction.reply({ content: permission.reason ?? 'Bu işlem için yetkiniz yok.', flags: MessageFlags.Ephemeral }).catch((e) => logError('musicButtonHandler:permissionReply', e, 'debug'));
@@ -93,7 +96,7 @@ export async function handleMusicButton(interaction: ButtonInteraction): Promise
     await interaction.deferReply({ flags: MessageFlags.Ephemeral });
     const result = await musicManager.getLyrics(interaction.guildId, undefined, clientId);
     const lyrics = result.lyrics || 'Bu şarkı için söz bulunamadı.';
-    if (lyrics.length <= 1900) {
+    if (lyrics.length <= DISCORD_MESSAGE_CAP) {
       await interaction.editReply(`**${result.track?.title ?? 'Şarkı Sözleri'}**\n\n${lyrics}`);
       return;
     }
@@ -159,7 +162,7 @@ export async function handleMusicButton(interaction: ButtonInteraction): Promise
   } catch (error) {
     // musicManager kullanıcı-dostu Türkçe hata fırlatabilir (ör. "aktif oynatıcı yok").
     // Buton etkileşiminin durumuna göre hatayı yüzeye çıkar ki kullanıcı sessiz kalmasın.
-    const content = error instanceof Error && error.message ? error.message.slice(0, 1900) : 'Müzik işlemi tamamlanamadı.';
+    const content = error instanceof Error && error.message ? error.message.slice(0, DISCORD_MESSAGE_CAP) : 'Müzik işlemi tamamlanamadı.';
     console.error('[ERROR] Müzik butonu hatası:', error);
     // deferUpdate ile ack'lenen mesaj-güncelleme aksiyonlarında editReply panel mesajını EZER;
     // bunlarda followUp (yeni ephemeral) kullanırız. deferReply'lı aksiyonlarda editReply doğru.
@@ -194,7 +197,7 @@ export async function handleMusicSelect(interaction: StringSelectMenuInteraction
       });
     const permission = await Promise.race<{ allowed: boolean; reason?: string }>([
       permCheck,
-      new Promise<{ allowed: boolean }>((resolve) => setTimeout(() => resolve({ allowed: true }), 2500)),
+      new Promise<{ allowed: boolean }>((resolve) => setTimeout(() => resolve({ allowed: true }), PERMISSION_CHECK_TIMEOUT_MS)),
     ]);
     if (!permission.allowed) {
       await interaction.reply({ content: permission.reason ?? 'Bu işlem için yetkiniz yok.', flags: MessageFlags.Ephemeral }).catch((e) => logError('musicSelect:permissionReply', e, 'debug'));
@@ -228,7 +231,7 @@ export async function handleMusicSelect(interaction: StringSelectMenuInteraction
     });
     await interaction.editReply(`🎵 **${state.nowPlaying?.title ?? track.title}** ${state.status === 'playing' ? 'çalıyor.' : 'sıraya eklendi.'}`);
   } catch (error) {
-    const content = error instanceof Error && error.message ? error.message.slice(0, 1900) : 'Şarkı başlatılamadı.';
+    const content = error instanceof Error && error.message ? error.message.slice(0, DISCORD_MESSAGE_CAP) : 'Şarkı başlatılamadı.';
     console.error('[ERROR] Müzik seçim hatası:', error);
     if (interaction.deferred && !interaction.replied) {
       await interaction.editReply({ content }).catch((e) => logError('musicSelect:errorEditReply', e, 'debug'));
